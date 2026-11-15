@@ -14,7 +14,12 @@ Entries are listed newest first within each stage. Every decision gives the reas
 | S2.1 | Data audit + data dictionary | done |
 | S2.2 | Cricsheet download (48 MB) + parse + dedupe/unify | done |
 | S2.3 | Player identity map (+ manual check of top 200) | done (99.07% of balls) |
-| S2.4 | Competition-strength model | done (bootstrap SE pending approval) |
+| S2.4 | Competition-strength model (v2: + venue term, + extras target, λ grid 3–10,000) | done |
+| S2.4b | Match-bootstrap SEs for league strength (`s07b_bootstrap.py`, 60 reps, 47 min) | done |
+| S2.6 | Match context: venue key, Cricsheet knockouts, IPL qualification stakes, day/night, rain fixes, impact era (`s06b_context.py`) | done |
+| S2.7 | Dates of birth from Wikidata (CC0) for the age curve (`s06c_dob.py`) | done |
+| S2.8 | Roles, bowler pressure-building credit, survivorship check (`s06d_roles.py`) | done |
+| S4-gap | Commitments from the gap review carried into S4: era term + era-dependent wicket value in WP model; age-curve term in skill models; role-relative ratings; pressure-building credit as candidate feature; stakes + day/night as candidate pressure inputs; IPW + all-competition scoring for survivorship | todo (in S4) |
 | S3.1 | Feature build + FEATURES.md | todo |
 | S3B | Player profile database (all players, all splits) + DATA_DICTIONARY + reconciliation + 20-player spot check; pressure columns after S4A | todo |
 | S4E | SHAP top predictors, player-type clustering, matchup model | todo |
@@ -49,6 +54,25 @@ Entries are listed newest first within each stage. Every decision gives the reas
 - **Profile pages:** pages for every player wait for the Phase 7 brief. The report appendix covers top candidates.
 
 ## S2 — Data audit and public data
+
+**15 Nov — gap review: fixes for the 10 gaps + 3 known issues** (user: "solve all the gaps and the known issue")
+- **Venue (gap 1).** One `venue_key` across sources: 95 of 98 RR venue ids named from paired Cricsheet matches (vote share ≥ 0.6); Cricsheet's 298 names collapse to 286 keys with 26 known renames (e.g. Feroz Shah Kotla → Arun Jaitley, Sardar Patel → Narendra Modi). Venue now a penalised term in the competition-strength ridge. `v2_results/context/rr_venue_to_cricsheet.csv`.
+- **Extras (gap 2).** Wides + no-ball runs are a third ridge target over all deliveries with a bowler term; bowler runs-saved = runs-off-bat effect + extras effect × deliveries per legal ball.
+- **Pressure building (gap 3).** Over-level OLS (254k overs, match-clustered SE): each dot ball raises partner wickets next over by +0.0034 (SE 0.0010), i.e. a 4-dot vs 1-dot over adds +3.2% relative. Split-half r of the dot/boundary credit 0.83; of the bowler-specific residual beyond dots 0.02 → no separate "squeeze skill"; the credit is a candidate S4 feature only. `v2_results/context/ROLES_REPORT.md`.
+- **Age (gap 4).** Wikidata SPARQL (P2697 ESPNcricinfo id → P569 DOB), 31,018 rows, generic query, DOB used only to compute age. Ball-weighted coverage: 96–100% in every franchise league and RR IPL/T20I; 53% Cricsheet T20I (associates); 67% RR A-team. `v2_results/context/dob_coverage.csv`.
+- **Roles (gap 5).** Batting position from order of arrival (equals RR `batting_order` in 99.9% of innings); batter role from median position; bowler role from phase mix; part-timer flag. Pace/spin known only for RR-pack bowlers (Cricsheet has no bowling style) — stated limitation.
+- **Knockouts in Cricsheet (gap 6).** Cricsheet has no stage field; playoff games carry no `match_number`. Rule: un-numbered games on/after the last numbered game of a numbered tournament (tournament = comp + event, new instance after a > 60-day gap so BBL Dec–Jan seasons stay whole). 399 knockouts; IPL exactly 4 per season 2019–26; T20 World Cup 11 of 12 semis/finals 2021–26.
+- **Qualification stakes (gap 7).** Monte Carlo (4,000 sims per match, coin-flip remaining results, random tie-break) of P(qualify | win) − P(qualify | lose) per team for every IPL league game 2022–26; playoffs = 1. Median league game 0.20; in the last 14 league games, 47% of team-games have stakes < 0.05 (dead rubber) and 10% > 0.5. `v2_work/unified/team_stakes.parquet`.
+- **Day/night & dew (gap 8).** The RR timestamp column holds dates only, so day/night comes from IPL double-headers (lower match number = afternoon). Dew check: spin economy in the second innings at night 8.51 vs first innings 8.53 — no aggregate dew effect; day/night kept as a covariate to test in S4, not as an adjustment.
+- **Impact Player era (gap 9).** First-innings runs after over 10 with 1–2 wickets down rose by ~12–15 runs in 2023+ vs 2019–22 (small samples per cell). S4A gives the WP model an era term and lets wicket value depend on era.
+- **Survivorship (gap 10).** IPL retention next season (≥ 60 balls): batters worst quartile 75% vs best 94%; bowlers 69% vs 90%. S4 scoring adds dropout-by-decile, inverse-probability-of-retention weights and all-competition next-season targets.
+- **Rain (known issue).** 34 = RR matches with any reduced overs (audit); 23 = with a revised target (baseline/report). Difference = 9 no-result/abandoned + 2 completed games with a shortened first innings and no target: rr19959 gets target 132 / 66 balls from Cricsheet; rr16753 has no public target → equal-overs par (flagged `rain_fix`). Baseline modelled both as 120-ball chases.
+- **λ grid (known issue).** Widened to 3–10,000 (extras 30–30,000); edge check printed.
+- **Venue key bug found and fixed.** The first refit merged different grounds sharing a name ("County Ground" = Taunton, Northampton, Bristol, Chelmsford, Derby, Hove), giving a spurious +14.5 effect. Key is now name | city (empty city strings filled; Hove = Brighton).
+- **Convergence.** lsqr cap raised 3,000 → 10,000; final fits converged in 4,581 (runs), 1,734 (dismissals), 2,322 (extras) iterations. Chosen penalties: runs 100, dismissals 1,000, extras 300 — none at the grid edge.
+- **Bootstrap SEs (known issue, done).** 60 match-bootstrap reps (47 min). League quality, runs per 100 balls vs IPL (SE in brackets), batters / bowlers incl. extras: MLC −3.4 (0.9) / −5.9 (0.8); ILT20 −3.6 (0.7) / −1.9 (0.7); T20I-Full −4.5 (0.5) / −2.5 (0.4); CPL −6.3 (0.7) / −4.4 (0.7); BBL −6.5 (0.8) / −6.1 (0.8); SA20 −7.2 (0.6) / −3.1 (0.7); PSL −8.2 (0.7) / −2.8 (0.8); LPL −9.3 (0.9) / −4.8 (0.8); T20 Blast −11.7 (0.7) / −9.1 (0.7); BPL −12.3 (0.9) / −9.0 (0.8); A-team −12.6 (0.9) / −8.8 (0.9); SMAT −13.4 (0.6) / −9.4 (0.6); CSA −16.1 (0.9) / −11.0 (1.0); Super Smash −16.3 (1.1) / −11.4 (1.2); T20I-Assoc −17.6 (0.8) / −9.4 (0.6). Every league is clearly below the IPL (all > 2 SE); neighbours within ~1.5 runs (e.g. MLC/ILT20, CPL/BBL) are not distinguishable. Adding venue moved the associate T20I gap from −25.1 to −17.6 (part of it was ground conditions). `v2_results/comp_strength/league_strength_2022_26_with_se.csv`.
+- **Venue effects** (runs off the bat per 100 legal balls vs average ground): Eden Gardens +11.3, Wankhede +10.7, Chinnaswamy +10.1, Sawai Mansingh (Jaipur) −2.4, Chepauk −6.6. `v2_results/comp_strength/venue_effects_top60.csv`.
+- `v2_code/run_all.sh` added: one command per stage, in dependency order.
 
 **15 Nov — competition strength, refit with T20I split** (final for now; `v2_results/comp_strength/`)
 - **T20I split.** T20I-Full = both teams are full members (706 matches). T20I-Assoc = any associate team involved (2,396).
