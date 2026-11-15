@@ -1,0 +1,25 @@
+role,variant,top10_kept,base_top10_in_variant_top15,spearman,n,Vaibhav Sooryavanshi,Finn Allen,Priyansh Arya,Abhishek Sharma,Suryakumar Yadav,Tim David,Heinrich Klaasen,Nicholas Pooran,Jos Buttler,Glenn Maxwell,Jasprit Bumrah,Sunil Narine,Rashid Khan,Varun Chakravarthy,Wanindu Hasaranga,Noor Ahmad,Abrar Ahmed,Mohsin Khan,Kuldeep Yadav,Jofra Archer
+bat,pressure definition D2_leverage_phase,9,9,1.0,94,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,,,,,,,,,,,
+bat,pressure definition D3_baseline_PI,9,9,1.0,95,1.0,2.0,3.0,4.0,5.0,6.0,7.0,9.0,10.0,,,,,,,,,,,
+bat,pressure definition D7_leverage_stakes,9,10,1.0,94,1.0,2.0,3.0,4.0,5.0,6.0,7.0,9.0,10.0,11.0,,,,,,,,,,
+bat,pressure definition D6_close_game,7,10,1.0,138,1.0,2.0,3.0,4.0,6.0,7.0,9.0,11.0,12.0,13.0,,,,,,,,,,
+bat,pressure definition D5_wicket_stress,6,6,0.998,89,,,,,1.0,3.0,4.0,7.0,5.0,6.0,,,,,,,,,,
+bat,eligibility 100 pressure balls,7,10,1.0,127,1.0,2.0,3.0,4.0,6.0,7.0,9.0,11.0,12.0,13.0,,,,,,,,,,
+bat,eligibility 200 pressure balls,9,9,1.0,70,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,,,,,,,,,,,
+bat,eligibility: last season 2024+,10,10,1.0,98,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,,,,,,,,,,
+bat,"rank by M4 (EB overall, RR only)",8,9,0.675,91,1.0,5.0,9.0,3.0,4.0,2.0,6.0,8.0,13.0,29.0,,,,,,,,,,
+bat,"rank by M6 (APM, all leagues)",9,10,0.996,91,1.0,2.0,3.0,4.0,5.0,6.0,7.0,11.0,9.0,8.0,,,,,,,,,,
+bat,rank incl. pressure-specific effect (theta + delta),8,10,0.974,91,1.0,3.0,2.0,4.0,6.0,5.0,7.0,9.0,14.0,12.0,,,,,,,,,,
+bat,rank by raw observed pressure run value,5,6,0.495,91,1.0,34.0,3.0,17.0,8.0,2.0,4.0,14.0,41.0,20.0,,,,,,,,,,
+bowl,pressure definition D2_leverage_phase,10,10,1.0,104,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0
+bowl,pressure definition D3_baseline_PI,9,10,1.0,104,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,7.0,8.0,9.0,10.0,11.0
+bowl,pressure definition D7_leverage_stakes,9,10,1.0,101,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,7.0,8.0,9.0,10.0,11.0
+bowl,pressure definition D6_close_game,6,10,1.0,164,,,,,,,,,,,1.0,2.0,3.0,5.0,7.0,9.0,11.0,13.0,14.0,15.0
+bowl,pressure definition D5_wicket_stress,9,9,1.0,108,,,,,,,,,,,1.0,2.0,3.0,5.0,6.0,7.0,8.0,,9.0,10.0
+bowl,eligibility 100 pressure balls,8,10,1.0,140,,,,,,,,,,,1.0,2.0,3.0,5.0,6.0,8.0,9.0,10.0,11.0,13.0
+bowl,eligibility 200 pressure balls,9,9,1.0,74,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,6.0,,7.0,8.0,9.0
+bowl,eligibility: last season 2024+,10,10,1.0,107,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0
+bowl,"rank by M4 (EB overall, RR only)",8,8,0.722,103,,,,,,,,,,,2.0,1.0,4.0,5.0,9.0,7.0,8.0,21.0,10.0,43.0
+bowl,"rank by M6 (APM, all leagues)",10,10,0.992,103,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,7.0,6.0,8.0,10.0,9.0
+bowl,rank incl. pressure-specific effect (theta + delta),9,10,0.991,103,,,,,,,,,,,1.0,2.0,3.0,4.0,7.0,5.0,6.0,10.0,8.0,12.0
+bowl,rank by raw observed pressure run value,3,4,0.492,103,,,,,,,,,,,12.0,1.0,16.0,35.0,61.0,38.0,7.0,24.0,5.0,37.0

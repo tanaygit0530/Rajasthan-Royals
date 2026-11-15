@@ -1,0 +1,41 @@
+role,cutoff,grouping,group,n,mean_resid_per100,sd
+bat,2022,group,IPL-heavy,25,-3.053,29.127
+bat,2022,group,T20I/A-team-heavy,23,1.417,26.982
+bat,2022,group,mixed,18,2.212,43.615
+bat,2022,pub,more public-league balls than RR balls,65,-0.043,32.975
+bat,2022,pub,mostly RR-pack balls,1,5.912,
+bat,2023,group,IPL-heavy,29,-8.317,26.14
+bat,2023,group,T20I/A-team-heavy,39,4.069,33.787
+bat,2023,group,mixed,21,4.952,32.296
+bat,2023,pub,more public-league balls than RR balls,81,0.727,32.059
+bat,2023,pub,mostly RR-pack balls,8,-7.726,25.521
+bat,2024,group,IPL-heavy,34,-0.369,31.404
+bat,2024,group,T20I/A-team-heavy,42,-0.592,33.475
+bat,2024,group,mixed,26,1.127,38.02
+bat,2024,pub,more public-league balls than RR balls,78,-2.003,36.404
+bat,2024,pub,mostly RR-pack balls,24,5.598,22.015
+bat,2025,group,IPL-heavy,28,5.749,28.56
+bat,2025,group,T20I/A-team-heavy,27,4.241,43.688
+bat,2025,group,mixed,24,-7.863,27.37
+bat,2025,pub,more public-league balls than RR balls,46,0.442,39.75
+bat,2025,pub,mostly RR-pack balls,33,-0.528,28.133
+bowl,2022,group,IPL-heavy,17,5.271,28.716
+bowl,2022,group,T20I/A-team-heavy,22,-1.05,29.865
+bowl,2022,group,mixed,24,-2.12,28.996
+bowl,2022,pub,more public-league balls than RR balls,60,-0.522,29.259
+bowl,2022,pub,mostly RR-pack balls,3,16.427,12.827
+bowl,2023,group,IPL-heavy,34,4.387,35.212
+bowl,2023,group,T20I/A-team-heavy,50,-1.559,33.743
+bowl,2023,group,mixed,31,-2.751,31.913
+bowl,2023,pub,more public-league balls than RR balls,101,-1.501,33.488
+bowl,2023,pub,mostly RR-pack balls,14,11.36,30.429
+bowl,2024,group,IPL-heavy,30,-2.438,31.594
+bowl,2024,group,T20I/A-team-heavy,46,3.755,31.387
+bowl,2024,group,mixed,32,-1.868,26.976
+bowl,2024,pub,more public-league balls than RR balls,83,0.124,31.446
+bowl,2024,pub,mostly RR-pack balls,25,-0.359,25.192
+bowl,2025,group,IPL-heavy,36,1.066,37.829
+bowl,2025,group,T20I/A-team-heavy,22,-6.502,33.279
+bowl,2025,group,mixed,22,2.28,33.334
+bowl,2025,pub,more public-league balls than RR balls,48,-2.989,40.403
+bowl,2025,pub,mostly RR-pack balls,32,3.493,25.116

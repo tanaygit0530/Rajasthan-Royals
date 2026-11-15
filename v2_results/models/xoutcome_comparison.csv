@@ -1,0 +1,5 @@
+model,bat_runs_mse,bat_out_logloss,bowl_runs_mse,bowl_wkt_logloss,outcome7_logloss
+T0_cell_means,3.07995,0.21004,2.9919,0.20073,
+hgb_separate,3.03327,0.20971,2.94879,0.20043,
+lgbm_separate,3.03693,0.21006,2.95151,0.20078,
+lgbm_multiclass,3.03444,0.20996,2.95151,0.20078,1.49006

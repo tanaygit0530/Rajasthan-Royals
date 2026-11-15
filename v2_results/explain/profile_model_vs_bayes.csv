@@ -1,0 +1,13 @@
+role,test_cutoff,model,wcorr,spearman,n
+bat,2023,LightGBM on profile features,-0.0,,89
+bat,2023,M8_bayes (s12),0.202,0.1643,89
+bat,2024,LightGBM on profile features,0.0492,0.1102,102
+bat,2024,M8_bayes (s12),0.1485,0.0671,102
+bat,2025,LightGBM on profile features,0.1813,0.1715,79
+bat,2025,M8_bayes (s12),0.2777,0.2308,79
+bowl,2023,LightGBM on profile features,-0.0,,115
+bowl,2023,M8_bayes (s12),0.2233,0.1551,115
+bowl,2024,LightGBM on profile features,0.1105,0.1258,108
+bowl,2024,M8_bayes (s12),0.1849,0.2264,108
+bowl,2025,LightGBM on profile features,0.1612,0.1661,80
+bowl,2025,M8_bayes (s12),0.1969,0.231,80

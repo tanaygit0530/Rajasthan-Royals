@@ -1,0 +1,41 @@
+role,cutoff,variant,wcorr,n
+bat,2022,full,0.0243,66
+bat,2022,full + pressure-specific effect,-0.0323,66
+bat,2022,"no APM prior (no public data, no competition adjustment)",0.1078,66
+bat,2022,APM from RR-pack only (no public data),0.1184,66
+bat,2022,no age curve,0.0256,66
+bat,2023,full,0.1166,89
+bat,2023,full + pressure-specific effect,0.1574,89
+bat,2023,"no APM prior (no public data, no competition adjustment)",0.1778,89
+bat,2023,APM from RR-pack only (no public data),0.2122,89
+bat,2023,no age curve,0.122,89
+bat,2024,full,0.177,102
+bat,2024,full + pressure-specific effect,0.161,102
+bat,2024,"no APM prior (no public data, no competition adjustment)",0.1796,102
+bat,2024,APM from RR-pack only (no public data),0.1814,102
+bat,2024,no age curve,0.1738,102
+bat,2025,full,0.4558,79
+bat,2025,full + pressure-specific effect,0.4282,79
+bat,2025,"no APM prior (no public data, no competition adjustment)",0.2618,79
+bat,2025,APM from RR-pack only (no public data),0.4448,79
+bat,2025,no age curve,0.458,79
+bowl,2022,full,0.1628,63
+bowl,2022,full + pressure-specific effect,0.1302,63
+bowl,2022,"no APM prior (no public data, no competition adjustment)",0.0233,63
+bowl,2022,APM from RR-pack only (no public data),0.0805,63
+bowl,2022,no age curve,0.167,63
+bowl,2023,full,0.2732,115
+bowl,2023,full + pressure-specific effect,0.2608,115
+bowl,2023,"no APM prior (no public data, no competition adjustment)",0.2484,115
+bowl,2023,APM from RR-pack only (no public data),0.2729,115
+bowl,2023,no age curve,0.2801,115
+bowl,2024,full,0.2596,108
+bowl,2024,full + pressure-specific effect,0.2512,108
+bowl,2024,"no APM prior (no public data, no competition adjustment)",0.3014,108
+bowl,2024,APM from RR-pack only (no public data),0.292,108
+bowl,2024,no age curve,0.2575,108
+bowl,2025,full,0.2494,80
+bowl,2025,full + pressure-specific effect,0.2477,80
+bowl,2025,"no APM prior (no public data, no competition adjustment)",0.2099,80
+bowl,2025,APM from RR-pack only (no public data),0.2079,80
+bowl,2025,no age curve,0.2512,80

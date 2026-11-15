@@ -1,0 +1,11 @@
+role,grouping,group,players_total,mean_resid_per100,se
+bat,group,IPL-heavy,116.0,-1.46,2.69
+bat,group,T20I/A-team-heavy,131.0,2.14,3.05
+bat,group,mixed,89.0,-0.18,3.76
+bat,pub,more public-league balls than RR balls,270.0,-0.3,2.13
+bat,pub,mostly RR-pack balls,66.0,0.92,3.14
+bowl,group,IPL-heavy,117.0,1.74,3.17
+bowl,group,T20I/A-team-heavy,140.0,-0.51,2.73
+bowl,group,mixed,109.0,-1.34,2.89
+bowl,pub,more public-league balls than RR balls,292.0,-1.08,1.95
+bowl,pub,mostly RR-pack balls,74.0,4.2,3.01
