@@ -1,6 +1,6 @@
 # Player profile database: data dictionary (S3B)
 
-- `v2_work/profiles/player_profiles.parquet` (local, not committed; derived from the confidential RR pack): 3,482,733 rows, 6,748 players. Columns: pid (Cricsheet identifier, or rr<id> for RR-only players), role (bat/bowl), split, split_value, metric, value.
+- `v2_work/profiles/player_profiles.parquet` (local, not committed; derived from the confidential RR pack): 3,482,053 rows, 6,748 players. Columns: pid (Cricsheet identifier, or rr<id> for RR-only players), role (bat/bowl), split, split_value, metric, value.
 - `v2_work/profiles/player_identity.parquet`: name, date of birth (Wikidata, age only), batting hand, bowling type / arm / finger vs wrist spin, mystery-spinner flag (>= 10% googly/carrom/back-of-hand/chinaman deliveries), keeper share, captain matches, batting/bowling role, part-timer flag.
 - `v2_results/profiles/player_profiles_summary.csv`: one row per player, headline career / IPL / last-12-months / pressure metrics.
 
@@ -57,7 +57,7 @@
 ## Definitions
 
 - Balls faced exclude wides; no-balls count. Bowler runs = runs off the bat + wides + no-ball runs (byes/leg-byes excluded). Bowler wickets exclude run outs, retired out, obstructing the field. Outs include non-striker run outs.
-- run_value_per100 = 100 x mean over balls of (runs - expected runs) - KW x (dismissal - expected dismissal), KW = 5.7 runs per wicket (s11); bowlers: the mirror image.
+- run_value_per100 = 100 x mean over balls of (runs - expected runs) - KW x (dismissal - expected dismissal), KW = 5.6 runs per wicket (s11); bowlers: the mirror image.
 - sr_first_10_balls / sr_after_20_balls: innings building (strike rate on balls 1-10 vs 21+ of an innings).
 - score_sd, pct_innings_30plus: batting consistency; econ_sd_runs: spread of runs conceded per bowling innings.
 

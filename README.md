@@ -6,6 +6,9 @@ every output table, the charts and the methodology report.
 > The RR data pack in `02_data/` is for this competition only and must not be shared or published.
 > Keep this folder private; submit only the report and your picks on Unstop.
 
+> **v2 (Nov 2026):** a rebuilt, out-of-time-validated version lives in `v2_code/` and `v2_results/`
+> (start with `v2_results/README.md` and `v2_results/report/`). The sections below describe the v1 baseline.
+
 ## Folder map
 
 | Folder | What is inside |

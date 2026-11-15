@@ -1,0 +1,4 @@
+test_auction,n,mae_log_model,mae_log_baseline,corr_model
+2024,62,1.178,1.165,0.414
+2025,164,0.83,1.168,0.645
+2026,59,0.833,0.802,0.513

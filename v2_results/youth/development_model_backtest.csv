@@ -1,0 +1,17 @@
+role,model,group,n,r,mse_per100
+bat,(a) early skill only,all aged <= 26 in 2021,130,0.6468,185.7892
+bat,(a) early skill only,aged <= 23 in 2021,45,0.6028,233.7766
+bat,(b) + age,all aged <= 26 in 2021,130,0.6521,183.595
+bat,(b) + age,aged <= 23 in 2021,45,0.5883,232.4339
+bat,(c) + age + sample size,all aged <= 26 in 2021,130,0.6515,183.8603
+bat,(c) + age + sample size,aged <= 23 in 2021,45,0.5882,232.464
+bat,mean only,all aged <= 26 in 2021,130,,323.7221
+bat,mean only,aged <= 23 in 2021,45,,360.097
+bowl,(a) early skill only,all aged <= 26 in 2021,157,0.5654,138.4331
+bowl,(a) early skill only,aged <= 23 in 2021,58,0.5074,137.6816
+bowl,(b) + age,all aged <= 26 in 2021,157,0.5585,140.0724
+bowl,(b) + age,aged <= 23 in 2021,58,0.494,139.4703
+bowl,(c) + age + sample size,all aged <= 26 in 2021,157,0.5514,141.7838
+bowl,(c) + age + sample size,aged <= 23 in 2021,58,0.4789,142.3922
+bowl,mean only,all aged <= 26 in 2021,157,,204.7721
+bowl,mean only,aged <= 23 in 2021,58,,190.0358

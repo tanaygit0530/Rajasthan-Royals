@@ -1,73 +1,73 @@
 bat_hand,bowl_type,phase,mean,size,rv_per100_shrunk
-LHB,Left-arm Chinaman,Death,-0.1394,235,-5.7911
-LHB,Left-arm Chinaman,Middle,-0.1618,1436,-13.9884
-LHB,Left-arm Chinaman,PP,0.476,53,5.3693
-LHB,Left-arm Fast,Death,0.176,299,6.7972
-LHB,Left-arm Fast,Middle,-0.0068,302,-1.0283
-LHB,Left-arm Fast,PP,0.0751,721,3.7318
-LHB,Left-arm fast-medium,Death,-0.1042,598,-7.2697
-LHB,Left-arm fast-medium,Middle,0.123,450,5.6066
-LHB,Left-arm fast-medium,PP,-0.0826,1268,-7.5768
-LHB,Left-arm medium,Death,-0.0344,617,-3.1226
-LHB,Left-arm medium,Middle,-0.0468,477,-3.4739
-LHB,Left-arm medium,PP,0.0023,871,-1.0146
-LHB,Left-arm medium-fast,Death,-0.0133,1169,-2.264
-LHB,Left-arm medium-fast,Middle,0.0168,1005,-0.0168
-LHB,Left-arm medium-fast,PP,0.115,1929,8.1061
-LHB,Right-arm Fast,Death,0.0929,2731,6.6168
-LHB,Right-arm Fast,Middle,-0.0497,2475,-5.7462
-LHB,Right-arm Fast,PP,0.0305,3879,1.2169
-LHB,Right-arm Leg-Break,Death,-0.1487,1234,-12.5194
-LHB,Right-arm Leg-Break,Middle,0.0109,7003,-0.5845
-LHB,Right-arm Leg-Break,PP,0.029,616,0.7215
-LHB,Right-arm fast-medium,Death,0.0519,1434,2.7234
-LHB,Right-arm fast-medium,Middle,0.0276,1596,0.8444
-LHB,Right-arm fast-medium,PP,0.0206,2220,0.3002
-LHB,Right-arm medium,Death,0.0899,2131,6.1305
-LHB,Right-arm medium,Middle,0.0694,2784,4.5769
-LHB,Right-arm medium,PP,0.021,3070,0.3469
-LHB,Right-arm medium-fast,Death,0.0679,2628,4.4111
-LHB,Right-arm medium-fast,Middle,-0.0002,3386,-1.5482
-LHB,Right-arm medium-fast,PP,0.0713,3228,4.8231
-LHB,Right-arm offbreak,Death,-0.0004,875,-1.1999
-LHB,Right-arm offbreak,Middle,-0.0527,6003,-6.5392
-LHB,Right-arm offbreak,PP,-0.0649,2502,-7.0702
-LHB,Slow left-arm orthodox,Death,-0.1517,468,-9.1027
-LHB,Slow left-arm orthodox,Middle,0.1164,4203,9.0665
-LHB,Slow left-arm orthodox,PP,0.2057,1105,13.8489
-RHB,Left-arm Chinaman,Death,-0.2485,405,-13.3633
-RHB,Left-arm Chinaman,Middle,-0.0827,2376,-8.5402
-RHB,Left-arm Chinaman,PP,-0.1897,43,-2.0071
-RHB,Left-arm Fast,Death,-0.1806,666,-12.3476
-RHB,Left-arm Fast,Middle,0.1281,631,6.7972
-RHB,Left-arm Fast,PP,0.0949,1581,6.2141
-RHB,Left-arm fast-medium,Death,0.085,1389,5.2766
-RHB,Left-arm fast-medium,Middle,0.1494,1206,9.9332
-RHB,Left-arm fast-medium,PP,0.0124,2542,-0.4057
-RHB,Left-arm medium,Death,0.0749,1237,4.3708
-RHB,Left-arm medium,Middle,0.0513,692,2.1665
-RHB,Left-arm medium,PP,-0.0302,1892,-3.9051
-RHB,Left-arm medium-fast,Death,0.095,2214,6.5991
-RHB,Left-arm medium-fast,Middle,0.0862,1897,5.7109
-RHB,Left-arm medium-fast,PP,0.0067,3647,-0.9359
-RHB,Right-arm Fast,Death,0.0703,4937,4.9259
-RHB,Right-arm Fast,Middle,0.0441,4625,2.4843
-RHB,Right-arm Fast,PP,-0.0209,6719,-3.589
-RHB,Right-arm Leg-Break,Death,-0.0726,2490,-7.7289
-RHB,Right-arm Leg-Break,Middle,0.0258,14646,0.8533
-RHB,Right-arm Leg-Break,PP,-0.1748,1415,-14.9628
-RHB,Right-arm fast-medium,Death,0.001,2604,-1.3981
-RHB,Right-arm fast-medium,Middle,0.1044,2866,7.6625
-RHB,Right-arm fast-medium,PP,-0.0243,4003,-3.7605
-RHB,Right-arm medium,Death,0.0833,4043,6.022
-RHB,Right-arm medium,Middle,0.0909,5104,6.8455
-RHB,Right-arm medium,PP,0.0348,5555,1.6544
-RHB,Right-arm medium-fast,Death,0.069,4685,4.7788
-RHB,Right-arm medium-fast,Middle,0.0269,5926,0.9194
-RHB,Right-arm medium-fast,PP,0.0709,5850,5.0341
-RHB,Right-arm offbreak,Death,-0.1093,1366,-9.7734
-RHB,Right-arm offbreak,Middle,0.035,6931,1.6976
-RHB,Right-arm offbreak,PP,0.0302,2750,1.1416
-RHB,Slow left-arm orthodox,Death,0.0866,1548,5.5271
-RHB,Slow left-arm orthodox,Middle,-0.1029,11532,-11.5998
-RHB,Slow left-arm orthodox,PP,-0.0391,4237,-5.133
+LHB,Left-arm Chinaman,Death,-0.1352,235,-5.6211
+LHB,Left-arm Chinaman,Middle,-0.161,1436,-13.9014
+LHB,Left-arm Chinaman,PP,0.4799,53,5.4196
+LHB,Left-arm Fast,Death,0.1798,299,6.9758
+LHB,Left-arm Fast,Middle,-0.0093,302,-1.1178
+LHB,Left-arm Fast,PP,0.0708,721,3.4815
+LHB,Left-arm fast-medium,Death,-0.1027,598,-7.1548
+LHB,Left-arm fast-medium,Middle,0.1254,450,5.7528
+LHB,Left-arm fast-medium,PP,-0.0794,1268,-7.3073
+LHB,Left-arm medium,Death,-0.0406,617,-3.4742
+LHB,Left-arm medium,Middle,-0.0493,477,-3.5894
+LHB,Left-arm medium,PP,0.0016,871,-1.0336
+LHB,Left-arm medium-fast,Death,-0.0119,1169,-2.1296
+LHB,Left-arm medium-fast,Middle,0.0129,1005,-0.2722
+LHB,Left-arm medium-fast,PP,0.1156,1929,8.1937
+LHB,Right-arm Fast,Death,0.0912,2731,6.5008
+LHB,Right-arm Fast,Middle,-0.0506,2475,-5.7945
+LHB,Right-arm Fast,PP,0.0316,3879,1.3498
+LHB,Right-arm Leg-Break,Death,-0.1443,1234,-12.162
+LHB,Right-arm Leg-Break,Middle,0.0092,7003,-0.7119
+LHB,Right-arm Leg-Break,PP,0.0271,616,0.6295
+LHB,Right-arm fast-medium,Death,0.0518,1434,2.7481
+LHB,Right-arm fast-medium,Middle,0.0248,1596,0.6465
+LHB,Right-arm fast-medium,PP,0.0215,2220,0.4105
+LHB,Right-arm medium,Death,0.0878,2131,5.9898
+LHB,Right-arm medium,Middle,0.069,2784,4.5715
+LHB,Right-arm medium,PP,0.0203,3070,0.3198
+LHB,Right-arm medium-fast,Death,0.0682,2628,4.4741
+LHB,Right-arm medium-fast,Middle,-0.0008,3386,-1.5686
+LHB,Right-arm medium-fast,PP,0.0699,3228,4.7346
+LHB,Right-arm offbreak,Death,-0.002,875,-1.2818
+LHB,Right-arm offbreak,Middle,-0.0529,6003,-6.5292
+LHB,Right-arm offbreak,PP,-0.0674,2502,-7.2545
+LHB,Slow left-arm orthodox,Death,-0.1499,468,-8.9845
+LHB,Slow left-arm orthodox,Middle,0.1161,4203,9.0753
+LHB,Slow left-arm orthodox,PP,0.2044,1105,13.7804
+RHB,Left-arm Chinaman,Death,-0.2486,405,-13.3453
+RHB,Left-arm Chinaman,Middle,-0.0836,2376,-8.587
+RHB,Left-arm Chinaman,PP,-0.1793,43,-1.9023
+RHB,Left-arm Fast,Death,-0.1747,666,-11.9556
+RHB,Left-arm Fast,Middle,0.1206,631,6.3613
+RHB,Left-arm Fast,PP,0.0913,1581,5.9529
+RHB,Left-arm fast-medium,Death,0.0883,1389,5.5628
+RHB,Left-arm fast-medium,Middle,0.1477,1206,9.8366
+RHB,Left-arm fast-medium,PP,0.0152,2542,-0.1292
+RHB,Left-arm medium,Death,0.0703,1237,4.0509
+RHB,Left-arm medium,Middle,0.0486,692,2.0221
+RHB,Left-arm medium,PP,-0.0302,1892,-3.8706
+RHB,Left-arm medium-fast,Death,0.0935,2214,6.5085
+RHB,Left-arm medium-fast,Middle,0.0826,1897,5.4418
+RHB,Left-arm medium-fast,PP,0.0093,3647,-0.6681
+RHB,Right-arm Fast,Death,0.0692,4937,4.8581
+RHB,Right-arm Fast,Middle,0.0428,4625,2.4053
+RHB,Right-arm Fast,PP,-0.0195,6719,-3.4192
+RHB,Right-arm Leg-Break,Death,-0.0705,2490,-7.5133
+RHB,Right-arm Leg-Break,Middle,0.0242,14646,0.7313
+RHB,Right-arm Leg-Break,PP,-0.1744,1415,-14.8969
+RHB,Right-arm fast-medium,Death,0.0031,2604,-1.1786
+RHB,Right-arm fast-medium,Middle,0.1026,2866,7.5353
+RHB,Right-arm fast-medium,PP,-0.0225,4003,-3.5625
+RHB,Right-arm medium,Death,0.0819,4043,5.9341
+RHB,Right-arm medium,Middle,0.0895,5104,6.7548
+RHB,Right-arm medium,PP,0.0371,5555,1.9009
+RHB,Right-arm medium-fast,Death,0.0686,4685,4.7814
+RHB,Right-arm medium-fast,Middle,0.0272,5926,0.9818
+RHB,Right-arm medium-fast,PP,0.071,5850,5.0833
+RHB,Right-arm offbreak,Death,-0.1088,1366,-9.7065
+RHB,Right-arm offbreak,Middle,0.0345,6931,1.6877
+RHB,Right-arm offbreak,PP,0.0316,2750,1.3051
+RHB,Slow left-arm orthodox,Death,0.0838,1548,5.3362
+RHB,Slow left-arm orthodox,Middle,-0.1035,11532,-11.6214
+RHB,Slow left-arm orthodox,PP,-0.0408,4237,-5.2525

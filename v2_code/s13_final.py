@@ -22,7 +22,8 @@ ID = pd.read_parquet(w('profiles/player_identity.parquet')).set_index('uid')
 MIN_P, LAST = 150, 2025
 DRAWS = 2000
 
-# ---------------- auction status (baseline rules + trade list as of 11 Nov 2026; refresh after 17 Nov retentions) -------
+# ---------------- auction status: baseline rules + trades/retirements to 15 Nov 2026 (Wikipedia 'List of 2027 IPL personnel
+# changes', CC BY-SA). Retention deadline was 15 Nov 2026; retained/released lists not yet published -> refresh before 16 Dec auction
 mp = rr('competition_team_player_mapping.csv'); cp = rr('competitions.csv')
 mp = mp.merge(cp[['comp_id', 'match_format']], on='comp_id')
 idm = pd.read_csv(res('idmap/idmap.csv')); U = idm[idm.method.str.match(r'^(A_|B1_|B2_)')].set_index('pid').cs.to_dict()
@@ -30,9 +31,14 @@ mp['uid'] = mp.player_id.map(lambda p: U.get(p, f'rr{int(p)}'))
 intl = mp[(mp.match_format == 'T20I') | mp.comp_id.isin([2670, 3289])]
 NAT = intl.groupby('uid').team_name.agg(lambda s: s.value_counts().index[0]).str.replace(' A$', '', regex=True)
 IPL26 = mp[mp.comp_id == 3298].drop_duplicates('uid').set_index('uid').team_name
+# nationality: RR-pack international team, else the team of the player's international appearances in Cricsheet
+# (all formats, all years; s16), else India (domestic Indian players have no international record)
+_cap = pd.read_parquet(w('value/capped.parquet')).set_index('uid')
+NAT = NAT.combine_first(_cap.nationality.dropna()) if 'nationality' in _cap else NAT.combine_first(_cap.intl_team.dropna().str.replace(' A$', '', regex=True))
 TRADES = {'Kuldeep Yadav': 'Lucknow Super Giants', 'Rishabh Pant': 'Delhi Capitals', 'T Natarajan': 'Sunrisers Hyderabad',
           'Liam Livingstone': 'Chennai Super Kings', 'Jack Edwards': 'Chennai Super Kings', 'Khaleel Ahmed': 'Sunrisers Hyderabad',
-          'Nathan Ellis': 'Sunrisers Hyderabad', 'Hardik Pandya': 'Punjab Kings', 'Arshdeep Singh': 'Mumbai Indians'}
+          'Nathan Ellis': 'Sunrisers Hyderabad', 'Hardik Pandya': 'Punjab Kings', 'Arshdeep Singh': 'Mumbai Indians',
+          'Zeeshan Ansari': 'Delhi Capitals', 'Harshal Patel': 'Gujarat Titans'}
 ABBR = {'Chennai Super Kings': 'CSK', 'Mumbai Indians': 'MI', 'Rajasthan Royals': 'RR', 'Punjab Kings': 'PBKS',
         'Royal Challengers Bengaluru': 'RCB', 'Delhi Capitals': 'DC', 'Kolkata Knight Riders': 'KKR',
         'Sunrisers Hyderabad': 'SRH', 'Gujarat Titans': 'GT', 'Lucknow Super Giants': 'LSG'}
@@ -40,35 +46,42 @@ ABBR = {'Chennai Super Kings': 'CSK', 'Mumbai Indians': 'MI', 'Rajasthan Royals'
 
 def status(name, uid):
     team = TRADES.get(name, IPL26.get(uid)); nat = NAT.get(uid, 'India')
-    if name == 'Sunil Narine': nat = 'West Indies'
     if nat == 'Pakistan': return team, 'Not eligible (Pakistan national)'
     if name == 'Harry Brook': return None, 'Not eligible (IPL ban through 2027)'
     if name == 'Andre Russell': return None, 'Not eligible (retired from IPL)'
+    if name == 'Ajinkya Rahane': return None, 'Not eligible (retired, 30 Jul 2026)'
     if team == 'Rajasthan Royals': return team, 'Already RR'
-    if isinstance(team, str): return team, f'Under contract ({ABBR.get(team, team)}); only if released 17 Nov'
+    if isinstance(team, str): return team, f'Under contract ({ABBR.get(team, team)}); only if released'
     return None, 'Open market (not on a 2026 IPL roster)'
 
 
-# Final configuration chosen by the out-of-time ablation (s13b, ABLATION in MODEL_COMPARISON.md): a component is kept only
-# if removing it lowers next-season accuracy. Age curve: removing it never hurt -> dropped. Public-data APM prior:
-# helps bowlers, not batters -> batters use the APM fitted on RR-pack matches only (still competition/venue/opponent
-# adjusted within the pack). Pressure-specific effect: hurts both -> estimated but not used to rank.
-FINAL = {'bat': dict(apm_rr_only=True, use_age=False), 'bowl': dict(apm_rr_only=False, use_age=False)}
+# Final configuration chosen by the out-of-time ablation (s13b; MODEL_COMPARISON.md). A component is kept only if
+# removing it lowers next-season accuracy, and a prior may not reuse the RR-pack balls of the likelihood (that would
+# count the same balls twice and make intervals falsely narrow).
+#   age curve: removing it never hurt -> dropped (both roles)
+#   bowlers: prior from public (Cricsheet, non-RR) matches only -> best variant, better in 4 of 4 folds
+#   batters: no skill prior (RR-pack hierarchical model only) -> within 1 SE of the best batter variant; the best
+#            point predictor (prior fitted on the same RR balls) is reported as a sensitivity check only
+#   pressure-specific effect: hurts both roles -> estimated, not used to rank
+FINAL = {'bat': dict(apm_src=None, use_age=False), 'bowl': dict(apm_src='cs', use_age=False)}
 
 
-def fit_role(role, pdef=None, min_p=MIN_P, last=LAST, draws=DRAWS, use_apm=True, use_age=None, apm_rr_only=None):
+def fit_role(role, pdef=None, min_p=MIN_P, last=LAST, draws=DRAWS, use_age=None, apm_src='final'):
     use_age = FINAL[role]['use_age'] if use_age is None else use_age
-    apm_rr_only = FINAL[role]['apm_rr_only'] if apm_rr_only is None else apm_rr_only
+    apm_src = FINAL[role]['apm_src'] if apm_src == 'final' else apm_src
     if pdef:
         os.environ['PDEF'] = pdef
     V = pd.read_parquet(w('values/ball_values_final.parquet'))
     V, thr = K.add_flags(V, 2026, d=pdef or K.PDEF)
-    A = K.apm(2026, rr_only=apm_rr_only)
+    A = K.apm(2026, src=apm_src or 'all')
     F = K.features(V, 2026, role, A, P, ROLE_T)
     F['age_actual'] = F.age
     F['age'] = F.age if use_age else 28.0
-    if not use_apm:
+    if apm_src is None:
         F['M6_apm'] = 0.0
+    elif apm_src == 'cs':     # players with no public-league balls get the population prior (APM = 0 = average)
+        nb = A['apm_bat_n' if role == 'bat' else 'apm_bowl_n'].reindex(F.index).fillna(0)
+        F['M6_apm'] = F.M6_apm.where(nb > 0, 0.0)
     F['M6_apm'] = F.M6_apm.fillna(F.M6_apm.median())
     th, de, summ = K.bayes_fit(F, F.attrs['var_ball'], draws=draws, warm=draws)
     F['theta'] = th.mean(0); F['delta'] = de.mean(0)
@@ -159,14 +172,18 @@ if __name__ == '__main__':
             cmp(role, nm_, table(role, F, th, de, summ, (F.p_n >= mp_) & (F.last_season >= ls_)))
         el0 = (F.p_n >= MIN_P) & (F.last_season >= LAST)
         Fe = F[el0]
-        for nm_, col in [('rank by M4 (EB overall, RR only)', 'M4_eb_overall'), ('rank by M6 (APM, all leagues)', 'M6_apm'),
+        apm_all = K.apm(2026)['apm_bat_rv' if role == 'bat' else 'apm_bowl_rv']
+        for nm_, col in [('rank by M4 (EB overall, RR only)', 'M4_eb_overall'), ('rank by M6 (APM, all leagues)', 'APM'),
                          ('rank incl. pressure-specific effect (theta + delta)', None)]:
-            s = (Fe.theta + Fe.delta) if col is None else Fe[col]
+            s = (Fe.theta + Fe.delta) if col is None else apm_all.reindex(Fe.index) if col == 'APM' else Fe[col]
             T2 = Fe.assign(score=s).sort_values('score', ascending=False)
             cmp(role, nm_, T2)
         T2 = Fe.assign(score=Fe.p_raw).sort_values('score', ascending=False); cmp(role, 'rank by raw observed pressure run value', T2)
-        for nm_, kw in [('with age curve', dict(use_age=True)), ('APM prior from all leagues' if role == 'bat' else 'APM prior from RR pack only',
-                         dict(apm_rr_only=not FINAL[role]['apm_rr_only']))]:
+        for nm_, kw in [('with age curve', dict(use_age=True)), ('prior: APM from RR pack (double counts)', dict(apm_src='rr')),
+                        ('prior: APM from public leagues only', dict(apm_src='cs')), ('prior: APM all leagues (double counts)', dict(apm_src='all')),
+                        ('no skill prior', dict(apm_src=None))]:
+            if kw.get('apm_src', 'x') == FINAL[role]['apm_src']:
+                continue
             F2, th2, de2, s2, el2, _ = fit_role(role, draws=1000, **kw)
             cmp(role, f'final model {nm_}', table(role, F2, th2, de2, s2, el2))
     pd.DataFrame(sens).round(3).to_csv(res('models/sensitivity.csv'), index=False)

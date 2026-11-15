@@ -1,0 +1,12 @@
+role,cutoff,group,n,corr_theta_vs_later,corr_raw_pressure_vs_later
+bat,2022,capped at cutoff,84,0.209,-0.013
+bat,2022,uncapped at cutoff,12,-0.351,0.042
+bat,2023,capped at cutoff,101,0.234,0.114
+bat,2024,capped at cutoff,99,0.152,0.01
+bat,2024,uncapped at cutoff,8,0.778,0.222
+bowl,2022,capped at cutoff,99,0.333,0.056
+bowl,2022,uncapped at cutoff,8,-0.201,0.057
+bowl,2023,capped at cutoff,120,0.298,0.031
+bowl,2023,uncapped at cutoff,16,-0.189,-0.248
+bowl,2024,capped at cutoff,116,0.37,0.232
+bowl,2024,uncapped at cutoff,18,-0.056,0.449

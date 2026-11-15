@@ -1,11 +1,13 @@
 role,variant,mean,std
-bat,APM from RR-pack only (no public data),0.239,0.142
-bat,full,0.193,0.186
-bat,full + pressure-specific effect,0.179,0.189
-bat,"no APM prior (no public data, no competition adjustment)",0.182,0.063
-bat,no age curve,0.195,0.186
-bowl,APM from RR-pack only (no public data),0.213,0.096
-bowl,full,0.236,0.05
-bowl,full + pressure-specific effect,0.222,0.062
-bowl,"no APM prior (no public data, no competition adjustment)",0.196,0.121
-bowl,no age curve,0.239,0.05
+bat,APM from RR-pack only (no public data),0.266,0.108
+bat,full,0.206,0.164
+bat,full + pressure-specific effect,0.204,0.162
+bat,"no APM prior (no public data, no competition adjustment)",0.203,0.05
+bat,no age curve,0.206,0.165
+bat,public-only APM prior (no double counting),0.158,0.05
+bowl,APM from RR-pack only (no public data),0.185,0.098
+bowl,full,0.232,0.055
+bowl,full + pressure-specific effect,0.226,0.065
+bowl,"no APM prior (no public data, no competition adjustment)",0.164,0.139
+bowl,no age curve,0.233,0.054
+bowl,public-only APM prior (no double counting),0.231,0.06

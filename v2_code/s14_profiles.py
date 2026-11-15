@@ -180,11 +180,11 @@ for pre, role, split, sv, ms in [
         ('bat_', 'bat', 'all', 'career', ['innings', 'runs', 'balls', 'average', 'strike_rate', 'fifties', 'hundreds', 'boundary_pct', 'dot_pct']),
         ('bat_ipl_', 'bat', 'comp2', 'IPL', ['runs', 'balls', 'average', 'strike_rate']),
         ('bat_12m_', 'bat', 'recent', 'last_12_months', ['runs', 'balls', 'strike_rate']),
-        ('bat_pres_', 'bat', 'pres', '1.0', ['balls', 'strike_rate', 'run_value_per100']),
+        ('bat_pres_', 'bat', 'pres', '1', ['balls', 'strike_rate', 'run_value_per100']),
         ('bowl_', 'bowl', 'all', 'career', ['balls', 'wickets', 'economy', 'average', 'strike_rate', 'dot_pct']),
         ('bowl_ipl_', 'bowl', 'comp2', 'IPL', ['balls', 'wickets', 'economy']),
         ('bowl_12m_', 'bowl', 'recent', 'last_12_months', ['balls', 'wickets', 'economy']),
-        ('bowl_pres_', 'bowl', 'pres', '1.0', ['balls', 'economy', 'run_value_per100'])]:
+        ('bowl_pres_', 'bowl', 'pres', '1', ['balls', 'economy', 'run_value_per100'])]:
     S = S.join(pick(role, split, sv, ms, pre))
 S.index.name = 'uid'
 S = S[(S.bat_balls.fillna(0) + S.bowl_balls.fillna(0)) > 0]

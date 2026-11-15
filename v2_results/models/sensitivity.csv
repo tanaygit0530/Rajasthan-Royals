@@ -1,25 +1,33 @@
-role,variant,top10_kept,base_top10_in_variant_top15,spearman,n,Vaibhav Sooryavanshi,Finn Allen,Priyansh Arya,Abhishek Sharma,Suryakumar Yadav,Tim David,Heinrich Klaasen,Nicholas Pooran,Jos Buttler,Glenn Maxwell,Jasprit Bumrah,Sunil Narine,Rashid Khan,Varun Chakravarthy,Wanindu Hasaranga,Noor Ahmad,Abrar Ahmed,Mohsin Khan,Kuldeep Yadav,Jofra Archer
-bat,pressure definition D2_leverage_phase,9,9,1.0,94,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,,,,,,,,,,,
-bat,pressure definition D3_baseline_PI,9,9,1.0,95,1.0,2.0,3.0,4.0,5.0,6.0,7.0,9.0,10.0,,,,,,,,,,,
-bat,pressure definition D7_leverage_stakes,9,10,1.0,94,1.0,2.0,3.0,4.0,5.0,6.0,7.0,9.0,10.0,11.0,,,,,,,,,,
-bat,pressure definition D6_close_game,7,10,1.0,138,1.0,2.0,3.0,4.0,6.0,7.0,9.0,11.0,12.0,13.0,,,,,,,,,,
-bat,pressure definition D5_wicket_stress,6,6,0.998,89,,,,,1.0,3.0,4.0,7.0,5.0,6.0,,,,,,,,,,
-bat,eligibility 100 pressure balls,7,10,1.0,127,1.0,2.0,3.0,4.0,6.0,7.0,9.0,11.0,12.0,13.0,,,,,,,,,,
-bat,eligibility 200 pressure balls,9,9,1.0,70,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,,,,,,,,,,,
-bat,eligibility: last season 2024+,10,10,1.0,98,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,,,,,,,,,,
-bat,"rank by M4 (EB overall, RR only)",8,9,0.675,91,1.0,5.0,9.0,3.0,4.0,2.0,6.0,8.0,13.0,29.0,,,,,,,,,,
-bat,"rank by M6 (APM, all leagues)",9,10,0.996,91,1.0,2.0,3.0,4.0,5.0,6.0,7.0,11.0,9.0,8.0,,,,,,,,,,
-bat,rank incl. pressure-specific effect (theta + delta),8,10,0.974,91,1.0,3.0,2.0,4.0,6.0,5.0,7.0,9.0,14.0,12.0,,,,,,,,,,
-bat,rank by raw observed pressure run value,5,6,0.495,91,1.0,34.0,3.0,17.0,8.0,2.0,4.0,14.0,41.0,20.0,,,,,,,,,,
-bowl,pressure definition D2_leverage_phase,10,10,1.0,104,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0
-bowl,pressure definition D3_baseline_PI,9,10,1.0,104,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,7.0,8.0,9.0,10.0,11.0
-bowl,pressure definition D7_leverage_stakes,9,10,1.0,101,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,7.0,8.0,9.0,10.0,11.0
-bowl,pressure definition D6_close_game,6,10,1.0,164,,,,,,,,,,,1.0,2.0,3.0,5.0,7.0,9.0,11.0,13.0,14.0,15.0
-bowl,pressure definition D5_wicket_stress,9,9,1.0,108,,,,,,,,,,,1.0,2.0,3.0,5.0,6.0,7.0,8.0,,9.0,10.0
-bowl,eligibility 100 pressure balls,8,10,1.0,140,,,,,,,,,,,1.0,2.0,3.0,5.0,6.0,8.0,9.0,10.0,11.0,13.0
-bowl,eligibility 200 pressure balls,9,9,1.0,74,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,6.0,,7.0,8.0,9.0
-bowl,eligibility: last season 2024+,10,10,1.0,107,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0
-bowl,"rank by M4 (EB overall, RR only)",8,8,0.722,103,,,,,,,,,,,2.0,1.0,4.0,5.0,9.0,7.0,8.0,21.0,10.0,43.0
-bowl,"rank by M6 (APM, all leagues)",10,10,0.992,103,,,,,,,,,,,1.0,2.0,3.0,4.0,5.0,7.0,6.0,8.0,10.0,9.0
-bowl,rank incl. pressure-specific effect (theta + delta),9,10,0.991,103,,,,,,,,,,,1.0,2.0,3.0,4.0,7.0,5.0,6.0,10.0,8.0,12.0
-bowl,rank by raw observed pressure run value,3,4,0.492,103,,,,,,,,,,,12.0,1.0,16.0,35.0,61.0,38.0,7.0,24.0,5.0,37.0
+role,variant,top10_kept,base_top10_in_variant_top15,spearman,n,Vaibhav Sooryavanshi,Tim David,Abhishek Sharma,Finn Allen,Suryakumar Yadav,Heinrich Klaasen,Phil Salt,Nicholas Pooran,Priyansh Arya,Tim Seifert,Jasprit Bumrah,Sunil Narine,Rashid Khan,Wanindu Hasaranga,Varun Chakravarthy,Noor Ahmad,Mujeeb Ur Rahman,Abrar Ahmed,Blessing Muzarabani,Matheesha Pathirana
+bat,pressure definition D2_leverage_phase,8,10,0.999,97,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,13.0,12.0,,,,,,,,,,
+bat,pressure definition D3_baseline_PI,8,10,0.999,93,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,12.0,11.0,,,,,,,,,,
+bat,pressure definition D7_leverage_stakes,8,9,0.998,92,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,11.0,17.0,,,,,,,,,,
+bat,pressure definition D6_close_game,8,9,0.998,138,1.0,2.0,3.0,5.0,4.0,7.0,8.0,10.0,16.0,13.0,,,,,,,,,,
+bat,pressure definition D5_wicket_stress,4,4,0.995,89,,1.0,,,2.0,3.0,,5.0,,,,,,,,,,,,
+bat,eligibility 100 pressure balls,8,9,0.999,124,1.0,2.0,3.0,4.0,5.0,7.0,8.0,10.0,14.0,16.0,,,,,,,,,,
+bat,eligibility 200 pressure balls,9,9,1.0,67,1.0,2.0,3.0,4.0,5.0,,6.0,7.0,8.0,10.0,,,,,,,,,,
+bat,eligibility: last season 2024+,9,10,0.999,95,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,11.0,,,,,,,,,,
+bat,"rank by M4 (EB overall, RR only)",10,10,0.993,89,1.0,2.0,3.0,5.0,4.0,6.0,7.0,8.0,9.0,10.0,,,,,,,,,,
+bat,"rank by M6 (APM, all leagues)",8,8,0.661,89,1.0,6.0,4.0,2.0,5.0,7.0,17.0,10.0,3.0,50.0,,,,,,,,,,
+bat,rank incl. pressure-specific effect (theta + delta),10,10,0.985,89,1.0,2.0,3.0,5.0,4.0,6.0,7.0,8.0,9.0,10.0,,,,,,,,,,
+bat,rank by raw observed pressure run value,6,8,0.671,89,1.0,2.0,13.0,28.0,18.0,3.0,11.0,7.0,5.0,4.0,,,,,,,,,,
+bat,final model with age curve,9,10,0.999,89,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,11.0,,,,,,,,,,
+bat,final model prior: APM from RR pack (double counts),8,10,0.829,89,1.0,4.0,2.0,5.0,6.0,8.0,7.0,12.0,3.0,13.0,,,,,,,,,,
+bat,final model prior: APM from public leagues only,9,9,0.868,89,1.0,3.0,4.0,2.0,5.0,6.0,10.0,7.0,8.0,20.0,,,,,,,,,,
+bat,final model prior: APM all leagues (double counts),8,9,0.695,89,1.0,6.0,4.0,2.0,5.0,7.0,14.0,9.0,3.0,47.0,,,,,,,,,,
+bowl,pressure definition D2_leverage_phase,10,10,0.999,102,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,6.0,7.0,8.0,9.0,10.0
+bowl,pressure definition D3_baseline_PI,9,10,0.999,104,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,6.0,7.0,8.0,10.0,11.0
+bowl,pressure definition D7_leverage_stakes,9,10,0.998,96,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,6.0,7.0,8.0,10.0,11.0
+bowl,pressure definition D6_close_game,7,10,0.997,163,,,,,,,,,,,1.0,2.0,3.0,6.0,5.0,7.0,9.0,11.0,14.0,15.0
+bowl,pressure definition D5_wicket_stress,9,10,0.995,108,,,,,,,,,,,1.0,2.0,3.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0
+bowl,eligibility 100 pressure balls,8,10,0.999,139,,,,,,,,,,,1.0,2.0,3.0,6.0,5.0,7.0,8.0,9.0,11.0,12.0
+bowl,eligibility 200 pressure balls,9,9,0.999,72,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,6.0,7.0,,8.0,9.0
+bowl,eligibility: last season 2024+,10,10,0.999,106,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,6.0,7.0,8.0,9.0,10.0
+bowl,"rank by M4 (EB overall, RR only)",9,10,0.884,102,,,,,,,,,,,2.0,1.0,4.0,9.0,6.0,7.0,5.0,8.0,13.0,3.0
+bowl,"rank by M6 (APM, all leagues)",7,8,0.903,102,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,7.0,17.0,6.0,14.0,42.0
+bowl,rank incl. pressure-specific effect (theta + delta),7,9,0.936,102,,,,,,,,,,,2.0,1.0,3.0,15.0,4.0,9.0,5.0,10.0,22.0,11.0
+bowl,rank by raw observed pressure run value,1,3,0.576,102,,,,,,,,,,,27.0,1.0,17.0,54.0,12.0,33.0,14.0,21.0,70.0,16.0
+bowl,final model with age curve,10,10,0.993,102,,,,,,,,,,,1.0,2.0,3.0,4.0,6.0,5.0,7.0,8.0,10.0,9.0
+bowl,final model prior: APM from RR pack (double counts),5,7,0.86,102,,,,,,,,,,,1.0,2.0,4.0,18.0,3.0,12.0,19.0,7.0,15.0,26.0
+bowl,final model prior: APM all leagues (double counts),7,8,0.916,102,,,,,,,,,,,1.0,2.0,3.0,5.0,4.0,7.0,16.0,6.0,13.0,35.0
+bowl,final model no skill prior,9,10,0.878,102,,,,,,,,,,,1.0,2.0,4.0,8.0,5.0,7.0,6.0,9.0,12.0,3.0

@@ -113,6 +113,15 @@ TIER_A = {'India', 'Australia', 'England', 'South Africa', 'New Zealand', 'Pakis
 TIER_B = {'Ireland', 'Zimbabwe', 'Scotland', 'Netherlands', 'India A', 'Pakistan A', 'Sri Lanka A', 'Bangladesh A', 'Afghanistan A'}
 
 
+CRR_K = 18   # balls: early in an innings the run rate is shrunk toward the competition par rate
+
+
+def crr_shrunk(sc, lb, par):
+    """current run rate shrunk toward par: as if CRR_K balls had already been bowled at par. Without this, one
+    boundary off ball 1 implies a rate of 24 and the projected total (and win probability) swings wildly."""
+    return (sc + par / 120 * CRR_K) / (lb + CRR_K) * 6
+
+
 def build_state(MF):
     cols = ['source', 'match_id', 'innings', 'over', 'seq', 'bat_team', 'bowl_team', 'legal', 'season', 'score_before',
             'legal_before', 'wkts_before', 'phase', 'comp2']
@@ -124,7 +133,8 @@ def build_state(MF):
     B['wih'] = 10 - B.wkts_before
     B['need'] = np.where(B.innings == 2, B.target - B.score_before, np.nan)
     B['rrr'] = np.clip(B.need / np.maximum(B.balls_left, 1) * 6, -6, 60)
-    B['crr'] = B.score_before / np.maximum(B.legal_before, 1) * 6
+    B['crr_raw'] = B.score_before / np.maximum(B.legal_before, 1) * 6          # baseline-style (volatile early on)
+    B['crr'] = crr_shrunk(B.score_before, B.legal_before, B.par_prev)
     B['score_vs_par'] = B.score_before - B.par_prev * B.legal_before / 120
     B['bat_won'] = np.where(B.winner.isna(), np.nan, (B.bat_team == B.winner).astype(float))
     tier = lambda s: np.where(s.isin(TIER_A), 1, np.where(s.isin(TIER_B), 2, 3))
@@ -132,7 +142,7 @@ def build_state(MF):
     B['is_ipl'] = B.comp.eq('IPL').astype(int)
     for c in ['knockout_v2', 'impact_era', 'is_intl']:
         B[c] = B[c].fillna(0).astype(int)
-    f32 = ['par_prev', 'venue_dev', 'elo_diff', 'balls_left', 'need', 'rrr', 'crr', 'score_vs_par', 'bat_won']
+    f32 = ['par_prev', 'venue_dev', 'elo_diff', 'balls_left', 'need', 'rrr', 'crr', 'crr_raw', 'score_vs_par', 'bat_won']
     B[f32] = B[f32].astype('float32')
     return B
 
@@ -143,7 +153,7 @@ F1 = ['score_before', 'balls_left', 'wih', 'crr', 'inn1_balls', 'score_vs_par', 
       'knockout_v2', 'impact_era', 'is_intl']
 M1 = [1, 1, 1, 0, 0, 1, -1, -1, 1, 0, 0, 0]
 FB2 = ['need', 'balls_left', 'wih', 'rrr', 'level', 'is_ipl']; MB2 = [-1, 1, 1, -1, 0, 0]
-FB1 = ['score_before', 'balls_left', 'wih', 'crr', 'inn1_balls', 'level', 'is_ipl']; MB1 = [1, 1, 1, 0, 0, 0, 0]
+FB1 = ['score_before', 'balls_left', 'wih', 'crr_raw', 'inn1_balls', 'level', 'is_ipl']; MB1 = [1, 1, 1, 0, 0, 0, 0]
 
 
 def lr_design(d, inn):

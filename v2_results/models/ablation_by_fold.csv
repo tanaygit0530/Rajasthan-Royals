@@ -1,41 +1,49 @@
 role,cutoff,variant,wcorr,n
-bat,2022,full,0.0243,66
-bat,2022,full + pressure-specific effect,-0.0323,66
-bat,2022,"no APM prior (no public data, no competition adjustment)",0.1078,66
-bat,2022,APM from RR-pack only (no public data),0.1184,66
-bat,2022,no age curve,0.0256,66
-bat,2023,full,0.1166,89
-bat,2023,full + pressure-specific effect,0.1574,89
-bat,2023,"no APM prior (no public data, no competition adjustment)",0.1778,89
-bat,2023,APM from RR-pack only (no public data),0.2122,89
-bat,2023,no age curve,0.122,89
-bat,2024,full,0.177,102
-bat,2024,full + pressure-specific effect,0.161,102
-bat,2024,"no APM prior (no public data, no competition adjustment)",0.1796,102
-bat,2024,APM from RR-pack only (no public data),0.1814,102
-bat,2024,no age curve,0.1738,102
-bat,2025,full,0.4558,79
-bat,2025,full + pressure-specific effect,0.4282,79
-bat,2025,"no APM prior (no public data, no competition adjustment)",0.2618,79
-bat,2025,APM from RR-pack only (no public data),0.4448,79
-bat,2025,no age curve,0.458,79
-bowl,2022,full,0.1628,63
-bowl,2022,full + pressure-specific effect,0.1302,63
-bowl,2022,"no APM prior (no public data, no competition adjustment)",0.0233,63
-bowl,2022,APM from RR-pack only (no public data),0.0805,63
-bowl,2022,no age curve,0.167,63
-bowl,2023,full,0.2732,115
-bowl,2023,full + pressure-specific effect,0.2608,115
-bowl,2023,"no APM prior (no public data, no competition adjustment)",0.2484,115
-bowl,2023,APM from RR-pack only (no public data),0.2729,115
-bowl,2023,no age curve,0.2801,115
-bowl,2024,full,0.2596,108
-bowl,2024,full + pressure-specific effect,0.2512,108
-bowl,2024,"no APM prior (no public data, no competition adjustment)",0.3014,108
-bowl,2024,APM from RR-pack only (no public data),0.292,108
-bowl,2024,no age curve,0.2575,108
-bowl,2025,full,0.2494,80
-bowl,2025,full + pressure-specific effect,0.2477,80
-bowl,2025,"no APM prior (no public data, no competition adjustment)",0.2099,80
-bowl,2025,APM from RR-pack only (no public data),0.2079,80
-bowl,2025,no age curve,0.2512,80
+bat,2022,full,0.0397,67
+bat,2022,full + pressure-specific effect,0.0291,67
+bat,2022,"no APM prior (no public data, no competition adjustment)",0.1903,67
+bat,2022,APM from RR-pack only (no public data),0.181,67
+bat,2022,no age curve,0.0405,67
+bat,2022,public-only APM prior (no double counting),0.0939,67
+bat,2023,full,0.185,83
+bat,2023,full + pressure-specific effect,0.2014,83
+bat,2023,"no APM prior (no public data, no competition adjustment)",0.2016,83
+bat,2023,APM from RR-pack only (no public data),0.2518,83
+bat,2023,no age curve,0.1869,83
+bat,2023,public-only APM prior (no double counting),0.2106,83
+bat,2024,full,0.1661,92
+bat,2024,full + pressure-specific effect,0.1653,92
+bat,2024,"no APM prior (no public data, no competition adjustment)",0.1515,92
+bat,2024,APM from RR-pack only (no public data),0.209,92
+bat,2024,no age curve,0.163,92
+bat,2024,public-only APM prior (no double counting),0.1496,92
+bat,2025,full,0.4316,78
+bat,2025,full + pressure-specific effect,0.4211,78
+bat,2025,"no APM prior (no public data, no competition adjustment)",0.2706,78
+bat,2025,APM from RR-pack only (no public data),0.4218,78
+bat,2025,no age curve,0.4341,78
+bat,2025,public-only APM prior (no double counting),0.1796,78
+bowl,2022,full,0.1786,60
+bowl,2022,full + pressure-specific effect,0.1563,60
+bowl,2022,"no APM prior (no public data, no competition adjustment)",-0.0393,60
+bowl,2022,APM from RR-pack only (no public data),0.0481,60
+bowl,2022,no age curve,0.1797,60
+bowl,2022,public-only APM prior (no double counting),0.1477,60
+bowl,2023,full,0.2016,106
+bowl,2023,full + pressure-specific effect,0.1965,106
+bowl,2023,"no APM prior (no public data, no competition adjustment)",0.1919,106
+bowl,2023,APM from RR-pack only (no public data),0.1814,106
+bowl,2023,no age curve,0.2062,106
+bowl,2023,public-only APM prior (no double counting),0.2331,106
+bowl,2024,full,0.2435,111
+bowl,2024,full + pressure-specific effect,0.2405,111
+bowl,2024,"no APM prior (no public data, no competition adjustment)",0.273,111
+bowl,2024,APM from RR-pack only (no public data),0.2634,111
+bowl,2024,no age curve,0.2423,111
+bowl,2024,public-only APM prior (no double counting),0.255,111
+bowl,2025,full,0.3043,83
+bowl,2025,full + pressure-specific effect,0.3093,83
+bowl,2025,"no APM prior (no public data, no competition adjustment)",0.2284,83
+bowl,2025,APM from RR-pack only (no public data),0.2473,83
+bowl,2025,no age curve,0.3043,83
+bowl,2025,public-only APM prior (no double counting),0.2877,83

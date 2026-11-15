@@ -2,38 +2,38 @@
 
 ## Top predictors of next-season pressure run value: batters
 
-| feature       | meaning                                                    |   mean_abs_shap | effect           |
-|:--------------|:-----------------------------------------------------------|----------------:|:-----------------|
-| gap_eb        | pressure-minus-normal gap (shrunk)                         |          0.0508 | higher -> worse  |
-| rv_chasing    | run value chasing                                          |          0.0266 | higher -> better |
-| M4_eb_overall | overall run value (all situations, RR pack, shrunk)        |          0.0256 | higher -> better |
-| rv_setting    | run value setting a total                                  |          0.0251 | higher -> worse  |
-| dot_pct       | dot %                                                      |          0.0232 | higher -> worse  |
-| pub_n         | balls in other leagues                                     |          0.0202 | higher -> better |
-| p_n           | pressure balls seen                                        |          0.015  | higher -> worse  |
-| M6_apm        | opponent/competition-adjusted skill from all leagues (APM) |          0.0146 | higher -> better |
+| feature       | meaning                                             |   mean_abs_shap | effect           |
+|:--------------|:----------------------------------------------------|----------------:|:-----------------|
+| M4_eb_overall | overall run value (all situations, RR pack, shrunk) |          0.0412 | higher -> better |
+| rv_setting    | run value setting a total                           |          0.0255 | higher -> worse  |
+| pub_n         | balls in other leagues                              |          0.0247 | higher -> better |
+| gap_eb        | pressure-minus-normal gap (shrunk)                  |          0.0243 | higher -> worse  |
+| dot_pct       | dot %                                               |          0.0232 | higher -> worse  |
+| rv_Death      | run value at the death                              |          0.0211 | higher -> worse  |
+| rv_chasing    | run value chasing                                   |          0.0192 | higher -> better |
+| rv_vs_spin    | run value vs spin                                   |          0.0187 | higher -> worse  |
 
 ## Top predictors of next-season pressure run value: bowlers
 
-| feature    | meaning                                                    |   mean_abs_shap | effect           |
-|:-----------|:-----------------------------------------------------------|----------------:|:-----------------|
-| econ       | economy                                                    |          0.024  | higher -> worse  |
-| rv_chasing | run value chasing                                          |          0.0201 | higher -> better |
-| M6_apm     | opponent/competition-adjusted skill from all leagues (APM) |          0.02   | higher -> better |
-| p_n        | pressure balls seen                                        |          0.0197 | higher -> worse  |
-| rv_vs_rhb  | run value vs right-handers                                 |          0.0196 | higher -> better |
-| rv_Death   | run value at the death                                     |          0.0172 | higher -> better |
-| wkt_rate   | wicket rate                                                |          0.0171 | higher -> worse  |
-| gap_eb     | pressure-minus-normal gap (shrunk)                         |          0.0147 | higher -> worse  |
+| feature       | meaning                                                    |   mean_abs_shap | effect           |
+|:--------------|:-----------------------------------------------------------|----------------:|:-----------------|
+| econ          | economy                                                    |          0.0428 | higher -> worse  |
+| dot_rate      | dot-ball rate                                              |          0.0171 | higher -> better |
+| rv_Death      | run value at the death                                     |          0.017  | higher -> better |
+| rv_chasing    | run value chasing                                          |          0.0169 | higher -> better |
+| age           | age                                                        |          0.0162 | higher -> better |
+| p_n           | pressure balls seen                                        |          0.0153 | higher -> worse  |
+| M4_eb_overall | overall run value (all situations, RR pack, shrunk)        |          0.0146 | higher -> better |
+| M6_apm        | opponent/competition-adjusted skill from all leagues (APM) |          0.0134 | higher -> better |
 
 Out-of-time check of the profile LightGBM (train on earlier folds, test on the next):
 
 |                                          |   wcorr |   spearman |
 |:-----------------------------------------|--------:|-----------:|
-| ('bat', 'LightGBM on profile features')  |   0.077 |      0.141 |
-| ('bat', 'M8_bayes (s12)')                |   0.209 |      0.154 |
-| ('bowl', 'LightGBM on profile features') |   0.091 |      0.146 |
-| ('bowl', 'M8_bayes (s12)')               |   0.202 |      0.204 |
+| ('bat', 'LightGBM on profile features')  |   0.029 |      0.035 |
+| ('bat', 'M8_bayes (s12)')                |   0.2   |      0.153 |
+| ('bowl', 'LightGBM on profile features') |   0.164 |      0.166 |
+| ('bowl', 'M8_bayes (s12)')               |   0.229 |      0.243 |
 
 - SHAP is descriptive: it shows what the profile model leans on. Ratings use the model that predicts best out of time (s12).
 
@@ -60,37 +60,37 @@ League-wide run value per 100 balls for the batter vs the average ball (shrunk, 
 
 |                                   |   Death |   Middle |    PP |
 |:----------------------------------|--------:|---------:|------:|
-| ('LHB', 'Left-arm Chinaman')      |    -5.8 |    -14   |   5.4 |
-| ('LHB', 'Left-arm Fast')          |     6.8 |     -1   |   3.7 |
-| ('LHB', 'Left-arm fast-medium')   |    -7.3 |      5.6 |  -7.6 |
-| ('LHB', 'Left-arm medium')        |    -3.1 |     -3.5 |  -1   |
-| ('LHB', 'Left-arm medium-fast')   |    -2.3 |     -0   |   8.1 |
-| ('LHB', 'Right-arm Fast')         |     6.6 |     -5.7 |   1.2 |
-| ('LHB', 'Right-arm Leg-Break')    |   -12.5 |     -0.6 |   0.7 |
-| ('LHB', 'Right-arm fast-medium')  |     2.7 |      0.8 |   0.3 |
-| ('LHB', 'Right-arm medium')       |     6.1 |      4.6 |   0.3 |
-| ('LHB', 'Right-arm medium-fast')  |     4.4 |     -1.5 |   4.8 |
-| ('LHB', 'Right-arm offbreak')     |    -1.2 |     -6.5 |  -7.1 |
-| ('LHB', 'Slow left-arm orthodox') |    -9.1 |      9.1 |  13.8 |
-| ('RHB', 'Left-arm Chinaman')      |   -13.4 |     -8.5 |  -2   |
-| ('RHB', 'Left-arm Fast')          |   -12.3 |      6.8 |   6.2 |
-| ('RHB', 'Left-arm fast-medium')   |     5.3 |      9.9 |  -0.4 |
-| ('RHB', 'Left-arm medium')        |     4.4 |      2.2 |  -3.9 |
-| ('RHB', 'Left-arm medium-fast')   |     6.6 |      5.7 |  -0.9 |
-| ('RHB', 'Right-arm Fast')         |     4.9 |      2.5 |  -3.6 |
-| ('RHB', 'Right-arm Leg-Break')    |    -7.7 |      0.9 | -15   |
-| ('RHB', 'Right-arm fast-medium')  |    -1.4 |      7.7 |  -3.8 |
-| ('RHB', 'Right-arm medium')       |     6   |      6.8 |   1.7 |
-| ('RHB', 'Right-arm medium-fast')  |     4.8 |      0.9 |   5   |
-| ('RHB', 'Right-arm offbreak')     |    -9.8 |      1.7 |   1.1 |
-| ('RHB', 'Slow left-arm orthodox') |     5.5 |    -11.6 |  -5.1 |
+| ('LHB', 'Left-arm Chinaman')      |    -5.6 |    -13.9 |   5.4 |
+| ('LHB', 'Left-arm Fast')          |     7   |     -1.1 |   3.5 |
+| ('LHB', 'Left-arm fast-medium')   |    -7.2 |      5.8 |  -7.3 |
+| ('LHB', 'Left-arm medium')        |    -3.5 |     -3.6 |  -1   |
+| ('LHB', 'Left-arm medium-fast')   |    -2.1 |     -0.3 |   8.2 |
+| ('LHB', 'Right-arm Fast')         |     6.5 |     -5.8 |   1.3 |
+| ('LHB', 'Right-arm Leg-Break')    |   -12.2 |     -0.7 |   0.6 |
+| ('LHB', 'Right-arm fast-medium')  |     2.7 |      0.6 |   0.4 |
+| ('LHB', 'Right-arm medium')       |     6   |      4.6 |   0.3 |
+| ('LHB', 'Right-arm medium-fast')  |     4.5 |     -1.6 |   4.7 |
+| ('LHB', 'Right-arm offbreak')     |    -1.3 |     -6.5 |  -7.3 |
+| ('LHB', 'Slow left-arm orthodox') |    -9   |      9.1 |  13.8 |
+| ('RHB', 'Left-arm Chinaman')      |   -13.3 |     -8.6 |  -1.9 |
+| ('RHB', 'Left-arm Fast')          |   -12   |      6.4 |   6   |
+| ('RHB', 'Left-arm fast-medium')   |     5.6 |      9.8 |  -0.1 |
+| ('RHB', 'Left-arm medium')        |     4.1 |      2   |  -3.9 |
+| ('RHB', 'Left-arm medium-fast')   |     6.5 |      5.4 |  -0.7 |
+| ('RHB', 'Right-arm Fast')         |     4.9 |      2.4 |  -3.4 |
+| ('RHB', 'Right-arm Leg-Break')    |    -7.5 |      0.7 | -14.9 |
+| ('RHB', 'Right-arm fast-medium')  |    -1.2 |      7.5 |  -3.6 |
+| ('RHB', 'Right-arm medium')       |     5.9 |      6.8 |   1.9 |
+| ('RHB', 'Right-arm medium-fast')  |     4.8 |      1   |   5.1 |
+| ('RHB', 'Right-arm offbreak')     |    -9.7 |      1.7 |   1.3 |
+| ('RHB', 'Slow left-arm orthodox') |     5.3 |    -11.6 |  -5.3 |
 
 Are player-specific matchup gaps real? Split-half reliability (odd/even matches, Spearman-Brown):
 
 | effect                                         |   reliability |   players |
 |:-----------------------------------------------|--------------:|----------:|
-| batter: spin minus pace                        |         0.444 |       208 |
-| batter: left-arm minus right-arm bowling       |        -0.092 |       133 |
-| bowler: vs left-handers minus vs right-handers |         0.17  |       210 |
+| batter: spin minus pace                        |         0.443 |       208 |
+| batter: left-arm minus right-arm bowling       |        -0.091 |       133 |
+| bowler: vs left-handers minus vs right-handers |         0.178 |       210 |
 
 - Reliability near zero means an individual player's apparent matchup weakness is mostly noise at this sample size; scout cards only call out a player matchup when it is large AND the reliability of that effect type is meaningful.

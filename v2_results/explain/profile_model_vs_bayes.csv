@@ -1,13 +1,13 @@
 role,test_cutoff,model,wcorr,spearman,n
-bat,2023,LightGBM on profile features,-0.0,,89
-bat,2023,M8_bayes (s12),0.202,0.1643,89
-bat,2024,LightGBM on profile features,0.0492,0.1102,102
-bat,2024,M8_bayes (s12),0.1485,0.0671,102
-bat,2025,LightGBM on profile features,0.1813,0.1715,79
-bat,2025,M8_bayes (s12),0.2777,0.2308,79
-bowl,2023,LightGBM on profile features,-0.0,,115
-bowl,2023,M8_bayes (s12),0.2233,0.1551,115
-bowl,2024,LightGBM on profile features,0.1105,0.1258,108
-bowl,2024,M8_bayes (s12),0.1849,0.2264,108
-bowl,2025,LightGBM on profile features,0.1612,0.1661,80
-bowl,2025,M8_bayes (s12),0.1969,0.231,80
+bat,2023,LightGBM on profile features,0.0,,83
+bat,2023,M8_bayes (s12),0.2134,0.1844,83
+bat,2024,LightGBM on profile features,0.0022,0.0145,92
+bat,2024,M8_bayes (s12),0.1531,0.0918,92
+bat,2025,LightGBM on profile features,0.0834,0.0548,78
+bat,2025,M8_bayes (s12),0.2342,0.1838,78
+bowl,2023,LightGBM on profile features,,,106
+bowl,2023,M8_bayes (s12),0.1665,0.1084,106
+bowl,2024,LightGBM on profile features,0.1639,0.1899,111
+bowl,2024,M8_bayes (s12),0.2267,0.2915,111
+bowl,2025,LightGBM on profile features,0.1639,0.1428,83
+bowl,2025,M8_bayes (s12),0.2936,0.3283,83

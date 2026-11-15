@@ -1,0 +1,624 @@
+year,name_wiki,uid,match,price_cr,base_cr,team,name_model
+2022,Shikhar Dhawan,0a476045,exact,8.25,2.0,Punjab Kings,Shikhar Dhawan
+2022,Ravichandran Ashwin,495d42a5,exact,5.0,2.0,Rajasthan Royals,Ravichandran Ashwin
+2022,Pat Cummins,,unmatched,7.25,2.0,Kolkata Knight Riders,
+2022,Kagiso Rabada,e62dd25d,exact,9.25,2.0,Punjab Kings,Kagiso Rabada
+2022,Trent Boult,a818c1be,exact,8.0,2.0,Rajasthan Royals,Trent Boult
+2022,Shreyas Iyer,85ec8e33,exact,12.25,2.0,Kolkata Knight Riders,Shreyas Iyer
+2022,Mohammed Shami,8cf9814c,exact,6.25,2.0,Gujarat Titans,Mohammed Shami
+2022,Faf du Plessis,3355b542,exact,7.0,2.0,Royal Challengers Bangalore,Faf du Plessis
+2022,Quinton de Kock,372455c4,exact,6.75,2.0,Lucknow Super Giants,Quinton de Kock
+2022,David Warner,dcce6f09,exact,6.25,2.0,Delhi Capitals,David Warner
+2022,Manish Pandey,93b4fc78,exact,4.6,1.5,Lucknow Super Giants,Manish Pandey
+2022,Shimron Hetmyer,48a1d7b7,exact,8.5,1.5,Rajasthan Royals,Shimron Hetmyer
+2022,Robin Uthappa,1c17e270,exact,2.0,2.0,Chennai Super Kings,Robin Uthappa
+2022,Jason Roy,d1c36f5c,exact,2.0,2.0,Gujarat Titans,Jason Roy
+2022,Devdutt Padikkal,2c25d4f5,exact,7.75,1.5,Rajasthan Royals,Devdutt Padikkal
+2022,Dwayne Bravo,87e562a9,exact,4.4,1.5,Chennai Super Kings,Dwayne Bravo
+2022,Nitish Rana,fb2d1dda,exact,8.0,1.5,Kolkata Knight Riders,Nitish Rana
+2022,Jason Holder,0f721006,exact,8.75,1.5,Lucknow Super Giants,Jason Holder
+2022,Harshal Patel,f986ca1a,exact,10.75,1.5,Royal Challengers Bangalore,Harshal Patel
+2022,Deepak Hooda,73ad96ed,exact,5.75,0.75,Lucknow Super Giants,Deepak Hooda
+2022,Wanindu Hasaranga,a97c8ec2,exact,10.75,1.0,Royal Challengers Bangalore,Wanindu Hasaranga
+2022,Washington Sundar,f19ccfad,exact,8.75,1.5,Sunrisers Hyderabad,Washington Sundar
+2022,Krunal Pandya,5b8c830e,exact,8.25,2.0,Lucknow Super Giants,Krunal Pandya
+2022,Mitchell Marsh,3d8feaf8,exact,6.5,2.0,Delhi Capitals,Mitchell Marsh
+2022,Ambati Rayudu,70d205c9,exact,6.75,2.0,Chennai Super Kings,Ambati Rayudu
+2022,Ishan Kishan,752f7486,exact,15.25,1.5,Mumbai Indians,Ishan Kishan
+2022,Jonny Bairstow,abb83e27,exact,6.75,1.0,Punjab Kings,Jonny Bairstow
+2022,Dinesh Karthik,c03f1114,exact,5.5,2.0,Royal Challengers Bangalore,Dinesh Karthik
+2022,Nicholas Pooran,3241e3fd,exact,10.75,1.5,Sunrisers Hyderabad,Nicholas Pooran
+2022,T. Natarajan,ce794613,fuzzy,4.0,1.0,Sunrisers Hyderabad,T Natarajan
+2022,Deepak Chahar,23eeb873,exact,14.0,2.0,Chennai Super Kings,Deepak Chahar
+2022,Prasidh Krishna,85e0cf10,exact,10.0,1.0,Rajasthan Royals,Prasidh Krishna
+2022,Lockie Ferguson,2f9d0389,exact,10.0,2.0,Gujarat Titans,Lockie Ferguson
+2022,Josh Hazlewood,03806cf8,exact,7.75,1.5,Royal Challengers Bangalore,Josh Hazlewood
+2022,Mark Wood,8d92a2c3,exact,7.5,2.0,Lucknow Super Giants,Mark Wood
+2022,Bhuvneshwar Kumar,2e81a32d,exact,4.2,2.0,Sunrisers Hyderabad,Bhuvneshwar Kumar
+2022,Shardul Thakur,1abb78f8,exact,10.75,2.0,Delhi Capitals,Shardul Thakur
+2022,Mustafizur Rahman,0a8fce53,exact,2.0,2.0,Delhi Capitals,Mustafizur Rahman
+2022,Kuldeep Yadav,8d2c70ad,exact,2.0,1.0,Delhi Capitals,Kuldeep Yadav
+2022,Rahul Chahar,2ed569a0,exact,5.25,0.75,Punjab Kings,Rahul Chahar
+2022,Yuzvendra Chahal,57ee1fde,exact,6.5,2.0,Rajasthan Royals,Yuzvendra Chahal
+2022,Priyam Garg,bb965e9a,exact,0.2,0.2,Sunrisers Hyderabad,Priyam Garg
+2022,Abhinav Manohar Sadarangani,,unmatched,2.6,0.2,Gujarat Titans,
+2022,Dewald Brevis,844e79d1,exact,3.0,0.2,Mumbai Indians,Dewald Brevis
+2022,Ashwin Hebbar,b11d8647,exact,0.2,0.2,Delhi Capitals,Ashwin Hebbar
+2022,Rahul Tripathi,77255a9e,exact,8.5,0.4,Sunrisers Hyderabad,Rahul Tripathi
+2022,Riyan Parag,04a418e8,exact,3.8,0.3,Rajasthan Royals,Riyan Parag
+2022,Abhishek Sharma,f29185a1,exact,6.5,0.2,Sunrisers Hyderabad,Abhishek Sharma
+2022,Sarfaraz Khan,f088b960,exact,0.2,0.2,Delhi Capitals,Sarfaraz Khan
+2022,M. Shahrukh Khan,7dcb9bc9,fuzzy,9.0,0.4,Punjab Kings,M Shahrukh Khan
+2022,Shivam Mavi,c38d3503,exact,7.25,0.4,Kolkata Knight Riders,Shivam Mavi
+2022,Rahul Tewatia,39a2dfa8,exact,9.0,0.4,Gujarat Titans,Rahul Tewatia
+2022,Kamlesh Nagarkoti,b4f5c2d9,exact,1.1,0.4,Delhi Capitals,Kamlesh Nagarkoti
+2022,Harpreet Brar,c05edf8e,exact,3.8,0.2,Punjab Kings,Harpreet Brar
+2022,Shahbaz Ahmed,f9e6e7ef,exact,2.4,0.3,Royal Challengers Bangalore,Shahbaz Ahmed
+2022,K. S. Bharat,44a89551,fuzzy,2.0,0.2,Delhi Capitals,KS Bharat
+2022,Anuj Rawat,c8f5f961,exact,3.4,0.2,Royal Challengers Bangalore,Anuj Rawat
+2022,Prabhsimran Singh,9418198b,exact,0.6,0.2,Punjab Kings,Prabhsimran Singh
+2022,Sheldon Jackson,acc1aeda,exact,0.6,0.3,Kolkata Knight Riders,Sheldon Jackson
+2022,Jitesh Sharma,800d2d97,exact,0.2,0.2,Punjab Kings,Jitesh Sharma
+2022,Basil Thampi,871e9faf,exact,0.3,0.3,Mumbai Indians,Basil Thampi
+2022,Kartik Tyagi,5d2eea49,exact,4.0,0.2,Sunrisers Hyderabad,Kartik Tyagi
+2022,Akash Deep,0a67aec0,exact,0.2,0.2,Royal Challengers Bangalore,Akash Deep
+2022,KM Asif,798cc28e,exact,0.2,0.2,Chennai Super Kings,KM Asif
+2022,Avesh Khan,eef2536f,exact,10.0,0.2,Lucknow Super Giants,Avesh Khan
+2022,Ishan Porel,,unmatched,0.25,0.2,Punjab Kings,
+2022,Tushar Deshpande,46a9bea1,exact,0.2,0.2,Chennai Super Kings,Tushar Deshpande
+2022,Ankit Rajpoot,,unmatched,0.5,0.2,Lucknow Super Giants,
+2022,Noor Ahmad,efc04be7,exact,0.3,0.3,Gujarat Titans,Noor Ahmad
+2022,Murugan Ashwin,e2db2409,exact,1.6,0.2,Mumbai Indians,Murugan Ashwin
+2022,K. C. Cariappa,,unmatched,0.3,0.2,Rajasthan Royals,
+2022,Shreyas Gopal,7a8bd078,exact,0.75,0.2,Sunrisers Hyderabad,Shreyas Gopal
+2022,Jagadeesha Suchith,4125d931,exact,0.2,0.2,Sunrisers Hyderabad,Jagadeesha Suchith
+2022,Ravisrinivasan Sai Kishore,,unmatched,3.0,0.2,Gujarat Titans,
+2022,Aiden Markram,6a26221c,exact,2.6,1.0,Sunrisers Hyderabad,Aiden Markram
+2022,Ajinkya Rahane,29e95537,exact,1.0,1.0,Kolkata Knight Riders,Ajinkya Rahane
+2022,Mandeep Singh,,unmatched,1.1,0.5,Delhi Capitals,
+2022,Liam Livingstone,50c6bc2b,exact,11.5,1.0,Punjab Kings,Liam Livingstone
+2022,Dominic Drakes,34b332d3,exact,1.1,0.75,Gujarat Titans,Dominic Drakes
+2022,Jayant Yadav,81049310,exact,1.7,1.0,Gujarat Titans,Jayant Yadav
+2022,Vijay Shankar,0994d0ae,exact,1.4,0.5,Gujarat Titans,Vijay Shankar
+2022,Odean Smith,23cca426,exact,6.0,1.0,Punjab Kings,Odean Smith
+2022,Marco Jansen,81c36ee9,exact,4.2,0.5,Sunrisers Hyderabad,Marco Jansen
+2022,Shivam Dube,a4e37e47,exact,4.0,0.5,Chennai Super Kings,Shivam Dube
+2022,Krishnappa Gowtham,90de905a,exact,0.9,0.5,Lucknow Super Giants,Krishnappa Gowtham
+2022,Khaleel Ahmed,a2f46292,exact,5.25,0.5,Delhi Capitals,Khaleel Ahmed
+2022,Dushmantha Chameera,327b58d3,exact,2.0,0.5,Lucknow Super Giants,Dushmantha Chameera
+2022,Chetan Sakariya,2cdce1be,exact,4.2,0.5,Delhi Capitals,Chetan Sakariya
+2022,Sandeep Sharma,ce820073,exact,0.5,0.5,Punjab Kings,Sandeep Sharma
+2022,Navdeep Saini,21d4e29b,exact,2.6,0.75,Rajasthan Royals,Navdeep Saini
+2022,Jaydev Unadkat,1e66c162,exact,1.3,0.75,Mumbai Indians,Jaydev Unadkat
+2022,Mayank Markande,a9fd84fb,exact,0.65,0.5,Mumbai Indians,Mayank Markande
+2022,Shahbaz Nadeem,,unmatched,0.5,0.5,Lucknow Super Giants,
+2022,Maheesh Theekshana,f24c6701,exact,0.7,0.5,Chennai Super Kings,Maheesh Theekshana
+2022,Rinku Singh,0a509d6b,exact,0.55,0.2,Kolkata Knight Riders,Rinku Singh
+2022,Manan Vohra,c03e2850,exact,0.2,0.2,Lucknow Super Giants,Manan Vohra
+2022,Lalit Yadav,ad427b5c,exact,0.65,0.2,Delhi Capitals,Lalit Yadav
+2022,Ripal Patel,60500956,exact,0.2,0.2,Delhi Capitals,Ripal Patel
+2022,Yash Dhull,dd7e9b3b,exact,0.5,0.2,Delhi Capitals,Yash Dhull
+2022,Tilak Varma,b0482a1d,exact,1.7,0.2,Mumbai Indians,Namboori Tilak Varma
+2022,Mahipal Lomror,da934ee8,exact,0.95,0.4,Royal Challengers Bangalore,Mahipal Lomror
+2022,Anukul Roy,e4cdf230,exact,0.2,0.2,Kolkata Knight Riders,Anukul Roy
+2022,Darshan Nalkande,cd8d2859,exact,0.2,0.2,Gujarat Titans,Darshan Nalkande
+2022,R. Sanjay Yadav,33ffc3dd,fuzzy,0.5,0.2,Mumbai Indians,Sanjay Yadav
+2022,Raj Bawa,ba6b2f91,exact,2.0,0.2,Punjab Kings,Raj Bawa
+2022,Rajvardhan Hangargekar,c3c92b42,exact,1.5,0.3,Chennai Super Kings,Rajvardhan Hangargekar
+2022,Yash Dayal,7210d461,exact,3.2,0.2,Gujarat Titans,Yash Dayal
+2022,Simarjeet Singh,30df8c66,exact,0.2,0.2,Chennai Super Kings,Simarjeet Singh
+2022,Finn Allen,bf74b130,exact,0.8,0.5,Royal Challengers Bangalore,Finn Allen
+2022,Devon Conway,df5a6881,exact,1.0,1.0,Chennai Super Kings,Devon Conway
+2022,Rovman Powell,650d5e49,exact,2.8,0.75,Delhi Capitals,Rovman Powell
+2022,Jofra Archer,5574750c,exact,8.0,2.0,Mumbai Indians,Jofra Archer
+2022,Rishi Dhawan,26a85969,exact,0.55,0.5,Punjab Kings,Rishi Dhawan
+2022,Dwaine Pretorius,11614d87,exact,0.5,0.5,Chennai Super Kings,Dwaine Pretorius
+2022,Sherfane Rutherford,d014d5ac,exact,1.0,1.0,Royal Challengers Bangalore,Sherfane Rutherford
+2022,Daniel Sams,caf69bf7,exact,2.6,1.0,Mumbai Indians,Daniel Sams
+2022,Mitchell Santner,e4a0deae,exact,1.9,1.0,Chennai Super Kings,Mitchell Santner
+2022,Romario Shepherd,c5aef772,exact,7.75,0.75,Sunrisers Hyderabad,Romario Shepherd
+2022,Jason Behrendorff,4933f499,exact,0.75,0.75,Royal Challengers Bangalore,Jason Behrendorff
+2022,Obed McCoy,529eb9e0,exact,0.75,0.75,Rajasthan Royals,Obed McCoy
+2022,Tymal Mills,245c97cb,exact,1.5,1.0,Mumbai Indians,Tymal Mills
+2022,Adam Milne,350bb1b1,exact,1.9,1.5,Chennai Super Kings,Adam Milne
+2022,Subhranshu Senapati,0edcb652,fuzzy,0.2,0.2,Chennai Super Kings,Subhransu Senapati
+2022,Tim David,f1f99156,exact,8.25,0.4,Mumbai Indians,Tim David
+2022,Pravin Dubey,,unmatched,0.5,0.2,Delhi Capitals,
+2022,Prerak Mankad,663b5e34,exact,0.2,0.2,Punjab Kings,Prerak Mankad
+2022,Suyash Prabhudessai,9385de2e,exact,0.3,0.2,Royal Challengers Bangalore,Suyash Prabhudessai
+2022,Vaibhav Arora,7c3b3b78,exact,2.0,0.2,Punjab Kings,Vaibhav Arora
+2022,Mukesh Choudhary,765a4731,exact,0.2,0.2,Chennai Super Kings,Mukesh Choudhary
+2022,Rasikh Salam Dar,,unmatched,0.2,0.2,Kolkata Knight Riders,
+2022,Mohsin Khan,,unmatched,0.2,0.2,Lucknow Super Giants,
+2022,Chama Milind,,unmatched,0.25,0.2,Royal Challengers Bangalore,
+2022,Prashant Solanki,c695b423,exact,1.2,0.2,Chennai Super Kings,Prashant Solanki
+2022,Sean Abbott,1a2676c5,exact,2.4,0.2,Sunrisers Hyderabad,Sean Abbott
+2022,Alzarri Joseph,b0946605,exact,2.4,0.75,Gujarat Titans,Alzarri Joseph
+2022,Riley Meredith,64775749,exact,1.0,1.0,Mumbai Indians,Riley Meredith
+2022,Ayush Badoni,872b03f7,exact,0.2,0.2,Lucknow Super Giants,Ayush Badoni
+2022,Aneeshwar Gautam,,unmatched,1.0,1.0,Royal Challengers Bangalore,
+2022,Baba Indrajith,ff1e68fa,exact,0.2,0.2,Kolkata Knight Riders,Baba Indrajith
+2022,Chamika Karunaratne,fb3e0d39,exact,0.5,0.5,Kolkata Knight Riders,Chamika Karunaratne
+2022,Ravikumar Samarth,f2dbbff5,exact,0.2,0.2,Sunrisers Hyderabad,Ravikumar Samarth
+2022,Abhijeet Tomar,aa5d8c9e,exact,0.4,0.2,Kolkata Knight Riders,Abhijeet Tomar
+2022,Pradeep Sangwan,9fc0ef64,exact,0.2,0.2,Gujarat Titans,Pradeep Sangwan
+2022,Writtick Chatterjee,a00e1842,exact,0.2,0.2,Punjab Kings,Writtick Chatterjee
+2022,Pratham Singh,f9f21866,exact,0.2,0.2,Kolkata Knight Riders,Pratham Singh
+2022,Shashank Singh,26989d80,exact,0.2,0.2,Sunrisers Hyderabad,Shashank Singh
+2022,Kyle Mayers,73c18486,exact,0.5,0.5,Lucknow Super Giants,Kyle Mayers
+2022,Karan Sharma,39ed0d2f,exact,0.2,0.2,Lucknow Super Giants,Karan Sharma
+2022,Baltej Singh,0c0ef3fb,exact,0.2,0.2,Punjab Kings,Baltej Singh
+2022,Saurabh Dubey,11061889,exact,0.2,0.2,Sunrisers Hyderabad,Saurabh Dubey
+2022,Mohammed Arshad Khan,,unmatched,0.2,0.2,Mumbai Indians,
+2022,Ansh Patel,9e76cdb3,exact,0.2,0.2,Punjab Kings,Ansh Patel
+2022,Ashok Sharma,50c09020,exact,0.5,0.2,Kolkata Knight Riders,Ashok Sharma
+2022,Anunay Singh,a3350945,exact,0.2,0.2,Rajasthan Royals,Anunay Singh
+2022,David Miller,d67d5f00,exact,3.0,1.0,Gujarat Titans,David Miller
+2022,Sam Billings,c16d4035,exact,2.0,2.0,Kolkata Knight Riders,Sam Billings
+2022,Wriddhiman Saha,fe11caa6,exact,1.9,1.0,Gujarat Titans,Wriddhiman Saha
+2022,Matthew Wade,afa7e784,exact,2.4,2.0,Gujarat Titans,Matthew Wade
+2022,C. Hari Nishanth,,unmatched,0.2,0.2,Chennai Super Kings,
+2022,Anmolpreet Singh,1399b39c,exact,0.2,0.2,Mumbai Indians,Anmolpreet Singh
+2022,Narayan Jagadeesan,bd54eef5,exact,0.2,0.2,Chennai Super Kings,Narayan Jagadeesan
+2022,Vishnu Vinod,0494fa6e,exact,0.5,0.2,Sunrisers Hyderabad,Vishnu Vinod
+2022,Chris Jordan,ffe699c0,exact,3.6,2.0,Chennai Super Kings,Chris Jordan
+2022,Lungi Ngidi,f834dcfc,exact,0.5,0.5,Delhi Capitals,Lungi Ngidi
+2022,Karn Sharma,119678fd,exact,0.5,0.5,Royal Challengers Bangalore,Karn Sharma
+2022,Kuldeep Sen,2e78f685,exact,0.2,0.2,Rajasthan Royals,Kuldeep Sen
+2022,Alex Hales,92aeac25,exact,1.5,1.5,Kolkata Knight Riders,Alex Hales
+2022,Evin Lewis,0ebfb1ad,exact,2.0,2.0,Lucknow Super Giants,Evin Lewis
+2022,Karun Nair,944533a5,exact,1.4,0.5,Rajasthan Royals,Karun Nair
+2022,Glenn Phillips,9a46c4e5,exact,1.5,1.5,Sunrisers Hyderabad,Glenn Phillips
+2022,Tim Seifert,4663bd23,exact,0.5,0.5,Delhi Capitals,Tim Seifert
+2022,Nathan Ellis,9eb1455b,exact,0.75,0.75,Punjab Kings,Nathan Ellis
+2022,Fazalhaq Farooqi,e9c7f0d0,exact,0.5,0.5,Sunrisers Hyderabad,FazalHaq Farooqi
+2022,Ramandeep Singh,be24ead0,exact,0.2,0.2,Mumbai Indians,Ramandeep Singh
+2022,Atharva Taide,1ac746c8,exact,0.2,0.2,Punjab Kings,Atharwa Taide
+2022,Dhruv Jurel,bcf325d2,exact,0.2,0.2,Rajasthan Royals,Dhruv Jurel
+2022,Mayank Yadav,b1ad996b,exact,0.2,0.2,Lucknow Super Giants,Mayank Yadav
+2022,Tejas Baroka,,unmatched,0.2,0.2,Rajasthan Royals,
+2022,Bhanuka Rajapaksa,6c882e9a,exact,0.5,0.5,Punjab Kings,Bhanuka Rajapaksa
+2022,Gurkeerat Singh,6eb146d2,exact,0.5,0.5,Gujarat Titans,Gurkeerat Singh
+2022,Tim Southee,13c35c9e,exact,1.5,1.5,Kolkata Knight Riders,Tim Southee
+2022,Rahul Buddhi,70a9b353,exact,0.2,0.2,Mumbai Indians,Rahul Buddhi
+2022,Benny Howell,,unmatched,0.4,0.4,Punjab Kings,
+2022,Kuldip Yadav,030f3089,exact,0.2,0.2,Rajasthan Royals,Kuldip Yadav
+2022,Varun Aaron,0a3d54b9,exact,0.5,0.5,Gujarat Titans,Varun Aaron
+2022,Ramesh Kumar,,unmatched,0.2,0.2,Kolkata Knight Riders,
+2022,Hrithik Shokeen,0c9652b0,exact,0.2,0.2,Mumbai Indians,Hrithik Shokeen
+2022,K. Bhagath Varma,5438ffba,fuzzy,0.2,0.2,Chennai Super Kings,K Bhagath Varma
+2022,Arjun Tendulkar,44aac2f0,exact,0.3,0.2,Mumbai Indians,Arjun Tendulkar
+2022,Shubham Garhwal,,unmatched,0.2,0.2,Rajasthan Royals,
+2022,Mohammad Nabi,62af8546,exact,1.0,1.0,Kolkata Knight Riders,Mohammad Nabi
+2022,Umesh Yadav,cc1e8c68,exact,2.0,2.0,Kolkata Knight Riders,Umesh Yadav
+2022,James Neesham,,unmatched,1.5,1.5,Rajasthan Royals,
+2022,Nathan Coulter-Nile,,unmatched,2.0,2.0,Rajasthan Royals,
+2022,Vicky Ostwal,,unmatched,0.2,0.2,Delhi Capitals,
+2022,Rassie van der Dussen,9948e262,exact,1.0,1.0,Rajasthan Royals,Rassie van der Dussen
+2022,Daryl Mitchell,eade4650,exact,0.75,0.75,Rajasthan Royals,Daryl Mitchell
+2022,Siddharth Kaul,dcf81436,fuzzy,0.75,0.75,Royal Challengers Bangalore,Siddarth Kaul
+2022,B. Sai Sudharshan,d5130a30,fuzzy,0.2,0.2,Gujarat Titans,Sai Sudharsan
+2022,Aryan Juyal,5f2732f7,exact,0.2,0.2,Mumbai Indians,Aryan Juyal
+2022,Luvnith Sisodia,a689af4b,exact,0.2,0.2,Royal Challengers Bangalore,LUVNITH SISODIA
+2022,Fabian Allen,b52ffbbd,exact,0.75,0.75,Mumbai Indians,Fabian Allen
+2022,David Willey,7f048519,exact,2.0,2.0,Royal Challengers Bangalore,David Willey
+2022,Aman Khan,378daa89,exact,0.2,0.2,Kolkata Knight Riders,Aman Khan
+2023,Kane Williamson,d027ba9f,exact,2.0,2.0,Gujarat Titans,Kane Williamson
+2023,Harry Brook,4ae1755b,exact,13.25,1.5,Sunrisers Hyderabad,Harry Brook
+2023,Mayank Agarwal,00ea847a,exact,8.25,1.0,Sunrisers Hyderabad,Mayank Agarwal
+2023,Ajinkya Rahane,29e95537,exact,0.5,0.5,Chennai Super Kings,Ajinkya Rahane
+2023,Sam Curran,e94915e6,exact,18.5,2.0,Punjab Kings,Sam Curran
+2023,Odean Smith,23cca426,exact,0.5,0.5,Gujarat Titans,Odean Smith
+2023,Sikandar Raza,26d041c4,exact,0.5,0.5,Punjab Kings,Sikandar Raza
+2023,Jason Holder,0f721006,exact,5.75,2.0,Rajasthan Royals,Jason Holder
+2023,Cameron Green,eaa76d3c,exact,17.5,2.0,Mumbai Indians,Cameron Green
+2023,Ben Stokes,e087956b,exact,16.25,2.0,Chennai Super Kings,Ben Stokes
+2023,Nicholas Pooran,3241e3fd,exact,16.0,2.0,Lucknow Super Giants,Nicholas Pooran
+2023,Heinrich Klaasen,235c2bb6,exact,5.25,1.0,Sunrisers Hyderabad,Heinrich Klaasen
+2023,Phil Salt,3d284ca3,exact,2.0,2.0,Delhi Capitals,Phil Salt
+2023,Reece Topley,8db7f47f,exact,1.9,0.75,Royal Challengers Bangalore,Reece Topley
+2023,Jaydev Unadkat,1e66c162,exact,0.5,0.5,Lucknow Super Giants,Jaydev Unadkat
+2023,Jhye Richardson,1ee08e9a,exact,1.5,1.5,Mumbai Indians,Jhye Richardson
+2023,Ishant Sharma,5bb1a1c4,exact,0.5,0.5,Delhi Capitals,Ishant Sharma
+2023,Adil Rashid,249d60c9,exact,2.0,2.0,Sunrisers Hyderabad,Adil Rashid
+2023,Mayank Markande,a9fd84fb,exact,0.5,0.5,Sunrisers Hyderabad,Mayank Markande
+2023,Shaik Rasheed,cbf58a86,exact,0.2,0.2,Chennai Super Kings,Shaik Rasheed
+2023,Vivrant Sharma,1b7b0fa7,exact,2.6,0.2,Sunrisers Hyderabad,Vivrant Sharma
+2023,Samarth Vyas,34819e70,exact,0.2,0.2,Sunrisers Hyderabad,Samarth Vyas
+2023,Sanvir Singh,b0f2baf4,exact,0.2,0.2,Sunrisers Hyderabad,Sanvir Singh
+2023,Nishant Sindhu,,unmatched,0.6,0.2,Chennai Super Kings,
+2023,N Jagadeesan,bd54eef5,exact,0.9,0.2,Kolkata Knight Riders,Narayan Jagadeesan
+2023,K. S. Bharat,44a89551,fuzzy,1.2,0.2,Gujarat Titans,KS Bharat
+2023,Upendra Yadav,80ffea17,exact,0.25,0.2,Sunrisers Hyderabad,Upendra Yadav
+2023,Vaibhav Arora,7c3b3b78,exact,0.6,0.2,Kolkata Knight Riders,Vaibhav Arora
+2023,Yash Thakur,4b31f3a3,exact,0.45,0.2,Lucknow Super Giants,Yash Thakur
+2023,Shivam Mavi,c38d3503,exact,6.0,0.4,Gujarat Titans,Shivam Mavi
+2023,Mukesh Kumar,2cffab74,exact,5.5,0.2,Delhi Capitals,Mukesh Kumar
+2023,Himanshu Sharma,52294a79,exact,0.2,0.2,Royal Challengers Bangalore,Himanshu Sharma
+2023,Manish Pandey,93b4fc78,exact,2.4,1.0,Delhi Capitals,Manish Pandey
+2023,Will Jacks,,unmatched,3.2,1.5,Royal Challengers Bangalore,
+2023,Romario Shepherd,c5aef772,exact,0.5,0.5,Lucknow Super Giants,Romario Shepherd
+2023,Daniel Sams,caf69bf7,exact,0.75,0.75,Lucknow Super Giants,Daniel Sams
+2023,Kyle Jamieson,68c56d09,exact,1.0,1.0,Chennai Super Kings,Kyle Jamieson
+2023,Piyush Chawla,98ae73b1,exact,0.5,0.5,Mumbai Indians,Piyush Chawla
+2023,Amit Mishra,,unmatched,0.5,0.5,Lucknow Super Giants,
+2023,Harpreet Singh Bhatia,,unmatched,0.4,0.2,Punjab Kings,
+2023,Manoj Bhandage,e96801ea,exact,0.2,0.2,Royal Challengers Bangalore,Manoj Bhandage
+2023,Mayank Dagar,a457cfb5,exact,1.8,0.2,Sunrisers Hyderabad,Mayank Dagar
+2023,Duan Jansen,8dc152d1,exact,0.2,0.2,Mumbai Indians,Duan Jansen
+2023,Prerak Mankad,663b5e34,exact,1.8,0.2,Lucknow Super Giants,Prerak Mankad
+2023,Donavon Ferreira,,unmatched,0.2,0.2,Rajasthan Royals,
+2023,Urvil Patel,cf59b3f0,exact,0.2,0.2,Gujarat Titans,Urvil Patel
+2023,Vishnu Vinod,0494fa6e,exact,0.2,0.2,Mumbai Indians,Vishnu Vinod
+2023,Vidwath Kaverappa,d4d929b0,fuzzy,0.2,0.2,Punjab Kings,Vidhwath Kaverappa
+2023,Rajan Kumar,cd474693,exact,0.2,0.2,Royal Challengers Bangalore,Rajan Kumar
+2023,Suyash Sharma,9440ef41,exact,0.2,0.2,Kolkata Knight Riders,Suyash Sharma
+2023,Josh Little,,unmatched,4.4,0.5,Gujarat Titans,
+2023,Mohit Sharma,,unmatched,0.5,0.5,Gujarat Titans,
+2023,Shams Mulani,9d704f6f,exact,0.2,0.2,Mumbai Indians,Shams Mulani
+2023,Swapnil Singh,983f2f61,exact,0.2,0.2,Lucknow Super Giants,Swapnil Singh
+2023,David Wiese,aa8d28ae,exact,1.0,1.0,Kolkata Knight Riders,David Wiese
+2023,Nitish Kumar Reddy,aad0c365,fuzzy,0.2,0.2,Sunrisers Hyderabad,Nitish Reddy
+2023,Avinash Singh,,unmatched,0.6,0.2,Royal Challengers Bangalore,
+2023,Kunal Rathore,e3851766,exact,0.2,0.2,Rajasthan Royals,Kunal Rathore
+2023,Sonu Yadav,6ab96cc2,exact,0.2,0.2,Royal Challengers Bangalore,Sonu Yadav
+2023,Kulwant Khejroliya,fa2f1dde,exact,0.2,0.2,Kolkata Knight Riders,Kulwant Khejroliya
+2023,Ajay Mandal,31ee319e,exact,0.2,0.2,Chennai Super Kings,Ajay Mandal
+2023,Mohit Rathee,9a5f2863,exact,0.2,0.2,Punjab Kings,Mohit Rathee
+2023,Nehal Wadhera,d1a60072,exact,0.2,0.2,Mumbai Indians,Nehal Wadhera
+2023,Bhagath Varma,5438ffba,fuzzy,0.2,0.2,Chennai Super Kings,K Bhagath Varma
+2023,Shivam Singh,e1d9ae9c,exact,0.2,0.2,Punjab Kings,Shivam Singh
+2023,Rilee Rossouw,cad00a4d,exact,4.6,2.0,Delhi Capitals,Rilee Rossouw
+2023,Litton Das,0404d43c,fuzzy,0.5,0.5,Kolkata Knight Riders,Liton Das
+2023,Akeal Hosein,4d7f517e,exact,1.0,1.0,Sunrisers Hyderabad,Akeal Hosein
+2023,Adam Zampa,14f96089,exact,1.5,1.5,Rajasthan Royals,Adam Zampa
+2023,Anmolpreet Singh,1399b39c,exact,0.2,0.2,Sunrisers Hyderabad,Anmolpreet Singh
+2023,KM Asif,798cc28e,exact,0.3,0.2,Rajasthan Royals,KM Asif
+2023,Murugan Ashwin,e2db2409,exact,0.2,0.2,Rajasthan Royals,Murugan Ashwin
+2023,Mandeep Singh,,unmatched,0.5,0.5,Kolkata Knight Riders,
+2023,Akash Vasisht,35ccfdd4,exact,0.2,0.2,Rajasthan Royals,Akash Vasisht
+2023,Naveen-ul-Haq,c0c411cb,exact,0.5,0.5,Lucknow Super Giants,Naveen ul Haq
+2023,Yudhvir Singh Charak,,unmatched,0.2,0.2,Lucknow Super Giants,
+2023,Raghav Goyal,266849c1,exact,0.2,0.2,Mumbai Indians,Raghav Goyal
+2023,Abdul Basith,cc777ffa,exact,0.2,0.2,Rajasthan Royals,Abdul Basith
+2023,Joe Root,a343262c,exact,1.0,1.0,Rajasthan Royals,Joe Root
+2023,Shakib al Hasan,7dc35884,exact,1.5,1.5,Kolkata Knight Riders,Shakib Al Hasan
+2024,Harry Brook,4ae1755b,exact,4.0,2.0,Delhi Capitals,Harry Brook
+2024,Travis Head,12b610c2,exact,6.8,2.0,Sunrisers Hyderabad,Travis Head
+2024,Rovman Powell,650d5e49,exact,7.4,1.0,Rajasthan Royals,Rovman Powell
+2024,Set 2: Capped All-Rounders,,unmatched,0.02,0.02,Set 2: Capped All-Rounders,
+2024,Wanindu Hasaranga,a97c8ec2,exact,1.5,1.5,Sunrisers Hyderabad,Wanindu Hasaranga
+2024,Rachin Ravindra,ba5e1069,exact,1.8,0.5,Chennai Super Kings,Rachin Ravindra
+2024,Shardul Thakur,1abb78f8,exact,4.0,2.0,Chennai Super Kings,Shardul Thakur
+2024,Azmatullah Omarzai,8f6dd463,exact,0.5,0.5,Gujarat Titans,Azmatullah Omarzai
+2024,Pat Cummins,,unmatched,20.5,2.0,Sunrisers Hyderabad,
+2024,Gerald Coetzee,3204c99f,exact,5.0,2.0,Mumbai Indians,Gerald Coetzee
+2024,Harshal Patel,f986ca1a,exact,11.75,2.0,Punjab Kings,Harshal Patel
+2024,Daryl Mitchell,eade4650,exact,14.0,1.0,Chennai Super Kings,Daryl Mitchell
+2024,Chris Woakes,4c5d73db,exact,4.2,2.0,Punjab Kings,Chris Woakes
+2024,Set 3: Capped Wicket-Keepers,,unmatched,0.03,0.03,Set 3: Capped Wicket-Keepers,
+2024,Tristan Stubbs,85b3fab2,exact,0.5,0.5,Delhi Capitals,Tristan Stubbs
+2024,K. S. Bharat,44a89551,fuzzy,0.5,0.5,Kolkata Knight Riders,KS Bharat
+2024,Set 4: Capped Fast Bowlers,,unmatched,0.04,0.04,Set 4: Capped Fast Bowlers,
+2024,Chetan Sakariya,2cdce1be,exact,0.5,0.5,Kolkata Knight Riders,Chetan Sakariya
+2024,Alzarri Joseph,b0946605,exact,11.5,1.0,Royal Challengers Bengaluru,Alzarri Joseph
+2024,Umesh Yadav,cc1e8c68,exact,5.8,2.0,Gujarat Titans,Umesh Yadav
+2024,Shivam Mavi,c38d3503,exact,6.4,0.5,Lucknow Super Giants,Shivam Mavi
+2024,Mitchell Starc,3fb19989,exact,24.75,2.0,Kolkata Knight Riders,Mitchell Starc
+2024,Jaydev Unadkat,1e66c162,exact,1.6,0.5,Sunrisers Hyderabad,Jaydev Unadkat
+2024,Dilshan Madushanka,de7d833e,exact,4.6,0.5,Mumbai Indians,Dilshan Madushanka
+2024,Set 6: Uncapped Batters,,unmatched,0.06,0.06,Set 6: Uncapped Batters,
+2024,Shubham Dubey,6b2ff18f,exact,5.8,0.2,Rajasthan Royals,Shubham Dubey
+2024,Sameer Rizvi,f89d3b11,exact,8.4,0.2,Chennai Super Kings,Sameer Rizvi
+2024,Angkrish Raghuvanshi,d7017798,exact,0.2,0.2,Kolkata Knight Riders,Angkrish Raghuvanshi
+2024,Set 7: Uncapped All-Ronders,,unmatched,0.07,0.07,Set 7: Uncapped All-Ronders,
+2024,Arshin Kulkarni,2d140b79,exact,0.2,0.2,Lucknow Super Giants,Arshin Kulkarni
+2024,Shahrukh Khan,7dcb9bc9,fuzzy,7.4,0.2,Gujarat Titans,M Shahrukh Khan
+2024,Ramandeep Singh,be24ead0,exact,0.2,0.2,Kolkata Knight Riders,Ramandeep Singh
+2024,Set 8: Uncapped Wicket-Keepers,,unmatched,0.08,0.08,Set 8: Uncapped Wicket-Keepers,
+2024,Tom Kohler-Cadmore,f836b33d,fuzzy,0.4,0.4,Rajasthan Royals,Tom Kohler
+2024,Ricky Bhui,b63e358a,exact,0.2,0.2,Delhi Capitals,Ricky Bhui
+2024,Kumar Kushagra,57ca01b3,exact,7.2,0.2,Delhi Capitals,Kumar Kushagra
+2024,Set 9: Uncapped Fast Bowlers,,unmatched,0.09,0.09,Set 9: Uncapped Fast Bowlers,
+2024,Yash Dayal,7210d461,exact,5.0,0.2,Royal Challengers Bengaluru,Yash Dayal
+2024,Sushant Mishra,92500ad5,exact,2.2,0.2,Gujarat Titans,Sushant Mishra
+2024,Kartik Tyagi,5d2eea49,exact,5.0,0.2,Gujarat Titans,Kartik Tyagi
+2024,Rasikh Dar,,unmatched,0.2,0.2,Delhi Capitals,
+2024,Akash Singh,b483905d,exact,0.2,0.2,Sunrisers Hyderabad,Akash Singh
+2024,Set 10: Uncapped Spinners,,unmatched,0.1,0.1,Set 10: Uncapped Spinners,
+2024,Manav Suthar,025c4400,exact,0.2,0.2,Gujarat Titans,Manav Suthar
+2024,Manimaran Siddharth,cf0ccafa,exact,2.4,0.2,Lucknow Super Giants,Manimaran Siddharth
+2024,Shreyas Gopal,7a8bd078,exact,0.2,0.2,Mumbai Indians,Shreyas Gopal
+2024,Accelerated Round 1,,unmatched,0.01,0.01,Accelerated Round 1,
+2024,Sherfane Rutherford,d014d5ac,exact,1.5,1.5,Kolkata Knight Riders,Sherfane Rutherford
+2024,Ashton Turner,ff1e12a0,exact,1.0,1.0,Lucknow Super Giants,Ashton Turner
+2024,Tom Curran,,unmatched,1.5,1.5,Royal Challengers Bengaluru,
+2024,David Willey,7f048519,exact,2.0,2.0,Lucknow Super Giants,David Willey
+2024,Spencer Johnson,83c3e8e3,exact,10.0,0.5,Gujarat Titans,Spencer Johnson
+2024,Mustafizur Rahman,0a8fce53,exact,2.0,2.0,Chennai Super Kings,Mustafizur Rahman
+2024,Jhye Richardson,1ee08e9a,exact,5.0,1.5,Delhi Capitals,Jhye Richardson
+2024,Nuwan Thushara,ee1b6c27,exact,4.8,0.5,Mumbai Indians,Nuwan Thushara
+2024,Naman Dhir,fffa744b,exact,0.2,0.2,Mumbai Indians,Naman Dhir
+2024,Anshul Kamboj,fcc21ace,exact,0.2,0.2,Mumbai Indians,Anshul Kamboj
+2024,Sumit Kumar,,unmatched,1.0,0.2,Delhi Capitals,
+2024,Ashutosh Sharma,84d9c311,exact,0.2,0.2,Punjab Kings,Ashutosh Sharma
+2024,Vishwanath Singh,,unmatched,0.2,0.2,Punjab Kings,
+2024,Shashank Singh,26989d80,exact,0.2,0.2,Punjab Kings,Shashank Singh
+2024,Tanay Thyagarajan,f1809c03,exact,0.2,0.2,Punjab Kings,Tanay Thyagarajan
+2024,Robin Minz,bafd0398,exact,3.6,0.2,Gujarat Titans,Robin Minz
+2024,Prince Choudary,,unmatched,0.2,0.2,Punjab Kings,
+2024,Jhathavedh Subramanyan,,unmatched,0.2,0.2,Sunrisers Hyderabad,
+2024,Accelerated Round 2,,unmatched,0.02,0.02,Accelerated Round 2,
+2024,Manish Pandey,93b4fc78,exact,0.5,0.5,Kolkata Knight Riders,Manish Pandey
+2024,Rilee Rossouw,cad00a4d,exact,8.0,2.0,Punjab Kings,Rilee Rossouw
+2024,Lockie Ferguson,2f9d0389,exact,2.0,2.0,Royal Challengers Bengaluru,Lockie Ferguson
+2024,Mujeeb Ur Rahman,7d92277a,exact,2.0,2.0,Kolkata Knight Riders,Mujeeb Ur Rahman
+2024,Arshad Khan,12314277,exact,0.2,0.2,Lucknow Super Giants,Arshad Khan
+2024,Mohammad Nabi,62af8546,exact,1.5,1.5,Mumbai Indians,Mohammad Nabi
+2024,Shai Hope,1fc6ef83,exact,0.75,0.75,Delhi Capitals,Shai Hope
+2024,Gus Atkinson,70d57519,exact,1.0,1.0,Kolkata Knight Riders,Gus Atkinson
+2024,Swastik Chhikara,,unmatched,0.2,0.2,Delhi Capitals,
+2024,Abid Mushtaq,b10e8c85,exact,0.2,0.2,Rajasthan Royals,Abid Mushtaq (2)
+2024,Shivalik Sharma,,unmatched,0.2,0.2,Mumbai Indians,
+2024,Swapnil Singh,983f2f61,exact,0.2,0.2,Royal Challengers Bengaluru,Swapnil Singh
+2024,Avanish Rao Aravelly,,unmatched,0.2,0.2,Chennai Super Kings,
+2024,Nandre Burger,465aa633,exact,0.5,0.5,Rajasthan Royals,Nandre Burger
+2024,Sakib Hussain,280fff14,exact,0.2,0.2,Kolkata Knight Riders,Sakib Hussain
+2024,Saurav Chauhan,9e7225b0,exact,0.2,0.2,Royal Challengers Bengaluru,Saurav Chauhan
+2025,Jos Buttler,99b75528,exact,15.75,2.0,Gujarat Titans,Jos Buttler
+2025,Shreyas Iyer,85ec8e33,exact,26.75,2.0,Punjab Kings,Shreyas Iyer
+2025,Rishabh Pant,919a3be2,exact,27.0,2.0,Lucknow Super Giants,Rishabh Pant
+2025,Kagiso Rabada,e62dd25d,exact,10.75,2.0,Gujarat Titans,Kagiso Rabada
+2025,Arshdeep Singh,244048f6,exact,18.0,2.0,Punjab Kings,Arshdeep Singh
+2025,Mitchell Starc,3fb19989,exact,11.75,2.0,Delhi Capitals,Mitchell Starc
+2025,Yuzvendra Chahal,57ee1fde,exact,18.0,2.0,Punjab Kings,Yuzvendra Chahal
+2025,Liam Livingstone,50c6bc2b,exact,8.75,2.0,Royal Challengers Bengaluru,Liam Livingstone
+2025,David Miller,d67d5f00,exact,7.5,1.5,Lucknow Super Giants,David Miller
+2025,KL Rahul,b17e2f24,exact,14.0,2.0,Delhi Capitals,Lokesh Rahul
+2025,Mohammed Shami,8cf9814c,exact,10.0,2.0,Sunrisers Hyderabad,Mohammed Shami
+2025,Mohammed Siraj,2f49c897,exact,12.25,2.0,Gujarat Titans,Mohammed Siraj
+2025,Harry Brook,4ae1755b,exact,6.25,2.0,Delhi Capitals,Harry Brook
+2025,Devon Conway,df5a6881,exact,6.25,2.0,Chennai Super Kings,Devon Conway
+2025,Jake Fraser-McGurk,,unmatched,9.0,2.0,Delhi Capitals,
+2025,Aiden Markram,6a26221c,exact,2.0,2.0,Lucknow Super Giants,Aiden Markram
+2025,Devdutt Padikkal,2c25d4f5,exact,2.0,2.0,Royal Challengers Bengaluru,Devdutt Padikkal
+2025,Rahul Tripathi,77255a9e,exact,3.4,0.75,Chennai Super Kings,Rahul Tripathi
+2025,Ravichandran Ashwin,495d42a5,exact,9.75,2.0,Chennai Super Kings,Ravichandran Ashwin
+2025,Venkatesh Iyer,a24be938,exact,23.75,2.0,Kolkata Knight Riders,Venkatesh Iyer
+2025,Mitchell Marsh,3d8feaf8,exact,3.4,2.0,Lucknow Super Giants,Mitchell Marsh
+2025,Glenn Maxwell,b681e71e,exact,4.2,2.0,Punjab Kings,Glenn Maxwell
+2025,Harshal Patel,f986ca1a,exact,8.0,2.0,Sunrisers Hyderabad,Harshal Patel
+2025,Rachin Ravindra,ba5e1069,exact,4.0,1.5,Chennai Super Kings,Rachin Ravindra
+2025,Marcus Stoinis,d9273ee7,exact,11.0,2.0,Punjab Kings,Marcus Stoinis
+2025,Quinton de Kock,372455c4,exact,3.6,2.0,Kolkata Knight Riders,Quinton de Kock
+2025,Rahmanullah Gurbaz,0bacade8,exact,2.0,2.0,Kolkata Knight Riders,Rahmanullah Gurbaz
+2025,Ishan Kishan,752f7486,exact,11.25,2.0,Sunrisers Hyderabad,Ishan Kishan
+2025,Phil Salt,3d284ca3,exact,11.5,2.0,Royal Challengers Bengaluru,Phil Salt
+2025,Jitesh Sharma,800d2d97,exact,11.0,1.0,Royal Challengers Bengaluru,Jitesh Sharma
+2025,Khaleel Ahmed,a2f46292,exact,4.8,2.0,Chennai Super Kings,Khaleel Ahmed
+2025,Jofra Archer,5574750c,exact,12.5,2.0,Rajasthan Royals,Jofra Archer
+2025,Trent Boult,a818c1be,exact,12.5,2.0,Mumbai Indians,Trent Boult
+2025,Josh Hazlewood,03806cf8,exact,12.5,2.0,Royal Challengers Bengaluru,Josh Hazlewood
+2025,Avesh Khan,eef2536f,exact,9.75,2.0,Lucknow Super Giants,Avesh Khan
+2025,Prasidh Krishna,85e0cf10,exact,9.5,2.0,Gujarat Titans,Prasidh Krishna
+2025,T. Natarajan,ce794613,fuzzy,10.75,2.0,Delhi Capitals,T Natarajan
+2025,Anrich Nortje,acdc62f5,exact,6.5,2.0,Kolkata Knight Riders,Anrich Nortje
+2025,Noor Ahmad,efc04be7,exact,10.0,2.0,Chennai Super Kings,Noor Ahmad
+2025,Rahul Chahar,2ed569a0,exact,3.2,1.0,Sunrisers Hyderabad,Rahul Chahar
+2025,Wanindu Hasaranga,a97c8ec2,exact,5.25,2.0,Rajasthan Royals,Wanindu Hasaranga
+2025,Maheesh Theekshana,f24c6701,exact,4.4,2.0,Rajasthan Royals,Maheesh Theekshana
+2025,Adam Zampa,14f96089,exact,2.4,2.0,Sunrisers Hyderabad,Adam Zampa
+2025,Abhinav Manohar,0890552f,exact,3.2,0.3,Sunrisers Hyderabad,Abhinav Manohar
+2025,Karun Nair,944533a5,exact,0.5,0.3,Delhi Capitals,Karun Nair
+2025,Angkrish Raghuvanshi,d7017798,exact,3.0,0.3,Kolkata Knight Riders,Angkrish Raghuvanshi
+2025,Atharva Taide,1ac746c8,exact,0.3,0.3,Sunrisers Hyderabad,Atharwa Taide
+2025,Nehal Wadhera,d1a60072,exact,4.2,0.3,Punjab Kings,Nehal Wadhera
+2025,Harpreet Brar,c05edf8e,exact,1.5,0.3,Punjab Kings,Harpreet Brar
+2025,Naman Dhir,fffa744b,exact,5.25,0.3,Mumbai Indians,Naman Dhir
+2025,Mahipal Lomror,da934ee8,exact,1.7,0.3,Gujarat Titans,Mahipal Lomror
+2025,Sameer Rizvi,f89d3b11,exact,0.95,0.3,Delhi Capitals,Sameer Rizvi
+2025,Abdul Samad,,unmatched,4.2,0.3,Lucknow Super Giants,
+2025,Vijay Shankar,0994d0ae,exact,1.2,0.3,Chennai Super Kings,Vijay Shankar
+2025,Ashutosh Sharma,84d9c311,exact,3.8,0.3,Delhi Capitals,Ashutosh Sharma
+2025,Nishant Sindhu,,unmatched,0.3,0.3,Gujarat Titans,
+2025,Aryan Juyal,5f2732f7,exact,0.3,0.3,Lucknow Super Giants,Aryan Juyal
+2025,Kumar Kushagra,57ca01b3,exact,0.65,0.3,Gujarat Titans,Kumar Kushagra
+2025,Robin Minz,bafd0398,exact,0.65,0.3,Mumbai Indians,Robin Minz
+2025,Anuj Rawat,c8f5f961,exact,0.3,0.3,Gujarat Titans,Anuj Rawat
+2025,Luvnith Sisodia,a689af4b,exact,0.3,0.3,Kolkata Knight Riders,LUVNITH SISODIA
+2025,Vishnu Vinod,0494fa6e,exact,0.95,0.3,Punjab Kings,Vishnu Vinod
+2025,Vaibhav Arora,7c3b3b78,exact,1.8,0.3,Kolkata Knight Riders,Vaibhav Arora
+2025,Rasikh Salam Dar,,unmatched,6.0,0.3,Royal Challengers Bengaluru,
+2025,Akash Madhwal,4bd09374,exact,1.2,0.3,Rajasthan Royals,Akash Madhwal
+2025,Mohit Sharma,,unmatched,2.2,0.5,Delhi Capitals,
+2025,Simarjeet Singh,30df8c66,exact,1.5,0.3,Sunrisers Hyderabad,Simarjeet Singh
+2025,Yash Thakur,4b31f3a3,exact,1.6,0.3,Punjab Kings,Yash Thakur
+2025,Vijaykumar Vyshak,54e52590,exact,1.8,0.3,Punjab Kings,Vyshak Kumar
+2025,Shreyas Gopal,7a8bd078,exact,0.3,0.3,Chennai Super Kings,Shreyas Gopal
+2025,Mayank Markande,a9fd84fb,exact,0.3,0.3,Kolkata Knight Riders,Mayank Markande
+2025,Suyash Sharma,9440ef41,exact,2.6,0.3,Royal Challengers Bengaluru,Suyash Sharma
+2025,Karn Sharma,119678fd,exact,0.5,0.5,Mumbai Indians,Karn Sharma
+2025,Kumar Kartikeya,,unmatched,0.3,0.3,Rajasthan Royals,
+2025,Manav Suthar,025c4400,exact,0.3,0.3,Gujarat Titans,Manav Suthar
+2025,Faf du Plessis,3355b542,exact,2.0,2.0,Delhi Capitals,Faf du Plessis
+2025,Glenn Phillips,9a46c4e5,exact,2.0,2.0,Gujarat Titans,Glenn Phillips
+2025,Rovman Powell,650d5e49,exact,1.5,1.5,Kolkata Knight Riders,Rovman Powell
+2025,Ajinkya Rahane,29e95537,exact,1.5,1.5,Kolkata Knight Riders,Ajinkya Rahane
+2025,Sam Curran,e94915e6,exact,2.4,2.0,Chennai Super Kings,Sam Curran
+2025,Marco Jansen,81c36ee9,exact,7.0,1.25,Punjab Kings,Marco Jansen
+2025,Krunal Pandya,5b8c830e,exact,5.75,2.0,Royal Challengers Bengaluru,Krunal Pandya
+2025,Nitish Rana,fb2d1dda,exact,4.2,1.5,Rajasthan Royals,Nitish Rana
+2025,Washington Sundar,f19ccfad,exact,3.2,2.0,Gujarat Titans,Washington Sundar
+2025,Donovan Ferreira,f0af99a7,exact,0.75,0.75,Delhi Capitals,Donovan Ferreira
+2025,Josh Inglis,989889ff,exact,2.6,2.0,Punjab Kings,Josh Inglis
+2025,Ryan Rickelton,e66732f8,exact,1.0,1.0,Mumbai Indians,Ryan Rickelton
+2025,Deepak Chahar,23eeb873,exact,9.25,2.0,Mumbai Indians,Deepak Chahar
+2025,Gerald Coetzee,3204c99f,exact,2.4,1.25,Gujarat Titans,Gerald Coetzee
+2025,Akash Deep,0a67aec0,exact,8.0,1.0,Lucknow Super Giants,Akash Deep
+2025,Tushar Deshpande,46a9bea1,exact,6.5,1.0,Rajasthan Royals,Tushar Deshpande
+2025,Lockie Ferguson,2f9d0389,exact,2.0,2.0,Punjab Kings,Lockie Ferguson
+2025,Bhuvneshwar Kumar,2e81a32d,exact,10.75,2.0,Royal Challengers Bengaluru,Bhuvneshwar Kumar
+2025,Mukesh Kumar,2cffab74,exact,8.0,2.0,Delhi Capitals,Mukesh Kumar
+2025,Allah Ghazanfar,9ca68676,exact,4.8,0.75,Mumbai Indians,Allah Ghazanfar
+2025,Swastik Chikara,,unmatched,0.3,0.3,Royal Challengers Bengaluru,
+2025,Shubham Dubey,6b2ff18f,exact,0.8,0.3,Rajasthan Royals,Shubham Dubey
+2025,Shaik Rasheed,cbf58a86,exact,0.3,0.3,Chennai Super Kings,Shaik Rasheed
+2025,Himmat Singh,ebcfef83,exact,0.3,0.3,Lucknow Super Giants,Himmat Singh
+2025,Anshul Kamboj,fcc21ace,exact,3.4,0.3,Chennai Super Kings,Anshul Kamboj
+2025,Arshad Khan,12314277,exact,1.3,0.3,Gujarat Titans,Arshad Khan
+2025,Darshan Nalkande,cd8d2859,exact,0.3,0.3,Delhi Capitals,Darshan Nalkande
+2025,Anukul Roy,e4cdf230,exact,0.4,0.3,Kolkata Knight Riders,Anukul Roy
+2025,Swapnil Singh,983f2f61,exact,0.5,0.3,Royal Challengers Bengaluru,Swapnil Singh
+2025,Vansh Bedi,,unmatched,0.55,0.3,Chennai Super Kings,
+2025,Kunal Rathore,e3851766,exact,0.3,0.3,Rajasthan Royals,Kunal Rathore
+2025,Gurnoor Brar,99258814,exact,1.3,0.3,Gujarat Titans,Gurnoor Brar
+2025,Mukesh Choudhary,765a4731,exact,0.3,0.3,Chennai Super Kings,Mukesh Choudhary
+2025,Arjun Tendulkar,44aac2f0,exact,0.3,0.3,Mumbai Indians,Arjun Tendulkar
+2025,Zeeshan Ansari,36619795,exact,0.4,0.3,Sunrisers Hyderabad,Zeeshan Ansari
+2025,Manimaran Siddharth,cf0ccafa,exact,0.75,0.3,Lucknow Super Giants,Manimaran Siddharth
+2025,Digvesh Singh,,unmatched,0.3,0.3,Lucknow Super Giants,
+2025,Manish Pandey,93b4fc78,exact,0.75,0.75,Kolkata Knight Riders,Manish Pandey
+2025,Sherfane Rutherford,d014d5ac,exact,2.6,1.5,Gujarat Titans,Sherfane Rutherford
+2025,Shahbaz Ahmed,f9e6e7ef,exact,2.4,1.0,Lucknow Super Giants,Shahbaz Ahmed
+2025,Tim David,f1f99156,exact,3.0,2.0,Royal Challengers Bengaluru,Tim David
+2025,Deepak Hooda,73ad96ed,exact,1.7,0.75,Chennai Super Kings,Deepak Hooda
+2025,Will Jacks,,unmatched,5.25,2.0,Mumbai Indians,
+2025,Azmatullah Omarzai,8f6dd463,exact,2.4,1.5,Punjab Kings,Azmatullah Omarzai
+2025,Sai Kishore,c7a995d3,exact,2.0,0.75,Gujarat Titans,Sai Kishore
+2025,Romario Shepherd,c5aef772,exact,1.5,1.5,Royal Challengers Bengaluru,Romario Shepherd
+2025,Spencer Johnson,83c3e8e3,exact,2.8,2.0,Kolkata Knight Riders,Spencer Johnson
+2025,Umran Malik,81c08fa3,exact,0.75,0.75,Kolkata Knight Riders,Umran Malik
+2025,Ishant Sharma,5bb1a1c4,exact,0.75,0.75,Gujarat Titans,Ishant Sharma
+2025,Nuwan Thushara,ee1b6c27,exact,1.6,0.75,Royal Challengers Bengaluru,Nuwan Thushara
+2025,Jaydev Unadkat,1e66c162,exact,1.0,1.0,Sunrisers Hyderabad,Jaydev Unadkat
+2025,Sachin Baby,dc9dd038,exact,0.3,0.3,Sunrisers Hyderabad,Sachin Baby
+2025,Harnoor Singh,,unmatched,0.3,0.3,Punjab Kings,
+2025,Andre Siddarth,,unmatched,0.3,0.3,Chennai Super Kings,
+2025,Yudhvir Singh,4885bbe6,exact,0.35,0.3,Rajasthan Royals,Yudhvir Singh
+2025,Rajvardhan Hangargekar,c3c92b42,exact,0.3,0.3,Lucknow Super Giants,Rajvardhan Hangargekar
+2025,Arshin Kulkarni,2d140b79,exact,0.3,0.3,Lucknow Super Giants,Arshin Kulkarni
+2025,Ashwani Kumar,d45c29b1,exact,0.3,0.3,Mumbai Indians,Ashwani Kumar
+2025,Akash Singh,b483905d,exact,0.3,0.3,Lucknow Super Giants,Akash Singh
+2025,Gurjapneet Singh,cc61ee8f,exact,2.2,0.3,Chennai Super Kings,Gurjapneet Singh
+2025,Matthew Breetzke,35f173a0,exact,0.75,,Lucknow Super Giants,Matthew Breetzke
+2025,Mitchell Santner,e4a0deae,exact,2.0,2.0,Mumbai Indians,Mitchell Santner
+2025,Jayant Yadav,81049310,exact,0.75,0.75,Gujarat Titans,Jayant Yadav
+2025,Fazalhaq Farooqi,e9c7f0d0,exact,2.0,2.0,Rajasthan Royals,FazalHaq Farooqi
+2025,Kwena Maphaka,107c26fb,exact,1.5,0.75,Rajasthan Royals,Kwena Maphaka
+2025,Kuldeep Sen,2e78f685,exact,0.8,0.75,Punjab Kings,Kuldeep Sen
+2025,Reece Topley,8db7f47f,exact,0.75,0.75,Mumbai Indians,Reece Topley
+2025,Lizaad Williams,a1d95bd8,exact,0.75,0.75,Mumbai Indians,Lizaad Williams
+2025,Priyansh Arya,b5797845,exact,3.8,0.3,Punjab Kings,Priyansh Arya
+2025,Manoj Bhandage,e96801ea,exact,0.3,0.3,Royal Challengers Bengaluru,Manoj Bhandage
+2025,Praveen Dubey,ed5a5510,exact,0.3,0.3,Punjab Kings,Praveen Dubey
+2025,Ajay Mandal,31ee319e,exact,0.3,0.3,Delhi Capitals,Ajay Mandal
+2025,Vipraj Nigam,5ffc0565,exact,0.5,0.3,Delhi Capitals,Vipraj Nigam
+2025,Krishnan Shrijith,,unmatched,0.3,0.3,Mumbai Indians,
+2025,Mohit Rathee,9a5f2863,exact,0.3,0.3,Royal Challengers Bengaluru,Mohit Rathee
+2025,Jacob Bethell,3c55c703,exact,2.6,1.25,Royal Challengers Bengaluru,Jacob Bethell
+2025,Brydon Carse,cad40f5e,exact,1.0,1.0,Sunrisers Hyderabad,Brydon Carse
+2025,Aaron Hardie,d405c0d5,exact,1.25,1.25,Punjab Kings,Aaron Hardie
+2025,Kamindu Mendis,08548b13,exact,0.75,0.75,Sunrisers Hyderabad,Kamindu Mendis
+2025,Dushmantha Chameera,327b58d3,exact,0.75,0.75,Delhi Capitals,Dushmantha Chameera
+2025,Nathan Ellis,9eb1455b,exact,2.0,1.0,Chennai Super Kings,Nathan Ellis
+2025,Shamar Joseph,97290faf,exact,0.75,0.75,Lucknow Super Giants,Shamar Joseph
+2025,Aniket Verma,a3b0600d,exact,0.3,0.3,Sunrisers Hyderabad,Aniket Verma
+2025,Raj Angad Bawa,,unmatched,0.3,0.3,Mumbai Indians,
+2025,Musheer Khan,d621b427,exact,0.3,0.3,Punjab Kings,Musheer Khan
+2025,Manvanth Kumar L,,unmatched,0.3,0.3,Delhi Capitals,
+2025,Suryansh Shedge,970ddd24,exact,0.3,0.3,Punjab Kings,Suryansh Shedge
+2025,Kulwant Khejroliya,fa2f1dde,exact,0.3,0.3,Gujarat Titans,Kulwant Khejroliya
+2025,Prince Yadav,80b2fb19,exact,0.3,0.3,Lucknow Super Giants,Prince Yadav
+2025,Jamie Overton,59559bc2,exact,1.5,1.5,Chennai Super Kings,Jamie Overton
+2025,Xavier Bartlett,3b53243a,exact,0.8,0.75,Punjab Kings,Xavier Bartlett
+2025,Lungi Ngidi,f834dcfc,exact,1.0,0.3,Royal Challengers Bengaluru,Lungi Ngidi
+2025,Yuvraj Chaudhary,1730e08e,exact,0.3,0.3,Lucknow Super Giants,Yuvraj Chaudhary
+2025,Kamlesh Nagarkoti,b4f5c2d9,exact,0.3,0.3,Chennai Super Kings,Kamlesh Nagarkoti
+2025,Abhinandan Singh,82c10dac,exact,0.3,0.3,Royal Challengers Bengaluru,Abhinandan Singh
+2025,Karim Janat,62175638,exact,0.75,0.3,Gujarat Titans,Karim Janat
+2025,Pyla Avinash,,unmatched,0.3,0.3,Punjab Kings,
+2025,Ramakrishna Ghosh,dee07622,exact,0.3,0.3,Chennai Super Kings,Ramakrishna Ghosh
+2025,Bevon Jacobs,972f217b,exact,0.3,0.3,Mumbai Indians,Bevon Jacobs
+2025,Ashok Sharma,50c09020,exact,0.3,0.3,Rajasthan Royals,Ashok Sharma
+2025,Vaibhav Sooryavanshi,470f446b,exact,1.1,0.3,Rajasthan Royals,Vaibhav Sooryavanshi
+2025,Eshan Malinga,5750bcb4,exact,1.2,0.3,Sunrisers Hyderabad,Eshan Malinga
+2025,Tripurana Vijay,51ec3919,exact,0.3,0.3,Delhi Capitals,Tripurana Vijay
+2025,Madhav Tiwari,fb5f69e4,exact,0.4,0.3,Delhi Capitals,Madhav Tiwari
+2025,Vignesh Puthur,1e030637,exact,0.3,0.3,Mumbai Indians,Vignesh Puthur
+2026,Cameron Green,eaa76d3c,exact,25.2,2.0,Kolkata Knight Riders,Cameron Green
+2026,Sarfaraz Khan,f088b960,exact,0.75,0.75,Chennai Super Kings,Sarfaraz Khan
+2026,David Miller,d67d5f00,exact,2.0,2.0,Delhi Capitals,David Miller
+2026,Prithvi Shaw,8b3e9c7c,exact,0.75,0.75,Delhi Capitals,Prithvi Shaw
+2026,Wanindu Hasaranga,a97c8ec2,exact,2.0,2.0,Lucknow Super Giants,Wanindu Hasaranga
+2026,Venkatesh Iyer,a24be938,exact,7.0,2.0,Royal Challengers Bengaluru,Venkatesh Iyer
+2026,Liam Livingstone,50c6bc2b,exact,13.0,2.0,Sunrisers Hyderabad,Liam Livingstone
+2026,Rachin Ravindra,ba5e1069,exact,2.0,2.0,Kolkata Knight Riders,Rachin Ravindra
+2026,Finn Allen,bf74b130,exact,2.0,2.0,Kolkata Knight Riders,Finn Allen
+2026,Quinton de Kock,372455c4,exact,1.0,1.0,Mumbai Indians,Quinton de Kock
+2026,Ben Duckett,5f26f677,exact,2.0,2.0,Delhi Capitals,Ben Duckett
+2026,Akash Deep,0a67aec0,exact,1.0,1.0,Kolkata Knight Riders,Akash Deep
+2026,Jacob Duffy,dadbdb68,exact,2.0,2.0,Royal Challengers Bengaluru,Jacob Duffy
+2026,Matt Henry,e84ac20c,exact,2.0,2.0,Chennai Super Kings,Matt Henry
+2026,Shivam Mavi,c38d3503,exact,0.75,0.75,Sunrisers Hyderabad,Shivam Mavi
+2026,Anrich Nortje,acdc62f5,exact,2.0,2.0,Lucknow Super Giants,Anrich Nortje
+2026,Matheesha Pathirana,64839cb3,exact,18.0,2.0,Kolkata Knight Riders,Matheesha Pathirana
+2026,Ravi Bishnoi,df064e1a,exact,7.2,2.0,Rajasthan Royals,Ravi Bishnoi
+2026,Rahul Chahar,2ed569a0,exact,5.2,1.0,Chennai Super Kings,Rahul Chahar
+2026,Akeal Hosein,4d7f517e,exact,2.0,2.0,Chennai Super Kings,Akeal Hosein
+2026,Auqib Nabi,7c3c0337,exact,8.4,0.3,Delhi Capitals,Auqib Nabi
+2026,Shivang Kumar,7b44eb3e,exact,0.3,0.3,Sunrisers Hyderabad,Shivang Kumar
+2026,Prashant Veer,e148e6bd,exact,14.2,0.3,Chennai Super Kings,Prashant Veer
+2026,Mukul Choudhary,1c84109e,exact,2.6,0.3,Lucknow Super Giants,Mukul Choudhary
+2026,Kartik Sharma,7b679de5,exact,14.2,0.3,Chennai Super Kings,Kartik Sharma
+2026,Tejasvi Singh,,unmatched,3.0,0.3,Kolkata Knight Riders,
+2026,Sushant Mishra,92500ad5,exact,0.9,0.3,Rajasthan Royals,Sushant Mishra
+2026,Ashok Sharma,50c09020,exact,0.9,0.3,Gujarat Titans,Ashok Sharma
+2026,Naman Tiwari,,unmatched,1.0,0.3,Lucknow Super Giants,
+2026,Kartik Tyagi,5d2eea49,exact,0.3,0.3,Kolkata Knight Riders,Kartik Tyagi
+2026,Yash Raj Punja,02dfebbe,exact,0.3,0.3,Rajasthan Royals,Yash Punja
+2026,Vignesh Puthur,1e030637,exact,0.3,0.3,Rajasthan Royals,Vignesh Puthur
+2026,Prashant Solanki,c695b423,exact,0.3,0.3,Kolkata Knight Riders,Prashant Solanki
+2026,Pathum Nissanka,8ee36b18,exact,4.0,0.75,Delhi Capitals,Pathum Nissanka
+2026,Rahul Tripathi,77255a9e,exact,0.75,0.75,Kolkata Knight Riders,Rahul Tripathi
+2026,Ben Dwarshuis,e1b9f3a9,exact,4.4,1.0,Punjab Kings,Ben Dwarshuis
+2026,Zak Foulkes,,unmatched,0.75,0.75,Chennai Super Kings,
+2026,Jason Holder,0f721006,exact,7.0,2.0,Gujarat Titans,Jason Holder
+2026,Matthew Short,a90e53ec,exact,1.5,1.5,Chennai Super Kings,Matthew Short
+2026,Tom Banton,25f7b7d6,exact,2.0,2.0,Gujarat Titans,Tom Banton
+2026,Jordan Cox,ff154ecd,exact,0.75,0.75,Royal Challengers Bengaluru,Jordan Cox
+2026,Josh Inglis,989889ff,exact,8.6,2.0,Lucknow Super Giants,Josh Inglis
+2026,Tim Seifert,4663bd23,exact,1.5,1.5,Kolkata Knight Riders,Tim Seifert
+2026,Kyle Jamieson,68c56d09,exact,2.0,2.0,Delhi Capitals,Kyle Jamieson
+2026,Adam Milne,350bb1b1,exact,2.4,2.0,Rajasthan Royals,Adam Milne
+2026,Lungi Ngidi,f834dcfc,exact,2.0,2.0,Delhi Capitals,Lungi Ngidi
+2026,Mustafizur Rahman,0a8fce53,exact,9.2,2.0,Kolkata Knight Riders,Mustafizur Rahman
+2026,Kuldeep Sen,2e78f685,exact,0.75,0.75,Rajasthan Royals,Kuldeep Sen
+2026,Danish Malewar,9e6032fa,exact,0.3,0.3,Mumbai Indians,Danish Malewar
+2026,Aman Rao,,unmatched,0.3,0.3,Rajasthan Royals,
+2026,Akshat Raghuwanshi,d8d67045,exact,2.2,0.3,Lucknow Super Giants,Akshat Raghuwanshi
+2026,Satvik Deswal,,unmatched,0.3,0.3,Royal Challengers Bengaluru,
+2026,Aman Khan,378daa89,exact,0.4,0.3,Chennai Super Kings,Aman Khan
+2026,Vicky Ostwal,,unmatched,0.3,0.3,Royal Challengers Bengaluru,
+2026,Mayank Rawat,2b801189,exact,0.3,0.3,Mumbai Indians,Mayank Rawat
+2026,Mangesh Yadav,,unmatched,5.2,0.3,Royal Challengers Bengaluru,
+2026,Salil Arora,d7423da1,exact,1.5,0.3,Sunrisers Hyderabad,Salil Arora
+2026,Ravi Singh,548516a6,exact,0.95,0.3,Rajasthan Royals,Ravi Singh
+2026,Sakib Hussain,280fff14,exact,0.3,0.3,Sunrisers Hyderabad,Sakib Hussain
+2026,Mohammad Izhar,,unmatched,0.3,0.3,Mumbai Indians,
+2026,Onkar Tarmale,,unmatched,0.3,0.3,Sunrisers Hyderabad,
+2026,Prithvi Raj,,unmatched,0.3,0.3,Gujarat Titans,
+2026,Praveen Dubey,ed5a5510,exact,0.3,0.3,Punjab Kings,Praveen Dubey
+2026,Cooper Connolly,fe366f34,exact,3.0,2.0,Punjab Kings,Cooper Connolly
+2026,Luke Wood,65b6943c,exact,0.75,0.75,Gujarat Titans,Luke Wood
+2026,Sahil Parekh,,unmatched,0.3,0.3,Delhi Capitals,
+2026,Amit Kumar,,unmatched,0.3,0.3,Sunrisers Hyderabad,
+2026,Vishal Nishad,,unmatched,0.3,0.3,Punjab Kings,
+2026,Atharva Ankolekar,d6cd318e,exact,0.3,0.3,Mumbai Indians,Atharva Ankolekar
+2026,Praful Hinge,ece7b6b3,exact,0.3,0.3,Sunrisers Hyderabad,Praful Hinge
+2026,Krains Fuletra,,unmatched,0.3,0.3,Sunrisers Hyderabad,
+2026,Vihaan Malhotra,,unmatched,0.3,0.3,Royal Challengers Bengaluru,
+2026,Sarthak Ranjan,,unmatched,0.3,0.3,Kolkata Knight Riders,
+2026,Brijesh Sharma,133bbd61,exact,0.3,0.3,Rajasthan Royals,Brijesh Sharma
+2026,Kanishk Chouhan,,unmatched,0.3,0.3,Royal Challengers Bengaluru,
+2026,Daksh Kamra,,unmatched,0.3,0.3,Kolkata Knight Riders,
+2026,Jack Edwards,f787e0eb,exact,3.0,0.5,Sunrisers Hyderabad,Jack Edwards

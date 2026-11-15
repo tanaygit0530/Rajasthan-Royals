@@ -1,0 +1,16 @@
+uid,board_rank,name,age,cap_status,status_2027,label,n,skill,se,proj_1,proj_1_lo,proj_1_hi,proj_2,proj_3,sample_flag
+2c54c49b,1,Matthew Humphreys,24,capped,Open market (not on a 2026 IPL roster),Strong watch,449.0,30.08,6.94,30.08,9.23,50.93,26.39,22.69,small sample (<500 balls)
+c5f40e35,2,SW Currie,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1385.0,28.76,4.22,28.76,9.14,48.38,25.28,21.8,
+7d92277a,3,Mujeeb Ur Rahman,26,capped,Open market (not on a 2026 IPL roster),Strong watch,5011.0,28.71,2.28,28.71,9.62,47.79,25.23,21.76,
+736123bb,4,Dunith Wellalage,24,capped,Open market (not on a 2026 IPL roster),Strong watch,1433.0,28.28,4.15,28.28,8.68,47.87,24.88,21.47,
+5750bcb4,5,Eshan Malinga,26,capped,Under contract (SRH); only if released,Strong watch,1216.0,28.05,4.48,28.05,8.33,47.76,24.68,21.32,
+f24c6701,6,Maheesh Theekshana,26,capped,Open market (not on a 2026 IPL roster),Strong watch,4953.0,27.83,2.29,27.83,8.75,46.92,24.5,21.17,
+ac2e7ec0,7,T Murphy,26,capped,Open market (not on a 2026 IPL roster),Strong watch,414.0,27.81,7.17,27.81,6.83,48.79,24.48,21.16,small sample (<500 balls)
+80b2fb19,8,Prince Yadav,25,capped,Under contract (LSG); only if released,Strong watch,751.0,27.57,5.58,27.57,7.4,47.74,24.28,21.0,
+df064e1a,9,Ravi Bishnoi,26,capped,Already RR,Strong watch,3401.0,26.9,2.75,26.9,7.72,46.08,23.72,20.55,
+78c12883,10,Sonny Baker,24,capped,Open market (not on a 2026 IPL roster),Strong watch,488.0,26.28,6.71,26.28,5.55,47.0,23.2,20.12,small sample (<500 balls)
+52c952d9,11,Tanveer Sangha,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1326.0,25.67,4.31,25.67,6.02,45.32,22.7,19.72,
+e9c7f0d0,12,FazalHaq Farooqi,26,capped,Open market (not on a 2026 IPL roster),Strong watch,2664.0,23.86,3.09,23.86,4.59,43.13,21.17,18.49,
+24f6e254,13,JM James,26,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,162.0,22.26,10.05,22.26,-0.58,45.1,19.84,17.42,small sample (<500 balls)
+64839cb3,14,Matheesha Pathirana,24,capped,Under contract (KKR); only if released,Strong watch,2012.0,22.04,3.54,22.04,2.64,41.44,19.66,17.27,
+876dbe2d,15,Dan Mousley,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1261.0,21.81,4.41,21.81,2.12,41.49,19.46,17.11,

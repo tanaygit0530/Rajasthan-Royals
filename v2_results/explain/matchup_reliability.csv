@@ -1,4 +1,4 @@
 effect,reliability,players
-batter: spin minus pace,0.444,208
-batter: left-arm minus right-arm bowling,-0.092,133
-bowler: vs left-handers minus vs right-handers,0.17,210
+batter: spin minus pace,0.443,208
+batter: left-arm minus right-arm bowling,-0.091,133
+bowler: vs left-handers minus vs right-handers,0.178,210

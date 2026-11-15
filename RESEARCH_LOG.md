@@ -19,20 +19,20 @@ Entries are listed newest first within each stage. Every decision gives the reas
 | S2.6 | Match context: venue key, Cricsheet knockouts, IPL qualification stakes, day/night, rain fixes, impact era (`s06b_context.py`) | done |
 | S2.7 | Dates of birth from Wikidata (CC0) for the age curve (`s06c_dob.py`) | done |
 | S2.8 | Roles, bowler pressure-building credit, survivorship check (`s06d_roles.py`) | done |
-| S4-gap | Commitments from the gap review carried into S4: era term + era-dependent wicket value in WP model; age-curve term in skill models; role-relative ratings; pressure-building credit as candidate feature; stakes + day/night as candidate pressure inputs; IPW + all-competition scoring for survivorship | todo (in S4) |
-| S3.1 | Feature build + FEATURES.md | todo |
-| S3B | Player profile database (all players, all splits) + DATA_DICTIONARY + reconciliation + 20-player spot check; pressure columns after S4A | todo |
-| S4E | SHAP top predictors, player-type clustering, matchup model | todo |
-| S3.2 | Pressure-definition comparison | todo |
-| S4A | WP + expected-outcome model comparison (rolling by season) | todo |
-| S4B | Player-skill model comparison (M0–M7) | todo |
-| S4C | Is clutch repeatable? | todo |
-| S4D | Final score, sensitivity, ablation, fairness | todo |
-| S5 | Scout cards (~30 per list) | todo |
-| S5B | Value hunting: capped status, emerging tier (40+ pressure balls), upside backtest, price model, value list + 5 cards each | todo (after S4) |
-| S5C | Youth board: age (Wikidata), development model + comparables, top 15/15/5 board, 10 cards, youth strategy section | todo (after S4) |
+| S4-gap | Gap-review commitments carried into S4 (era term, age curve, role-relative, pressure-building, stakes, day/night, survivorship IPW) | done - tested; age curve and stakes/day-night did not help and are not used |
+| S3.1 | Feature build + FEATURES.md | done |
+| S3B | Player profile database + DATA_DICTIONARY + reconciliation (exact) + 20-player Cricsheet spot check | done |
+| S4E | SHAP top predictors, player-type clustering, matchup model | done |
+| S3.2 | Pressure-definition comparison | done (learned leverage) |
+| S4A | WP + expected-outcome model comparison (rolling by season) | done (logistic WP; HGB xOutcome) |
+| S4B | Player-skill model comparison (M0–M8) | done |
+| S4C | Is clutch repeatable? | done (no) |
+| S4D | Final score, sensitivity, ablation, fairness, interval coverage | done |
+| S5 | Scout cards (30 per list) + sourced scouting notes | done |
+| S5B | Value hunting: capped status, emerging tier, upside backtest, price model, value lists + 5 cards each | done |
+| S5C | Youth board, development-model backtest, comparables, 10 cards | done (lower-resolution manual reads not collected - see open items) |
 | P7 | Auction optimiser | waiting for the Phase 7 brief; 5B/5C output pool CSVs in a documented format |
-| S6 | Deliverables in `v2_results/` + fresh-eyes review | todo |
+| S6 | Deliverables in `v2_results/` + fresh-eyes review | done (review PASS) |
 
 ## Scope changes
 
@@ -52,6 +52,24 @@ Entries are listed newest first within each stage. Every decision gives the reas
 - **Not derivable:** caught in the deep vs infield.
 - **Two-pass build:** pressure columns are filled after S4A.
 - **Profile pages:** pages for every player wait for the Phase 7 brief. The report appendix covers top candidates.
+
+## S3-S6 — Models, ratings and deliverables (15 Nov 2026)
+
+- **WP (S4A).** Logistic regression beat HGB / LightGBM / XGBoost / blend out of time on both innings (log-loss 0.634 / 0.402 vs baseline replica 0.695 / 0.463); trees overfit match-level features; stronger regularisation tested on one fold and still lost. Expected outcomes: sklearn HGB (+1.5% over cell means).
+- **Bug found and fixed:** raw current run rate made first-ball WP swing (first-over leverage 2.5x average). Run rate now shrunk toward par for the first 18 balls; whole chain s08-s19 rerun. First-over leverage now 1.9x setting / 0.9x chasing.
+- **Pressure (S3.2).** Learned leverage kept by the pre-set rule; other definitions are sensitivity checks.
+- **Skill backtest (S4B/C).** Baseline formula: r = -0.02 (bat) / -0.12 (bowl) with next-season pressure run value. Overall-skill models ~0.19-0.24; noise ceiling 0.44 / 0.34. Adding a pressure-specific gap hurts (clutch not repeatable).
+- **Final model (S4D).** Hierarchical Bayes overall skill; bowlers with a public-league-only APM prior; batters without prior; no age curve. Found and fixed a double-counting problem (prior fitted on the same RR balls) that made intervals ~3x too narrow. 80% interval coverage in the backtest: 68% bat / 74% bowl (stated in report).
+- **Fairness.** Residuals by IPL-heavy / T20I-heavy / public-heavy groups all within ~1 SE of zero.
+- **Value (S5B).** Prices 2022-26 from Wikipedia; price model beats a capped x overseas median baseline in 2 of 3 auctions; retained players without an auction price excluded from value lists.
+- **Youth (S5C).** Pool restricted to players with real non-associate cricket; Pakistan nationals excluded; development model backtest shows age adds nothing beyond early skill, so projections use early skill only.
+- **Status data.** Wikipedia 2027 page: retention deadline 15 Nov (some reports 17 Nov), auction 16 Dec in Goa, Harshal Patel SRH->GT (15 Nov), Rahane retired. Nationality now from international records, else Wikidata (verify flagged cases).
+- **Fresh-eyes review: PASS** (no duplicates; all top-30 ids ball-aligned; raw recomputed pressure balls match 60/60).
+
+### Open items
+- Re-run `s13_final.py` -> `s22_review.py` when 2027 retention lists are published (before 16 Dec).
+- Youth lower-resolution manual reads (U19, state leagues) not yet collected; youth cards say "None collected".
+- Phase 7 optimiser: waiting for the brief; pools in `v2_results/value/phase7_pool_*.csv`.
 
 ## S2 — Data audit and public data
 

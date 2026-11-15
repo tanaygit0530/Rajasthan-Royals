@@ -1,0 +1,16 @@
+uid,board_rank,name,age,cap_status,status_2027,label,n,skill,se,proj_1,proj_1_lo,proj_1_hi,proj_2,proj_3,sample_flag
+efc04be7,1,Noor Ahmad,22,capped,Under contract (CSK); only if released,Strong watch,3726.0,32.93,2.63,32.93,13.78,52.09,28.77,24.61,
+9ca68676,2,Allah Ghazanfar,20,capped,Under contract (MI); only if released,Strong watch,1240.0,32.61,4.44,32.61,12.91,52.31,28.5,24.4,
+280fff14,3,Sakib Hussain,22,uncapped (no international),Under contract (SRH); only if released,Strong watch,276.0,29.26,8.39,29.26,7.55,50.97,25.7,22.14,small sample (<500 balls)
+5cdf8304,4,Joel Davies,23,capped,Open market (not on a 2026 IPL roster),Strong watch,318.0,22.33,7.96,22.33,0.89,43.77,19.9,17.47,small sample (<500 balls)
+fe366f34,5,Cooper Connolly,23,capped,Under contract (PBKS); only if released,Strong watch,582.0,21.12,6.23,21.12,0.64,41.6,18.89,16.65,
+9440ef41,6,Suyash Sharma,23,uncapped (no international),Under contract (RCB); only if released,Strong watch,1041.0,18.05,4.82,18.05,-1.79,37.9,16.32,14.58,
+1d48795b,7,F Singh,22,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,296.0,17.56,8.17,17.56,-4.01,39.13,15.9,14.25,small sample (<500 balls)
+bf26cd81,8,AM Green,20,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,150.0,17.37,10.29,17.37,-5.64,40.38,15.75,14.12,small sample (<500 balls)
+f146c339,9,SM Meherob,23,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,214.0,14.98,9.18,14.98,-7.25,37.21,13.75,12.51,small sample (<500 balls)
+26f1d66c,10,Farhan Ahmed,19,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,138.0,14.96,10.54,14.96,-8.24,38.15,13.73,12.5,small sample (<500 balls)
+ec0b9258,11,M Tharupathi,22,uncapped (no international),Open market (not on a 2026 IPL roster),Track,184.0,11.38,9.65,11.38,-11.18,33.93,10.73,10.08,small sample (<500 balls)
+b5a12740,12,Mahli Beardman,21,capped,Open market (not on a 2026 IPL roster),Track,270.0,11.28,8.46,11.28,-10.47,33.03,10.65,10.02,small sample (<500 balls)
+107c26fb,13,Kwena Maphaka,20,capped,Already RR,Track,969.0,10.96,4.98,10.96,-8.94,30.87,10.38,9.81,
+0ecb4de6,14,Rehan Ahmed,22,capped,Under contract (DC); only if released,Track,1626.0,8.61,3.92,8.61,-10.9,28.13,8.42,8.22,
+3c55c703,15,Jacob Bethell,23,capped,Under contract (RCB); only if released,Track,314.0,4.82,7.99,4.82,-16.64,26.28,5.24,5.67,small sample (<500 balls)

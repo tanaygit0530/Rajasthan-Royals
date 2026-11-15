@@ -62,7 +62,8 @@ class WP:
         f['balls_left'] = bal - lb; f['wih'] = 10 - wk
         f['need'] = np.where(f.innings == 2, f.target - sc, np.nan)
         f['rrr'] = np.clip(f.need / np.maximum(f.balls_left, 1) * 6, -6, 60)
-        f['crr'] = sc / np.maximum(lb, 1) * 6
+        f['crr'] = W.crr_shrunk(sc, lb, f.par_prev)
+        f['crr_raw'] = sc / np.maximum(lb, 1) * 6
         f['score_vs_par'] = sc - f.par_prev * lb / 120
         p = np.full(len(f), np.nan)
         i2 = (f.innings == 2).values
