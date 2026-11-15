@@ -1,0 +1,7 @@
+role,component,split_half_r_pressure,shrinkage_k_balls,split_half_r_normal
+batting,Match impact (WPA),0.255,259,0.288
+batting,Scoring control,0.371,150,0.527
+batting,Wicket edge,0.13,592,0.233
+bowling,Match impact (WPA),0.061,1534,0.167
+bowling,Scoring control,0.029,3364,0.413
+bowling,Wicket edge,-0.04,10000,0.066

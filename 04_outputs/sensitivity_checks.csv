@@ -1,0 +1,19 @@
+role,variant,top10_kept,base_top10_in_variant_top15,spearman
+bat,Pressure = top 33% of balls,7,9,0.908
+bat,Pressure = top 20% of balls,8,9,0.953
+bat,Pressure = top 10% of balls,4,4,0.801
+bat,No recency weighting,10,10,0.991
+bat,Equal component weights,10,10,0.994
+bat,WPA only,9,10,0.925
+bat,No pressure-vs-baseline delta,10,10,0.99
+bat,Eligibility 120 pressure balls,10,10,0.99
+bat,Eligibility 200 pressure balls,9,9,0.996
+bowl,Pressure = top 33% of balls,8,9,0.941
+bowl,Pressure = top 20% of balls,8,10,0.943
+bowl,Pressure = top 10% of balls,5,5,0.837
+bowl,No recency weighting,8,10,0.99
+bowl,Equal component weights,9,10,0.987
+bowl,WPA only,8,8,0.925
+bowl,No pressure-vs-baseline delta,9,10,0.998
+bowl,Eligibility 120 pressure balls,9,10,0.987
+bowl,Eligibility 200 pressure balls,9,10,0.998

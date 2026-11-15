@@ -1,0 +1,10 @@
+# Confidential RR data pack and anything derived from it at ball level - never commit
+02_data/
+data_public/
+v2_work/
+03_code/out/
+**/*.pkl
+**/*.parquet
+.DS_Store
+__pycache__/
+.env_superr/

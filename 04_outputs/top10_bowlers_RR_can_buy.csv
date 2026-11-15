@@ -1,0 +1,11 @@
+Buyable rank,Rank,Player,Nation,IPL team (2027),Auction availability (14 Nov 2026),Pressure balls,Matches with pressure balls,Economy under pressure,Economy normal,Pressure wickets,Pressure Rating,Rating 10th pct,Rating 90th pct,P(top 10),Rank 10th pct,Rank 90th pct,WPA per 100 pressure balls (shrunk),Runs above/saved vs expected per 100 balls,Positive pressure spells %,Rise vs own baseline
+1.0,1,Sunil Narine,West Indies,Kolkata Knight Riders,Under contract (KKR); only if released 17 Nov,328,34,6.79,6.9,14,0.64,0.41,0.83,0.83,1,13,0.39,15.21,68.04,-1.66
+2.0,2,Jasprit Bumrah,India,Mumbai Indians,Under contract (MI); only if released 17 Nov,429,56,7.52,7.18,21,0.6,0.31,0.87,0.75,1,18,0.41,20.08,60.23,-2.56
+3.0,3,Varun Chakravarthy,India,Kolkata Knight Riders,Under contract (KKR); only if released 17 Nov,415,45,7.68,8.06,27,0.57,0.31,0.84,0.75,1,18,0.44,2.95,59.71,0.07
+4.0,4,Mujeeb Ur Rahman,Afghanistan,,Open market (not on a 2026 IPL roster),262,26,6.98,7.05,15,0.49,0.27,0.69,0.61,3,21,0.33,6.35,67.01,-0.73
+5.0,5,Josh Hazlewood,Australia,Royal Challengers Bengaluru,Under contract (RCB); only if released 17 Nov,383,43,7.86,8.43,34,0.48,0.21,0.79,0.6,2,25,0.43,4.56,58.14,0.52
+6.0,6,Rashid Khan,Afghanistan,Gujarat Titans,Under contract (GT); only if released 17 Nov,559,69,6.88,7.57,36,0.44,0.2,0.7,0.49,2,27,0.34,6.23,61.58,0.75
+7.0,8,Krunal Pandya,India,Royal Challengers Bengaluru,Under contract (RCB); only if released 17 Nov,296,33,7.01,8.06,20,0.41,0.16,0.66,0.43,4,33,0.26,4.82,71.76,0.12
+8.0,9,Matheesha Pathirana,Sri Lanka,Kolkata Knight Riders,Under contract (KKR); only if released 17 Nov,232,28,9.18,8.74,18,0.4,0.16,0.61,0.39,5,31,0.19,12.62,61.9,-1.93
+9.0,10,Mahedi Hasan,Bangladesh,,Open market (not on a 2026 IPL roster),247,31,7.82,6.76,14,0.4,0.1,0.69,0.4,3,39,0.4,5.46,54.55,-1.09
+10.0,11,Bhuvneshwar Kumar,India,Royal Challengers Bengaluru,Under contract (RCB); only if released 17 Nov,490,68,8.66,8.19,26,0.4,0.12,0.71,0.46,2,37,0.36,6.91,59.3,-1.22
