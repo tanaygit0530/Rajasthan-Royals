@@ -9,13 +9,15 @@ Entries are listed newest first within each stage. Every decision gives the reas
 | S0.1 | `.gitignore` guard for `02_data/`, `data_public/`, `v2_work/`, pickles | done |
 | S0.2 | Conda env `.env_superr` (py3.11 + lightgbm, xgboost, numpyro, statsmodels…) | done |
 | S0.3 | Diagnose baseline non-reproducibility | done (cross-machine, not random) |
-| S0.4 | Separate project git repo (local); GitHub private remote | local done; remote awaiting user |
+| S0.4 | Separate project git repo; GitHub private remote `tanaygit0530/Rajasthan-Royals` | done |
 | S1 | CRICKET_PRIMER.md (cited research) | done |
 | S2.1 | Data audit + data dictionary | done |
-| S2.2 | Cricsheet download (48 MB) + parse | done; dedupe vs RR pack next |
+| S2.2 | Cricsheet download (48 MB) + parse + dedupe/unify | done |
 | S2.3 | Player identity map (+ manual check of top 200) | done (99.07% of balls) |
-| S2.4 | Competition-strength model | todo |
+| S2.4 | Competition-strength model | done (bootstrap SE pending approval) |
 | S3.1 | Feature build + FEATURES.md | todo |
+| S3B | Player profile database (all players, all splits) + DATA_DICTIONARY + reconciliation + 20-player spot check; pressure columns after S4A | todo |
+| S4E | SHAP top predictors, player-type clustering, matchup model | todo |
 | S3.2 | Pressure-definition comparison | todo |
 | S4A | WP + expected-outcome model comparison (rolling by season) | todo |
 | S4B | Player-skill model comparison (M0–M7) | todo |
@@ -39,7 +41,56 @@ Entries are listed newest first within each stage. Every decision gives the reas
 - **Phase 7 optimiser:** the user will paste the brief later. Until then, 5B and 5C write their pools to a documented CSV format.
 - **Order:** 5B and 5C run after core S4. The plan addendum is in `~/.claude/plans/jolly-yawning-metcalfe.md`.
 
+**15 Nov — Phase 3B (full player profile database) added by the user.** Feasibility by field is recorded in the plan addendum:
+- **RR pack only:** style, stroke, delivery and speed fields. Speed is present on 61% of balls and needs outlier cleaning (maximum 1,456 km/h). `delivery_style` includes Yorker 4,212, Wide Yorker 1,448, Slow Ball, Knuckle, Carrom, Googly and Doosra.
+- **Cricsheet only:** fielding.
+- **Not derivable:** caught in the deep vs infield.
+- **Two-pass build:** pressure columns are filled after S4A.
+- **Profile pages:** pages for every player wait for the Phase 7 brief. The report appendix covers top candidates.
+
 ## S2 — Data audit and public data
+
+**15 Nov — competition strength, refit with T20I split** (final for now; `v2_results/comp_strength/`)
+- **T20I split.** T20I-Full = both teams are full members (706 matches). T20I-Assoc = any associate team involved (2,396).
+- **League pool quality, 2022–26** (runs per 100 balls vs IPL, batters / bowlers):
+
+  | League | Batters | Bowlers |
+  |---|---|---|
+  | IPL | 0 | 0 |
+  | ILT20 | −4.5 | −1.8 |
+  | MLC | −4.5 | −6.1 |
+  | **T20I-Full** | **−5.9** | **−2.4** |
+  | BBL | −7.0 | −6.5 |
+  | CPL | −7.3 | −4.6 |
+  | SA20 | −7.6 | −3.7 |
+  | PSL | −9.0 | −2.6 |
+  | LPL | −11.3 | −4.0 |
+  | Blast | −13.0 | −10.2 |
+  | A-team | −15.1 | −9.7 |
+  | BPL | −15.8 | −8.8 |
+  | SMAT | −16.9 | −10.9 |
+  | CSA | −18.4 | −13.4 |
+  | Super Smash | −19.2 | −14.0 |
+  | T20I-Assoc | −25.1 | −12.9 |
+
+- **Answer to the brief's "IPL vs T20I" question:** full-member T20Is are close to the IPL in player quality. The raw T20I gap was almost entirely associate games.
+- **Penalty.** The runs penalty moved to λ=30, the edge of the grid. MSE barely changes between 30 and 100 (2.7449 vs 2.7457), so this is a flat optimum. **To do:** extend the grid down to 10 when the final pipeline runs.
+- **Uncertainty.** The per-season table (`league_strength_by_season.csv`) shows year-to-year stability. A match-bootstrap for standard errors would take about 27 minutes (40 s per fit × 2 targets × 20 resamples) and is **deferred until the user approves it**.
+
+**15 Nov — competition strength, first fit** (`s07_comp_strength.py`)
+- **Model.** Sparse ridge on 1.6M legal balls, 2019–26: context (innings × over × wickets down) + competition×season environment + batter effect − bowler effect. Fitted separately for runs off the bat and for striker dismissed. Context and environment are effectively unpenalised (column scaling ×100). Players link the competitions.
+- **Penalty chosen out of time** (train ≤2025, score 2026): λ=100 for runs, λ=1000 for dismissals.
+  - Player effects cut the 2026 runs MSE by **1.5%** relative to context and environment alone. Per-ball runs are mostly noise, so this is a real signal.
+  - For dismissals the gain is only **0.05%**. Dismissal skill is almost invisible ball by ball. This matches the baseline's near-zero split-half r for wicket components, and it means dismissal and wicket terms must be heavily shrunk.
+- **League pool quality, 2022–26** (runs per 100 balls vs IPL, batters / bowlers): IPL 0/0, ILT20 −4.7/−0.8, MLC −4.7/−4.7, CPL −6.8/−3.8, SA20 −7.2/−3.2, BBL −7.9/−5.5, PSL −8.8/−2.2, LPL −10.2, Blast −13.4, BPL −14.5, A-team −15.2, SMAT −15.4, CSA −17.4, Super Smash −17.4.
+  - T20I came out at −19.1 as a single bucket, which mixes in associate nations. **Fix:** split into T20I-Full (both teams full members) and T20I-Assoc, then refit.
+- **Raw transfer check** (same batters, IPL vs other league, raw runs per 100 balls): this mixes quality with conditions and era. Batters score 10 more per 100 balls in the IPL than in the BBL, but 7 fewer than in the Blast. That is consistent with the environment effects, not a contradiction. It is kept only as a sanity table.
+
+**15 Nov — unified ball table** (`s06_unify.py`)
+- **Contents:** all RR-pack matches, with their rich fields, plus Cricsheet matches not in the RR pack. That gives 1,665,310 balls, 7,288 matches and 6,754 players.
+- **Player key:** the Cricsheet ID, or `rr<id>` for RR players with no Cricsheet match.
+- **RR reconciliation is exact:** off-the-bat runs 269,506 = 269,506, total runs 284,203 = 284,203, wickets 10,868 = 10,868. Two RR rows had extras with no type (1 run each) and are counted as "other extras". "Retired out" counts as a wicket.
+- 16 public innings have 121–122 legal balls. These are real umpire miscounts, mostly in associate T20Is, and are harmless (balls left is clipped at 0).
 
 **15 Nov — identity map done** (`s05_idmap.py` → `v2_results/idmap/`)
 - **Match pairing.** RR matches were paired with Cricsheet matches on date (±1 day) plus both innings totals. 782 of 867 paired. On aligned balls, runs agreed for a median of 100% of balls, and every paired match agreed on at least 90%.
