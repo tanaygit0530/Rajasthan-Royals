@@ -335,10 +335,50 @@ Bowlers
 - Auction status is as of 15 Nov 2026 (trades and retirements from Wikipedia); retention lists were due mid-November and were not yet published. Re-run `s13_final.py` with the published lists before the 16 Dec auction.
 - Qualitative notes come from public reporting and may be incomplete; they are labelled and never change a rank.
 
+# 6. From ranking to selection: what RR should do
+
+A ranking answers "who is best under pressure"; a selector also asks "who does Rajasthan Royals need". We placed every rated player into role slots and compared RR's best player in each slot (2026 roster, all assumed retained) with the league benchmark (median of the ten best eligible players in that slot).
+
+| slot                  |   benchmark_top10_median | rr_best              |   rr_best_score |   gap |
+|:----------------------|-------------------------:|:---------------------|----------------:|------:|
+| Middle-overs spin     |                     12.2 | Ravi Bishnoi         |             5.3 |   6.9 |
+| Middle order (4-5)    |                     11.5 | Shimron Hetmyer      |             4.7 |   6.7 |
+| Left-arm bowler       |                      8.4 | Ravindra Jadeja      |             4.4 |   4   |
+| Wrist spin            |                      7.1 | Ravi Bishnoi         |             5.3 |   1.8 |
+| Death pace            |                      8.1 | Jofra Archer         |             6.8 |   1.3 |
+| No.3                  |                      1.2 | nan                  |           nan   |   1.2 |
+| Powerplay pace        |                      7.9 | Jofra Archer         |             6.8 |   1   |
+| Finisher (6-7)        |                      5.6 | Donovan Ferreira     |             5.3 |   0.2 |
+| Opener                |                     10.8 | Vaibhav Sooryavanshi |            37.6 | -26.8 |
+| Left-handed top-6 bat |                      7.5 | Vaibhav Sooryavanshi |            37.6 | -30.1 |
+
+- **RR's biggest pressure gaps are middle-overs spin and middle order (4-5).** Opening is RR's strength (Sooryavanshi is the top-rated batter in the dataset).
+- **Priority targets** (fill one of the two biggest gaps, P(top 10) of 20% or more, available if released): Sunil Narine (Middle-overs spin), Suryakumar Yadav (Middle order (4-5)), Heinrich Klaasen (Middle order (4-5)), Nicholas Pooran (Middle order (4-5), Left-handed top-6 bat), Noor Ahmad (Middle-overs spin, Wrist spin, Left-arm bowler), Mujeeb Ur Rahman (Middle-overs spin).
+- Shortlists of the best three available players per slot, with a value pick, form trend and price, are in `v2_results/rr_fit/RR_FIT_REPORT.md`; a verdict, main risks and the fallback option for every candidate are in `SELECTOR_VERDICTS.md`. Fitness reports are used only as risk flags.
+
+**Shortlist - Middle-overs spin**
+
+| pick       | name              | nation      |   score |   p_top10 | trend   | status                                 |
+|:-----------|:------------------|:------------|--------:|----------:|:--------|:---------------------------------------|
+| top 3      | Sunil Narine      | West Indies |   21.54 |      0.51 | rising  | Under contract (KKR); only if released |
+| top 3      | Rashid Khan       | Afghanistan |   16.3  |      0.33 | steady  | Under contract (GT); only if released  |
+| top 3      | Wanindu Hasaranga | Sri Lanka   |   13.55 |      0.25 | steady  | Under contract (LSG); only if released |
+| value pick | Akeal Hosein      | West Indies |    7.89 |      0.16 | steady  | Under contract (CSK); only if released |
+
+**Shortlist - Middle order (4-5)**
+
+| pick       | name             | nation       |   score |   p_top10 | trend   | status                                 |
+|:-----------|:-----------------|:-------------|--------:|----------:|:--------|:---------------------------------------|
+| top 3      | Tim David        | Australia    |   24.67 |      0.46 | steady  | Under contract (RCB); only if released |
+| top 3      | Suryakumar Yadav | India        |   19.33 |      0.29 | falling | Under contract (MI); only if released  |
+| top 3      | Heinrich Klaasen | South Africa |   16.63 |      0.27 | falling | Under contract (SRH); only if released |
+| value pick | Tristan Stubbs   | South Africa |    9.52 |      0.17 | steady  | Under contract (DC); only if released  |
+
 # Appendix
 
 - Uncapped & Value Targets, emerging tier, price model: `v2_results/value/VALUE_REPORT.md`.
 - Youth board (age 23 and under), development-model backtest, comparables: `v2_results/youth/YOUTH_REPORT.md`.
+- RR squad fit, role gaps, shortlists, selector verdicts: `v2_results/rr_fit/`.
 - Player profile database and data dictionary: `v2_results/profiles/`.
 - What predicts pressure performance (SHAP), player types, matchups: `v2_results/explain/EXPLAIN_REPORT.md`.
 - Reproduction: `bash v2_code/run_all.sh`; sources and licences: `data_public/SOURCES.md`, `CRICKET_PRIMER.md`.

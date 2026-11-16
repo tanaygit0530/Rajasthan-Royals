@@ -2121,12 +2121,255 @@ before the 16 Dec auction.</li>
 <li>Qualitative notes come from public reporting and may be incomplete;
 they are labelled and never change a rank.</li>
 </ul>
+<h1 id="from-ranking-to-selection-what-rr-should-do">6. From ranking to
+selection: what RR should do</h1>
+<p>A ranking answers “who is best under pressure”; a selector also asks
+“who does Rajasthan Royals need”. We placed every rated player into role
+slots and compared RR’s best player in each slot (2026 roster, all
+assumed retained) with the league benchmark (median of the ten best
+eligible players in that slot).</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 27%" />
+<col style="width: 23%" />
+<col style="width: 17%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">slot</th>
+<th style="text-align: right;">benchmark_top10_median</th>
+<th style="text-align: left;">rr_best</th>
+<th style="text-align: right;">rr_best_score</th>
+<th style="text-align: right;">gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Middle-overs spin</td>
+<td style="text-align: right;">12.2</td>
+<td style="text-align: left;">Ravi Bishnoi</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">6.9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Middle order (4-5)</td>
+<td style="text-align: right;">11.5</td>
+<td style="text-align: left;">Shimron Hetmyer</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">6.7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Left-arm bowler</td>
+<td style="text-align: right;">8.4</td>
+<td style="text-align: left;">Ravindra Jadeja</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wrist spin</td>
+<td style="text-align: right;">7.1</td>
+<td style="text-align: left;">Ravi Bishnoi</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">1.8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Death pace</td>
+<td style="text-align: right;">8.1</td>
+<td style="text-align: left;">Jofra Archer</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">1.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">No.3</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Powerplay pace</td>
+<td style="text-align: right;">7.9</td>
+<td style="text-align: left;">Jofra Archer</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finisher (6-7)</td>
+<td style="text-align: right;">5.6</td>
+<td style="text-align: left;">Donovan Ferreira</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Opener</td>
+<td style="text-align: right;">10.8</td>
+<td style="text-align: left;">Vaibhav Sooryavanshi</td>
+<td style="text-align: right;">37.6</td>
+<td style="text-align: right;">-26.8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Left-handed top-6 bat</td>
+<td style="text-align: right;">7.5</td>
+<td style="text-align: left;">Vaibhav Sooryavanshi</td>
+<td style="text-align: right;">37.6</td>
+<td style="text-align: right;">-30.1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>RR’s biggest pressure gaps are middle-overs spin and middle
+order (4-5).</strong> Opening is RR’s strength (Sooryavanshi is the
+top-rated batter in the dataset).</li>
+<li><strong>Priority targets</strong> (fill one of the two biggest gaps,
+P(top 10) of 20% or more, available if released): Sunil Narine
+(Middle-overs spin), Suryakumar Yadav (Middle order (4-5)), Heinrich
+Klaasen (Middle order (4-5)), Nicholas Pooran (Middle order (4-5),
+Left-handed top-6 bat), Noor Ahmad (Middle-overs spin, Wrist spin,
+Left-arm bowler), Mujeeb Ur Rahman (Middle-overs spin).</li>
+<li>Shortlists of the best three available players per slot, with a
+value pick, form trend and price, are in
+<code>v2_results/rr_fit/RR_FIT_REPORT.md</code>; a verdict, main risks
+and the fallback option for every candidate are in
+<code>SELECTOR_VERDICTS.md</code>. Fitness reports are used only as risk
+flags.</li>
+</ul>
+<p><strong>Shortlist - Middle-overs spin</strong></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">pick</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">nation</th>
+<th style="text-align: right;">score</th>
+<th style="text-align: right;">p_top10</th>
+<th style="text-align: left;">trend</th>
+<th style="text-align: left;">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">top 3</td>
+<td style="text-align: left;">Sunil Narine</td>
+<td style="text-align: left;">West Indies</td>
+<td style="text-align: right;">21.54</td>
+<td style="text-align: right;">0.51</td>
+<td style="text-align: left;">rising</td>
+<td style="text-align: left;">Under contract (KKR); only if
+released</td>
+</tr>
+<tr>
+<td style="text-align: left;">top 3</td>
+<td style="text-align: left;">Rashid Khan</td>
+<td style="text-align: left;">Afghanistan</td>
+<td style="text-align: right;">16.3</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: left;">steady</td>
+<td style="text-align: left;">Under contract (GT); only if released</td>
+</tr>
+<tr>
+<td style="text-align: left;">top 3</td>
+<td style="text-align: left;">Wanindu Hasaranga</td>
+<td style="text-align: left;">Sri Lanka</td>
+<td style="text-align: right;">13.55</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">steady</td>
+<td style="text-align: left;">Under contract (LSG); only if
+released</td>
+</tr>
+<tr>
+<td style="text-align: left;">value pick</td>
+<td style="text-align: left;">Akeal Hosein</td>
+<td style="text-align: left;">West Indies</td>
+<td style="text-align: right;">7.89</td>
+<td style="text-align: right;">0.16</td>
+<td style="text-align: left;">steady</td>
+<td style="text-align: left;">Under contract (CSK); only if
+released</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shortlist - Middle order (4-5)</strong></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 12%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 7%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">pick</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">nation</th>
+<th style="text-align: right;">score</th>
+<th style="text-align: right;">p_top10</th>
+<th style="text-align: left;">trend</th>
+<th style="text-align: left;">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">top 3</td>
+<td style="text-align: left;">Tim David</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">24.67</td>
+<td style="text-align: right;">0.46</td>
+<td style="text-align: left;">steady</td>
+<td style="text-align: left;">Under contract (RCB); only if
+released</td>
+</tr>
+<tr>
+<td style="text-align: left;">top 3</td>
+<td style="text-align: left;">Suryakumar Yadav</td>
+<td style="text-align: left;">India</td>
+<td style="text-align: right;">19.33</td>
+<td style="text-align: right;">0.29</td>
+<td style="text-align: left;">falling</td>
+<td style="text-align: left;">Under contract (MI); only if released</td>
+</tr>
+<tr>
+<td style="text-align: left;">top 3</td>
+<td style="text-align: left;">Heinrich Klaasen</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: right;">16.63</td>
+<td style="text-align: right;">0.27</td>
+<td style="text-align: left;">falling</td>
+<td style="text-align: left;">Under contract (SRH); only if
+released</td>
+</tr>
+<tr>
+<td style="text-align: left;">value pick</td>
+<td style="text-align: left;">Tristan Stubbs</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: right;">9.52</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: left;">steady</td>
+<td style="text-align: left;">Under contract (DC); only if released</td>
+</tr>
+</tbody>
+</table>
 <h1 id="appendix">Appendix</h1>
 <ul>
 <li>Uncapped &amp; Value Targets, emerging tier, price model:
 <code>v2_results/value/VALUE_REPORT.md</code>.</li>
 <li>Youth board (age 23 and under), development-model backtest,
 comparables: <code>v2_results/youth/YOUTH_REPORT.md</code>.</li>
+<li>RR squad fit, role gaps, shortlists, selector verdicts:
+<code>v2_results/rr_fit/</code>.</li>
 <li>Player profile database and data dictionary:
 <code>v2_results/profiles/</code>.</li>
 <li>What predicts pressure performance (SHAP), player types, matchups:

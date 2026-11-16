@@ -202,9 +202,30 @@ L += ['# 5. Reliability and limitations', '',
       '- Auction status is as of 15 Nov 2026 (trades and retirements from Wikipedia); retention lists were due mid-November and '
       'were not yet published. Re-run `s13_final.py` with the published lists before the 16 Dec auction.',
       '- Qualitative notes come from public reporting and may be incomplete; they are labelled and never change a rank.', '']
+# ---- 6. from ranking to selection (RR fit; s23)
+if os.path.exists(R('rr_fit/role_gaps.csv')):
+    G = rd('rr_fit/role_gaps.csv'); VD = rd('rr_fit/selector_verdicts.csv'); SHL = rd('rr_fit/role_shortlists.csv')
+    g2 = list(G.slot.head(2))
+    pt = VD[VD.verdict.eq('Priority target')]
+    L += ['# 6. From ranking to selection: what RR should do', '',
+          'A ranking answers "who is best under pressure"; a selector also asks "who does Rajasthan Royals need". We placed every '
+          'rated player into role slots and compared RR\'s best player in each slot (2026 roster, all assumed retained) with the '
+          'league benchmark (median of the ten best eligible players in that slot).', '',
+          G[['slot', 'benchmark_top10_median', 'rr_best', 'rr_best_score', 'gap']].round(1).to_markdown(index=False), '',
+          f'- **RR\'s biggest pressure gaps are {g2[0].lower()} and {g2[1].lower()}.** Opening is RR\'s strength (Sooryavanshi is the '
+          'top-rated batter in the dataset).',
+          f'- **Priority targets** (fill one of the two biggest gaps, P(top 10) of 20% or more, available if released): '
+          + (', '.join(f'{r.name} ({r.slots})' for r in pt.itertuples()) if len(pt) else 'none meet all three conditions') + '.',
+          '- Shortlists of the best three available players per slot, with a value pick, form trend and price, are in '
+          '`v2_results/rr_fit/RR_FIT_REPORT.md`; a verdict, main risks and the fallback option for every candidate are in '
+          '`SELECTOR_VERDICTS.md`. Fitness reports are used only as risk flags.', '']
+    for sl in g2:
+        t = SHL[SHL.slot == sl][['pick', 'name', 'nation', 'score', 'p_top10', 'trend', 'status']]
+        L += [f'**Shortlist - {sl}**', '', t.round(2).to_markdown(index=False), '']
 L += ['# Appendix', '',
       '- Uncapped & Value Targets, emerging tier, price model: `v2_results/value/VALUE_REPORT.md`.',
       '- Youth board (age 23 and under), development-model backtest, comparables: `v2_results/youth/YOUTH_REPORT.md`.',
+      '- RR squad fit, role gaps, shortlists, selector verdicts: `v2_results/rr_fit/`.',
       '- Player profile database and data dictionary: `v2_results/profiles/`.',
       '- What predicts pressure performance (SHAP), player types, matchups: `v2_results/explain/EXPLAIN_REPORT.md`.',
       '- Reproduction: `bash v2_code/run_all.sh`; sources and licences: `data_public/SOURCES.md`, `CRICKET_PRIMER.md`.']

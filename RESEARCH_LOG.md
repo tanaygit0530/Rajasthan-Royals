@@ -71,6 +71,12 @@ Entries are listed newest first within each stage. Every decision gives the reas
 - **Report limitation added:** early first-innings leverage (1.9x in over 1) explained; ratings unaffected (they use all balls).
 - **Youth lower-resolution reads:** cricket-only public reporting for 20 shortlisted players saved in `cards/scouting_notes.json` (keys `youth:<name>`), cited; never used in projections. Nationality for 9 players with no international/Wikidata record taken from cited reports (`youth/manual_nationality.csv`) — Sameer Minhas (Pakistan) now correctly excluded as IPL-ineligible.
 
+**16 Nov — S7: from ranking to selection (RR fit)**
+- `s23_rr_fit.py`: RR 2026 roster (27, 9 overseas incl. replacements vs a squad limit of 8), role slots, gaps vs league benchmark, best-3 + value pick per slot, form trends (descriptive), selector verdicts.
+- Biggest RR pressure gaps: middle-overs spin (Bishnoi 5.3 vs benchmark 12.2) and middle order 4-5 (Hetmyer 4.7 vs 11.5). Opening is RR's strength (Sooryavanshi).
+- Priority targets: Narine, Noor Ahmad, Mujeeb (spin); Suryakumar, Klaasen, Pooran (middle order). Medical check first: Tim David, Bumrah, Rashid, Salt, Hasaranga, Varun, Pathirana.
+- Predicted prices hidden for retained players never auctioned (model cannot price them). New report section 6.
+
 ### Open items
 - Re-run `s13_final.py` -> `s22_review.py` when 2027 retention lists are published (before 16 Dec).
 - Phase 7 optimiser: waiting for the brief; pools in `v2_results/value/phase7_pool_*.csv`.

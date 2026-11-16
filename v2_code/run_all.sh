@@ -31,6 +31,7 @@ STAGES=(
   s17_value             # prices, value lists, emerging tier, Phase 7 pools
   s20_youth             # youth board, development model backtest, comparables
   s18_cards             # scout cards
+  s23_rr_fit            # RR squad fit, role gaps, shortlists, selector verdicts
   s19_charts            # report charts
   s21_report            # report, executive summary, model comparison, baseline vs v2 (pandoc + Chrome)
   s22_review            # fresh-eyes review (independent recomputation from the raw RR file)
