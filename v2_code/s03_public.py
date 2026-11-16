@@ -39,6 +39,8 @@ def csv_rows(txt):
 matches, balls = [], []
 for zp in sorted(glob.glob(os.path.join(PUB, 'zips', '*_male_csv2.zip'))):
     key = os.path.basename(zp).split('_male')[0]
+    if key not in COMP:      # e.g. odis/tests archives (used only by s16 for capped status) are not T20 data
+        continue
     z = zipfile.ZipFile(zp)
     files = [n for n in z.namelist() if n.endswith('_info.csv')]
     n_kept = 0
