@@ -29,7 +29,7 @@ Pool: age <= 26 on 1 Apr 2027, >= 60 balls since 2024, >= 120 balls since 2022 o
 
 - Season-to-season change by age (linear fit, all leagues, >= 120 balls in both seasons): bat: -2.21 at age 20, -2.03 at age 30 (runs per 100 balls per season); bowl: -3.40 at age 20, -2.44 at age 30 (runs per 100 balls per season). The change is negative at every age: that is regression to the mean among players picked after good seasons, not a development curve, so it is used only for the size of year-to-year noise, not as growth.
 
-- Excluded from the bat board as not eligible for the IPL: Abbas Afridi, Saim Ayub, Khawaja Nafay, Shaheen Afridi, Yasir Khan, Haseebullah Khan, Maaz Sadaqat, Naseem Shah....
+- Excluded from the bat board as not eligible for the IPL: Abbas Afridi, Saim Ayub, Khawaja Nafay, Shaheen Afridi, Yasir Khan, Haseebullah Khan, Sameer Minhas, Maaz Sadaqat....
 ## Youth board: batters aged <= 23 (top 15)
 
 Skill and projections in runs per 100 balls vs average (competition / venue / opponent adjusted). Reference: established players (>= 1000 balls) median 30.0, 75th percentile 37.1.
@@ -42,15 +42,15 @@ Skill and projections in runs per 100 balls vs average (competition / venue / op
 |            4 | Brian Bennett        |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Strong watch | 1597 |    43.7 |     43.7 |        23.3 |        64.2 |                           |
 |            5 | Hassan Eisakhil      |    20 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  151 |    35.9 |     35.9 |        12.1 |        59.7 | small sample (<500 balls) |
 |            6 | Cooper Connolly      |    23 | capped                      | Under contract (PBKS); only if released | Strong watch |  997 |    35.3 |     35.3 |        14.6 |        56.1 |                           |
-|            7 | Sameer Minhas        |    20 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  223 |    34.2 |     34.2 |        11.3 |        57.2 | small sample (<500 balls) |
-|            8 | Jacob Bethell        |    23 | capped                      | Under contract (RCB); only if released  | Strong watch | 1204 |    31.7 |     31.7 |        11.1 |        52.3 |                           |
-|            9 | JM Coles             |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  801 |    30.4 |     30.4 |         9.4 |        51.4 |                           |
-|           10 | Nitish Reddy         |    23 | capped                      | Under contract (SRH); only if released  | Strong watch |  766 |    30.3 |     30.3 |         9.2 |        51.3 |                           |
-|           11 | Sameer Rizvi         |    23 | uncapped (no international) | Under contract (DC); only if released   | Track        |  449 |    29.9 |     29.9 |         8.2 |        51.6 | small sample (<500 balls) |
-|           12 | Joel Davies          |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  135 |    29.5 |     29.5 |         5.5 |        53.5 | small sample (<500 balls) |
-|           13 | Angkrish Raghuvanshi |    22 | uncapped (no international) | Under contract (KKR); only if released  | Track        |  677 |    28   |     28   |         6.8 |        49.1 |                           |
-|           14 | JT Todd              |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Track        |  244 |    27.6 |     27.6 |         4.8 |        50.3 | small sample (<500 balls) |
-|           15 | JEK Rew              |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  525 |    26.1 |     26.1 |         4.7 |        47.6 |                           |
+|            7 | Jacob Bethell        |    23 | capped                      | Under contract (RCB); only if released  | Strong watch | 1204 |    31.7 |     31.7 |        11.1 |        52.3 |                           |
+|            8 | JM Coles             |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  801 |    30.4 |     30.4 |         9.4 |        51.4 |                           |
+|            9 | Nitish Reddy         |    23 | capped                      | Under contract (SRH); only if released  | Strong watch |  766 |    30.3 |     30.3 |         9.2 |        51.3 |                           |
+|           10 | Sameer Rizvi         |    23 | uncapped (no international) | Under contract (DC); only if released   | Track        |  449 |    29.9 |     29.9 |         8.2 |        51.6 | small sample (<500 balls) |
+|           11 | Joel Davies          |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  135 |    29.5 |     29.5 |         5.5 |        53.5 | small sample (<500 balls) |
+|           12 | Angkrish Raghuvanshi |    22 | uncapped (no international) | Under contract (KKR); only if released  | Track        |  677 |    28   |     28   |         6.8 |        49.1 |                           |
+|           13 | JT Todd              |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Track        |  244 |    27.6 |     27.6 |         4.8 |        50.3 | small sample (<500 balls) |
+|           14 | JEK Rew              |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  525 |    26.1 |     26.1 |         4.7 |        47.6 |                           |
+|           15 | W Luxton             |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Track        |  432 |    21.9 |     21.9 |         0.1 |        43.6 | small sample (<500 balls) |
 
 - Excluded from the bowl board as not eligible for the IPL: Faisal Akram, Jahandad Khan, Zaman Khan, Abbas Afridi, Saim Ayub, Mehran Mumtaz, Hunain Shah, Shaheen Afridi....
 ## Youth board: bowlers aged <= 23 (top 15)

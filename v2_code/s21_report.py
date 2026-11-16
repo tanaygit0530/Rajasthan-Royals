@@ -19,6 +19,7 @@ WP = rd('models/wp_comparison.csv'); XO = rd('models/xoutcome_comparison.csv', i
 PD_ = rd('pressure/pressure_definitions.csv'); PCH = json.load(open(R('pressure/chosen_pressure.json')))
 SK = {r: rd(f'models/skill_backtest_{r}_by_fold.csv') for r in ['bat', 'bowl']}
 AB = rd('models/ablation_by_fold.csv'); FAIR = rd('models/fairness.csv'); SENS = rd('models/sensitivity.csv')
+CAL = json.load(open(R('models/interval_calibration.json')))
 COV = rd('models/interval_coverage.csv'); CLU = {r: rd(f'models/clutch_{r}.csv') for r in ['bat', 'bowl']}
 SURV = {r: rd(f'models/skill_survivorship_{r}.csv') for r in ['bat', 'bowl']}
 LS = rd('comp_strength/league_strength_2022_26_with_se.csv')
@@ -62,6 +63,9 @@ fb = ab_b.loc['full'];
 wp1 = WP[(WP.innings == 1)].set_index('model'); wp2 = WP[(WP.innings == 2)].set_index('model')
 d1 = PD_.set_index('definition').loc[PCH['chosen']]
 covm = COV.groupby('role').coverage_80.mean()
+clear = {r: int((T.head(15).p_top10 >= 0.5).sum()) for r, T in [('bat', BAT), ('bowl', BOWL)]}
+clear_txt = (f'only {clear["bat"]} batter(s) and {clear["bowl"]} bowler(s) have a better-than-even chance of a top-10 place once '
+             'uncertainty is calibrated; the rest of each top 10 is a near-tie, so price, role, fitness and team fit should decide between them')
 ovl = {k: len(set(BASE[k].Player) & set(FR[FR.list == f'{k}_open'].name)) for k in BASE}
 
 # ======================= REPORT =======================
@@ -176,18 +180,25 @@ L += ['# 5. Reliability and limitations', '',
       'Bowlers', '', ab_w.to_markdown(), '',
       '- Final configuration: no age curve (it never helped), no pressure-specific term (it hurt), public-league prior for bowlers only, '
       'and no prior that reuses the RR-pack balls of the likelihood (that would count the same balls twice and make intervals falsely narrow).',
-      f'- **Intervals.** 80% posterior predictive intervals covered {covm.get("bat", np.nan):.0%} (batters) and {covm.get("bowl", np.nan):.0%} '
-      '(bowlers) of next-season outcomes in the backtest - slightly narrow, so treat the ends of the intervals as a little optimistic.', '',
+      f'- **Intervals are calibrated out of time.** The model\'s raw 80% intervals covered only {CAL["bat"]["coverage_before"]:.0%} (batters) and '
+      f'{CAL["bowl"]["coverage_before"]:.0%} (bowlers) of next-season outcomes in the backtest. We widened them by the smallest factor that '
+      f'restores 80% coverage ({CAL["bat"]["widen"]:.2f}x batters, {CAL["bowl"]["widen"]:.2f}x bowlers; coverage after: '
+      f'{CAL["bat"]["coverage_after"]:.0%} / {CAL["bowl"]["coverage_after"]:.0%}). All intervals and P(top 10) values in this report use the widened version.', '',
       '**Sensitivity** (top 10 kept out of 10 under each variant):', '', sens_tab.to_markdown(index=False), '',
       '**Survivorship.** Poor performers are dropped more often, so next-season targets exist mainly for survivors. Re-scoring with '
       'inverse-probability-of-retention weights and with all-competition next-season targets left the model ordering unchanged '
       '(`v2_results/models/skill_survivorship_*.csv`).', '',
       '**Limitations.**', '',
-      '- Pressure outcomes in one season are mostly noise; scores separate the top three or four in each list clearly, ranks 5-15 much less so.',
+      f'- Pressure outcomes in one season are mostly noise: {clear_txt}.',
       '- Fielding is not measured (no fielder names in the RR pack or Cricsheet csv2). Pitch, weather and field placements are unknown.',
       '- Batting hand, bowling type and speed exist only for RR-pack balls; matchup splits are shown only where the effect type is '
       f'repeatable (batter spin-vs-pace r = {MREL.set_index("effect").reliability.iloc[0]:.2f}; other matchup types are noise).',
       '- Day/night is inferred from IPL double-headers; no dew effect was detectable.',
+      '- Leverage in the first overs of a first innings is above average (about 1.9x in over 1, falling to 1.2x by over 6) because the '
+      'win-probability model treats an early wicket as a large cut to the projected total. Chases look as expected (rising to 3.5x in the '
+      'last over). We shrank the early run rate toward par to remove a first-ball artefact; the remaining effect is partly real and partly '
+      'model shape. It changes which balls count as pressure, not the ratings themselves (ratings use all balls), and the top 10 '
+      'is stable across the alternative pressure definitions in the sensitivity table.',
       '- Auction status is as of 15 Nov 2026 (trades and retirements from Wikipedia); retention lists were due mid-November and '
       'were not yet published. Re-run `s13_final.py` with the published lists before the 16 Dec auction.',
       '- Qualitative notes come from public reporting and may be incomplete; they are labelled and never change a rank.', '']
@@ -206,7 +217,9 @@ M = ['# Model comparison (all out of time)', '', '## Win probability', '', WP.ro
      '## Expected outcomes', '', XO.round(5).to_markdown(), '', '## Pressure definitions', '', PD_.round(3).to_markdown(index=False), '',
      '## Player skill: next-season pressure run value', '', '### Batters', '', sb.round(3).to_markdown(), '', '### Bowlers', '',
      sw.round(3).to_markdown(), '', '## Ablation', '', '### Batters', '', ab_b.to_markdown(), '', '### Bowlers', '', ab_w.to_markdown(), '',
-     '## Interval coverage (80% predictive intervals)', '', COV.round(3).to_markdown(index=False), '',
+     '## Interval coverage (80% predictive intervals)', '', 'Before calibration (s13b, public-only prior variant):', '', COV.round(3).to_markdown(index=False), '',
+     'Calibration of the final configuration (s13c): widening factor per role and coverage before / after:', '',
+     pd.DataFrame(CAL).T.round(3).to_markdown(), '',
      '## Profile-feature LightGBM vs the Bayesian model', '', rd('explain/profile_model_vs_bayes.csv').groupby(['role', 'model'])[['wcorr', 'spearman']].mean().round(3).to_markdown(), '',
      '## Decisions', '', '- WP: logistic (simplest and best). Expected outcomes: sklearn HGB. Pressure: learned leverage.',
      '- Skill: hierarchical Bayes, overall skill only; bowlers with a public-league prior, batters without a prior; no age curve. '
@@ -251,7 +264,7 @@ ES = ['# SupeRR Selector S2 - executive summary (v2)', '',
       'pressure performance is overall skill measured fairly.',
       f'- The v1 ranking formula did not predict next-season pressure performance (correlation {m2b:+.2f} / {m2w:+.2f}); v2 does, '
       f'about {sb.loc["M4_eb_overall", "wcorr"]:.2f} / {sw.loc["M6_apm", "wcorr"]:.2f}, roughly half to all of what the noise allows.',
-      '- The top three or four in each list are clear; ranks 5-15 are near-ties, so price, role and fitness should decide between them.', '',
+      f'- The order is a best estimate, not a certainty: {clear_txt}.', '',
       '**Risks.** Fitness reports in 2026 for several names (see scout cards); retention lists not yet published; fielding unmeasured.']
 open(R('EXECUTIVE_SUMMARY.md'), 'w').write('\n'.join(ES))
 

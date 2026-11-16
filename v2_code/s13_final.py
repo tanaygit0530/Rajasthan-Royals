@@ -89,10 +89,19 @@ def fit_role(role, pdef=None, min_p=MIN_P, last=LAST, draws=DRAWS, use_age=None,
     return F, th, de, summ, el, thr
 
 
+CAL_PATH = res('models/interval_calibration.json')
+
+
+def widen(role):
+    """out-of-time interval calibration factor from s13c (1.0 if not yet computed)"""
+    return json.load(open(CAL_PATH))[role]['widen'] if os.path.exists(CAL_PATH) else 1.0
+
+
 def table(role, F, th, de, summ, el):
     d0 = summ['d0'][0]
     idx = np.where(el.values)[0]
-    S = (th[:, idx] + d0) * 100
+    te = th[:, idx]; mu = te.mean(0)
+    S = (mu + widen(role) * (te - mu) + d0) * 100      # calibrated: widened so 80% intervals cover 80% out of time
     T = F[el].copy()
     T['score'] = S.mean(0); T['score_lo'] = np.percentile(S, 10, 0); T['score_hi'] = np.percentile(S, 90, 0)
     R = (-S).argsort(1).argsort(1) + 1

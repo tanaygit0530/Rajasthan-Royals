@@ -17,6 +17,6 @@
 
 - "Clutch" does not repeat: players who over-perform under pressure in one season tend to fall back. The best guide to pressure performance is overall skill measured fairly.
 - The v1 ranking formula did not predict next-season pressure performance (correlation -0.02 / -0.12); v2 does, about 0.19 / 0.24, roughly half to all of what the noise allows.
-- The top three or four in each list are clear; ranks 5-15 are near-ties, so price, role and fitness should decide between them.
+- The order is a best estimate, not a certainty: only 1 batter(s) and 2 bowler(s) have a better-than-even chance of a top-10 place once uncertainty is calibrated; the rest of each top 10 is a near-tie, so price, role, fitness and team fit should decide between them.
 
 **Risks.** Fitness reports in 2026 for several names (see scout cards); retention lists not yet published; fielding unmeasured.

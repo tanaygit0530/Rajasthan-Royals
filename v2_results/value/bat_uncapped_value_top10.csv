@@ -1,11 +1,11 @@
 uid,value_rank,name,nation,cap_status,tier,status,score,score_lo,score_hi,p_n,age,pred_price_cr,value_per_cr
-b5797845,1,Priyansh Arya,India,uncapped (no international),established (150+ pressure balls),Under contract (PBKS); only if released,10.99,-0.46,21.99,284,,2.37,5.86
-26989d80,2,Shashank Singh,India,uncapped (no international),emerging (40-149 pressure balls),Under contract (PBKS); only if released,9.81,-0.77,19.81,98,35.36,1.01,12.55
-85b3fab2,3,Tristan Stubbs,South Africa,capped,established (150+ pressure balls),Under contract (DC); only if released,9.52,2.12,17.05,264,26.63,2.2,5.64
-b2b4f545,4,Ayush Mhatre,India,uncapped (no international),emerging (40-149 pressure balls),Under contract (CSK); only if released,8.28,-5.67,22.09,141,19.71,1.95,5.72
-0a509d6b,5,Rinku Singh,India,capped,established (150+ pressure balls),Under contract (KKR); only if released,8.11,0.44,16.18,192,29.47,2.65,4.15
-1fc6ef83,6,Shai Hope,West Indies,capped,established (150+ pressure balls),Open market (not on a 2026 IPL roster),7.69,-0.72,15.81,330,33.39,2.32,4.56
-7fa12533,7,Mark Chapman,New Zealand,capped,emerging (40-149 pressure balls),Open market (not on a 2026 IPL roster),6.23,-2.32,15.13,129,32.76,2.64,3.45
-84d9c311,8,Ashutosh Sharma,India,uncapped (no international),emerging (40-149 pressure balls),Under contract (DC); only if released,5.81,-6.21,17.89,120,28.54,1.92,4.54
-26d041c4,9,Sikandar Raza,Zimbabwe,capped,established (150+ pressure balls),Open market (not on a 2026 IPL roster),5.67,-2.82,14.17,189,40.94,2.38,3.59
-99cddc5e,10,George Dockrell,Ireland,capped,emerging (40-149 pressure balls),Open market (not on a 2026 IPL roster),5.23,-5.1,15.96,73,34.69,2.62,3.1
+b5797845,1,Priyansh Arya,India,uncapped (no international),established (150+ pressure balls),Under contract (PBKS); only if released,10.99,-20.49,41.24,284,,2.37,5.86
+26989d80,2,Shashank Singh,India,uncapped (no international),emerging (40-149 pressure balls),Under contract (PBKS); only if released,9.81,-19.28,37.31,98,35.36,1.01,12.55
+85b3fab2,3,Tristan Stubbs,South Africa,capped,established (150+ pressure balls),Under contract (DC); only if released,9.52,-10.84,30.23,264,26.63,2.2,5.64
+b2b4f545,4,Ayush Mhatre,India,uncapped (no international),emerging (40-149 pressure balls),Under contract (CSK); only if released,8.28,-30.06,46.27,141,19.71,1.95,5.72
+0a509d6b,5,Rinku Singh,India,capped,established (150+ pressure balls),Under contract (KKR); only if released,8.11,-12.98,30.3,192,29.47,2.65,4.15
+1fc6ef83,6,Shai Hope,West Indies,capped,established (150+ pressure balls),Open market (not on a 2026 IPL roster),7.69,-15.43,30.04,330,33.39,2.32,4.56
+7fa12533,7,Mark Chapman,New Zealand,capped,emerging (40-149 pressure balls),Open market (not on a 2026 IPL roster),6.23,-17.27,30.71,129,32.76,2.64,3.45
+84d9c311,8,Ashutosh Sharma,India,uncapped (no international),emerging (40-149 pressure balls),Under contract (DC); only if released,5.81,-27.24,39.03,120,28.54,1.92,4.54
+26d041c4,9,Sikandar Raza,Zimbabwe,capped,established (150+ pressure balls),Open market (not on a 2026 IPL roster),5.67,-17.67,29.05,189,40.94,2.38,3.59
+99cddc5e,10,George Dockrell,Ireland,capped,emerging (40-149 pressure balls),Open market (not on a 2026 IPL roster),5.23,-23.18,34.74,73,34.69,2.62,3.1

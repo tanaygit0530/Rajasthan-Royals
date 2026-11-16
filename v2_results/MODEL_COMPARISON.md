@@ -96,6 +96,8 @@
 
 ## Interval coverage (80% predictive intervals)
 
+Before calibration (s13b, public-only prior variant):
+
 | role   |   cutoff |   coverage_80 |   n |
 |:-------|---------:|--------------:|----:|
 | bat    |     2022 |         0.597 |  67 |
@@ -106,6 +108,13 @@
 | bowl   |     2023 |         0.717 | 106 |
 | bowl   |     2024 |         0.748 | 111 |
 | bowl   |     2025 |         0.711 |  83 |
+
+Calibration of the final configuration (s13c): widening factor per role and coverage before / after:
+
+|      |   widen |   coverage_before |   coverage_after |
+|:-----|--------:|------------------:|-----------------:|
+| bat  |    2.75 |             0.7   |            0.812 |
+| bowl |    3    |             0.731 |            0.8   |
 
 ## Profile-feature LightGBM vs the Bayesian model
 

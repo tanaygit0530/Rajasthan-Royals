@@ -24,6 +24,7 @@ STAGES=(
   s12_backtest          # player-skill backtest M0-M8 + clutch test
   s14_profiles          # player profile database (needs s11)
   s16_capped            # capped / uncapped status (nationality for s13)
+  s13c_calibrate        # out-of-time interval calibration (widening factor used by s13)
   s13_final             # final ratings, intervals, sensitivity (~40 min)
   s13b_ablation         # out-of-time ablation, fairness, interval coverage (~30 min)
   s15_explain           # SHAP, clusters, matchups (needs s12, s14)

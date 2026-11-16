@@ -17,7 +17,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- 175 off 80 balls in the U19 World Cup final v England (Feb 2026), a final record; 30 sixes in the tournament (an edition record), 439 runs. Youngest men's List A centurion and fastest List A 150 (59 balls) in the 2025-26 Vijay Hazare Trophy. Source: [ICC; The Week](https://www.icc-cricket.com/tournaments/u19-cricket-worldcup-2026/news/indian-batter-sets-new-u19-world-cup-final-record-with-blistering-century).
 
 ---
 
@@ -34,7 +34,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- Youngest to pass 150 in men's List A (181 off 117 v Nagaland, Vijay Hazare 2024-25); two first-class hundreds in his debut Ranji season; 49-ball SMAT hundred (Nov 2025). Quiet U19 Asia Cup (Dec 2025). Mumbai's chief selector reported an injury in Aug 2026. Source: [Wisden; India TV; The Week; CricTracker](https://www.wisden.com/cricket-news/who-is-ayush-mhatre-the-17-year-old-mumbai-batter-who-broke-yashasvi-jaiswals-world-record).
 
 ---
 
@@ -51,7 +51,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- 370 runs and a century leading Pretoria Capitals to the SA20 final (2026); missed the start of IPL 2026 with an injury picked up in practice. Source: [Cape Argus; NewsBytes](https://capeargus.co.za/sport/cricket/2026-03-30-dewald-brevis-injured-will-miss-csks-ipl-season-opener).
 
 ---
 
@@ -68,13 +68,13 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- 292 runs at the 2026 T20 World Cup, a Zimbabwe record for one edition, including 97* off 59 v India and 64* in the win over Australia. Source: [ICC; NewsBytes; Al Jazeera](https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/news/zimbabwe-take-lessons-for-the-future-from-t20-world-cup).
 
 ---
 
 ### 5. Hassan Eisakhil - Strong watch
 
-*Age 20 on 1 Apr 2027 · unknown (inferred / unknown) · uncapped (no international) · 2027 status: Open market (not on a 2026 IPL roster)*
+*Age 20 on 1 Apr 2027 · Afghanistan (Wikidata) · uncapped (no international) · 2027 status: Open market (not on a 2026 IPL roster)*
 
 **Data**
 
@@ -85,7 +85,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- Afghan opening batter; maiden national call-up for the 2026 Asian Games; 92 on BPL debut (Jan 2026); maiden List A hundred reported. Source: [Wisden; ICC](https://wisden.com/cricket-news/afghanistan-legend-mohammad-nabi-son-hassan-eisakhil-wins-maiden-international-call-up-for-2026-asian-games).
 
 ---
 
@@ -121,7 +121,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- Afghan off-spinner; about 15 wickets in 11 IPL 2026 matches for MI; six powerplay wickets, a record for an MI spinner in one season. Source: [CricTracker; SportsYaari](https://www.crictracker.com/cricket-news/ipl-2026-video-of-the-day-am-ghazanfar-strikes-twice-in-two-to-rock-sunrisers-hyderabad/).
 
 ---
 
@@ -138,7 +138,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- Bihar quick; 4/24 on IPL debut for SRH v RR (Apr 2026). Pace claims vary by outlet (some report 150 km/h; unverified). Source: [ESPNcricinfo; Outlook India](https://www.espn.in/cricket/story/_/id/48615109/the-sharpening-sakib-hussain).
 
 ---
 
@@ -155,7 +155,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- Australian left-arm spinner (Sydney Sixers); T20I debut v Bangladesh in 2026 with 3/17. Source: [CricTracker; cricket.com.au](https://www.crictracker.com/cricket-news/ban-vs-aus-2026-a-childhood-dream-joel-davies-mark-australia-debut-with-match-winning-spell/).
 
 ---
 
@@ -172,6 +172,6 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 **Lower-resolution reports (labelled; not used in projections)**
 
-- None collected.
+- 72* on IPL debut for PBKS (player of the match, Mar 2026); one report of an IPL hundred v SRH (single source, unverified); modest T20 World Cup (3 and 11). Source: [cricket.com.au; IANS](https://www.cricket.com.au/news/4479543).
 
 ---

@@ -54,11 +54,14 @@ def moments(pid, role, k=3):
     return out
 
 
+WIDTH_MED = {r: (lambda T: (T.score_hi - T.score_lo).head(30).median())(pd.read_csv(res(f'rankings/{r}_full_rankings.csv'))) for r in ['bat', 'bowl']}
+
+
 def card(uid, r, role, header_rank):
     nm = r['name']
     st = []
     if r['p_n'] < 200: st.append(f'small pressure sample ({int(r.p_n)} balls)')
-    if r['score_hi'] - r['score_lo'] > 15: st.append('wide interval')
+    if (r['score_hi'] - r['score_lo']) > 1.25 * WIDTH_MED[role]: st.append('interval much wider than typical (thin or inconsistent evidence)')
     if pd.notna(r['age']) and r['age'] >= 34: st.append(f'age {r.age:.0f} in 2027')
     if r.get('near_tie_with_next', False): st.append('statistical near-tie with the next-ranked player')
     if str(r['status']).startswith('Not eligible'): st.append(r['status'])

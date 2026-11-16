@@ -1,0 +1,12 @@
+{
+ "bat": {
+  "widen": 2.75,
+  "coverage_before": 0.7,
+  "coverage_after": 0.8125
+ },
+ "bowl": {
+  "widen": 3.0,
+  "coverage_before": 0.7305555555555555,
+  "coverage_after": 0.8
+ }
+}

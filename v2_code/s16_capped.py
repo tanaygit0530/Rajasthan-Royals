@@ -81,6 +81,13 @@ C['wd_country'] = [wd.get(str(int(k))) if pd.notna(k) else None for k in kc]
 B_ = pd.read_parquet(w('unified/balls.parquet'), columns=['batter', 'bowler', 'comp'])
 indian_dom = set(B_[B_.comp.isin(['IPL', 'SMAT'])].batter) | set(B_[B_.comp.isin(['IPL', 'SMAT'])].bowler)
 C['nationality'] = C.intl_team.str.replace(' A$', '', regex=True).fillna(C.wd_country.replace({'India national cricket team': 'India'}))
+# manual, cited nationality for shortlisted players with no international or Wikidata record (youth reads, 16 Nov 2026)
+MAN = res('youth/manual_nationality.csv')
+if os.path.exists(MAN):
+    mn = pd.read_csv(MAN).set_index('name').nationality
+    nm_clean = C.name.str.replace(r' \(\d+\)$', '', regex=True)
+    fill = nm_clean.map(mn)
+    C['nationality'] = C.nationality.fillna(fill)
 C['nationality'] = C.nationality.fillna(pd.Series(np.where(C.index.isin(indian_dom), 'India', 'unknown'), index=C.index))
 os.makedirs(w('value'), exist_ok=True); os.makedirs(res('value'), exist_ok=True)
 C.index.name = 'uid'

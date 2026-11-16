@@ -1,46 +1,280 @@
 {
-  "_about": "QUALITATIVE scouting notes (not used for ranking). Gathered by web search on 2026-11-15 from public reporting; each note cites its source. Used only to explain results, flag risks or break labelled near-ties (hard rule 3). Reports conflict in places; conflicts are stated. Unverified claims are marked.",
-  "_general": [
-    {"note": "IPL 2027 auction on 16 December 2026 in Goa. Retention lists were due mid-November 2026: reports differ on 15 vs 17 November. No 2027 retention list was published at the time of writing, so every 'under contract' player is only available if released.", "source": "Wikipedia, List of 2027 IPL personnel changes (rev 1385657353); CricTracker; NewsBytes", "url": "https://en.wikipedia.org/wiki/List_of_2027_Indian_Premier_League_personnel_changes"},
-    {"note": "Trades confirmed before the deadline: Pant (LSG->DC), Kuldeep Yadav (DC->LSG), T Natarajan (DC->SRH), Zeeshan Ansari (SRH->DC), Livingstone and Jack Edwards (SRH->CSK), Khaleel Ahmed and Nathan Ellis (CSK->SRH), Hardik Pandya (MI->PBKS), Arshdeep Singh (PBKS->MI), Harshal Patel (SRH->GT, 15 Nov). Ajinkya Rahane retired on 30 July 2026.", "source": "Wikipedia, List of 2027 IPL personnel changes", "url": "https://en.wikipedia.org/wiki/List_of_2027_Indian_Premier_League_personnel_changes"}
-  ],
-  "Jasprit Bumrah": [
-    {"type": "fitness", "note": "Left-knee impact injury while fielding (July 2026 ODI v England); ruled out of the Sri Lanka Tests. Rested from the NZ T20Is/ODIs in Oct-Nov 2026 and lined up for the NZ Tests from 19 Nov. Long-standing workload management. No IPL-specific concern reported.", "source": "Qatar Tribune; Tribune (PK); Possible11 (Oct 2026)", "url": "https://www.qatar-tribune.com/article/247088/sports/bumrah-ruled-out-of-test-series-in-sri-lanka-due-to-knee-injury"}
-  ],
-  "Sunil Narine": [
-    {"type": "status", "note": "Aged 38 by IPL 2027. Retained by KKR for 2026 (Rs 12 cr) when Russell was released; named among possible KKR captains after Rahane's retirement. No 2027 retention confirmation found.", "source": "WION; Outlook India", "url": "https://www.wionews.com/sports/who-will-captain-kkr-ipl-2027-rinku-singh-sunil-narine-ajinkya-rahane-retirement-1785425805522"}
-  ],
-  "Rashid Khan": [
-    {"type": "fitness", "note": "Lower-back problems since 2023 and surgery after the 2023 World Cup; says he rushed back too early. Doctor advised limiting Test cricket (April 2026). White-ball workload continued: 15 wickets in 11 IPL 2026 matches reported.", "source": "CricTracker; The Statesman; NewKerala (Nov 2026)", "url": "https://www.crictracker.com/cricket-news/doctor-told-me-stay-away-from-red-ball-cricket-rashid-khan-opens-up-on-injury-troubles-after-dc-vs-gt-match"}
-  ],
-  "Varun Chakravarthy": [
-    {"type": "fitness", "note": "Several 2026 setbacks: hand injury (April), left-foot injury in IPL 2026 (seen with crutch and brace in May; missed matches), then reported finger fractures and a side strain in India T20Is. Reports conflict on dates. Durability is the main risk.", "source": "Sunday Guardian; CricTracker; Outlook India", "url": "https://www.crictracker.com/cricket-news/varun-chakravarthy-ruled-out-of-ireland-series-due-to-injury-7510/"}
-  ],
-  "Wanindu Hasaranga": [
-    {"type": "fitness", "note": "Left hamstring injury at the T20 World Cup (Feb 2026); ruled out of the whole of IPL 2026 and replaced by George Linde (10 April 2026). His IPL 2026 data is therefore missing, not poor.", "source": "Outlook India; Geo Super", "url": "https://www.outlookindia.com/sports/cricket/wanindu-hasaranga-replacement-indian-premier-league-2026-george-linde-lucknow-super-giants"}
-  ],
-  "Matheesha Pathirana": [
-    {"type": "fitness", "note": "Calf injury at the T20 World Cup (Feb 2026), then a hamstring injury after 8 balls in his only IPL 2026 match for KKR; hamstring surgery in France on 16 June 2026. Return date not found. High injury risk.", "source": "ICC; Outlook India; manager's statement reported in Sri Lankan media", "url": "https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/news/injury-rules-key-sri-lanka-speedster-out-of-t20-world-cup"}
-  ],
-  "Mujeeb Ur Rahman": [
-    {"type": "status", "note": "Not on a 2026 IPL roster (open market). Left SA20 2026 early; reason not reported, so injury not confirmed.", "source": "Sports Digest", "url": "https://sportsdigest.in/naveen-ul-haq-ruled-out-of-t20-world-cup/176543/amp/"}
-  ],
-  "Tim David": [
-    {"type": "fitness", "note": "Grade-two right hamstring strain in the BBL (Dec 2025), returned for the T20 World Cup; an earlier hamstring injury cost him nearly two months of IPL 2025. Recurring hamstring issue.", "source": "The Nightly; Cricket.com", "url": "https://thenightly.com.au/sport/cricket/big-bash-league-hobart-hurricanes-star-tim-david-ruled-out-for-remainder-of-season-but-on-track-for-world-cup-c-21149883"}
-  ],
-  "Phil Salt": [
-    {"type": "fitness", "note": "Left-finger injury 18 April 2026, about a month out; reported fit again before the IPL 2026 final.", "source": "Outlook India; CricTracker", "url": "https://www.outlookindia.com/sports/cricket/phil-salt-returns-england-finger-injury-ipl-2026-royal-challengers-bengaluru"}
-  ],
-  "Heinrich Klaasen": [
-    {"type": "status", "note": "Retired from international cricket (June 2025) and ruled out a comeback (2026), but continues in franchise cricket; 624 runs at SR 160 reported for IPL 2026. Age 35 in 2027.", "source": "Wisden; Pretoria News; Asianet Newsable", "url": "https://pretorianews.co.za/sport/cricket/2026-05-04-heinrich-klaasen-rules-out-any-thoughts-of-return-to-proteas-after-ipl-heroics/"}
-  ],
-  "Nicholas Pooran": [
-    {"type": "form", "note": "Retired from international cricket in June 2025; IPL 2026 described as a poor season by his own account (LSG eliminated first). Model already reflects his 2026 balls.", "source": "Wisden; NewKerala", "url": "https://wisden.com/cricket-news/explained-why-nicholas-pooran-retired-from-international-cricket-aged-29"}
-  ],
-  "Suryakumar Yadav": [
-    {"type": "form", "note": "Long T20I slump in 2025, rebound in Jan 2026 (82 off 37 v NZ); sports-hernia surgery in 2025; wrist-injury rumours (May 2026) denied. Poor IPL 2026 form reported. One unconfirmed report says India won the 2026 T20 World Cup under his captaincy.", "source": "Khaleej Times; Cricket Addictor; Asianet", "url": "https://www.khaleejtimes.com/sports/cricket/struggling-suryakumar-will-not-change-style-to-find-form-before-t20-world-cup"}
-  ],
-  "Finn Allen": [
-    {"type": "form", "note": "Dropped by KKR for form in April 2026 (no injury), then 93 off 35 v GT on 17 May. Very high strike rate, volatile output.", "source": "Outlook India; ESPNcricinfo", "url": "https://africa.espn.com/cricket/story/_/id/48793477/ipl-2026-kkr-vs-gt-finn-allen-says-being-dropped-initial-failures-helped-get-better"}
-  ]
+ "_about": "QUALITATIVE scouting notes (not used for ranking). Gathered by web search on 2026-11-15 from public reporting; each note cites its source. Used only to explain results, flag risks or break labelled near-ties (hard rule 3). Reports conflict in places; conflicts are stated. Unverified claims are marked.",
+ "_general": [
+  {
+   "note": "IPL 2027 auction on 16 December 2026 in Goa. Retention lists were due mid-November 2026: reports differ on 15 vs 17 November. No 2027 retention list was published at the time of writing, so every 'under contract' player is only available if released.",
+   "source": "Wikipedia, List of 2027 IPL personnel changes (rev 1385657353); CricTracker; NewsBytes",
+   "url": "https://en.wikipedia.org/wiki/List_of_2027_Indian_Premier_League_personnel_changes"
+  },
+  {
+   "note": "Trades confirmed before the deadline: Pant (LSG->DC), Kuldeep Yadav (DC->LSG), T Natarajan (DC->SRH), Zeeshan Ansari (SRH->DC), Livingstone and Jack Edwards (SRH->CSK), Khaleel Ahmed and Nathan Ellis (CSK->SRH), Hardik Pandya (MI->PBKS), Arshdeep Singh (PBKS->MI), Harshal Patel (SRH->GT, 15 Nov). Ajinkya Rahane retired on 30 July 2026.",
+   "source": "Wikipedia, List of 2027 IPL personnel changes",
+   "url": "https://en.wikipedia.org/wiki/List_of_2027_Indian_Premier_League_personnel_changes"
+  }
+ ],
+ "Jasprit Bumrah": [
+  {
+   "type": "fitness",
+   "note": "Left-knee impact injury while fielding (July 2026 ODI v England); ruled out of the Sri Lanka Tests. Rested from the NZ T20Is/ODIs in Oct-Nov 2026 and lined up for the NZ Tests from 19 Nov. Long-standing workload management. No IPL-specific concern reported.",
+   "source": "Qatar Tribune; Tribune (PK); Possible11 (Oct 2026)",
+   "url": "https://www.qatar-tribune.com/article/247088/sports/bumrah-ruled-out-of-test-series-in-sri-lanka-due-to-knee-injury"
+  }
+ ],
+ "Sunil Narine": [
+  {
+   "type": "status",
+   "note": "Aged 38 by IPL 2027. Retained by KKR for 2026 (Rs 12 cr) when Russell was released; named among possible KKR captains after Rahane's retirement. No 2027 retention confirmation found.",
+   "source": "WION; Outlook India",
+   "url": "https://www.wionews.com/sports/who-will-captain-kkr-ipl-2027-rinku-singh-sunil-narine-ajinkya-rahane-retirement-1785425805522"
+  }
+ ],
+ "Rashid Khan": [
+  {
+   "type": "fitness",
+   "note": "Lower-back problems since 2023 and surgery after the 2023 World Cup; says he rushed back too early. Doctor advised limiting Test cricket (April 2026). White-ball workload continued: 15 wickets in 11 IPL 2026 matches reported.",
+   "source": "CricTracker; The Statesman; NewKerala (Nov 2026)",
+   "url": "https://www.crictracker.com/cricket-news/doctor-told-me-stay-away-from-red-ball-cricket-rashid-khan-opens-up-on-injury-troubles-after-dc-vs-gt-match"
+  }
+ ],
+ "Varun Chakravarthy": [
+  {
+   "type": "fitness",
+   "note": "Several 2026 setbacks: hand injury (April), left-foot injury in IPL 2026 (seen with crutch and brace in May; missed matches), then reported finger fractures and a side strain in India T20Is. Reports conflict on dates. Durability is the main risk.",
+   "source": "Sunday Guardian; CricTracker; Outlook India",
+   "url": "https://www.crictracker.com/cricket-news/varun-chakravarthy-ruled-out-of-ireland-series-due-to-injury-7510/"
+  }
+ ],
+ "Wanindu Hasaranga": [
+  {
+   "type": "fitness",
+   "note": "Left hamstring injury at the T20 World Cup (Feb 2026); ruled out of the whole of IPL 2026 and replaced by George Linde (10 April 2026). His IPL 2026 data is therefore missing, not poor.",
+   "source": "Outlook India; Geo Super",
+   "url": "https://www.outlookindia.com/sports/cricket/wanindu-hasaranga-replacement-indian-premier-league-2026-george-linde-lucknow-super-giants"
+  }
+ ],
+ "Matheesha Pathirana": [
+  {
+   "type": "fitness",
+   "note": "Calf injury at the T20 World Cup (Feb 2026), then a hamstring injury after 8 balls in his only IPL 2026 match for KKR; hamstring surgery in France on 16 June 2026. Return date not found. High injury risk.",
+   "source": "ICC; Outlook India; manager's statement reported in Sri Lankan media",
+   "url": "https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/news/injury-rules-key-sri-lanka-speedster-out-of-t20-world-cup"
+  }
+ ],
+ "Mujeeb Ur Rahman": [
+  {
+   "type": "status",
+   "note": "Not on a 2026 IPL roster (open market). Left SA20 2026 early; reason not reported, so injury not confirmed.",
+   "source": "Sports Digest",
+   "url": "https://sportsdigest.in/naveen-ul-haq-ruled-out-of-t20-world-cup/176543/amp/"
+  }
+ ],
+ "Tim David": [
+  {
+   "type": "fitness",
+   "note": "Grade-two right hamstring strain in the BBL (Dec 2025), returned for the T20 World Cup; an earlier hamstring injury cost him nearly two months of IPL 2025. Recurring hamstring issue.",
+   "source": "The Nightly; Cricket.com",
+   "url": "https://thenightly.com.au/sport/cricket/big-bash-league-hobart-hurricanes-star-tim-david-ruled-out-for-remainder-of-season-but-on-track-for-world-cup-c-21149883"
+  }
+ ],
+ "Phil Salt": [
+  {
+   "type": "fitness",
+   "note": "Left-finger injury 18 April 2026, about a month out; reported fit again before the IPL 2026 final.",
+   "source": "Outlook India; CricTracker",
+   "url": "https://www.outlookindia.com/sports/cricket/phil-salt-returns-england-finger-injury-ipl-2026-royal-challengers-bengaluru"
+  }
+ ],
+ "Heinrich Klaasen": [
+  {
+   "type": "status",
+   "note": "Retired from international cricket (June 2025) and ruled out a comeback (2026), but continues in franchise cricket; 624 runs at SR 160 reported for IPL 2026. Age 35 in 2027.",
+   "source": "Wisden; Pretoria News; Asianet Newsable",
+   "url": "https://pretorianews.co.za/sport/cricket/2026-05-04-heinrich-klaasen-rules-out-any-thoughts-of-return-to-proteas-after-ipl-heroics/"
+  }
+ ],
+ "Nicholas Pooran": [
+  {
+   "type": "form",
+   "note": "Retired from international cricket in June 2025; IPL 2026 described as a poor season by his own account (LSG eliminated first). Model already reflects his 2026 balls.",
+   "source": "Wisden; NewKerala",
+   "url": "https://wisden.com/cricket-news/explained-why-nicholas-pooran-retired-from-international-cricket-aged-29"
+  }
+ ],
+ "Suryakumar Yadav": [
+  {
+   "type": "form",
+   "note": "Long T20I slump in 2025, rebound in Jan 2026 (82 off 37 v NZ); sports-hernia surgery in 2025; wrist-injury rumours (May 2026) denied. Poor IPL 2026 form reported. One unconfirmed report says India won the 2026 T20 World Cup under his captaincy.",
+   "source": "Khaleej Times; Cricket Addictor; Asianet",
+   "url": "https://www.khaleejtimes.com/sports/cricket/struggling-suryakumar-will-not-change-style-to-find-form-before-t20-world-cup"
+  }
+ ],
+ "Finn Allen": [
+  {
+   "type": "form",
+   "note": "Dropped by KKR for form in April 2026 (no injury), then 93 off 35 v GT on 17 May. Very high strike rate, volatile output.",
+   "source": "Outlook India; ESPNcricinfo",
+   "url": "https://africa.espn.com/cricket/story/_/id/48793477/ipl-2026-kkr-vs-gt-finn-allen-says-being-dropped-initial-failures-helped-get-better"
+  }
+ ],
+ "youth:Vaibhav Sooryavanshi": [
+  {
+   "type": "lower-resolution",
+   "note": "175 off 80 balls in the U19 World Cup final v England (Feb 2026), a final record; 30 sixes in the tournament (an edition record), 439 runs. Youngest men's List A centurion and fastest List A 150 (59 balls) in the 2025-26 Vijay Hazare Trophy.",
+   "source": "ICC; The Week",
+   "url": "https://www.icc-cricket.com/tournaments/u19-cricket-worldcup-2026/news/indian-batter-sets-new-u19-world-cup-final-record-with-blistering-century"
+  }
+ ],
+ "youth:Ayush Mhatre": [
+  {
+   "type": "lower-resolution",
+   "note": "Youngest to pass 150 in men's List A (181 off 117 v Nagaland, Vijay Hazare 2024-25); two first-class hundreds in his debut Ranji season; 49-ball SMAT hundred (Nov 2025). Quiet U19 Asia Cup (Dec 2025). Mumbai's chief selector reported an injury in Aug 2026.",
+   "source": "Wisden; India TV; The Week; CricTracker",
+   "url": "https://www.wisden.com/cricket-news/who-is-ayush-mhatre-the-17-year-old-mumbai-batter-who-broke-yashasvi-jaiswals-world-record"
+  }
+ ],
+ "youth:Sameer Minhas": [
+  {
+   "type": "lower-resolution",
+   "note": "Pakistan U19 opener: 172 off 113 in the U19 Asia Cup final v India (Dec 2025), player of the tournament; U19 World Cup 2026 squad. NOT IPL-eligible (Pakistan).",
+   "source": "ICC; PCB; Wisden",
+   "url": "https://www.icc-cricket.com/news/sameer-minhas-seeking-u19-world-cup-glory-for-pakistan"
+  }
+ ],
+ "youth:Hassan Eisakhil": [
+  {
+   "type": "lower-resolution",
+   "note": "Afghan opening batter; maiden national call-up for the 2026 Asian Games; 92 on BPL debut (Jan 2026); maiden List A hundred reported.",
+   "source": "Wisden; ICC",
+   "url": "https://wisden.com/cricket-news/afghanistan-legend-mohammad-nabi-son-hassan-eisakhil-wins-maiden-international-call-up-for-2026-asian-games"
+  }
+ ],
+ "youth:Angkrish Raghuvanshi": [
+  {
+   "type": "lower-resolution",
+   "note": "IPL 2026 cut short by concussion and a finger fracture (surgery); earlier head/neck blow in the Vijay Hazare Trophy (Dec 2025). Fit again for the 2026-27 domestic season; 270 runs at 45 in Vijay Hazare 2025-26.",
+   "source": "CricTracker; NewsBytes",
+   "url": "https://www.crictracker.com/cricket-news/angkrish-raghuvanshi-named-in-mumbai-squad-after-recovering-from-finger-injury/"
+  }
+ ],
+ "youth:Sakib Hussain": [
+  {
+   "type": "lower-resolution",
+   "note": "Bihar quick; 4/24 on IPL debut for SRH v RR (Apr 2026). Pace claims vary by outlet (some report 150 km/h; unverified).",
+   "source": "ESPNcricinfo; Outlook India",
+   "url": "https://www.espn.in/cricket/story/_/id/48615109/the-sharpening-sakib-hussain"
+  }
+ ],
+ "youth:Brian Bennett": [
+  {
+   "type": "lower-resolution",
+   "note": "292 runs at the 2026 T20 World Cup, a Zimbabwe record for one edition, including 97* off 59 v India and 64* in the win over Australia.",
+   "source": "ICC; NewsBytes; Al Jazeera",
+   "url": "https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/news/zimbabwe-take-lessons-for-the-future-from-t20-world-cup"
+  }
+ ],
+ "youth:JT Todd": [
+  {
+   "type": "lower-resolution",
+   "note": "Probably Jamal Todd (New Zealand, Otago, born 2004) - identity match by name and team is an inference; verify.",
+   "source": "ESPNcricinfo profile",
+   "url": "https://www.espncricinfo.com/cricketers/jamal-todd-1353031"
+  }
+ ],
+ "youth:Joel Davies": [
+  {
+   "type": "lower-resolution",
+   "note": "Australian left-arm spinner (Sydney Sixers); T20I debut v Bangladesh in 2026 with 3/17.",
+   "source": "CricTracker; cricket.com.au",
+   "url": "https://www.crictracker.com/cricket-news/ban-vs-aus-2026-a-childhood-dream-joel-davies-mark-australia-debut-with-match-winning-spell/"
+  }
+ ],
+ "youth:F Singh": [
+  {
+   "type": "lower-resolution",
+   "note": "Fateh Singh, England-qualified left-arm spinner, Worcestershire since late 2024.",
+   "source": "Wikipedia; Trent Bridge",
+   "url": "https://en.wikipedia.org/wiki/Fateh_Singh_(cricketer)"
+  }
+ ],
+ "youth:JM Coles": [
+  {
+   "type": "lower-resolution",
+   "note": "James Coles (Sussex): first England T20I call-up for the India series (July 2026); 224* career-best in June 2026; most expensive buy of the 2026 Hundred; top-order bat who also bowls.",
+   "source": "Express & Star; Brighton & Hove News; TNT Sports",
+   "url": "https://www.brightonandhovenews.org/2026/06/22/england-call-up-for-coles-for-t20-series-against-india/"
+  }
+ ],
+ "youth:SM Meherob": [
+  {
+   "type": "lower-resolution",
+   "note": "Bangladesh off-spinning all-rounder (Rajshahi; Bangladesh A in Nov 2025); ex-U19 (2022 World Cup squad).",
+   "source": "Wikipedia; ESPNcricinfo",
+   "url": "https://en.wikipedia.org/wiki/SM_Meherob"
+  }
+ ],
+ "youth:M Tharupathi": [
+  {
+   "type": "lower-resolution",
+   "note": "Probably Malsha Tharupathi, Sri Lankan leg-spinner (Moors SC; ex-Sri Lanka U19) named among LPL 2026 emerging players - identity is an inference.",
+   "source": "The Papare; ESPNcricinfo",
+   "url": "https://www.thepapare.com/?p=2621184"
+  }
+ ],
+ "youth:Dewald Brevis": [
+  {
+   "type": "lower-resolution",
+   "note": "370 runs and a century leading Pretoria Capitals to the SA20 final (2026); missed the start of IPL 2026 with an injury picked up in practice.",
+   "source": "Cape Argus; NewsBytes",
+   "url": "https://capeargus.co.za/sport/cricket/2026-03-30-dewald-brevis-injured-will-miss-csks-ipl-season-opener"
+  }
+ ],
+ "youth:Jacob Bethell": [
+  {
+   "type": "lower-resolution",
+   "note": "105 off 48 in the 2026 T20 World Cup semi-final v India; struggled for runs and game time at RCB in IPL 2026 (96 runs in 7 matches reported).",
+   "source": "Free Press Journal; Outlook India",
+   "url": "https://www.outlookindia.com/sports/cricket/srh-vs-rcb-ipl-2026-is-jacob-bethell-playing-today"
+  }
+ ],
+ "youth:Kwena Maphaka": [
+  {
+   "type": "lower-resolution",
+   "note": "South Africa left-arm quick; 2026 T20 World Cup squad (described as an X-factor by the coach); career-best T20I four-wicket haul v Australia reported.",
+   "source": "Cape Argus; Daily News (SA)",
+   "url": "https://capeargus.co.za/sport/cricket/2026-01-05-kwena-maphaka-has-that-x-factor-for-the-t20-world-cup-says-shukri-conrad"
+  }
+ ],
+ "youth:Mahli Beardman": [
+  {
+   "type": "lower-resolution",
+   "note": "13 wickets in BBL 2025-26 for champions Perth Scorchers; T20I debut v Pakistan (Jan 2026, 2/33); then a recurrence of a lumbar stress fracture and ~7 months out. Injury risk.",
+   "source": "ESPNcricinfo; cricket.com.au",
+   "url": "https://www.espncricinfo.com/story/bbl-2025-26-mahli-beardman-topples-steven-smith-in-pinnacle-moment-1520292"
+  }
+ ],
+ "youth:Allah Ghazanfar": [
+  {
+   "type": "lower-resolution",
+   "note": "Afghan off-spinner; about 15 wickets in 11 IPL 2026 matches for MI; six powerplay wickets, a record for an MI spinner in one season.",
+   "source": "CricTracker; SportsYaari",
+   "url": "https://www.crictracker.com/cricket-news/ipl-2026-video-of-the-day-am-ghazanfar-strikes-twice-in-two-to-rock-sunrisers-hyderabad/"
+  }
+ ],
+ "youth:Farhan Ahmed": [
+  {
+   "type": "lower-resolution",
+   "note": "England off-spinner (Nottinghamshire, born 2008): 7/140 on Championship debut; T20 hat-trick and five-for v Lancashire (2025); England U19 captain and 2026 U19 World Cup runner-up.",
+   "source": "Wikipedia; ECB",
+   "url": "https://en.wikipedia.org/wiki/Farhan_Ahmed_(English_cricketer)"
+  }
+ ],
+ "youth:Cooper Connolly": [
+  {
+   "type": "lower-resolution",
+   "note": "72* on IPL debut for PBKS (player of the match, Mar 2026); one report of an IPL hundred v SRH (single source, unverified); modest T20 World Cup (3 and 11).",
+   "source": "cricket.com.au; IANS",
+   "url": "https://www.cricket.com.au/news/4479543"
+  }
+ ],
+ "_about_youth": "Youth notes (key youth:<name>): lower-resolution public reporting gathered 2026-11-16 for the shortlisted players; cricket information only (no family, personal or social-media details); never used in projections."
 }

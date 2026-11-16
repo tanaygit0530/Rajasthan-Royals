@@ -66,9 +66,13 @@ Entries are listed newest first within each stage. Every decision gives the reas
 - **Status data.** Wikipedia 2027 page: retention deadline 15 Nov (some reports 17 Nov), auction 16 Dec in Goa, Harshal Patel SRH->GT (15 Nov), Rahane retired. Nationality now from international records, else Wikidata (verify flagged cases).
 - **Fresh-eyes review: PASS** (no duplicates; all top-30 ids ball-aligned; raw recomputed pressure balls match 60/60).
 
+**16 Nov — the three optional items**
+- **Interval calibration (s13c).** Refit the final configuration on each fold; raw 80% intervals covered 70% (bat) / 73% (bowl). Widening by 2.75x / 3.0x restores 81% / 80%. Applied to all intervals and P(top 10). Consequence: only 1 batter (Sooryavanshi) and 2 bowlers (Bumrah, Narine) have P(top 10) > 50%; the rest of each top 10 is a near-tie. Report wording now computed from the data.
+- **Report limitation added:** early first-innings leverage (1.9x in over 1) explained; ratings unaffected (they use all balls).
+- **Youth lower-resolution reads:** cricket-only public reporting for 20 shortlisted players saved in `cards/scouting_notes.json` (keys `youth:<name>`), cited; never used in projections. Nationality for 9 players with no international/Wikidata record taken from cited reports (`youth/manual_nationality.csv`) — Sameer Minhas (Pakistan) now correctly excluded as IPL-ineligible.
+
 ### Open items
 - Re-run `s13_final.py` -> `s22_review.py` when 2027 retention lists are published (before 16 Dec).
-- Youth lower-resolution manual reads (U19, state leagues) not yet collected; youth cards say "None collected".
 - Phase 7 optimiser: waiting for the brief; pools in `v2_results/value/phase7_pool_*.csv`.
 
 ## S2 — Data audit and public data
