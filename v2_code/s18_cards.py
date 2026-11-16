@@ -106,63 +106,70 @@ def card(uid, r, role, header_rank):
     return '\n'.join(L + ['', '---', ''])
 
 
-for role, nice in [('bat', 'batters'), ('bowl', 'bowlers')]:
-    T = pd.read_csv(res(f'rankings/{role}_full_rankings.csv'), index_col='uid')
-    out = [f'# Scout cards: top {N_TOP} {nice} (open ranking)', '',
-           'Score = predicted run value per 100 pressure balls next season (hierarchical Bayes, S4D). '
-           'Data panels come from model outputs; scouting panels are labelled qualitative notes (2026-11-15).', '']
-    for uid, r in T.head(N_TOP).iterrows():
-        out.append(card(uid, r, role, int(r['rank'])))
-    open(res(f'cards/SCOUT_CARDS_{nice}.md'), 'w').write('\n'.join(out))
-vo = ['# Scout cards: Uncapped & Value Targets (top 5 per list)', '']
-for role, nice in [('bat', 'batters'), ('bowl', 'bowlers')]:
-    p = res(f'value/{role}_uncapped_value_top10.csv')
-    if not os.path.exists(p):
-        continue
-    T = pd.read_csv(res(f'value/{role}_pool_all.csv'), index_col='uid')
-    top = pd.read_csv(p, index_col='uid').head(5)
-    vo += [f'## {nice.title()}', '']
-    for i, (uid, _) in enumerate(top.iterrows(), 1):
-        r = T.loc[uid]
-        vo.append(card(uid, r, role, i).replace('**Data (model', f'*Tier: {r.tier} · predicted 2027 price Rs {r.pred_price_cr:.1f} cr '
-                                                f'(last auction: {f(r.last_price_cr, 2)} cr) · value per crore {r.value_per_cr:.1f}*\n\n**Data (model'))
-open(res('cards/VALUE_CARDS.md'), 'w').write('\n'.join(vo))
-print('cards written')
 
-# ---------------- youth cards (S5C): top 5 batters + top 5 bowlers aged <= 23 ----------------
-# Minors policy: cricket data and age only; no personal details. Lower-resolution notes (public match reporting) are
-# labelled and never enter the projections.
-CP = pd.read_csv(res('youth/comparables.csv')) if os.path.exists(res('youth/comparables.csv')) else pd.DataFrame()
-UB = pd.read_parquet(w('unified/balls.parquet'), columns=['batter', 'bowler', 'comp2', 'season', 'legal'])
-UB = UB[UB.legal & (UB.season >= 2022)]
-yo = ['# Youth scout cards (age 23 and under on 1 April 2027)', '',
-      'Data: competition-, venue- and opponent-adjusted run value per 100 balls (all leagues 2019-26), projections from the '
-      'backtested development model (`youth/YOUTH_REPORT.md`). Nationality comes from international records, else Wikidata - '
-      'verify before bidding where it is shown as from Wikidata or unknown. Minors policy: cricket information and age only.', '']
-for role, nice, col in [('bat', 'Batters', 'batter'), ('bowl', 'Bowlers', 'bowler')]:
-    p = res(f'youth/{role}_board_u23.csv')
-    if not os.path.exists(p):
-        continue
-    Y = pd.read_csv(p, index_col='uid').head(5)
-    yo += [f'## {nice}', '']
-    for uid, r in Y.iterrows():
-        comp = UB[UB[col] == uid].comp2.value_counts(normalize=True).head(4)
-        cps = CP[(CP.uid == uid) & (CP.role == role)] if len(CP) else pd.DataFrame()
-        nat = CAP.nationality.get(uid, 'unknown') if 'nationality' in CAP else '-'
-        src = 'international record' if pd.notna(CAP.intl_team.get(uid)) else ('Wikidata' if nat not in ('unknown', 'India') else 'inferred / unknown')
-        yo += [f'### {int(r.board_rank)}. {r["name"]} - {r.label}', '',
-               f'*Age {int(r.age)} on 1 Apr 2027 · {nat} ({src}) · {r.cap_status} · 2027 status: {r.status_2027}*', '',
-               '**Data**', '',
-               f'- Adjusted skill: **{r.skill:.1f}** runs per 100 balls vs average (SE {r.se:.1f}; {int(r.n)} balls). '
-               f'{r.sample_flag if isinstance(r.sample_flag, str) and r.sample_flag else "Sample adequate."}',
-               f'- Projection, next season: {r.proj_1:.1f} (80% interval {r.proj_1_lo:.1f} to {r.proj_1_hi:.1f}); in 2 seasons {r.proj_2:.1f}; '
-               f'in 3 seasons {r.proj_3:.1f}.',
-               '- Balls since 2022 by competition: ' + ', '.join(f'{k} {v:.0%}' for k, v in comp.items()) + '.',
-               '- Historical comparables (same age, similar adjusted skill in 2019-21 -> skill 2024-26): ' +
-               ('; '.join(f'{c.comparable} ({c.comp_skill_at_same_age:.0f} -> {fmt_or_dash(c.comp_later_skill)})' for c in cps.itertuples()) if len(cps) else 'none found') + '.',
-               '', '**Lower-resolution reports (labelled; not used in projections)**', '']
-        notes = NOTES.get(f'youth:{r["name"]}', [])
-        yo += [f'- {n["note"]} Source: [{n["source"]}]({n["url"]}).' for n in notes] or ['- None collected.']
-        yo += ['', '---', '']
-open(res('cards/YOUTH_CARDS.md'), 'w').write('\n'.join(yo))
-print('youth cards written')
+def main():
+    for role, nice in [('bat', 'batters'), ('bowl', 'bowlers')]:
+        T = pd.read_csv(res(f'rankings/{role}_full_rankings.csv'), index_col='uid')
+        out = [f'# Scout cards: top {N_TOP} {nice} (open ranking)', '',
+               'Score = predicted run value per 100 pressure balls next season (hierarchical Bayes, S4D). '
+               'Data panels come from model outputs; scouting panels are labelled qualitative notes (2026-11-15).', '']
+        for uid, r in T.head(N_TOP).iterrows():
+            out.append(card(uid, r, role, int(r['rank'])))
+        open(res(f'cards/SCOUT_CARDS_{nice}.md'), 'w').write('\n'.join(out))
+    vo = ['# Scout cards: Uncapped & Value Targets (top 5 per list)', '']
+    for role, nice in [('bat', 'batters'), ('bowl', 'bowlers')]:
+        p = res(f'value/{role}_uncapped_value_top10.csv')
+        if not os.path.exists(p):
+            continue
+        T = pd.read_csv(res(f'value/{role}_pool_all.csv'), index_col='uid')
+        top = pd.read_csv(p, index_col='uid').head(5)
+        vo += [f'## {nice.title()}', '']
+        for i, (uid, _) in enumerate(top.iterrows(), 1):
+            r = T.loc[uid]
+            vo.append(card(uid, r, role, i).replace('**Data (model', f'*Tier: {r.tier} · predicted 2027 price Rs {r.pred_price_cr:.1f} cr '
+                                                    f'(last auction: {f(r.last_price_cr, 2)} cr) · value per crore {r.value_per_cr:.1f}*\n\n**Data (model'))
+    open(res('cards/VALUE_CARDS.md'), 'w').write('\n'.join(vo))
+    print('cards written')
+
+    # ---------------- youth cards (S5C): top 5 batters + top 5 bowlers aged <= 23 ----------------
+    # Minors policy: cricket data and age only; no personal details. Lower-resolution notes (public match reporting) are
+    # labelled and never enter the projections.
+    CP = pd.read_csv(res('youth/comparables.csv')) if os.path.exists(res('youth/comparables.csv')) else pd.DataFrame()
+    UB = pd.read_parquet(w('unified/balls.parquet'), columns=['batter', 'bowler', 'comp2', 'season', 'legal'])
+    UB = UB[UB.legal & (UB.season >= 2022)]
+    yo = ['# Youth scout cards (age 23 and under on 1 April 2027)', '',
+          'Data: competition-, venue- and opponent-adjusted run value per 100 balls (all leagues 2019-26), projections from the '
+          'backtested development model (`youth/YOUTH_REPORT.md`). Nationality comes from international records, else Wikidata - '
+          'verify before bidding where it is shown as from Wikidata or unknown. Minors policy: cricket information and age only.', '']
+    for role, nice, col in [('bat', 'Batters', 'batter'), ('bowl', 'Bowlers', 'bowler')]:
+        p = res(f'youth/{role}_board_u23.csv')
+        if not os.path.exists(p):
+            continue
+        Y = pd.read_csv(p, index_col='uid').head(5)
+        yo += [f'## {nice}', '']
+        for uid, r in Y.iterrows():
+            comp = UB[UB[col] == uid].comp2.value_counts(normalize=True).head(4)
+            cps = CP[(CP.uid == uid) & (CP.role == role)] if len(CP) else pd.DataFrame()
+            nat = CAP.nationality.get(uid, 'unknown') if 'nationality' in CAP else '-'
+            src = 'international record' if pd.notna(CAP.intl_team.get(uid)) else ('Wikidata' if nat not in ('unknown', 'India') else 'inferred / unknown')
+            yo += [f'### {int(r.board_rank)}. {r["name"]} - {r.label}', '',
+                   f'*Age {int(r.age)} on 1 Apr 2027 · {nat} ({src}) · {r.cap_status} · 2027 status: {r.status_2027}*', '',
+                   '**Data**', '',
+                   f'- Adjusted skill: **{r.skill:.1f}** runs per 100 balls vs average (SE {r.se:.1f}; {int(r.n)} balls). '
+                   f'{r.sample_flag if isinstance(r.sample_flag, str) and r.sample_flag else "Sample adequate."}',
+                   f'- Projection, next season: {r.proj_1:.1f} (80% interval {r.proj_1_lo:.1f} to {r.proj_1_hi:.1f}); in 2 seasons {r.proj_2:.1f}; '
+                   f'in 3 seasons {r.proj_3:.1f}.',
+                   '- Balls since 2022 by competition: ' + ', '.join(f'{k} {v:.0%}' for k, v in comp.items()) + '.',
+                   '- Historical comparables (same age, similar adjusted skill in 2019-21 -> skill 2024-26): ' +
+                   ('; '.join(f'{c.comparable} ({c.comp_skill_at_same_age:.0f} -> {fmt_or_dash(c.comp_later_skill)})' for c in cps.itertuples()) if len(cps) else 'none found') + '.',
+                   '', '**Lower-resolution reports (labelled; not used in projections)**', '']
+            notes = NOTES.get(f'youth:{r["name"]}', [])
+            yo += [f'- {n["note"]} Source: [{n["source"]}]({n["url"]}).' for n in notes] or ['- None collected.']
+            yo += ['', '---', '']
+    open(res('cards/YOUTH_CARDS.md'), 'w').write('\n'.join(yo))
+    print('youth cards written')
+
+
+
+if __name__ == '__main__':
+    main()

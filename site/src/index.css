@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pink: 214 51 132; --royal: 37 74 165;
+  --page: 247 247 245; --surface: 255 255 255; --line: 228 227 222;
+  --ink: 17 17 17; --ink2: 82 81 78;
+  --good: 12 128 52; --risk: 196 48 48; --warn: 176 110 0;
+  --bat: 37 74 165; --bowl: 196 41 117;
+  color-scheme: light;
+}
+.dark {
+  --pink: 240 120 178; --royal: 120 156 240;
+  --page: 14 15 18; --surface: 24 25 29; --line: 52 53 60;
+  --ink: 238 238 235; --ink2: 175 174 168;
+  --good: 74 196 110; --risk: 240 110 110; --warn: 232 170 60;
+  --bat: 120 156 240; --bowl: 240 120 178;
+  color-scheme: dark;
+}
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-page text-ink font-sans antialiased; }
+:focus-visible { outline: 3px solid rgb(var(--royal)); outline-offset: 2px; border-radius: 6px; }
+.card { @apply bg-surface border border-line rounded-2xl; }
+.chip { @apply inline-flex items-center gap-1 rounded-full border border-line px-2 py-0.5 text-xs text-ink2 whitespace-nowrap; }
+.btn { @apply inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition; }
+.btn-primary { @apply btn bg-royal text-white hover:opacity-90; }
+.dark .btn-primary { @apply text-[#0e0f12]; }
+.btn-ghost { @apply btn border border-line bg-surface hover:bg-page; }
+.tbl th { @apply text-left text-xs font-semibold uppercase tracking-wide text-ink2 px-3 py-2 whitespace-nowrap; }
+.tbl td { @apply px-3 py-2 border-t border-line align-middle; }
+.num { font-variant-numeric: tabular-nums; }
+.skip { @apply sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 bg-surface px-3 py-2 rounded; }

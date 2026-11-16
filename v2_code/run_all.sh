@@ -35,6 +35,7 @@ STAGES=(
   s19_charts            # report charts
   s21_report            # report, executive summary, model comparison, baseline vs v2 (pandoc + Chrome)
   s22_review            # fresh-eyes review (independent recomputation from the raw RR file)
+  s25_site_export       # aggregated JSON for the evaluator site (site/private_data, git-ignored)
 )
 # usage: run_all.sh            -> all stages
 #        run_all.sh s07        -> stages starting with s07

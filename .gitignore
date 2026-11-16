@@ -8,3 +8,9 @@ v2_work/
 .DS_Store
 __pycache__/
 .env_superr/
+site/private_data/
+site/node_modules/
+site/dist/
+site/public/enc/
+site/screens/
+site/.env.local
