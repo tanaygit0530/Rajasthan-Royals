@@ -34,56 +34,56 @@ Pool: age <= 26 on 1 Apr 2027, >= 60 balls since 2024, >= 120 balls since 2022 o
 
 Skill and projections in runs per 100 balls vs average (competition / venue / opponent adjusted). Reference: established players (>= 1000 balls) median 30.0, 75th percentile 37.1.
 
-|   board_rank | name                 |   age | cap_status                  | status_2027                             | label        |    n |   skill |   proj_1 |   proj_1_lo |   proj_1_hi | sample_flag               |
-|-------------:|:---------------------|------:|:----------------------------|:----------------------------------------|:-------------|-----:|--------:|---------:|------------:|------------:|:--------------------------|
-|            1 | Vaibhav Sooryavanshi |    16 | capped                      | Already RR                              | Buy now      |  703 |   106.3 |    106.3 |        85.2 |       127.4 |                           |
-|            2 | Ayush Mhatre         |    19 | uncapped (no international) | Under contract (CSK); only if released  | Buy now      |  239 |    61.2 |     61.2 |        38.4 |        84   | small sample (<500 balls) |
-|            3 | Dewald Brevis        |    23 | capped                      | Under contract (CSK); only if released  | Strong watch | 2367 |    48.5 |     48.5 |        28.3 |        68.7 |                           |
-|            4 | Brian Bennett        |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Strong watch | 1597 |    43.7 |     43.7 |        23.3 |        64.2 |                           |
-|            5 | Hassan Eisakhil      |    20 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  151 |    35.9 |     35.9 |        12.1 |        59.7 | small sample (<500 balls) |
-|            6 | Cooper Connolly      |    23 | capped                      | Under contract (PBKS); only if released | Strong watch |  997 |    35.3 |     35.3 |        14.6 |        56.1 |                           |
-|            7 | Jacob Bethell        |    23 | capped                      | Under contract (RCB); only if released  | Strong watch | 1204 |    31.7 |     31.7 |        11.1 |        52.3 |                           |
-|            8 | JM Coles             |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  801 |    30.4 |     30.4 |         9.4 |        51.4 |                           |
-|            9 | Nitish Reddy         |    23 | capped                      | Under contract (SRH); only if released  | Strong watch |  766 |    30.3 |     30.3 |         9.2 |        51.3 |                           |
-|           10 | Sameer Rizvi         |    23 | uncapped (no international) | Under contract (DC); only if released   | Track        |  449 |    29.9 |     29.9 |         8.2 |        51.6 | small sample (<500 balls) |
-|           11 | Joel Davies          |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  135 |    29.5 |     29.5 |         5.5 |        53.5 | small sample (<500 balls) |
-|           12 | Angkrish Raghuvanshi |    22 | uncapped (no international) | Under contract (KKR); only if released  | Track        |  677 |    28   |     28   |         6.8 |        49.1 |                           |
-|           13 | JT Todd              |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Track        |  244 |    27.6 |     27.6 |         4.8 |        50.3 | small sample (<500 balls) |
-|           14 | JEK Rew              |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  525 |    26.1 |     26.1 |         4.7 |        47.6 |                           |
-|           15 | W Luxton             |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Track        |  432 |    21.9 |     21.9 |         0.1 |        43.6 | small sample (<500 balls) |
+|   board_rank | name                 |   age | cap_status                  | status_2027                            | label        |    n |   skill |   proj_1 |   proj_1_lo |   proj_1_hi | sample_flag               |
+|-------------:|:---------------------|------:|:----------------------------|:---------------------------------------|:-------------|-----:|--------:|---------:|------------:|------------:|:--------------------------|
+|            1 | Vaibhav Sooryavanshi |    16 | capped                      | Already RR (retained)                  | Buy now      |  703 |   106.3 |    106.3 |        85.2 |       127.4 |                           |
+|            2 | Ayush Mhatre         |    19 | uncapped (no international) | Retained by CSK (not in auction)       | Buy now      |  239 |    61.2 |     61.2 |        38.4 |        84   | small sample (<500 balls) |
+|            3 | Dewald Brevis        |    23 | capped                      | Retained by CSK (not in auction)       | Strong watch | 2367 |    48.5 |     48.5 |        28.3 |        68.7 |                           |
+|            4 | Brian Bennett        |    23 | capped                      | Open market (not on a 2026 IPL roster) | Strong watch | 1597 |    43.7 |     43.7 |        23.3 |        64.2 |                           |
+|            5 | Hassan Eisakhil      |    20 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Strong watch |  151 |    35.9 |     35.9 |        12.1 |        59.7 | small sample (<500 balls) |
+|            6 | Cooper Connolly      |    23 | capped                      | Retained by PBKS (not in auction)      | Strong watch |  997 |    35.3 |     35.3 |        14.6 |        56.1 |                           |
+|            7 | Jacob Bethell        |    23 | capped                      | In auction pool (released by RCB)      | Strong watch | 1204 |    31.7 |     31.7 |        11.1 |        52.3 |                           |
+|            8 | JM Coles             |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Strong watch |  801 |    30.4 |     30.4 |         9.4 |        51.4 |                           |
+|            9 | Nitish Reddy         |    23 | capped                      | Retained by SRH (not in auction)       | Strong watch |  766 |    30.3 |     30.3 |         9.2 |        51.3 |                           |
+|           10 | Sameer Rizvi         |    23 | uncapped (no international) | Retained by DC (not in auction)        | Track        |  449 |    29.9 |     29.9 |         8.2 |        51.6 | small sample (<500 balls) |
+|           11 | Joel Davies          |    23 | capped                      | Open market (not on a 2026 IPL roster) | Track        |  135 |    29.5 |     29.5 |         5.5 |        53.5 | small sample (<500 balls) |
+|           12 | Angkrish Raghuvanshi |    22 | uncapped (no international) | Retained by KKR (not in auction)       | Track        |  677 |    28   |     28   |         6.8 |        49.1 |                           |
+|           13 | JT Todd              |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Track        |  244 |    27.6 |     27.6 |         4.8 |        50.3 | small sample (<500 balls) |
+|           14 | JEK Rew              |    23 | capped                      | Open market (not on a 2026 IPL roster) | Track        |  525 |    26.1 |     26.1 |         4.7 |        47.6 |                           |
+|           15 | W Luxton             |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Track        |  432 |    21.9 |     21.9 |         0.1 |        43.6 | small sample (<500 balls) |
 
 - Excluded from the bowl board as not eligible for the IPL: Faisal Akram, Jahandad Khan, Zaman Khan, Abbas Afridi, Saim Ayub, Mehran Mumtaz, Hunain Shah, Shaheen Afridi....
 ## Youth board: bowlers aged <= 23 (top 15)
 
 Skill and projections in runs per 100 balls vs average (competition / venue / opponent adjusted). Reference: established players (>= 1000 balls) median 14.6, 75th percentile 21.5.
 
-|   board_rank | name            |   age | cap_status                  | status_2027                             | label        |    n |   skill |   proj_1 |   proj_1_lo |   proj_1_hi | sample_flag               |
-|-------------:|:----------------|------:|:----------------------------|:----------------------------------------|:-------------|-----:|--------:|---------:|------------:|------------:|:--------------------------|
-|            1 | Noor Ahmad      |    22 | capped                      | Under contract (CSK); only if released  | Strong watch | 3726 |    32.9 |     32.9 |        13.8 |        52.1 |                           |
-|            2 | Allah Ghazanfar |    20 | capped                      | Under contract (MI); only if released   | Strong watch | 1240 |    32.6 |     32.6 |        12.9 |        52.3 |                           |
-|            3 | Sakib Hussain   |    22 | uncapped (no international) | Under contract (SRH); only if released  | Strong watch |  276 |    29.3 |     29.3 |         7.6 |        51   | small sample (<500 balls) |
-|            4 | Joel Davies     |    23 | capped                      | Open market (not on a 2026 IPL roster)  | Strong watch |  318 |    22.3 |     22.3 |         0.9 |        43.8 | small sample (<500 balls) |
-|            5 | Cooper Connolly |    23 | capped                      | Under contract (PBKS); only if released | Strong watch |  582 |    21.1 |     21.1 |         0.6 |        41.6 |                           |
-|            6 | Suyash Sharma   |    23 | uncapped (no international) | Under contract (RCB); only if released  | Strong watch | 1041 |    18.1 |     18.1 |        -1.8 |        37.9 |                           |
-|            7 | F Singh         |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  296 |    17.6 |     17.6 |        -4   |        39.1 | small sample (<500 balls) |
-|            8 | AM Green        |    20 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  150 |    17.4 |     17.4 |        -5.6 |        40.4 | small sample (<500 balls) |
-|            9 | SM Meherob      |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  214 |    15   |     15   |        -7.2 |        37.2 | small sample (<500 balls) |
-|           10 | Farhan Ahmed    |    19 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Strong watch |  138 |    15   |     15   |        -8.2 |        38.2 | small sample (<500 balls) |
-|           11 | M Tharupathi    |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster)  | Track        |  184 |    11.4 |     11.4 |       -11.2 |        33.9 | small sample (<500 balls) |
-|           12 | Mahli Beardman  |    21 | capped                      | Open market (not on a 2026 IPL roster)  | Track        |  270 |    11.3 |     11.3 |       -10.5 |        33   | small sample (<500 balls) |
-|           13 | Kwena Maphaka   |    20 | capped                      | Already RR                              | Track        |  969 |    11   |     11   |        -8.9 |        30.9 |                           |
-|           14 | Rehan Ahmed     |    22 | capped                      | Under contract (DC); only if released   | Track        | 1626 |     8.6 |      8.6 |       -10.9 |        28.1 |                           |
-|           15 | Jacob Bethell   |    23 | capped                      | Under contract (RCB); only if released  | Track        |  314 |     4.8 |      4.8 |       -16.6 |        26.3 | small sample (<500 balls) |
+|   board_rank | name            |   age | cap_status                  | status_2027                            | label        |    n |   skill |   proj_1 |   proj_1_lo |   proj_1_hi | sample_flag               |
+|-------------:|:----------------|------:|:----------------------------|:---------------------------------------|:-------------|-----:|--------:|---------:|------------:|------------:|:--------------------------|
+|            1 | Noor Ahmad      |    22 | capped                      | Retained by CSK (not in auction)       | Strong watch | 3726 |    32.9 |     32.9 |        13.8 |        52.1 |                           |
+|            2 | Allah Ghazanfar |    20 | capped                      | In auction pool (released by MI)       | Strong watch | 1240 |    32.6 |     32.6 |        12.9 |        52.3 |                           |
+|            3 | Sakib Hussain   |    22 | uncapped (no international) | Retained by SRH (not in auction)       | Strong watch |  276 |    29.3 |     29.3 |         7.6 |        51   | small sample (<500 balls) |
+|            4 | Joel Davies     |    23 | capped                      | Open market (not on a 2026 IPL roster) | Strong watch |  318 |    22.3 |     22.3 |         0.9 |        43.8 | small sample (<500 balls) |
+|            5 | Cooper Connolly |    23 | capped                      | Retained by PBKS (not in auction)      | Strong watch |  582 |    21.1 |     21.1 |         0.6 |        41.6 |                           |
+|            6 | Suyash Sharma   |    23 | uncapped (no international) | Retained by RCB (not in auction)       | Strong watch | 1041 |    18.1 |     18.1 |        -1.8 |        37.9 |                           |
+|            7 | F Singh         |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Strong watch |  296 |    17.6 |     17.6 |        -4   |        39.1 | small sample (<500 balls) |
+|            8 | AM Green        |    20 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Strong watch |  150 |    17.4 |     17.4 |        -5.6 |        40.4 | small sample (<500 balls) |
+|            9 | SM Meherob      |    23 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Strong watch |  214 |    15   |     15   |        -7.2 |        37.2 | small sample (<500 balls) |
+|           10 | Farhan Ahmed    |    19 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Strong watch |  138 |    15   |     15   |        -8.2 |        38.2 | small sample (<500 balls) |
+|           11 | M Tharupathi    |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster) | Track        |  184 |    11.4 |     11.4 |       -11.2 |        33.9 | small sample (<500 balls) |
+|           12 | Mahli Beardman  |    21 | capped                      | Open market (not on a 2026 IPL roster) | Track        |  270 |    11.3 |     11.3 |       -10.5 |        33   | small sample (<500 balls) |
+|           13 | Kwena Maphaka   |    20 | capped                      | In auction pool (released by RR)       | Track        |  969 |    11   |     11   |        -8.9 |        30.9 |                           |
+|           14 | Rehan Ahmed     |    22 | capped                      | In auction pool (released by DC)       | Track        | 1626 |     8.6 |      8.6 |       -10.9 |        28.1 |                           |
+|           15 | Jacob Bethell   |    23 | capped                      | In auction pool (released by RCB)      | Track        |  314 |     4.8 |      4.8 |       -16.6 |        26.3 | small sample (<500 balls) |
 
 ## All-rounders aged <= 23 (top 5; >= 300 balls in each discipline)
 
-| name            |   age | cap_status                  | status_2027                             |    n |   n_bowl |   combined_proj |   combined_sd |
-|:----------------|------:|:----------------------------|:----------------------------------------|-----:|---------:|----------------:|--------------:|
-| Cooper Connolly |    23 | capped                      | Under contract (PBKS); only if released |  997 |      582 |            56.5 |          22.8 |
-| Jacob Bethell   |    23 | capped                      | Under contract (RCB); only if released  | 1204 |      314 |            36.5 |          23.2 |
-| JM Coles        |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster)  |  801 |      877 |            34.7 |          22.6 |
-| Nitish Reddy    |    23 | capped                      | Under contract (SRH); only if released  |  766 |      571 |            29.2 |          22.9 |
-| Rehan Ahmed     |    22 | capped                      | Under contract (DC); only if released   |  774 |     1626 |            16.5 |          22.4 |
+| name            |   age | cap_status                  | status_2027                            |    n |   n_bowl |   combined_proj |   combined_sd |
+|:----------------|------:|:----------------------------|:---------------------------------------|-----:|---------:|----------------:|--------------:|
+| Cooper Connolly |    23 | capped                      | Retained by PBKS (not in auction)      |  997 |      582 |            56.5 |          22.8 |
+| Jacob Bethell   |    23 | capped                      | In auction pool (released by RCB)      | 1204 |      314 |            36.5 |          23.2 |
+| JM Coles        |    22 | uncapped (no international) | Open market (not on a 2026 IPL roster) |  801 |      877 |            34.7 |          22.6 |
+| Nitish Reddy    |    23 | capped                      | Retained by SRH (not in auction)       |  766 |      571 |            29.2 |          22.9 |
+| Rehan Ahmed     |    22 | capped                      | In auction pool (released by DC)       |  774 |     1626 |            16.5 |          22.4 |
 
 ## Comparables
 

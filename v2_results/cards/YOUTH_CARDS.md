@@ -6,7 +6,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 1. Vaibhav Sooryavanshi - Buy now
 
-*Age 16 on 1 Apr 2027 · India (international record) · capped · 2027 status: Already RR*
+*Age 16 on 1 Apr 2027 · India (international record) · capped · 2027 status: Already RR (retained)*
 
 **Data**
 
@@ -23,7 +23,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 2. Ayush Mhatre - Buy now
 
-*Age 19 on 1 Apr 2027 · India (inferred / unknown) · uncapped (no international) · 2027 status: Under contract (CSK); only if released*
+*Age 19 on 1 Apr 2027 · India (inferred / unknown) · uncapped (no international) · 2027 status: Retained by CSK (not in auction)*
 
 **Data**
 
@@ -40,7 +40,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 3. Dewald Brevis - Strong watch
 
-*Age 23 on 1 Apr 2027 · South Africa (international record) · capped · 2027 status: Under contract (CSK); only if released*
+*Age 23 on 1 Apr 2027 · South Africa (international record) · capped · 2027 status: Retained by CSK (not in auction)*
 
 **Data**
 
@@ -93,7 +93,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 1. Noor Ahmad - Strong watch
 
-*Age 22 on 1 Apr 2027 · Afghanistan (international record) · capped · 2027 status: Under contract (CSK); only if released*
+*Age 22 on 1 Apr 2027 · Afghanistan (international record) · capped · 2027 status: Retained by CSK (not in auction)*
 
 **Data**
 
@@ -110,7 +110,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 2. Allah Ghazanfar - Strong watch
 
-*Age 20 on 1 Apr 2027 · Afghanistan (international record) · capped · 2027 status: Under contract (MI); only if released*
+*Age 20 on 1 Apr 2027 · Afghanistan (international record) · capped · 2027 status: In auction pool (released by MI)*
 
 **Data**
 
@@ -127,7 +127,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 3. Sakib Hussain - Strong watch
 
-*Age 22 on 1 Apr 2027 · India (inferred / unknown) · uncapped (no international) · 2027 status: Under contract (SRH); only if released*
+*Age 22 on 1 Apr 2027 · India (inferred / unknown) · uncapped (no international) · 2027 status: Retained by SRH (not in auction)*
 
 **Data**
 
@@ -161,7 +161,7 @@ Data: competition-, venue- and opponent-adjusted run value per 100 balls (all le
 
 ### 5. Cooper Connolly - Strong watch
 
-*Age 23 on 1 Apr 2027 · Australia (international record) · capped · 2027 status: Under contract (PBKS); only if released*
+*Age 23 on 1 Apr 2027 · Australia (international record) · capped · 2027 status: Retained by PBKS (not in auction)*
 
 **Data**
 

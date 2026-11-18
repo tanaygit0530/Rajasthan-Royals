@@ -89,7 +89,7 @@ L += ['# Headline', '',
       '## Top 10 bowlers under pressure (open ranking)', '', top_table('bowl', 'open'), '',
       'Score = predicted runs added per 100 pressure balls above expectation (bowlers: runs saved plus wickets). '
       '"Near-tie" = less than 60% posterior probability that the player is ahead of the next one; ranks inside a near-tie are '
-      'statistically interchangeable. Auction status: trades to 15 Nov 2026; 2027 retention lists not yet published.', '',
+      'statistically interchangeable. Availability uses the IPL 2027 retention lists published 17 Nov 2026: only players in the auction pool can be bought.', '',
       '## The lists RR can act on (excluding current RR players and ineligible players)', '', '**Batters**', '',
       top_table('bat', 'rr_can_buy'), '', '**Bowlers**', '', top_table('bowl', 'rr_can_buy'), '']
 
@@ -199,8 +199,8 @@ L += ['# 5. Reliability and limitations', '',
       'last over). We shrank the early run rate toward par to remove a first-ball artefact; the remaining effect is partly real and partly '
       'model shape. It changes which balls count as pressure, not the ratings themselves (ratings use all balls), and the top 10 '
       'is stable across the alternative pressure definitions in the sensitivity table.',
-      '- Auction status is as of 15 Nov 2026 (trades and retirements from Wikipedia); retention lists were due mid-November and '
-      'were not yet published. Re-run `s13_final.py` with the published lists before the 16 Dec auction.',
+      '- Availability follows the IPL 2027 retention lists published on 17 Nov 2026 (cited in `v2_code/config/`); auction-pool '
+      'players may still choose not to register, so re-check against the official auction register before 16 Dec.',
       '- Qualitative notes come from public reporting and may be incomplete; they are labelled and never change a rank.', '']
 # ---- 6. from ranking to selection (RR fit; s23)
 if os.path.exists(R('rr_fit/role_gaps.csv')):
@@ -209,7 +209,7 @@ if os.path.exists(R('rr_fit/role_gaps.csv')):
     pt = VD[VD.verdict.eq('Priority target')]
     L += ['# 6. From ranking to selection: what RR should do', '',
           'A ranking answers "who is best under pressure"; a selector also asks "who does Rajasthan Royals need". We placed every '
-          'rated player into role slots and compared RR\'s best player in each slot (2026 roster, all assumed retained) with the '
+          'rated player into role slots and compared RR\'s best player in each slot (IPL 2027 retained squad, 17 Nov 2026) with the '
           'league benchmark (median of the ten best eligible players in that slot).', '',
           G[['slot', 'benchmark_top10_median', 'rr_best', 'rr_best_score', 'gap']].round(1).to_markdown(index=False), '',
           f'- **RR\'s biggest pressure gaps are {g2[0].lower()} and {g2[1].lower()}.** Opening is RR\'s strength (Sooryavanshi is the '
@@ -286,7 +286,7 @@ ES = ['# SupeRR Selector S2 - executive summary (v2)', '',
       f'- The v1 ranking formula did not predict next-season pressure performance (correlation {m2b:+.2f} / {m2w:+.2f}); v2 does, '
       f'about {sb.loc["M4_eb_overall", "wcorr"]:.2f} / {sw.loc["M6_apm", "wcorr"]:.2f}, roughly half to all of what the noise allows.',
       f'- The order is a best estimate, not a certainty: {clear_txt}.', '',
-      '**Risks.** Fitness reports in 2026 for several names (see scout cards); retention lists not yet published; fielding unmeasured.']
+      '**Risks.** Fitness reports in 2026 for several names (see scout cards); many top names were retained by other teams, so the realistic targets come from the auction pool; fielding unmeasured.']
 open(R('EXECUTIVE_SUMMARY.md'), 'w').write('\n'.join(ES))
 
 # ======================= conversions =======================

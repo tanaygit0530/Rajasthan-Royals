@@ -4,7 +4,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 1. Vaibhav Sooryavanshi (India)
 
-*top-order aggressive · age in 2027: 16 · capped · 2027 status: Already RR*
+*top-order aggressive · age in 2027: 16 · capped · 2027 status: Already RR (retained)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -27,7 +27,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 2. Tim David (Australia)
 
-*finisher balanced · age in 2027: 31 · capped · 2027 status: Under contract (RCB); only if released*
+*finisher balanced · age in 2027: 31 · capped · 2027 status: Retained by RCB (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -50,7 +50,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 3. Abhishek Sharma (India)
 
-*top-order aggressive · age in 2027: 27 · capped · 2027 status: Under contract (SRH); only if released*
+*top-order aggressive · age in 2027: 27 · capped · 2027 status: Retained by SRH (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -73,7 +73,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 4. Finn Allen (New Zealand)
 
-*top-order aggressive · age in 2027: 28 · capped · 2027 status: Under contract (KKR); only if released*
+*top-order aggressive · age in 2027: 28 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -96,7 +96,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 5. Suryakumar Yadav (India)
 
-*middle-order balanced · age in 2027: 37 · capped · 2027 status: Under contract (MI); only if released*
+*middle-order balanced · age in 2027: 37 · capped · 2027 status: Retained by MI (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -119,7 +119,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 6. Heinrich Klaasen (South Africa)
 
-*middle-order balanced · age in 2027: 36 · capped · 2027 status: Under contract (SRH); only if released*
+*middle-order balanced · age in 2027: 36 · capped · 2027 status: Retained by SRH (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -142,7 +142,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 7. Phil Salt (England)
 
-*top-order aggressive · age in 2027: 31 · capped · 2027 status: Under contract (RCB); only if released*
+*top-order aggressive · age in 2027: 31 · capped · 2027 status: Retained by RCB (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -165,7 +165,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 8. Nicholas Pooran (West Indies)
 
-*middle-order balanced · age in 2027: 31 · capped · 2027 status: Under contract (LSG); only if released*
+*middle-order balanced · age in 2027: 31 · capped · 2027 status: Retained by LSG (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -188,7 +188,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 9. Priyansh Arya (India)
 
-*top-order aggressive · age in 2027: - · uncapped (no international) · 2027 status: Under contract (PBKS); only if released*
+*top-order aggressive · age in 2027: - · uncapped (no international) · 2027 status: Retained by PBKS (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -211,7 +211,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 10. Tim Seifert (New Zealand)
 
-*top-order aggressive · age in 2027: 32 · capped · 2027 status: Under contract (KKR); only if released*
+*top-order aggressive · age in 2027: 32 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -257,7 +257,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 12. Rovman Powell (West Indies)
 
-*middle-order balanced · age in 2027: 34 · capped · 2027 status: Under contract (KKR); only if released*
+*middle-order balanced · age in 2027: 34 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -280,7 +280,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 13. Jos Buttler (England)
 
-*top-order aggressive · age in 2027: 37 · capped · 2027 status: Under contract (GT); only if released*
+*top-order aggressive · age in 2027: 37 · capped · 2027 status: Retained by GT (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -326,7 +326,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 15. Mitchell Marsh (Australia)
 
-*top-order aggressive · age in 2027: 35 · capped · 2027 status: Under contract (LSG); only if released*
+*top-order aggressive · age in 2027: 35 · capped · 2027 status: Retained by LSG (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -349,7 +349,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 16. Tristan Stubbs (South Africa)
 
-*middle-order balanced · age in 2027: 27 · capped · 2027 status: Under contract (DC); only if released*
+*middle-order balanced · age in 2027: 27 · capped · 2027 status: Retained by DC (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -372,7 +372,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 17. Rinku Singh (India)
 
-*finisher balanced · age in 2027: 29 · capped · 2027 status: Under contract (KKR); only if released*
+*finisher balanced · age in 2027: 29 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -395,7 +395,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 18. Liam Livingstone (England)
 
-*middle-order balanced · age in 2027: 34 · capped · 2027 status: Under contract (CSK); only if released*
+*middle-order balanced · age in 2027: 34 · capped · 2027 status: Retained by CSK (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -441,7 +441,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 20. Pathum Nissanka (Sri Lanka)
 
-*top-order aggressive · age in 2027: 29 · capped · 2027 status: Under contract (DC); only if released*
+*top-order aggressive · age in 2027: 29 · capped · 2027 status: In auction pool (released by DC)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -464,7 +464,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 21. Josh Inglis (Australia)
 
-*top-order aggressive · age in 2027: 32 · capped · 2027 status: Under contract (LSG); only if released*
+*top-order aggressive · age in 2027: 32 · capped · 2027 status: Retained by LSG (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -487,7 +487,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 22. Shivam Dube (India)
 
-*middle-order balanced · age in 2027: 34 · capped · 2027 status: Under contract (CSK); only if released*
+*middle-order balanced · age in 2027: 34 · capped · 2027 status: Retained by CSK (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -510,7 +510,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 23. Marcus Stoinis (Australia)
 
-*middle-order balanced · age in 2027: 38 · capped · 2027 status: Under contract (PBKS); only if released*
+*middle-order balanced · age in 2027: 38 · capped · 2027 status: Retained by PBKS (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -533,7 +533,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 24. Shreyas Iyer (India)
 
-*middle-order balanced · age in 2027: 32 · capped · 2027 status: Under contract (PBKS); only if released*
+*middle-order balanced · age in 2027: 32 · capped · 2027 status: Retained by PBKS (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -556,7 +556,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 25. Travis Head (Australia)
 
-*top-order aggressive · age in 2027: 33 · capped · 2027 status: Under contract (SRH); only if released*
+*top-order aggressive · age in 2027: 33 · capped · 2027 status: In auction pool (released by SRH)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -579,7 +579,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 26. David Miller (South Africa)
 
-*middle-order balanced · age in 2027: 38 · capped · 2027 status: Under contract (DC); only if released*
+*middle-order balanced · age in 2027: 38 · capped · 2027 status: Retained by DC (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -625,7 +625,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 28. Cameron Green (Australia)
 
-*middle-order balanced · age in 2027: 28 · capped · 2027 status: Under contract (KKR); only if released*
+*middle-order balanced · age in 2027: 28 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -648,7 +648,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 29. Yashasvi Jaiswal (India)
 
-*top-order aggressive · age in 2027: 25 · capped · 2027 status: Already RR*
+*top-order aggressive · age in 2027: 25 · capped · 2027 status: Already RR (retained)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -671,7 +671,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 30. Shimron Hetmyer (West Indies)
 
-*middle-order balanced · age in 2027: 30 · capped · 2027 status: Already RR*
+*middle-order balanced · age in 2027: 30 · capped · 2027 status: In auction pool (released by RR)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 

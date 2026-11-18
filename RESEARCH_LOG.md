@@ -77,6 +77,12 @@ Entries are listed newest first within each stage. Every decision gives the reas
 - Priority targets: Narine, Noor Ahmad, Mujeeb (spin); Suryakumar, Klaasen, Pooran (middle order). Medical check first: Tim David, Bumrah, Rashid, Salt, Hasaranga, Varun, Pathirana.
 - Predicted prices hidden for retained players never auctioned (model cannot price them). New report section 6.
 
+**18 Nov — IPL 2027 retentions applied; final report**
+- Retention lists (published 17 Nov 2026; Willow Sports via Yahoo Sports, rajasthanroyals.com; RVCJ graphic supplied by the user for 5 traded players) stored as cited config in `v2_code/config/`. Status is now: RR (retained) / retained by another team / in the auction pool (released) / open market / not eligible; only auction-pool and open-market players are buyable.
+- Of the open top 10s, 9 batters and 6 bowlers are retained by other teams; Hasaranga, Mujeeb, Muzarabani and Pathirana are in the pool. RR squad = 19 (Shami, Siddharth traded in; Curran out; Hetmyer and 8 others released); purse Rs 27.05 cr, 6 slots (3 overseas). Biggest RR gap is now the middle order (4-5), then middle-overs spin.
+- Clean reproducibility run (from raw data, separate copy) finished all stages: models byte-identical; final lists identical except one #10 near-tie (RR-can-buy bowlers, 0.01 apart) from sampler noise.
+- `s26_final_pdf.py`: 8-page visual final report (`FINAL_SUBMISSION/SupeRR_S2_Final_Report.pdf`), every number read from outputs.
+
 ### Open items
 - Re-run `s13_final.py` -> `s22_review.py` when 2027 retention lists are published (before 16 Dec).
 - Phase 7 optimiser: waiting for the brief; pools in `v2_results/value/phase7_pool_*.csv`.

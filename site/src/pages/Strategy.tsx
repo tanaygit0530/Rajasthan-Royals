@@ -4,18 +4,18 @@ import Chart from '../components/Chart'
 import { Chip, Section, Tip } from '../components/ui'
 import { f1, pct } from '../lib/fmt'
 
-const VT: Record<string, string> = { 'Priority target': 'good', Target: 'royal', 'Value / back-up option': 'neutral', 'Medical check first': 'risk', 'Core - already RR': 'pink', 'Not eligible': 'risk' }
+const VT: Record<string, string> = { 'Priority target': 'good', Target: 'royal', 'Value / back-up option': 'neutral', 'Medical check first': 'risk', 'Core - already RR': 'pink', 'Not available (retained elsewhere)': 'neutral', 'Not eligible': 'risk' }
 export default function Strategy() {
   const { strategy: s, players } = useData()
   const gaps = [...s.gaps].sort((a: any, b: any) => b.gap - a.gap)
   const slots = Array.from(new Set(s.plans.map((p: any) => p.slot))) as string[]
-  const order = ['Priority target', 'Target', 'Value / back-up option', 'Medical check first', 'Core - already RR', 'Not eligible']
+  const order = ['Priority target', 'Target', 'Value / back-up option', 'Medical check first', 'Core - already RR', 'Not available (retained elsewhere)', 'Not eligible']
   const plink = (id: string | undefined, name: string) => id && players[id] ? <Link className="font-semibold hover:text-royal" to={`/player/${id}`}>{name}</Link> : <span className="font-semibold">{name}</span>
   return (
     <div>
       <div className="text-xs font-semibold uppercase tracking-widest text-pink">From ranking to selection</div>
       <h1 className="text-3xl font-extrabold sm:text-4xl">What Rajasthan Royals should do</h1>
-      <p className="mt-3 max-w-3xl text-ink2">We placed every rated player into a role and compared RR's best current player in each role (2026 roster, all assumed retained) with the league benchmark – the median of the ten best eligible players in that role.<Tip k="gap" label="gap" /></p>
+      <p className="mt-3 max-w-3xl text-ink2">We placed every rated player into a role and compared RR's best current player in each role (IPL 2027 retained squad, published 17 Nov 2026) with the league benchmark – the median of the ten best eligible players in that role.<Tip k="gap" label="gap" /></p>
 
       <Section title="Where RR is strong and where it is exposed" kicker="Pressure gaps by role">
         <div className="card p-4"><Chart label="RR pressure gaps by role" height={80 + gaps.length * 34} option={(t: any) => {

@@ -1,16 +1,16 @@
 uid,board_rank,name,age,cap_status,status_2027,label,n,skill,se,proj_1,proj_1_lo,proj_1_hi,proj_2,proj_3,sample_flag
-f2c936d7,1,Mitchell Owen,25,capped,Under contract (PBKS); only if released,Buy now,929.0,67.78,5.07,67.78,46.96,88.61,65.67,63.56,
-f29185a1,2,Abhishek Sharma,26,capped,Under contract (SRH); only if released,Buy now,3186.0,65.34,2.84,65.34,45.22,85.46,63.49,61.63,
-6c19c6e5,3,Yashasvi Jaiswal,25,capped,Already RR,Strong watch,2399.0,48.42,3.25,48.42,28.19,68.64,48.32,48.23,
-b0482a1d,4,Namboori Tilak Varma,24,capped,Under contract (MI); only if released,Strong watch,3082.0,44.18,2.88,44.18,24.05,64.31,44.53,44.88,
-9418198b,5,Prabhsimran Singh,26,uncapped (no international),Under contract (PBKS); only if released,Strong watch,1927.0,43.76,3.61,43.76,23.44,64.09,44.15,44.55,
+f2c936d7,1,Mitchell Owen,25,capped,In auction pool (released by PBKS),Buy now,929.0,67.78,5.07,67.78,46.96,88.61,65.67,63.56,
+f29185a1,2,Abhishek Sharma,26,capped,Retained by SRH (not in auction),Buy now,3186.0,65.34,2.84,65.34,45.22,85.46,63.49,61.63,
+6c19c6e5,3,Yashasvi Jaiswal,25,capped,Already RR (retained),Strong watch,2399.0,48.42,3.25,48.42,28.19,68.64,48.32,48.23,
+b0482a1d,4,Namboori Tilak Varma,24,capped,Retained by MI (not in auction),Strong watch,3082.0,44.18,2.88,44.18,24.05,64.31,44.53,44.88,
+9418198b,5,Prabhsimran Singh,26,uncapped (no international),Retained by PBKS (not in auction),Strong watch,1927.0,43.76,3.61,43.76,23.44,64.09,44.15,44.55,
 238ce998,6,Quentin Sampson,26,capped,Open market (not on a 2026 IPL roster),Strong watch,284.0,41.86,8.3,41.86,19.4,64.33,42.45,43.04,small sample (<500 balls)
-85b3fab2,7,Tristan Stubbs,26,capped,Under contract (DC); only if released,Strong watch,2537.0,41.31,3.17,41.31,21.11,61.51,41.96,42.6,
-970ddd24,8,Suryansh Shedge,24,capped,Under contract (PBKS); only if released,Strong watch,140.0,39.96,10.5,39.96,16.03,63.89,40.75,41.54,small sample (<500 balls)
-d5130a30,9,Sai Sudharsan,26,capped,Under contract (GT); only if released,Strong watch,1865.0,39.35,3.67,39.35,19.01,59.69,40.2,41.05,
+85b3fab2,7,Tristan Stubbs,26,capped,Retained by DC (not in auction),Strong watch,2537.0,41.31,3.17,41.31,21.11,61.51,41.96,42.6,
+970ddd24,8,Suryansh Shedge,24,capped,Retained by PBKS (not in auction),Strong watch,140.0,39.96,10.5,39.96,16.03,63.89,40.75,41.54,small sample (<500 balls)
+d5130a30,9,Sai Sudharsan,26,capped,Retained by GT (not in auction),Strong watch,1865.0,39.35,3.67,39.35,19.01,59.69,40.2,41.05,
 9b6e1b3f,10,Jake McGurk,24,capped,Open market (not on a 2026 IPL roster),Strong watch,1237.0,37.02,4.45,37.02,16.42,57.61,38.11,39.21,
-04a418e8,11,Riyan Parag,25,capped,Already RR,Strong watch,1972.0,36.48,3.57,36.48,16.17,56.79,37.63,38.78,
+04a418e8,11,Riyan Parag,25,capped,Already RR (retained),Strong watch,1972.0,36.48,3.57,36.48,16.17,56.79,37.63,38.78,
 972f217b,12,Bevon Jacobs,24,capped,Open market (not on a 2026 IPL roster),Strong watch,835.0,36.41,5.32,36.41,15.48,57.34,37.57,38.73,
 0bacade8,13,Rahmanullah Gurbaz,25,capped,Open market (not on a 2026 IPL roster),Strong watch,3012.0,36.4,2.92,36.4,16.26,56.54,37.56,38.72,
-a3b0600d,14,Aniket Verma,25,uncapped (no international),Under contract (SRH); only if released,Strong watch,196.0,35.82,9.45,35.82,12.62,59.03,37.04,38.26,small sample (<500 balls)
+a3b0600d,14,Aniket Verma,25,uncapped (no international),Retained by SRH (not in auction),Strong watch,196.0,35.82,9.45,35.82,12.62,59.03,37.04,38.26,small sample (<500 balls)
 6ce9f3eb,15,EA Brookes,26,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,549.0,32.51,6.39,32.51,11.1,53.92,34.08,35.64,

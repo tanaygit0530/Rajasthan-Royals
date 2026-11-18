@@ -38,20 +38,59 @@ NAT = NAT.combine_first(_cap.nationality.dropna()) if 'nationality' in _cap else
 TRADES = {'Kuldeep Yadav': 'Lucknow Super Giants', 'Rishabh Pant': 'Delhi Capitals', 'T Natarajan': 'Sunrisers Hyderabad',
           'Liam Livingstone': 'Chennai Super Kings', 'Jack Edwards': 'Chennai Super Kings', 'Khaleel Ahmed': 'Sunrisers Hyderabad',
           'Nathan Ellis': 'Sunrisers Hyderabad', 'Hardik Pandya': 'Punjab Kings', 'Arshdeep Singh': 'Mumbai Indians',
-          'Zeeshan Ansari': 'Delhi Capitals', 'Harshal Patel': 'Gujarat Titans'}
+          'Zeeshan Ansari': 'Delhi Capitals', 'Harshal Patel': 'Gujarat Titans', 'Mohammed Shami': 'Rajasthan Royals',
+          'Manimaran Siddharth': 'Rajasthan Royals', 'Sam Curran': 'Lucknow Super Giants'}
 ABBR = {'Chennai Super Kings': 'CSK', 'Mumbai Indians': 'MI', 'Rajasthan Royals': 'RR', 'Punjab Kings': 'PBKS',
         'Royal Challengers Bengaluru': 'RCB', 'Delhi Capitals': 'DC', 'Kolkata Knight Riders': 'KKR',
         'Sunrisers Hyderabad': 'SRH', 'Gujarat Titans': 'GT', 'Lucknow Super Giants': 'LSG'}
 
 
+# ---- IPL 2027 retentions (published 17 Nov 2026; config/retentions_2027.csv, cited) ----
+from rapidfuzz import fuzz as _fz, process as _pr
+RET = pd.read_csv(os.path.join(ROOT, 'v2_code', 'config', 'retentions_2027.csv'))
+_P = pd.read_parquet(w('unified/players.parquet'))
+_norm = lambda x: ''.join(ch for ch in str(x).lower().replace('.', ' ').replace('-', ' ') if ch.isalpha() or ch == ' ').split()
+_key = lambda x: ' '.join(_norm(x))
+_cand = pd.concat([_P[['uid', 'name']].rename(columns={'name': 'n'}), _P[['uid', 'cs_name']].rename(columns={'cs_name': 'n'})]).dropna()
+_cand['k'] = _cand.n.map(_key)
+_ipl26 = set(IPL26.index)
+
+
+def _match(nm):
+    k = _key(nm)
+    pool = _cand[_cand.uid.isin(_ipl26)]
+    for src in (pool, _cand):
+        ex = src[src.k == k].uid.unique()
+        if len(ex) == 1:
+            return ex[0]
+        hits = _pr.extract(k, src.k.tolist(), scorer=_fz.token_sort_ratio, limit=3)
+        good = {src.uid.iloc[i] for _, sc, i in hits if sc >= 88}
+        if len(good) == 1:
+            return good.pop()
+    return None
+
+
+RET['uid'] = RET.player.map(_match)
+RET_MAP = {r.uid: (r.team, r.status) for r in RET.dropna(subset=['uid']).itertuples()}
+RET_UNMATCHED = RET[RET.uid.isna()].player.tolist()
+
+
 def status(name, uid):
+    """IPL 2027 availability after the 17 Nov 2026 retentions."""
     team = TRADES.get(name, IPL26.get(uid)); nat = NAT.get(uid, 'India')
     if nat == 'Pakistan': return team, 'Not eligible (Pakistan national)'
     if name == 'Harry Brook': return None, 'Not eligible (IPL ban through 2027)'
     if name == 'Andre Russell': return None, 'Not eligible (retired from IPL)'
     if name == 'Ajinkya Rahane': return None, 'Not eligible (retired, 30 Jul 2026)'
-    if team == 'Rajasthan Royals': return team, 'Already RR'
-    if isinstance(team, str): return team, f'Under contract ({ABBR.get(team, team)}); only if released'
+    if uid in RET_MAP:
+        t, st = RET_MAP[uid]
+        if st == 'retained':
+            return t, 'Already RR (retained)' if t == 'Rajasthan Royals' else f'Retained by {ABBR.get(t, t)} (not in auction)'
+        return None, f'In auction pool (released by {ABBR.get(t, t)})'
+    if name in TRADES:      # traded before the deadline; the published lists omit some traded players
+        t = TRADES[name]
+        return t, 'Already RR (retained)' if t == 'Rajasthan Royals' else f'Retained by {ABBR.get(t, t)} (traded; not in auction)'
+    if isinstance(team, str): return team, f'Not in published lists ({ABBR.get(team, team)} 2026) - check'
     return None, 'Open market (not on a 2026 IPL roster)'
 
 
@@ -121,7 +160,7 @@ def table(role, F, th, de, summ, el):
     st = [status(n, u) for n, u in zip(T.name, T.index)]
     T['team27'] = [s[0] for s in st]; T['status'] = [s[1] for s in st]
     T['nation'] = [NAT.get(u, 'India') for u in T.index]
-    T['buyable'] = ~T.status.str.startswith(('Already', 'Not eligible'))
+    T['buyable'] = T.status.str.startswith(('In auction pool', 'Open market'))     # only players RR can actually bid for
     T['buy_rank'] = np.nan; T.loc[T.buyable, 'buy_rank'] = np.arange(1, T.buyable.sum() + 1)
     rcol = 'bat_role' if role == 'bat' else 'bowl_role'
     T['role_label'] = ID[rcol].reindex(T.index).astype(str)

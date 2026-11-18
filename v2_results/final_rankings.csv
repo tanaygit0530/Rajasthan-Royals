@@ -1,41 +1,41 @@
 list,position,open_rank,uid,name,nation,status,score_runs_per100_pressure_balls,interval_80_lo,interval_80_hi,p_top10,pressure_balls,near_tie_with_next
-batters_open,1,1,470f446b,Vaibhav Sooryavanshi,India,Already RR,37.42,10.42,65.3,0.709,295,False
-batters_open,2,2,f1f99156,Tim David,Australia,Under contract (RCB); only if released,24.66,4.12,45.48,0.465,274,True
-batters_open,3,3,f29185a1,Abhishek Sharma,India,Under contract (SRH); only if released,24.34,6.94,41.28,0.466,804,True
-batters_open,4,4,bf74b130,Finn Allen,New Zealand,Under contract (KKR); only if released,19.47,-5.94,45.72,0.371,327,True
-batters_open,5,5,271f83cd,Suryakumar Yadav,India,Under contract (MI); only if released,19.34,4.75,34.49,0.286,493,True
-batters_open,6,6,235c2bb6,Heinrich Klaasen,South Africa,Under contract (SRH); only if released,16.61,-2.65,36.38,0.275,185,True
-batters_open,7,7,3d284ca3,Phil Salt,England,Under contract (RCB); only if released,16.17,-2.7,35.66,0.26,560,True
-batters_open,8,8,3241e3fd,Nicholas Pooran,West Indies,Under contract (LSG); only if released,15.37,-1.67,32.35,0.218,322,True
-batters_open,9,9,b5797845,Priyansh Arya,India,Under contract (PBKS); only if released,10.92,-18.78,41.39,0.269,284,True
-batters_open,10,10,4663bd23,Tim Seifert,New Zealand,Under contract (KKR); only if released,10.49,-14.64,34.92,0.221,325,True
-batters_rr_can_buy,1,2,f1f99156,Tim David,Australia,Under contract (RCB); only if released,24.66,4.12,45.48,0.465,274,True
-batters_rr_can_buy,2,3,f29185a1,Abhishek Sharma,India,Under contract (SRH); only if released,24.34,6.94,41.28,0.466,804,True
-batters_rr_can_buy,3,4,bf74b130,Finn Allen,New Zealand,Under contract (KKR); only if released,19.47,-5.94,45.72,0.371,327,True
-batters_rr_can_buy,4,5,271f83cd,Suryakumar Yadav,India,Under contract (MI); only if released,19.34,4.75,34.49,0.286,493,True
-batters_rr_can_buy,5,6,235c2bb6,Heinrich Klaasen,South Africa,Under contract (SRH); only if released,16.61,-2.65,36.38,0.275,185,True
-batters_rr_can_buy,6,7,3d284ca3,Phil Salt,England,Under contract (RCB); only if released,16.17,-2.7,35.66,0.26,560,True
-batters_rr_can_buy,7,8,3241e3fd,Nicholas Pooran,West Indies,Under contract (LSG); only if released,15.37,-1.67,32.35,0.218,322,True
-batters_rr_can_buy,8,9,b5797845,Priyansh Arya,India,Under contract (PBKS); only if released,10.92,-18.78,41.39,0.269,284,True
-batters_rr_can_buy,9,10,4663bd23,Tim Seifert,New Zealand,Under contract (KKR); only if released,10.49,-14.64,34.92,0.221,325,True
-batters_rr_can_buy,10,11,b8cc58c9,Reeza Hendricks,South Africa,Open market (not on a 2026 IPL roster),10.1,-14.05,33.98,0.206,260,True
-bowlers_open,1,1,462411b3,Jasprit Bumrah,India,Under contract (MI); only if released,24.31,7.45,40.59,0.596,494,True
-bowlers_open,2,2,9d430b40,Sunil Narine,West Indies,Under contract (KKR); only if released,21.52,5.44,38.16,0.512,345,False
-bowlers_open,3,3,5f547c8b,Rashid Khan,Afghanistan,Under contract (GT); only if released,16.23,2.27,30.68,0.335,398,True
-bowlers_open,4,4,a97c8ec2,Wanindu Hasaranga,Sri Lanka,Under contract (LSG); only if released,13.61,-1.13,28.75,0.251,329,True
-bowlers_open,5,5,5b7ab5a9,Varun Chakravarthy,India,Under contract (KKR); only if released,13.43,-1.51,28.67,0.255,429,True
-bowlers_open,6,6,efc04be7,Noor Ahmad,Afghanistan,Under contract (CSK); only if released,12.31,-3.47,27.85,0.232,262,True
+batters_open,1,1,470f446b,Vaibhav Sooryavanshi,India,Already RR (retained),37.42,10.42,65.3,0.709,295,False
+batters_open,2,2,f1f99156,Tim David,Australia,Retained by RCB (not in auction),24.66,4.12,45.48,0.465,274,True
+batters_open,3,3,f29185a1,Abhishek Sharma,India,Retained by SRH (not in auction),24.34,6.94,41.28,0.466,804,True
+batters_open,4,4,bf74b130,Finn Allen,New Zealand,Retained by KKR (not in auction),19.47,-5.94,45.72,0.371,327,True
+batters_open,5,5,271f83cd,Suryakumar Yadav,India,Retained by MI (not in auction),19.34,4.75,34.49,0.286,493,True
+batters_open,6,6,235c2bb6,Heinrich Klaasen,South Africa,Retained by SRH (not in auction),16.61,-2.65,36.38,0.275,185,True
+batters_open,7,7,3d284ca3,Phil Salt,England,Retained by RCB (not in auction),16.17,-2.7,35.66,0.26,560,True
+batters_open,8,8,3241e3fd,Nicholas Pooran,West Indies,Retained by LSG (not in auction),15.37,-1.67,32.35,0.218,322,True
+batters_open,9,9,b5797845,Priyansh Arya,India,Retained by PBKS (not in auction),10.92,-18.78,41.39,0.269,284,True
+batters_open,10,10,4663bd23,Tim Seifert,New Zealand,Retained by KKR (not in auction),10.49,-14.64,34.92,0.221,325,True
+batters_rr_can_buy,1,11,b8cc58c9,Reeza Hendricks,South Africa,Open market (not on a 2026 IPL roster),10.1,-14.05,33.98,0.206,260,True
+batters_rr_can_buy,2,14,6f02fe2a,Muhammad Waseem,United Arab Emirates,Open market (not on a 2026 IPL roster),9.71,-19.65,38.08,0.241,173,True
+batters_rr_can_buy,3,19,1fc6ef83,Shai Hope,West Indies,Open market (not on a 2026 IPL roster),7.5,-15.97,30.46,0.154,330,True
+batters_rr_can_buy,4,20,8ee36b18,Pathum Nissanka,Sri Lanka,In auction pool (released by DC),7.34,-11.09,26.17,0.111,645,True
+batters_rr_can_buy,5,25,12b610c2,Travis Head,Australia,In auction pool (released by SRH),6.21,-18.85,30.19,0.147,569,True
+batters_rr_can_buy,6,27,26d041c4,Sikandar Raza,Zimbabwe,Open market (not on a 2026 IPL roster),5.68,-16.94,28.64,0.13,189,True
+batters_rr_can_buy,7,30,48a1d7b7,Shimron Hetmyer,West Indies,In auction pool (released by RR),4.57,-16.06,24.89,0.097,240,True
+batters_rr_can_buy,8,34,eade4650,Daryl Mitchell,New Zealand,Open market (not on a 2026 IPL roster),3.45,-18.52,25.41,0.097,188,True
+batters_rr_can_buy,9,35,abb83e27,Jonny Bairstow,England,Open market (not on a 2026 IPL roster),3.03,-21.69,28.07,0.127,221,True
+batters_rr_can_buy,10,37,5d1e7582,Kusal Mendis,Sri Lanka,Open market (not on a 2026 IPL roster),2.35,-18.64,23.01,0.077,477,True
+bowlers_open,1,1,462411b3,Jasprit Bumrah,India,Retained by MI (not in auction),24.31,7.45,40.59,0.596,494,True
+bowlers_open,2,2,9d430b40,Sunil Narine,West Indies,Retained by KKR (not in auction),21.52,5.44,38.16,0.512,345,False
+bowlers_open,3,3,5f547c8b,Rashid Khan,Afghanistan,Retained by GT (not in auction),16.23,2.27,30.68,0.335,398,True
+bowlers_open,4,4,a97c8ec2,Wanindu Hasaranga,Sri Lanka,In auction pool (released by LSG),13.61,-1.13,28.75,0.251,329,True
+bowlers_open,5,5,5b7ab5a9,Varun Chakravarthy,India,Retained by KKR (not in auction),13.43,-1.51,28.67,0.255,429,True
+bowlers_open,6,6,efc04be7,Noor Ahmad,Afghanistan,Retained by CSK (not in auction),12.31,-3.47,27.85,0.232,262,True
 bowlers_open,7,7,7d92277a,Mujeeb Ur Rahman,Afghanistan,Open market (not on a 2026 IPL roster),11.48,-8.32,31.29,0.255,256,True
 bowlers_open,8,8,abb7c76c,Abrar Ahmed,Pakistan,Not eligible (Pakistan national),11.11,-8.66,31.21,0.256,169,True
-bowlers_open,9,9,449f4e3c,Blessing Muzarabani,Zimbabwe,Under contract (KKR); only if released,10.49,-8.27,30.12,0.237,263,True
-bowlers_open,10,10,64839cb3,Matheesha Pathirana,Sri Lanka,Under contract (KKR); only if released,9.54,-8.14,28.33,0.185,246,True
-bowlers_rr_can_buy,1,1,462411b3,Jasprit Bumrah,India,Under contract (MI); only if released,24.31,7.45,40.59,0.596,494,True
-bowlers_rr_can_buy,2,2,9d430b40,Sunil Narine,West Indies,Under contract (KKR); only if released,21.52,5.44,38.16,0.512,345,False
-bowlers_rr_can_buy,3,3,5f547c8b,Rashid Khan,Afghanistan,Under contract (GT); only if released,16.23,2.27,30.68,0.335,398,True
-bowlers_rr_can_buy,4,4,a97c8ec2,Wanindu Hasaranga,Sri Lanka,Under contract (LSG); only if released,13.61,-1.13,28.75,0.251,329,True
-bowlers_rr_can_buy,5,5,5b7ab5a9,Varun Chakravarthy,India,Under contract (KKR); only if released,13.43,-1.51,28.67,0.255,429,True
-bowlers_rr_can_buy,6,6,efc04be7,Noor Ahmad,Afghanistan,Under contract (CSK); only if released,12.31,-3.47,27.85,0.232,262,True
-bowlers_rr_can_buy,7,7,7d92277a,Mujeeb Ur Rahman,Afghanistan,Open market (not on a 2026 IPL roster),11.48,-8.32,31.29,0.255,256,True
-bowlers_rr_can_buy,8,9,449f4e3c,Blessing Muzarabani,Zimbabwe,Under contract (KKR); only if released,10.49,-8.27,30.12,0.237,263,True
-bowlers_rr_can_buy,9,10,64839cb3,Matheesha Pathirana,Sri Lanka,Under contract (KKR); only if released,9.54,-8.14,28.33,0.185,246,True
-bowlers_rr_can_buy,10,11,c33d8116,Mohsin Khan,India,Under contract (LSG); only if released,9.25,-9.8,29.63,0.215,296,True
+bowlers_open,9,9,449f4e3c,Blessing Muzarabani,Zimbabwe,In auction pool (released by KKR),10.49,-8.27,30.12,0.237,263,True
+bowlers_open,10,10,64839cb3,Matheesha Pathirana,Sri Lanka,In auction pool (released by KKR),9.54,-8.14,28.33,0.185,246,True
+bowlers_rr_can_buy,1,4,a97c8ec2,Wanindu Hasaranga,Sri Lanka,In auction pool (released by LSG),13.61,-1.13,28.75,0.251,329,True
+bowlers_rr_can_buy,2,7,7d92277a,Mujeeb Ur Rahman,Afghanistan,Open market (not on a 2026 IPL roster),11.48,-8.32,31.29,0.255,256,True
+bowlers_rr_can_buy,3,9,449f4e3c,Blessing Muzarabani,Zimbabwe,In auction pool (released by KKR),10.49,-8.27,30.12,0.237,263,True
+bowlers_rr_can_buy,4,10,64839cb3,Matheesha Pathirana,Sri Lanka,In auction pool (released by KKR),9.54,-8.14,28.33,0.185,246,True
+bowlers_rr_can_buy,5,14,f24c6701,Maheesh Theekshana,Sri Lanka,Open market (not on a 2026 IPL roster),8.72,-5.71,23.38,0.135,524,True
+bowlers_rr_can_buy,6,19,0a8fce53,Mustafizur Rahman,Bangladesh,In auction pool (released by KKR),7.75,-8.23,23.47,0.127,400,True
+bowlers_rr_can_buy,7,26,2f9d0389,Lockie Ferguson,New Zealand,In auction pool (released by PBKS),4.47,-12.9,22.08,0.117,285,True
+bowlers_rr_can_buy,8,29,83c3e8e3,Spencer Johnson,Australia,In auction pool (released by CSK),3.44,-19.05,25.48,0.158,150,True
+bowlers_rr_can_buy,9,31,495d42a5,Ravichandran Ashwin,India,Open market (not on a 2026 IPL roster),3.02,-13.29,19.47,0.074,317,True
+bowlers_rr_can_buy,10,35,14f96089,Adam Zampa,Australia,Open market (not on a 2026 IPL roster),2.62,-15.11,20.75,0.097,164,True

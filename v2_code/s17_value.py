@@ -203,7 +203,7 @@ L += ['', '## Phase 7 pool format (`phase7_pool_{bat,bowl}.csv`)', '',
       '| p_top10 | posterior probability of a top-10 rank among established players |',
       '| tier | established (150+ RR pressure balls) or emerging (40-149) |',
       '| cap_status | IPL 2027 capped/uncapped (5-year rule applied to Indian players) |',
-      '| status, team27, buyable | 2027 availability (trades to 15 Nov 2026; retentions not yet published) |',
+      '| status, team27, buyable | 2027 availability after the 17 Nov 2026 retentions (config/retentions_2027.csv) |',
       '| last_price_cr, pred_price_cr | last auction price (Rs crore, Wikipedia) and price-model estimate for 2027 |',
       '| value_per_cr | (score - replacement level) / predicted price |',
       '| price_known | False = under contract with no auction price on record (retained); excluded from value lists unless uncapped |']

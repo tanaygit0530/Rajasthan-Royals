@@ -291,5 +291,6 @@ dump('sources.json', dict(markdown=src, licences=[
     dict(name='Wikipedia', licence='CC BY-SA 4.0', url='https://en.wikipedia.org/'),
     dict(name='Wikidata', licence='CC0', url='https://www.wikidata.org/'),
     dict(name='News reports (scout notes)', licence='Quoted briefly with links; opinion, not used in ratings')]))
-shutil.copy(res('report/SupeRR_S2_v2_Methodology_Report.pdf'), os.path.join(OUT, 'report.pdf'))
+fin = res('report/final/SupeRR_S2_Final_Report.pdf')     # the concise final report (s26); fall back to the long report
+shutil.copy(fin if os.path.exists(fin) else res('report/SupeRR_S2_v2_Methodology_Report.pdf'), os.path.join(OUT, 'report.pdf'))
 print('players', len(players))

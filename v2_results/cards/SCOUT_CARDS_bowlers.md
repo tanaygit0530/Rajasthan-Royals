@@ -4,7 +4,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 1. Jasprit Bumrah (India)
 
-*new-ball economical · age in 2027: 33 · capped · 2027 status: Under contract (MI); only if released*
+*new-ball economical · age in 2027: 33 · capped · 2027 status: Retained by MI (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -27,7 +27,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 2. Sunil Narine (West Indies)
 
-*middle-overs average-economy · age in 2027: 38 · capped · 2027 status: Under contract (KKR); only if released*
+*middle-overs average-economy · age in 2027: 38 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -50,7 +50,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 3. Rashid Khan (Afghanistan)
 
-*middle-overs average-economy · age in 2027: 29 · capped · 2027 status: Under contract (GT); only if released*
+*middle-overs average-economy · age in 2027: 29 · capped · 2027 status: Retained by GT (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -73,7 +73,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 4. Wanindu Hasaranga (Sri Lanka)
 
-*middle-overs average-economy · age in 2027: 30 · capped · 2027 status: Under contract (LSG); only if released*
+*middle-overs average-economy · age in 2027: 30 · capped · 2027 status: In auction pool (released by LSG)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -96,7 +96,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 5. Varun Chakravarthy (India)
 
-*middle-overs average-economy · age in 2027: 36 · capped · 2027 status: Under contract (KKR); only if released*
+*middle-overs average-economy · age in 2027: 36 · capped · 2027 status: Retained by KKR (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -119,7 +119,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 6. Noor Ahmad (Afghanistan)
 
-*middle-overs average-economy · age in 2027: 22 · capped · 2027 status: Under contract (CSK); only if released*
+*middle-overs average-economy · age in 2027: 22 · capped · 2027 status: Retained by CSK (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -188,7 +188,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 9. Blessing Muzarabani (Zimbabwe)
 
-*new-ball economical · age in 2027: 30 · capped · 2027 status: Under contract (KKR); only if released*
+*new-ball economical · age in 2027: 30 · capped · 2027 status: In auction pool (released by KKR)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -211,7 +211,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 10. Matheesha Pathirana (Sri Lanka)
 
-*new-ball + death expensive · age in 2027: 24 · capped · 2027 status: Under contract (KKR); only if released*
+*new-ball + death expensive · age in 2027: 24 · capped · 2027 status: In auction pool (released by KKR)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -234,7 +234,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 11. Mohsin Khan (India)
 
-*new-ball + death expensive · age in 2027: 29 · uncapped (no international) · 2027 status: Under contract (LSG); only if released*
+*new-ball + death expensive · age in 2027: 29 · uncapped (no international) · 2027 status: Retained by LSG (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -257,7 +257,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 12. Mitchell Santner (New Zealand)
 
-*middle-overs average-economy · age in 2027: 35 · capped · 2027 status: Under contract (MI); only if released*
+*middle-overs average-economy · age in 2027: 35 · capped · 2027 status: Retained by MI (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -280,7 +280,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 13. Kuldeep Yadav (India)
 
-*middle-overs average-economy · age in 2027: 32 · capped · 2027 status: Under contract (LSG); only if released*
+*middle-overs average-economy · age in 2027: 32 · capped · 2027 status: Retained by LSG (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -326,7 +326,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 15. Josh Hazlewood (Australia)
 
-*new-ball + death expensive · age in 2027: 36 · capped · 2027 status: Under contract (RCB); only if released*
+*new-ball + death expensive · age in 2027: 36 · capped · 2027 status: Retained by RCB (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -349,7 +349,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 16. Nathan Ellis (Australia)
 
-*new-ball + death expensive · age in 2027: 33 · capped · 2027 status: Under contract (SRH); only if released*
+*new-ball + death expensive · age in 2027: 33 · capped · 2027 status: Retained by SRH (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -372,7 +372,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 17. Bhuvneshwar Kumar (India)
 
-*new-ball + death expensive · age in 2027: 37 · capped · 2027 status: Under contract (RCB); only if released*
+*new-ball + death expensive · age in 2027: 37 · capped · 2027 status: Retained by RCB (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -395,7 +395,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 18. Akeal Hosein (West Indies)
 
-*new-ball economical · age in 2027: 34 · capped · 2027 status: Under contract (CSK); only if released*
+*new-ball economical · age in 2027: 34 · capped · 2027 status: Retained by CSK (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -418,7 +418,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 19. Mustafizur Rahman (Bangladesh)
 
-*new-ball + death expensive · age in 2027: 32 · capped · 2027 status: Under contract (KKR); only if released*
+*new-ball + death expensive · age in 2027: 32 · capped · 2027 status: In auction pool (released by KKR)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -441,7 +441,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 20. Eshan Malinga (Sri Lanka)
 
-*new-ball + death expensive · age in 2027: 26 · capped · 2027 status: Under contract (SRH); only if released*
+*new-ball + death expensive · age in 2027: 26 · capped · 2027 status: Retained by SRH (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -464,7 +464,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 21. Jofra Archer (England)
 
-*new-ball + death expensive · age in 2027: 32 · capped · 2027 status: Already RR*
+*new-ball + death expensive · age in 2027: 32 · capped · 2027 status: Already RR (retained)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -487,7 +487,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 22. Krunal Pandya (India)
 
-*middle-overs average-economy · age in 2027: 36 · uncapped (Indian, last international > 5 years ago) · 2027 status: Under contract (RCB); only if released*
+*middle-overs average-economy · age in 2027: 36 · uncapped (Indian, last international > 5 years ago) · 2027 status: Retained by RCB (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -510,7 +510,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 23. Harpreet Brar (India)
 
-*middle-overs average-economy · age in 2027: 32 · uncapped (no international) · 2027 status: Under contract (PBKS); only if released*
+*middle-overs average-economy · age in 2027: 32 · uncapped (no international) · 2027 status: Retained by PBKS (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -533,7 +533,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 24. Ravi Bishnoi (India)
 
-*middle-overs average-economy · age in 2027: 27 · capped · 2027 status: Already RR*
+*middle-overs average-economy · age in 2027: 27 · capped · 2027 status: Already RR (retained)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -556,7 +556,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 25. Axar Patel (India)
 
-*middle-overs average-economy · age in 2027: 33 · capped · 2027 status: Under contract (DC); only if released*
+*middle-overs average-economy · age in 2027: 33 · capped · 2027 status: Retained by DC (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -579,7 +579,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 26. Lockie Ferguson (New Zealand)
 
-*new-ball + death expensive · age in 2027: 36 · capped · 2027 status: Under contract (PBKS); only if released*
+*new-ball + death expensive · age in 2027: 36 · capped · 2027 status: In auction pool (released by PBKS)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -602,7 +602,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 27. Ravindra Jadeja (India)
 
-*middle-overs average-economy · age in 2027: 38 · capped · 2027 status: Already RR*
+*middle-overs average-economy · age in 2027: 38 · capped · 2027 status: Already RR (retained)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -648,7 +648,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 29. Spencer Johnson (Australia)
 
-*new-ball + death expensive · age in 2027: 31 · capped · 2027 status: Under contract (CSK); only if released*
+*new-ball + death expensive · age in 2027: 31 · capped · 2027 status: In auction pool (released by CSK)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 
@@ -671,7 +671,7 @@ Score = predicted run value per 100 pressure balls next season (hierarchical Bay
 
 ### 30. Yuzvendra Chahal (India)
 
-*middle-overs average-economy · age in 2027: 37 · capped · 2027 status: Under contract (PBKS); only if released*
+*middle-overs average-economy · age in 2027: 37 · capped · 2027 status: Retained by PBKS (not in auction)*
 
 **Data (model outputs; RR pack 2022-26 for pressure numbers)**
 

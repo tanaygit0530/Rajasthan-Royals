@@ -16,67 +16,67 @@ We rank batters and bowlers by the run value they are expected to add **per pres
 
 ## Top 10 batters under pressure (open ranking)
 
-|   # | Player               | Nation       | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                             | Tie                |
-|----:|:---------------------|:-------------|:-----------------------|:------------|-----------------:|:----------------------------------------|:-------------------|
-|   1 | Vaibhav Sooryavanshi | India        | 37.4 (10.4 to 65.3)    | 71%         |              295 | Already RR                              |                    |
-|   2 | Tim David            | Australia    | 24.7 (4.1 to 45.5)     | 46%         |              274 | Under contract (RCB); only if released  | near-tie with next |
-|   3 | Abhishek Sharma      | India        | 24.3 (6.9 to 41.3)     | 47%         |              804 | Under contract (SRH); only if released  | near-tie with next |
-|   4 | Finn Allen           | New Zealand  | 19.5 (-5.9 to 45.7)    | 37%         |              327 | Under contract (KKR); only if released  | near-tie with next |
-|   5 | Suryakumar Yadav     | India        | 19.3 (4.8 to 34.5)     | 29%         |              493 | Under contract (MI); only if released   | near-tie with next |
-|   6 | Heinrich Klaasen     | South Africa | 16.6 (-2.6 to 36.4)    | 28%         |              185 | Under contract (SRH); only if released  | near-tie with next |
-|   7 | Phil Salt            | England      | 16.2 (-2.7 to 35.7)    | 26%         |              560 | Under contract (RCB); only if released  | near-tie with next |
-|   8 | Nicholas Pooran      | West Indies  | 15.4 (-1.7 to 32.4)    | 22%         |              322 | Under contract (LSG); only if released  | near-tie with next |
-|   9 | Priyansh Arya        | India        | 10.9 (-18.8 to 41.4)   | 27%         |              284 | Under contract (PBKS); only if released | near-tie with next |
-|  10 | Tim Seifert          | New Zealand  | 10.5 (-14.6 to 34.9)   | 22%         |              325 | Under contract (KKR); only if released  | near-tie with next |
+|   # | Player               | Nation       | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                       | Tie                |
+|----:|:---------------------|:-------------|:-----------------------|:------------|-----------------:|:----------------------------------|:-------------------|
+|   1 | Vaibhav Sooryavanshi | India        | 37.4 (10.4 to 65.3)    | 71%         |              295 | Already RR (retained)             |                    |
+|   2 | Tim David            | Australia    | 24.7 (4.1 to 45.5)     | 46%         |              274 | Retained by RCB (not in auction)  | near-tie with next |
+|   3 | Abhishek Sharma      | India        | 24.3 (6.9 to 41.3)     | 47%         |              804 | Retained by SRH (not in auction)  | near-tie with next |
+|   4 | Finn Allen           | New Zealand  | 19.5 (-5.9 to 45.7)    | 37%         |              327 | Retained by KKR (not in auction)  | near-tie with next |
+|   5 | Suryakumar Yadav     | India        | 19.3 (4.8 to 34.5)     | 29%         |              493 | Retained by MI (not in auction)   | near-tie with next |
+|   6 | Heinrich Klaasen     | South Africa | 16.6 (-2.6 to 36.4)    | 28%         |              185 | Retained by SRH (not in auction)  | near-tie with next |
+|   7 | Phil Salt            | England      | 16.2 (-2.7 to 35.7)    | 26%         |              560 | Retained by RCB (not in auction)  | near-tie with next |
+|   8 | Nicholas Pooran      | West Indies  | 15.4 (-1.7 to 32.4)    | 22%         |              322 | Retained by LSG (not in auction)  | near-tie with next |
+|   9 | Priyansh Arya        | India        | 10.9 (-18.8 to 41.4)   | 27%         |              284 | Retained by PBKS (not in auction) | near-tie with next |
+|  10 | Tim Seifert          | New Zealand  | 10.5 (-14.6 to 34.9)   | 22%         |              325 | Retained by KKR (not in auction)  | near-tie with next |
 
 ## Top 10 bowlers under pressure (open ranking)
 
 |   # | Player              | Nation      | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
 |----:|:--------------------|:------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
-|   1 | Jasprit Bumrah      | India       | 24.3 (7.5 to 40.6)     | 60%         |              494 | Under contract (MI); only if released  | near-tie with next |
-|   2 | Sunil Narine        | West Indies | 21.5 (5.4 to 38.2)     | 51%         |              345 | Under contract (KKR); only if released |                    |
-|   3 | Rashid Khan         | Afghanistan | 16.2 (2.3 to 30.7)     | 34%         |              398 | Under contract (GT); only if released  | near-tie with next |
-|   4 | Wanindu Hasaranga   | Sri Lanka   | 13.6 (-1.1 to 28.8)    | 25%         |              329 | Under contract (LSG); only if released | near-tie with next |
-|   5 | Varun Chakravarthy  | India       | 13.4 (-1.5 to 28.7)    | 26%         |              429 | Under contract (KKR); only if released | near-tie with next |
-|   6 | Noor Ahmad          | Afghanistan | 12.3 (-3.5 to 27.9)    | 23%         |              262 | Under contract (CSK); only if released | near-tie with next |
+|   1 | Jasprit Bumrah      | India       | 24.3 (7.5 to 40.6)     | 60%         |              494 | Retained by MI (not in auction)        | near-tie with next |
+|   2 | Sunil Narine        | West Indies | 21.5 (5.4 to 38.2)     | 51%         |              345 | Retained by KKR (not in auction)       |                    |
+|   3 | Rashid Khan         | Afghanistan | 16.2 (2.3 to 30.7)     | 34%         |              398 | Retained by GT (not in auction)        | near-tie with next |
+|   4 | Wanindu Hasaranga   | Sri Lanka   | 13.6 (-1.1 to 28.8)    | 25%         |              329 | In auction pool (released by LSG)      | near-tie with next |
+|   5 | Varun Chakravarthy  | India       | 13.4 (-1.5 to 28.7)    | 26%         |              429 | Retained by KKR (not in auction)       | near-tie with next |
+|   6 | Noor Ahmad          | Afghanistan | 12.3 (-3.5 to 27.9)    | 23%         |              262 | Retained by CSK (not in auction)       | near-tie with next |
 |   7 | Mujeeb Ur Rahman    | Afghanistan | 11.5 (-8.3 to 31.3)    | 26%         |              256 | Open market (not on a 2026 IPL roster) | near-tie with next |
 |   8 | Abrar Ahmed         | Pakistan    | 11.1 (-8.7 to 31.2)    | 26%         |              169 | Not eligible (Pakistan national)       | near-tie with next |
-|   9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 24%         |              263 | Under contract (KKR); only if released | near-tie with next |
-|  10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 18%         |              246 | Under contract (KKR); only if released | near-tie with next |
+|   9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 24%         |              263 | In auction pool (released by KKR)      | near-tie with next |
+|  10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 18%         |              246 | In auction pool (released by KKR)      | near-tie with next |
 
-Score = predicted runs added per 100 pressure balls above expectation (bowlers: runs saved plus wickets). "Near-tie" = less than 60% posterior probability that the player is ahead of the next one; ranks inside a near-tie are statistically interchangeable. Auction status: trades to 15 Nov 2026; 2027 retention lists not yet published.
+Score = predicted runs added per 100 pressure balls above expectation (bowlers: runs saved plus wickets). "Near-tie" = less than 60% posterior probability that the player is ahead of the next one; ranks inside a near-tie are statistically interchangeable. Availability uses the IPL 2027 retention lists published 17 Nov 2026: only players in the auction pool can be bought.
 
 ## The lists RR can act on (excluding current RR players and ineligible players)
 
 **Batters**
 
-|   # |   Open rank | Player           | Nation       | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                             | Tie                |
-|----:|------------:|:-----------------|:-------------|:-----------------------|:------------|-----------------:|:----------------------------------------|:-------------------|
-|   1 |           2 | Tim David        | Australia    | 24.7 (4.1 to 45.5)     | 46%         |              274 | Under contract (RCB); only if released  | near-tie with next |
-|   2 |           3 | Abhishek Sharma  | India        | 24.3 (6.9 to 41.3)     | 47%         |              804 | Under contract (SRH); only if released  | near-tie with next |
-|   3 |           4 | Finn Allen       | New Zealand  | 19.5 (-5.9 to 45.7)    | 37%         |              327 | Under contract (KKR); only if released  | near-tie with next |
-|   4 |           5 | Suryakumar Yadav | India        | 19.3 (4.8 to 34.5)     | 29%         |              493 | Under contract (MI); only if released   | near-tie with next |
-|   5 |           6 | Heinrich Klaasen | South Africa | 16.6 (-2.6 to 36.4)    | 28%         |              185 | Under contract (SRH); only if released  | near-tie with next |
-|   6 |           7 | Phil Salt        | England      | 16.2 (-2.7 to 35.7)    | 26%         |              560 | Under contract (RCB); only if released  | near-tie with next |
-|   7 |           8 | Nicholas Pooran  | West Indies  | 15.4 (-1.7 to 32.4)    | 22%         |              322 | Under contract (LSG); only if released  | near-tie with next |
-|   8 |           9 | Priyansh Arya    | India        | 10.9 (-18.8 to 41.4)   | 27%         |              284 | Under contract (PBKS); only if released | near-tie with next |
-|   9 |          10 | Tim Seifert      | New Zealand  | 10.5 (-14.6 to 34.9)   | 22%         |              325 | Under contract (KKR); only if released  | near-tie with next |
-|  10 |          11 | Reeza Hendricks  | South Africa | 10.1 (-14.1 to 34.0)   | 21%         |              260 | Open market (not on a 2026 IPL roster)  | near-tie with next |
+|   # |   Open rank | Player          | Nation               | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
+|----:|------------:|:----------------|:---------------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
+|   1 |          11 | Reeza Hendricks | South Africa         | 10.1 (-14.1 to 34.0)   | 21%         |              260 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   2 |          14 | Muhammad Waseem | United Arab Emirates | 9.7 (-19.6 to 38.1)    | 24%         |              173 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   3 |          19 | Shai Hope       | West Indies          | 7.5 (-16.0 to 30.5)    | 15%         |              330 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   4 |          20 | Pathum Nissanka | Sri Lanka            | 7.3 (-11.1 to 26.2)    | 11%         |              645 | In auction pool (released by DC)       | near-tie with next |
+|   5 |          25 | Travis Head     | Australia            | 6.2 (-18.9 to 30.2)    | 15%         |              569 | In auction pool (released by SRH)      | near-tie with next |
+|   6 |          27 | Sikandar Raza   | Zimbabwe             | 5.7 (-16.9 to 28.6)    | 13%         |              189 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   7 |          30 | Shimron Hetmyer | West Indies          | 4.6 (-16.1 to 24.9)    | 10%         |              240 | In auction pool (released by RR)       | near-tie with next |
+|   8 |          34 | Daryl Mitchell  | New Zealand          | 3.5 (-18.5 to 25.4)    | 10%         |              188 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   9 |          35 | Jonny Bairstow  | England              | 3.0 (-21.7 to 28.1)    | 13%         |              221 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|  10 |          37 | Kusal Mendis    | Sri Lanka            | 2.4 (-18.6 to 23.0)    | 8%          |              477 | Open market (not on a 2026 IPL roster) | near-tie with next |
 
 **Bowlers**
 
 |   # |   Open rank | Player              | Nation      | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
 |----:|------------:|:--------------------|:------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
-|   1 |           1 | Jasprit Bumrah      | India       | 24.3 (7.5 to 40.6)     | 60%         |              494 | Under contract (MI); only if released  | near-tie with next |
-|   2 |           2 | Sunil Narine        | West Indies | 21.5 (5.4 to 38.2)     | 51%         |              345 | Under contract (KKR); only if released |                    |
-|   3 |           3 | Rashid Khan         | Afghanistan | 16.2 (2.3 to 30.7)     | 34%         |              398 | Under contract (GT); only if released  | near-tie with next |
-|   4 |           4 | Wanindu Hasaranga   | Sri Lanka   | 13.6 (-1.1 to 28.8)    | 25%         |              329 | Under contract (LSG); only if released | near-tie with next |
-|   5 |           5 | Varun Chakravarthy  | India       | 13.4 (-1.5 to 28.7)    | 26%         |              429 | Under contract (KKR); only if released | near-tie with next |
-|   6 |           6 | Noor Ahmad          | Afghanistan | 12.3 (-3.5 to 27.9)    | 23%         |              262 | Under contract (CSK); only if released | near-tie with next |
-|   7 |           7 | Mujeeb Ur Rahman    | Afghanistan | 11.5 (-8.3 to 31.3)    | 26%         |              256 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   8 |           9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 24%         |              263 | Under contract (KKR); only if released | near-tie with next |
-|   9 |          10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 18%         |              246 | Under contract (KKR); only if released | near-tie with next |
-|  10 |          11 | Mohsin Khan         | India       | 9.2 (-9.8 to 29.6)     | 22%         |              296 | Under contract (LSG); only if released | near-tie with next |
+|   1 |           4 | Wanindu Hasaranga   | Sri Lanka   | 13.6 (-1.1 to 28.8)    | 25%         |              329 | In auction pool (released by LSG)      | near-tie with next |
+|   2 |           7 | Mujeeb Ur Rahman    | Afghanistan | 11.5 (-8.3 to 31.3)    | 26%         |              256 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   3 |           9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 24%         |              263 | In auction pool (released by KKR)      | near-tie with next |
+|   4 |          10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 18%         |              246 | In auction pool (released by KKR)      | near-tie with next |
+|   5 |          14 | Maheesh Theekshana  | Sri Lanka   | 8.7 (-5.7 to 23.4)     | 14%         |              524 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   6 |          19 | Mustafizur Rahman   | Bangladesh  | 7.8 (-8.2 to 23.5)     | 13%         |              400 | In auction pool (released by KKR)      | near-tie with next |
+|   7 |          26 | Lockie Ferguson     | New Zealand | 4.5 (-12.9 to 22.1)    | 12%         |              285 | In auction pool (released by PBKS)     | near-tie with next |
+|   8 |          29 | Spencer Johnson     | Australia   | 3.4 (-19.1 to 25.5)    | 16%         |              150 | In auction pool (released by CSK)      | near-tie with next |
+|   9 |          31 | Ravichandran Ashwin | India       | 3.0 (-13.3 to 19.5)    | 7%          |              317 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|  10 |          35 | Adam Zampa          | Australia   | 2.6 (-15.1 to 20.8)    | 10%         |              164 | Open market (not on a 2026 IPL roster) | near-tie with next |
 
 # 1. Defining pressure
 
@@ -332,17 +332,17 @@ Bowlers
 - Batting hand, bowling type and speed exist only for RR-pack balls; matchup splits are shown only where the effect type is repeatable (batter spin-vs-pace r = 0.44; other matchup types are noise).
 - Day/night is inferred from IPL double-headers; no dew effect was detectable.
 - Leverage in the first overs of a first innings is above average (about 1.9x in over 1, falling to 1.2x by over 6) because the win-probability model treats an early wicket as a large cut to the projected total. Chases look as expected (rising to 3.5x in the last over). We shrank the early run rate toward par to remove a first-ball artefact; the remaining effect is partly real and partly model shape. It changes which balls count as pressure, not the ratings themselves (ratings use all balls), and the top 10 is stable across the alternative pressure definitions in the sensitivity table.
-- Auction status is as of 15 Nov 2026 (trades and retirements from Wikipedia); retention lists were due mid-November and were not yet published. Re-run `s13_final.py` with the published lists before the 16 Dec auction.
+- Availability follows the IPL 2027 retention lists published on 17 Nov 2026 (cited in `v2_code/config/`); auction-pool players may still choose not to register, so re-check against the official auction register before 16 Dec.
 - Qualitative notes come from public reporting and may be incomplete; they are labelled and never change a rank.
 
 # 6. From ranking to selection: what RR should do
 
-A ranking answers "who is best under pressure"; a selector also asks "who does Rajasthan Royals need". We placed every rated player into role slots and compared RR's best player in each slot (2026 roster, all assumed retained) with the league benchmark (median of the ten best eligible players in that slot).
+A ranking answers "who is best under pressure"; a selector also asks "who does Rajasthan Royals need". We placed every rated player into role slots and compared RR's best player in each slot (IPL 2027 retained squad, 17 Nov 2026) with the league benchmark (median of the ten best eligible players in that slot).
 
 | slot                  |   benchmark_top10_median | rr_best              |   rr_best_score |   gap |
 |:----------------------|-------------------------:|:---------------------|----------------:|------:|
+| Middle order (4-5)    |                     11.5 | Riyan Parag          |            -0.4 |  11.8 |
 | Middle-overs spin     |                     12.2 | Ravi Bishnoi         |             5.3 |   6.9 |
-| Middle order (4-5)    |                     11.5 | Shimron Hetmyer      |             4.7 |   6.7 |
 | Left-arm bowler       |                      8.4 | Ravindra Jadeja      |             4.4 |   4   |
 | Wrist spin            |                      7.1 | Ravi Bishnoi         |             5.3 |   1.8 |
 | Death pace            |                      8.1 | Jofra Archer         |             6.8 |   1.3 |
@@ -352,27 +352,27 @@ A ranking answers "who is best under pressure"; a selector also asks "who does R
 | Opener                |                     10.8 | Vaibhav Sooryavanshi |            37.6 | -26.8 |
 | Left-handed top-6 bat |                      7.5 | Vaibhav Sooryavanshi |            37.6 | -30.1 |
 
-- **RR's biggest pressure gaps are middle-overs spin and middle order (4-5).** Opening is RR's strength (Sooryavanshi is the top-rated batter in the dataset).
-- **Priority targets** (fill one of the two biggest gaps, P(top 10) of 20% or more, available if released): Sunil Narine (Middle-overs spin), Suryakumar Yadav (Middle order (4-5)), Heinrich Klaasen (Middle order (4-5)), Nicholas Pooran (Middle order (4-5), Left-handed top-6 bat), Noor Ahmad (Middle-overs spin, Wrist spin, Left-arm bowler), Mujeeb Ur Rahman (Middle-overs spin).
+- **RR's biggest pressure gaps are middle order (4-5) and middle-overs spin.** Opening is RR's strength (Sooryavanshi is the top-rated batter in the dataset).
+- **Priority targets** (fill one of the two biggest gaps, P(top 10) of 20% or more, available if released): Mujeeb Ur Rahman (Middle-overs spin).
 - Shortlists of the best three available players per slot, with a value pick, form trend and price, are in `v2_results/rr_fit/RR_FIT_REPORT.md`; a verdict, main risks and the fallback option for every candidate are in `SELECTOR_VERDICTS.md`. Fitness reports are used only as risk flags.
+
+**Shortlist - Middle order (4-5)**
+
+| pick       | name          | nation               |   score |   p_top10 | trend   | status                                 |
+|:-----------|:--------------|:---------------------|--------:|----------:|:--------|:---------------------------------------|
+| top 3      | Mark Chapman  | New Zealand          |    6.23 |      0.06 | steady  | Open market (not on a 2026 IPL roster) |
+| top 3      | Sikandar Raza | Zimbabwe             |    5.67 |      0.13 | falling | Open market (not on a 2026 IPL roster) |
+| top 3      | Glenn Maxwell | Australia            |    5.66 |      0.04 | falling | Open market (not on a 2026 IPL roster) |
+| value pick | Asif Khan     | United Arab Emirates |    4.32 |      0.12 | steady  | Open market (not on a 2026 IPL roster) |
 
 **Shortlist - Middle-overs spin**
 
 | pick       | name              | nation      |   score |   p_top10 | trend   | status                                 |
 |:-----------|:------------------|:------------|--------:|----------:|:--------|:---------------------------------------|
-| top 3      | Sunil Narine      | West Indies |   21.54 |      0.51 | rising  | Under contract (KKR); only if released |
-| top 3      | Rashid Khan       | Afghanistan |   16.3  |      0.33 | steady  | Under contract (GT); only if released  |
-| top 3      | Wanindu Hasaranga | Sri Lanka   |   13.55 |      0.25 | steady  | Under contract (LSG); only if released |
-| value pick | Akeal Hosein      | West Indies |    7.89 |      0.16 | steady  | Under contract (CSK); only if released |
-
-**Shortlist - Middle order (4-5)**
-
-| pick       | name             | nation       |   score |   p_top10 | trend   | status                                 |
-|:-----------|:-----------------|:-------------|--------:|----------:|:--------|:---------------------------------------|
-| top 3      | Tim David        | Australia    |   24.67 |      0.46 | steady  | Under contract (RCB); only if released |
-| top 3      | Suryakumar Yadav | India        |   19.33 |      0.29 | falling | Under contract (MI); only if released  |
-| top 3      | Heinrich Klaasen | South Africa |   16.63 |      0.27 | falling | Under contract (SRH); only if released |
-| value pick | Tristan Stubbs   | South Africa |    9.52 |      0.17 | steady  | Under contract (DC); only if released  |
+| top 3      | Wanindu Hasaranga | Sri Lanka   |   13.55 |      0.25 | steady  | In auction pool (released by LSG)      |
+| top 3      | Mujeeb Ur Rahman  | Afghanistan |   11.55 |      0.26 | steady  | Open market (not on a 2026 IPL roster) |
+| top 3      | Roston Chase      | West Indies |    7.35 |      0.1  | steady  | Open market (not on a 2026 IPL roster) |
+| value pick | Dunith Wellalage  | Sri Lanka   |    6.84 |      0.11 | steady  | Open market (not on a 2026 IPL roster) |
 
 # Appendix
 

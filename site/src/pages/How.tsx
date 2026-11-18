@@ -90,7 +90,7 @@ export default function How() {
           <li>One season of pressure balls is mostly noise; most ranks inside the top 10 are statistical near-ties.</li>
           <li>Fielding is not measured (no fielder names in the data). Pitch, weather and field placements are unknown.</li>
           <li>Batting hand, bowling type and speed exist only for RR-pack balls; finer matchup splits are noisy.</li>
-          <li>Availability uses trades and retirements to 15 Nov 2026; 2027 retention lists were not yet published.</li>
+          <li>Availability uses the IPL 2027 retention lists published on 17 Nov 2026; auction-pool players may still not register.</li>
           <li>Auction prices are hard to predict, so price ranges are wide.</li>
           <li>Scout notes are opinion from public reporting and never change a rating.</li>
         </ul>

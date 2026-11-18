@@ -1,7 +1,7 @@
 """S7: from ranking to selection - RR squad fit, role gaps, role shortlists, form trends, selector verdicts.
 
 Squad: RR's 2026 IPL roster in the RR pack (27 players) with trades/retirements to 15 Nov 2026 (none involve RR);
-2027 retentions are not published, so every 2026 player is assumed retained (stated assumption).
+Squad = RR's IPL 2027 retained players incl. trades (config/retentions_2027.csv, published 17 Nov 2026).
 Ratings: the same calibrated Pressure Reliability Score as the main lists (established 150+ pressure balls and
 emerging 40-149 tiers, s17 pools). Players with < 40 RR pressure balls: shown with no score.
 Slots (a player can fill several): batting - opener, No.3, middle order (4-5), finisher (6-7), left-handed top-6;
@@ -28,11 +28,16 @@ for r in POOL:   # P(top 10) from the main (established) ranking where available
     POOL[r]['p_top10'] = FULL[r].p_top10.reindex(POOL[r].index).fillna(POOL[r].p_top10)
 mp = rr('competition_team_player_mapping.csv')
 idm = pd.read_csv(res('idmap/idmap.csv')); U = idm[idm.method.str.match(r'^(A_|B1_|B2_)')].set_index('pid').cs.to_dict()
-sq = mp[(mp.comp_id == 3298) & mp.team_name.eq('Rajasthan Royals')].copy()
-sq['uid'] = sq.player_id.map(lambda p: U.get(p, f'rr{int(p)}'))
+# RR squad = IPL 2027 retained list incl. trades in (17 Nov 2026), not the 2026 roster
+RTN = F13.RET[(F13.RET.team == 'Rajasthan Royals') & F13.RET.status.eq('retained')].copy()
+RTN['uid'] = RTN.uid.fillna(RTN.player.map(lambda n: f'unmatched:{n}'))
+sq = RTN.rename(columns={'player': 'player_name'})[['uid', 'player_name']]
 SQUAD = set(sq.uid)
+TEAMS = pd.read_csv(os.path.join(ROOT, 'v2_code', 'config', 'teams_2027.csv')).set_index('team')
+RRP = TEAMS.loc['Rajasthan Royals']
 L = ['# From ranking to selection: Rajasthan Royals fit (S7)', '',
-     'Squad = RR\'s 2026 roster (27 players); 2027 retentions not yet published, so all are assumed retained. Scores are the '
+     f'Squad = RR\'s {len(sq)} players for IPL 2027 (retained 17 Nov 2026, incl. trades in: Mohammed Shami, M Siddharth). '
+     f'Purse left Rs {RRP.purse_cr} cr, {int(RRP.slots_left)} slots ({int(RRP.overseas_slots_left)} overseas). Scores are the '
      'calibrated Pressure Reliability Scores used in the main lists (runs per 100 pressure balls above expectation).', '']
 
 from rr_fit_core import slots, BAT_SLOTS, BOWL_SLOTS   # shared with the site exporter
@@ -71,7 +76,7 @@ def trend(uid, role):
 # ---------------- RR squad table ----------------
 sqt = []
 for u in sq.uid:
-    nm = ID.name.get(u, sq[sq.uid == u].player_name.iloc[0])
+    nm = ID.name.get(u, sq[sq.uid == u].player_name.iloc[0]) if not str(u).startswith('unmatched') else u.split(':', 1)[1]
     b = POOL['bat'].loc[u] if u in POOL['bat'].index else None
     w_ = POOL['bowl'].loc[u] if u in POOL['bowl'].index else None
     sqt.append(dict(uid=u, name=nm, nation=F13.NAT.get(u, 'India'), overseas=F13.NAT.get(u, 'India') != 'India',
@@ -81,10 +86,10 @@ for u in sq.uid:
 SQ = pd.DataFrame(sqt).sort_values(['bat_score', 'bowl_score'], ascending=False)
 SQ.to_csv(res('rr_fit/rr_squad_2026.csv'), index=False)
 n_os = int(SQ.overseas.sum())
-L += [f'## RR squad (2026 roster): {len(SQ)} players, {n_os} overseas', '',
-      f'IPL rules allow 8 overseas players in a squad and 4 in the XI; the 2026 roster lists {n_os} (it includes in-season replacement '
-      'signings), so at least one overseas player must go and every overseas signing has to displace someone. Players with no score '
-      'have fewer than 40 RR-pack pressure balls.', '',
+L += [f'## RR squad for IPL 2027: {len(SQ)} players, {n_os} overseas', '',
+      f'Purse left Rs {RRP.purse_cr} cr; {int(RRP.slots_left)} slots to fill, {int(RRP.overseas_slots_left)} of them overseas. '
+      'Released by RR: Hetmyer, Deshpande, Milne, Maphaka, Kuldeep Sen, Yudhvir Singh, Vignesh Puthur, Ravi Singh, Emanjot Singh Chahal; '
+      'Sam Curran traded to LSG. Players with no score have fewer than 40 RR-pack pressure balls.', '',
       SQ[['name', 'nation', 'age_2027', 'slots', 'bat_score', 'bat_rank', 'bowl_score', 'bowl_rank']].round(1).to_markdown(index=False), '']
 
 # ---------------- gaps ----------------
@@ -141,6 +146,8 @@ for uid, r in cands.iterrows():
     st = str(r.status); nm = r['name']
     if uid in SQUAD:
         v = 'Core - already RR'
+    elif st.startswith('Retained by'):
+        v = 'Not available (retained elsewhere)'
     elif st.startswith('Not eligible'):
         v = 'Not eligible'
     elif fitness_flag(nm):
@@ -163,12 +170,12 @@ for uid, r in cands.iterrows():
     if r.score_lo < 0: risks.append('interval includes below-average')
     if t.trend == 'falling': risks.append('form falling')
     if 'price_known' in r and r.price_known is False: risks.append('price unknown (retained)')
-    if st.startswith('Under contract'): risks.append('available only if released')
+    if st.startswith('In auction pool'): risks.append('in the auction pool - expect competition')
     ver.append(dict(role=r.role, name=nm, nation=r.nation, verdict=v, slots=', '.join(sl) or '-', score=r.score,
                     interval=f'{r.score_lo:.1f} to {r.score_hi:.1f}', p_top10=r.p_top10, form_trend=t.trend,
                     main_risks='; '.join(risks) or 'none flagged', alternative=alt, status=st))
 VD = pd.DataFrame(ver)
-order = ['Priority target', 'Target', 'Value / back-up option', 'Medical check first', 'Core - already RR', 'Not eligible']
+order = ['Priority target', 'Target', 'Value / back-up option', 'Medical check first', 'Core - already RR', 'Not available (retained elsewhere)', 'Not eligible']
 VD['o'] = VD.verdict.map({k: i for i, k in enumerate(order)})
 VD = VD.sort_values(['o', 'score'], ascending=[True, False]).drop(columns='o')
 VD.round(3).to_csv(res('rr_fit/selector_verdicts.csv'), index=False)

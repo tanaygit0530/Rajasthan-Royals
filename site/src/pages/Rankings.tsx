@@ -54,7 +54,7 @@ export default function Rankings() {
         <select aria-label="Bowling type" className={sel} value={style} onChange={e => setStyle(e.target.value)}><option value="">Any bowling type</option>{['Pace', 'Spin', 'Left-arm', 'Right-arm', 'Wrist spin', 'Finger spin'].map(s => <option key={s}>{s}</option>)}</select>
         <select aria-label="Nationality" className={sel} value={nat} onChange={e => setNat(e.target.value)}><option value="">Indian & overseas</option><option value="India">Indian</option><option value="overseas">Overseas</option></select>
         <select aria-label="Capped status" className={sel} value={cap} onChange={e => setCap(e.target.value)}><option value="">Capped & uncapped</option><option value="capped">Capped</option><option value="uncapped">Uncapped</option></select>
-        <select aria-label="Availability" className={sel} value={avail} onChange={e => setAvail(e.target.value)}><option value="">Any availability</option><option value="Open market">Open market</option><option value="Under contract">Under contract</option><option value="Already RR">Already RR</option><option value="Not eligible">Not eligible</option></select>
+        <select aria-label="Availability" className={sel} value={avail} onChange={e => setAvail(e.target.value)}><option value="">Any availability</option><option value="In auction pool">In auction pool</option><option value="Open market">Open market</option><option value="Retained by">Retained by another team</option><option value="Already RR">Already RR</option><option value="Not eligible">Not eligible</option></select>
         <button onClick={exportRows} className="btn-ghost py-1.5"><Download size={14} aria-hidden />CSV</button>
       </div>
       <div className="card mt-4 overflow-x-auto">

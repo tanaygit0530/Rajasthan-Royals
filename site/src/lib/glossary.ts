@@ -12,6 +12,6 @@ export const G: Record<string, string> = {
   youth: 'Youth board: players aged 23 or under on 1 April 2027. Buy now / Strong watch / Track depends on the projected next-season level.',
   gap: 'Gap = league benchmark (median of the 10 best eligible players in that role) minus RR\'s best current player in that role. Bigger = weaker.',
   leverage: 'Leverage: how much the next ball can move the win probability, relative to an average ball (1.0).',
-  status: 'Availability for the IPL 2027 auction, using trades and retirements to 15 Nov 2026. Retention lists were not yet published.',
+  status: 'Availability for the IPL 2027 auction (16 Dec 2026), from the retention lists published on 17 Nov 2026. Only players in the auction pool or on the open market can be bought.',
   tier: 'Established = 150+ pressure balls; emerging = 40-149 (wider uncertainty).',
 }
