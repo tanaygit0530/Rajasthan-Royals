@@ -249,7 +249,7 @@ h3 { font-size: 10.5pt; margin: 3mm 0 1.5mm; } p { margin: 1mm 0 2mm; }
 .sub { color: #52514e; font-size: 7.3pt; font-weight: 400; } .sm { font-size: 7.6pt; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; } .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
 .card { border: 1px solid #e4e3de; border-radius: 3mm; padding: 3mm 3.5mm; background: #fff; }
-.hero { background: linear-gradient(120deg, #eef2fb, #fdf0f6); border-radius: 4mm; padding: 4mm 6mm; margin-bottom: 3mm; } .hero h1 { font-size: 19pt; }
+.hero { background: #f4f6fb; border-left: 4px solid #d63384; border-radius: 4mm; padding: 4mm 6mm; margin-bottom: 3mm; } .hero h1 { font-size: 19pt; }
 .big { font-size: 20pt; font-weight: 800; color: #254aa5; line-height: 1; } .bigp { color: #d63384; }
 .t { width: 100%; border-collapse: collapse; font-size: 8.2pt; } .t th { text-align: left; font-size: 7pt; text-transform: uppercase; color: #52514e; border-bottom: 1.5px solid #cfcfca; padding: 1.2mm 1.5mm; }
 .t td { border-bottom: 1px solid #ecebe7; padding: 0.9mm 1.4mm; vertical-align: top; } .t .n, .n { text-align: right; font-variant-numeric: tabular-nums; }
@@ -459,7 +459,7 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
       <li><b>Richer data</b> – fielding, ball-tracking and pitch data would sharpen ratings; U19 and state-league scorecards would firm up the youth board.</li></ul></div>
   <div class="grid2" style="margin-top:5mm">
     <div class="card" style="background:#f6f7fb"><h3 style="margin-top:0">Reproduce every number</h3><p class="sm">Install the pinned environment (<code>requirements.txt</code>), place the RR data pack in <code>02_data/</code>, run <code>bash v2_code/run_all.sh</code>. Each stage is one command; the README maps every table and chart in this report to the script and output file that produced it. The data pack is never uploaded or committed.</p></div>
-    <div class="card" style="background:linear-gradient(120deg,#13235a,#254aa5);color:#fff;border:0"><h3 style="margin-top:0;color:#fff">Contact</h3><p style="margin:0;font-size:10pt;line-height:1.7"><b>{AUTHOR['name']}</b><br>{AUTHOR['email']}<br>{AUTHOR['github']}</p><p class="sm" style="color:#d6dbf3;margin-top:2mm">Happy to walk the selection panel through the model, the website or any player in detail.</p></div></div>
+    <div class="card" style="background:#13235a;color:#fff;border:0"><h3 style="margin-top:0;color:#fff">Contact</h3><p style="margin:0;font-size:10pt;line-height:1.7"><b>{AUTHOR['name']}</b><br>{AUTHOR['email']}<br>{AUTHOR['github']}</p><p class="sm" style="color:#d6dbf3;margin-top:2mm">Happy to walk the selection panel through the model, the website or any player in detail.</p></div></div>
   <p class="foot">Sources: RR/Unstop data pack (aggregates only); Cricsheet (ODC-By); Wikipedia (CC BY-SA) auction prices; Wikidata (CC0) ages; IPL 2027 retentions – Willow Sports via Yahoo Sports and rajasthanroyals.com (17 Nov 2026), RVCJ graphic. Full method, code and every table: v2_results/ and the evaluator website.</p>
 </section>
 </body></html>"""
@@ -482,24 +482,25 @@ h1 { font-size: 24pt; font-weight: 700; } h2 { font-size: 16pt; font-weight: 700
 .t th { font-size: 7.4pt; } .card { padding: 3.5mm 4mm; } .pill { font-size: 7.4pt; }
 .formula { font-size: 10.5pt; }
 /* cover */
-.cover { padding: 0 !important; color: #fff; background: linear-gradient(150deg, #13235a 0%, #254aa5 55%, #7a2a7a 100%); }
-.cover .in { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 22mm 20mm 16mm; }
-.cover .tag { font-size: 9pt; letter-spacing: 3px; text-transform: uppercase; color: #ffb8da; font-weight: 600; }
-.cover h1 { font-size: 34pt; line-height: 1.1; margin: 5mm 0 4mm; color: #fff; letter-spacing: -.5px; }
-.cover .lead { font-size: 12.5pt; max-width: 150mm; color: #e6e9f7; }
-.cover .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-top: 10mm; }
-.cover .stat { border: 1px solid rgba(255,255,255,.28); border-radius: 3mm; padding: 4mm; background: rgba(255,255,255,.07); }
-.cover .stat .v { font-size: 19pt; font-weight: 700; } .cover .stat .l { font-size: 8pt; color: #d6dbf3; }
-.cover .toc { columns: 2; font-size: 9.5pt; color: #e6e9f7; margin-top: 8mm; } .cover .toc div { margin-bottom: 1.6mm; }
-.cover .author { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,.35); padding-top: 6mm; }
-.cover .author .nm { font-size: 15pt; font-weight: 700; } .cover .author .c { font-size: 9.5pt; color: #e6e9f7; line-height: 1.6; }
+.cover { padding: 0 !important; color: #14161c; background: #fff; }
+.cover .in { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 26mm 20mm 0 24mm; border-left: 5mm solid #d63384; }
+.cover .tag { font-size: 9pt; letter-spacing: 2.5px; text-transform: uppercase; color: #d63384; font-weight: 600; }
+.cover h1 { font-size: 32pt; line-height: 1.12; margin: 6mm 0 5mm; color: #13235a; letter-spacing: -.4px; }
+.cover .rule { width: 30mm; height: 1.2mm; background: #d63384; margin: 0 0 6mm; }
+.cover .lead { font-size: 12.5pt; max-width: 150mm; color: #52514e; }
+.cover .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-top: 12mm; }
+.cover .stat { border-top: 1.2mm solid #254aa5; padding: 3mm 0 0; }
+.cover .stat .v { font-size: 20pt; font-weight: 700; color: #13235a; } .cover .stat .l { font-size: 8.4pt; color: #52514e; }
+.cover .toc { columns: 2; font-size: 9.8pt; color: #14161c; margin-top: 12mm; border-top: 1px solid #e4e3de; padding-top: 5mm; } .cover .toc div { margin-bottom: 1.8mm; }
+.cover .author { display: flex; justify-content: space-between; align-items: flex-end; background: #13235a; color: #fff; margin: 0 -20mm 0 -24mm; padding: 9mm 20mm 10mm 24mm; }
+.cover .author .nm { font-size: 16pt; font-weight: 700; } .cover .author .c { font-size: 9.5pt; color: #d6dbf3; line-height: 1.6; }
 """
 TOC = ['The answer: players RR should back', 'The brief and our solution', 'Defining pressure', 'Measuring performance fairly',
        'Models and training logic', 'Evidence for the top 10', 'Reliability and limitations', 'RR after the retentions',
        'The IPL 2027 auction pool', 'Selector verdicts and youngsters', 'Value buys and future scope']
 COVER = f"""<section class="page cover"><div class="in">
   <div><div class="tag">SupeRR Selector Season 2 · Round 1 · Rajasthan Royals × Unstop</div>
-    <h1>The most reliable players<br>under pressure – and whom<br>RR should back at the<br>IPL 2027 auction</h1>
+    <h1>The most reliable players<br>under pressure – and whom<br>RR should back at the<br>IPL 2027 auction</h1><div class="rule"></div>
     <div class="lead">A data-driven pressure rating for batters and bowlers, validated on seasons the models never saw, and turned into an auction shortlist after the 17 November 2026 retentions.</div>
     <div class="stats">
       <div class="stat"><div class="v">1.67 M</div><div class="l">deliveries modelled</div></div>

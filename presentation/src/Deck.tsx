@@ -26,7 +26,7 @@ const ax = (x: any = {}) => ({ axisLine: { lineStyle: { color: C.line } }, axisL
 // ---------- slide chrome ----------
 function Frame({ k, t, sub, children, n }: { k: string; t: ReactNode; sub?: ReactNode; children: ReactNode; n: number }) {
   return <div className="relative h-full w-full bg-white px-[88px] pb-[70px] pt-[64px]">
-    <div className="absolute left-0 top-0 h-[10px] w-full" style={{ background: `linear-gradient(90deg, ${C.blue} 0%, ${C.blue} 55%, ${C.pink} 55%)` }} />
+    <div className="absolute left-0 top-0 h-[6px] w-full" style={{ background: C.pink }} />
     <div className="rise text-[18px] font-bold uppercase tracking-[0.22em] text-pink">{k}</div>
     <h2 className="rise mt-2 text-[52px] font-extrabold leading-[1.08] tracking-tight text-blue-deep" style={{ animationDelay: '.05s' }}>{t}</h2>
     {sub ? <p className="rise mt-3 max-w-[1250px] text-[22px] leading-snug text-mute" style={{ animationDelay: '.1s' }}>{sub}</p> : null}
@@ -47,7 +47,7 @@ function Face({ id, name, role, photos, size }: { id: string; name: string; role
   const src = photos[id]
   const st = { width: size, height: size, borderRadius: size * 0.22 }
   return src ? <img src={src} alt={name} style={st} className="shrink-0 object-cover object-top shadow-lg" />
-    : <div aria-hidden style={{ ...st, fontSize: size * 0.34, background: role === 'bat' ? `linear-gradient(140deg, ${C.navy}, ${C.blue})` : `linear-gradient(140deg, #B5115F, ${C.pink})` }} className="grid shrink-0 place-items-center font-head font-extrabold text-white shadow-lg">{ini(name)}</div>
+    : <div aria-hidden style={{ ...st, fontSize: size * 0.34, background: role === 'bat' ? C.blue : C.pink }} className="grid shrink-0 place-items-center font-head font-extrabold text-white shadow-lg">{ini(name)}</div>
 }
 function Toggle<T extends string>({ v, set, opts }: { v: T; set: (x: T) => void; opts: [T, string][] }) {
   return <div className="inline-flex gap-1 rounded-full bg-blue-soft p-1" role="tablist">{opts.map(([k, l]) => <button key={k} role="tab" aria-selected={v === k} className={`tab ${v === k ? 'on' : ''}`} onClick={e => { e.stopPropagation(); set(k) }}>{l}</button>)}</div>
@@ -60,8 +60,8 @@ function LeverageSlide({ lev }: { lev: any }) {
   return <div className="grid grid-cols-[1fr_400px] gap-8">
     <div className="card p-5"><div className="mb-2 flex items-center justify-between"><div className="text-[18px] font-semibold">How much the next ball can swing the match, by over</div>
       <Toggle v={m} set={setM} opts={[['both', 'Both'], ['setting', 'Setting'], ['chasing', 'Chasing']]} /></div>
-      <EC h={470} option={{ grid: { left: 60, right: 30, top: 30, bottom: 50 }, tooltip: { trigger: 'axis', valueFormatter: (v: number) => `${v.toFixed(2)}× an average ball` },
-        legend: { bottom: 0, textStyle: { fontSize: 15 } }, xAxis: { type: 'category', data: lev.overs, name: 'Over', nameLocation: 'middle', nameGap: 32, ...ax() }, yAxis: { type: 'value', ...ax() },
+      <EC h={470} option={{ grid: { left: 60, right: 30, top: 50, bottom: 50 }, tooltip: { trigger: 'axis', valueFormatter: (v: number) => `${v.toFixed(2)}× an average ball` },
+        legend: { top: 0, right: 10, itemGap: 28, textStyle: { fontSize: 15 } }, xAxis: { type: 'category', data: lev.overs, name: 'Over', nameLocation: 'middle', nameGap: 32, ...ax() }, yAxis: { type: 'value', ...ax() },
         series: [...(m !== 'chasing' ? [s('Setting a total', lev.setting, C.blue)] : []), ...(m !== 'setting' ? [s('Chasing', lev.chasing, C.pink)] : []),
           { type: 'line', data: [], markLine: { silent: true, symbol: 'none', data: [{ yAxis: 1 }], lineStyle: { color: C.mute, type: 'dashed' }, label: { formatter: 'average ball', color: C.mute, fontSize: 14 } } }] }} /></div>
     <div className="flex flex-col gap-4">
@@ -111,7 +111,7 @@ function ModelsSlide({ cal }: { cal: any }) {
       className={`card flex items-center gap-5 p-5 text-left transition ${o === i ? 'border-pink ring-4 ring-pink/15' : 'hover:border-blue'}`}>
       <div className={`grid h-14 w-14 shrink-0 place-items-center rounded-2xl font-head text-[24px] font-bold ${o === i ? 'bg-pink text-white' : 'bg-blue-soft text-blue'}`}>{i + 1}</div>
       <div><div className="font-head text-[24px] font-bold text-blue-deep">{m[0]}</div><div className="text-[17px] font-semibold text-pink">{m[1]}</div></div></button>)}</div>
-    <div key={o} className="card rise flex flex-col justify-between p-10" style={{ background: `linear-gradient(160deg, #fff 40%, ${C.pinkSoft})` }}>
+    <div key={o} className="card rise flex flex-col justify-between p-10">
       <div><div className="text-[16px] font-bold uppercase tracking-wider text-pink">Model {o + 1} · {M[o][1]}</div><div className="mt-3 font-head text-[44px] font-extrabold text-blue-deep">{M[o][0]}</div>
         <p className="mt-5 text-[26px] leading-snug">{M[o][2]}</p></div>
       <div className="rounded-2xl bg-white p-6 text-[21px] leading-snug shadow-sm"><b className="text-blue">Why we kept it: </b>{M[o][3]}</div>
@@ -180,8 +180,8 @@ function PlayerSlide({ id, role, rank, D }: { id: string; role: Role; rank: numb
   const min = -30, max = 45, X = (v: number) => `${((Math.max(min, Math.min(max, v)) - min) / (max - min)) * 100}%`
   const cr = D.credits[id]
   return <div className="relative h-full w-full overflow-hidden bg-white">
-    <div className="absolute inset-y-0 left-0 w-[520px]" style={{ background: role === 'bat' ? `linear-gradient(165deg, ${C.navy}, ${C.blue})` : `linear-gradient(165deg, #7A0F45, ${C.pink})` }} />
-    <div className="absolute left-0 top-0 h-[10px] w-full" style={{ background: `linear-gradient(90deg, ${C.blue} 0%, ${C.blue} 55%, ${C.pink} 55%)` }} />
+    <div className="absolute inset-y-0 left-0 w-[520px]" style={{ background: role === 'bat' ? C.navy : '#9E1458' }} />
+    <div className="absolute left-0 top-0 h-[6px] w-full" style={{ background: C.pink }} />
     <div className="absolute left-[64px] top-[70px] w-[392px] text-white">
       <div className="rise text-[17px] font-bold uppercase tracking-[0.2em] text-white/75">{role === 'bat' ? 'Batter' : 'Bowler'} · RR can buy</div>
       <div className="rise mt-1 font-head text-[120px] font-extrabold leading-none text-white/95">#{rank}</div>
@@ -272,16 +272,25 @@ export default function Deck() {
     if (!D) return { slides: [] as { t: string; g: string; el: (n: number, go: (k: number) => void) => ReactNode }[], idx: {} as Record<string, number> }
     const S: { t: string; g: string; el: (n: number, go: (k: number) => void) => ReactNode }[] = []
     const idx: Record<string, number> = {}
-    S.push({ t: 'Title', g: 'Intro', el: () => <div className="relative h-full w-full overflow-hidden text-white" style={{ background: `radial-gradient(900px 600px at 92% 8%, ${C.pink}cc, transparent 60%), linear-gradient(150deg, ${C.navy} 0%, ${C.blue} 75%)` }}>
-      <div className="absolute -bottom-40 -right-40 h-[620px] w-[620px] rounded-full border-[60px] border-white/5" /><div className="absolute bottom-24 right-40 h-[260px] w-[260px] rounded-full border-[30px] border-pink/40" />
-      <div className="absolute left-[100px] top-[100px] max-w-[1150px]">
-        <div className="rise text-[20px] font-bold uppercase tracking-[0.3em] text-pink-soft">SupeRR Selector Season 2 · Round 1</div>
-        <h1 className="rise mt-6 text-[88px] font-extrabold leading-[1.02] tracking-tight" style={{ animationDelay: '.08s' }}>The most reliable players <span className="text-pink-soft">under pressure</span></h1>
-        <p className="rise mt-6 text-[30px] text-white/85" style={{ animationDelay: '.16s' }}>…and whom Rajasthan Royals should back at the IPL 2027 auction</p></div>
-      <div className="absolute bottom-[90px] left-[100px] flex items-end gap-16">
-        <div className="rise" style={{ animationDelay: '.25s' }}><div className="text-[15px] uppercase tracking-[0.25em] text-pink-soft">Presented by</div><div className="mt-1 font-head text-[40px] font-bold">{AUTHOR.name}</div>
-          <div className="text-[20px] text-white/80">{AUTHOR.email} · {AUTHOR.github}</div></div>
-        <div className="rise text-[18px] text-white/70" style={{ animationDelay: '.3s' }}>Press → or click to begin</div></div></div> })
+    S.push({ t: 'Title', g: 'Intro', el: () => { const people = [...D.lists.bat.map((id: string) => [id, 'bat']), ...D.lists.bowl.map((id: string) => [id, 'bowl'])] as [string, Role][]
+      return <div className="relative h-full w-full overflow-hidden bg-white">
+      <div className="absolute left-0 top-0 h-full w-[14px] bg-pink" />
+      <div className="absolute left-[110px] top-[96px] w-[900px]">
+        <div className="rise text-[19px] font-bold uppercase tracking-[0.22em] text-pink">SupeRR Selector Season 2 · Round 1</div>
+        <h1 className="rise mt-6 text-[80px] font-extrabold leading-[1.04] tracking-tight text-blue-deep" style={{ animationDelay: '.08s' }}>The most reliable players under pressure</h1>
+        <div className="rise mt-7 h-[5px] w-[120px] bg-pink" style={{ animationDelay: '.12s' }} />
+        <p className="rise mt-7 text-[30px] leading-snug text-mute" style={{ animationDelay: '.16s' }}>…and whom Rajasthan Royals should back at the IPL 2027 auction</p></div>
+      <div className="absolute right-[90px] top-[110px] w-[470px]">
+        {[['bat', 'Top 10 batters'], ['bowl', 'Top 10 bowlers']].map(([r, l], row) => <div key={r} className="rise mb-10" style={{ animationDelay: `${0.2 + row * 0.1}s` }}>
+          <div className="mb-3 text-[15px] font-bold uppercase tracking-[0.18em]" style={{ color: r === 'bat' ? C.blue : C.pink }}>{l}</div>
+          <div className="flex flex-wrap pl-[26px]">{people.filter(x => x[1] === r).map(([id, role], k) =>
+            <div key={id} title={D.players[id].name} className="-ml-[26px] mb-3 rounded-full border-[5px] border-white shadow-md" style={{ zIndex: 20 - k }}>
+              {D.photos[id] ? <img src={D.photos[id]} alt={D.players[id].name} className="h-[96px] w-[96px] rounded-full object-cover object-top" />
+                : <div className="grid h-[96px] w-[96px] place-items-center rounded-full font-head text-[30px] font-bold text-white" style={{ background: role === 'bat' ? C.blue : C.pink }}>{ini(D.players[id].name)}</div>}</div>)}</div></div>)}</div>
+      <div className="absolute bottom-0 left-[14px] right-0 flex h-[170px] items-center justify-between bg-blue-deep px-[96px] text-white">
+        <div><div className="text-[14px] uppercase tracking-[0.25em] text-white/60">Presented by</div><div className="mt-1 font-head text-[36px] font-bold">{AUTHOR.name}</div>
+          <div className="text-[19px] text-white/80">{AUTHOR.email} · {AUTHOR.github}</div></div>
+        <div className="text-right text-[18px] text-white/70">Rajasthan Royals × Unstop<br />Press → or click to begin</div></div></div> } })
     const agendaAt = S.length
     S.push({ t: 'Agenda', g: 'Intro', el: (n, go) => <Frame k="Agenda" t="What we'll cover" n={n}>
       <div className="grid grid-cols-3 gap-5">{[['The question', 'brief'], ['Defining pressure', 'pressure'], ['Fair measurement', 'runvalue'], ['Models & training', 'models'], ['Proof it works', 'backtest'], ['Top 10 batters', 'bat-list'], ['Top 10 bowlers', 'bowl-list'], ['Head-to-head', 'compare'], ['RR auction plan', 'gaps']].map(([l, k], j) =>
@@ -326,7 +335,7 @@ export default function Deck() {
         <div className="grid grid-cols-3 gap-6">{(['bat', 'bowl'] as Role[]).map(r => <div key={r} className="card overflow-hidden p-6"><div className="font-head text-[22px] font-bold" style={{ color: r === 'bat' ? C.blue : C.pink }}>Next best {r === 'bat' ? 'batters' : 'bowlers'}</div>
           <table className="mt-3 w-full text-[18px]"><tbody>{D.strategy.pool[r].filter((x: any) => !top(r).includes(x.name)).slice(0, 8).map((x: any) => <tr key={x.name} className="border-t border-line">
             <td className="py-2 text-mute">#{x.pool_rank}</td><td className="py-2 font-semibold">{x.name}{x.tier === 'emerging' ? <span className="ml-2 text-[13px] text-mute">emerging</span> : null}</td><td className="num py-2 text-right font-bold">{f1(x.rating)}</td></tr>)}</tbody></table></div>)}
-          <div className="card p-6" style={{ background: `linear-gradient(160deg,#fff 50%, ${C.pinkSoft})` }}><div className="font-head text-[22px] font-bold text-blue-deep">Youngsters in the pool (≤23)</div>
+          <div className="card p-6"><div className="font-head text-[22px] font-bold text-blue-deep">Youngsters in the pool (≤23)</div>
             <table className="mt-3 w-full text-[18px]"><tbody>{[...D.strategy.youth_pool.bat.slice(0, 4), ...D.strategy.youth_pool.bowl.slice(0, 4)].map((x: any) => <tr key={x.name} className="border-t border-line">
               <td className="py-2 font-semibold">{x.name} <span className="text-[14px] text-mute">{x.age}</span></td><td className="py-2 text-right text-[15px] text-pink">{x.label}</td></tr>)}</tbody></table>
             <p className="mt-3 text-[14px] text-mute">Small samples: a watch list, not a ranking. Minors: cricket data and age only.</p></div></div>
@@ -336,7 +345,7 @@ export default function Deck() {
         ['Auction optimiser', 'Best targets within purse, slot and overseas limits – max bids and plan A/B/C per role.'], ['Live auction mode', 'Enter each lot; all 10 purses update and RR\'s targets re-optimise instantly.'],
         ['Better price model', 'Train on the official auction register and backtest price ranges on past auctions.'], ['Richer data', 'Fielding, ball-tracking and pitch data; U19 and state-league scorecards for youth.']].map(([a, b], j) =>
         <div key={a} className="card rise p-7" style={{ animationDelay: `${j * 0.05}s` }}><div className={`mb-4 h-2 w-16 rounded-full ${j % 2 ? 'bg-pink' : 'bg-blue'}`} /><div className="font-head text-[26px] font-bold text-blue-deep">{a}</div><p className="mt-2 text-[19px] leading-snug text-mute">{b}</p></div>)}</div></Frame> })
-    S.push({ t: 'Thank you', g: 'Close', el: () => <div className="relative grid h-full w-full grid-cols-[1fr_560px] gap-10 overflow-hidden p-[90px] text-white" style={{ background: `radial-gradient(900px 600px at 10% 110%, ${C.pink}cc, transparent 60%), linear-gradient(150deg, ${C.navy} 0%, ${C.blue} 80%)` }}>
+    S.push({ t: 'Thank you', g: 'Close', el: () => <div className="relative grid h-full w-full grid-cols-[1fr_560px] gap-10 overflow-hidden p-[90px] text-white" style={{ background: C.navy }}>
       <div className="flex flex-col justify-between"><div><div className="rise text-[20px] uppercase tracking-[0.3em] text-pink-soft">Thank you</div><h2 className="rise mt-4 text-[96px] font-extrabold leading-none">Questions?</h2>
         <p className="rise mt-6 max-w-[700px] text-[26px] text-white/85">Happy to walk the selection panel through the model, the data or any player in detail.</p></div>
         <div className="rise"><div className="font-head text-[44px] font-bold">{AUTHOR.name}</div><div className="text-[24px] text-white/85">{AUTHOR.email}</div><div className="text-[24px] text-white/85">{AUTHOR.github}</div></div></div>
