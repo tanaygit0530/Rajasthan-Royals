@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { lock } from '../lib/crypto'
 import { useData } from '../lib/data'
 
-const NAV = [['/', 'Overview'], ['/rankings', 'Rankings'], ['/compare', 'Compare'], ['/how-it-works', 'How it works'], ['/strategy', 'RR strategy'], ['/report', 'Report']]
+const NAV = [['/', 'Overview'], ['/rankings', 'Rankings'], ['/compare', 'Compare'], ['/how-it-works', 'How it works'], ['/strategy', 'RR strategy'], ['/report', 'Report'], ['/deck', 'Presentation']]
 export default function Layout() {
   const { meta } = useData()
   const [dark, setDark] = useState(document.documentElement.classList.contains('dark'))

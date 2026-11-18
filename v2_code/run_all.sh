@@ -38,6 +38,7 @@ STAGES=(
   s27_auction_pool      # IPL 2027 auction pool + available youngsters (CSV, xlsx)
   s26_final_pdf         # professional final report (12 pages, cover + header/footer) -> v2_results/report/final/
   s25_site_export       # aggregated JSON for the evaluator site (site/private_data, git-ignored)
+  s28_photos            # freely licensed photos of the 20 picks (Wikimedia; encrypted into the site bundle)
 )
 # usage: run_all.sh            -> all stages
 #        run_all.sh s07        -> stages starting with s07

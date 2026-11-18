@@ -17,3 +17,6 @@ Link: <URL>   ·   Password: sent separately
 6. Report – the full methodology report (PDF) and data sources.
 
 Every number on the site is generated from the same outputs as the written report and the submitted picks.
+
+## Presentation (web slides)
+Open **Presentation** in the top menu (or `#/deck`). Use the arrow keys, Space or swipe to move between slides; press **G** for an overview of every slide and **F** for full screen. There are 34 slides: the brief, method, models and backtest, the two top-10 lists, one slide per player (photo, rating with its 80% range, pressure vs normal vs career stats, phase chart, biggest pressure moments, verdict, price, and labelled opinion notes), the RR plan, the auction pool, future scope and credits.

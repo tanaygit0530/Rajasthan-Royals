@@ -12,9 +12,11 @@ import Compare from './pages/Compare'
 import How from './pages/How'
 import Strategy from './pages/Strategy'
 import Report from './pages/Report'
+import Deck from './pages/Deck'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Gate><DataProvider><HashRouter><Routes>
+      <Route path="deck" element={<Deck />} />
       <Route element={<Layout />}>
         <Route index element={<Landing />} /><Route path="rankings" element={<Rankings />} />
         <Route path="player/:id" element={<PlayerPage />} /><Route path="compare" element={<Compare />} />

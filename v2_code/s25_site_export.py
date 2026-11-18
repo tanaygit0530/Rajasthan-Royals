@@ -262,7 +262,10 @@ name2id = {players[u]['name']: u for u in players}
 VD['id'] = VD.name.map(name2id)
 strategy = dict(squad=recs(SQ), gaps=recs(GAPS), plans=plans, verdicts=recs(VD),
                 value={r: recs(rd(f'value/{r}_uncapped_value_top10.csv')) for r in ['bat', 'bowl']},
-                youth={r: recs(rd(f'youth/{r}_board_u23.csv')) for r in ['bat', 'bowl']}, allrounders=recs(YAR.reset_index()))
+                youth={r: recs(rd(f'youth/{r}_board_u23.csv')) for r in ['bat', 'bowl']}, allrounders=recs(YAR.reset_index()),
+                teams=recs(pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config', 'teams_2027.csv')).drop(columns='source')),
+                pool={r: recs(rd(f'auction_pool/{r}_auction_pool.csv').head(20)) for r in ['bat', 'bowl']},
+                youth_pool={r: recs(rd(f'auction_pool/{r}_youth_available_u23.csv').head(8)) for r in ['bat', 'bowl']})
 dump('strategy.json', strategy)
 
 # ---------------- meta ----------------
