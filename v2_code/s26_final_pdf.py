@@ -116,11 +116,11 @@ def tone(s):
 
 def top_table(role, kind='rr_can_buy'):
     t = FR[FR.list == f'{"batters" if role == "bat" else "bowlers"}_{kind}']
-    rows = ''.join(f'<tr><td class="n">{int(r.position)}</td><td style="white-space:nowrap"><b>{r.name}</b><div class="sub">{r.nation}</div></td>'
-                   f'<td class="n"><b>{r.score_runs_per100_pressure_balls:.1f}</b><div class="sub">{r.interval_80_lo:.0f} to {r.interval_80_hi:.0f}</div></td>'
+    rows = ''.join(f'<tr><td class="n">{int(r.position)}</td><td style="white-space:nowrap"><b>{r.name}</b></td><td class="sm">{r.nation}</td>'
+                   f'<td class="n" style="white-space:nowrap"><b>{r.score_runs_per100_pressure_balls:.1f}</b></td><td class="n sm" style="white-space:nowrap">{r.interval_80_lo:.0f} to {r.interval_80_hi:.0f}</td>'
                    f'<td class="n">{pc(r.p_top10)}</td><td class="n">{int(r.pressure_balls)}</td><td><span class="pill {tone(r.status)}">{short(r.status)}</span></td></tr>'
                    for r in t.itertuples())
-    return (f'<table class="t"><thead><tr><th>#</th><th>Player</th><th class="n">Rating<div class="sub">80% range</div></th><th class="n">P(top 10)</th>'
+    return (f'<table class="t"><thead><tr><th>#</th><th>Player</th><th>Country</th><th class="n">Rating</th><th class="n">80% range</th><th class="n">P(top 10)</th>'
             f'<th class="n">Pressure balls</th><th>Available as</th></tr></thead><tbody>{rows}</tbody></table>')
 
 
@@ -131,14 +131,14 @@ def av(x):
     x = str(x)
     return 'Open mkt*' if x.startswith('Open market') else x.replace('Released by ', 'ex-')
 def rabb(x):
-    return ', '.join(RAB.get(r.strip(), r.strip()) for r in str(x).split(','))[:30]
+    return ', '.join(RAB.get(r.strip(), r.strip()) for r in str(x).split(',')[:3])
 
 
 def pool_table(role, n=15):
     t = pd.read_csv(res(f'auction_pool/{role}_auction_pool.csv')).head(n)
     rows = ''.join(f'<tr><td class="n">{int(r.pool_rank)}</td><td style="white-space:nowrap"><b>{r.name}</b>{"<sup>†</sup>" if isinstance(r.evidence_flag, str) and r.evidence_flag else ""} '
                    f'{EMB if r.tier == "emerging" else ""} <span class="sub">{int(r.age) if pd.notna(r.age) else "–"}</span></td>'
-                   f'<td class="sm">{rabb(r.roles)}</td><td class="n" style="white-space:nowrap"><b>{r.rating:.1f}</b> <span class="sub">{r.low80:.0f} to {r.high80:.0f}</span></td>'
+                   f'<td class="sm" style="white-space:nowrap">{rabb(r.roles)}</td><td class="n" style="white-space:nowrap"><b>{r.rating:.1f}</b> <span class="sub">{r.low80:.0f} to {r.high80:.0f}</span></td>'
                    f'<td class="sm" style="white-space:nowrap">{av(r.available_as)}</td></tr>' for r in t.itertuples())
     return ('<table class="t sm"><thead><tr><th>#</th><th>Player · age</th><th>Role</th><th class="n">Rating (80%)</th><th>From</th></tr></thead>'
             f'<tbody>{rows}</tbody></table>')
@@ -179,7 +179,7 @@ REQ = [('Pressure definition', 'Learned <b>leverage index</b>: how much the next
        ('Fair comparisons', 'Opposition, venue, era and league strength adjusted (1.6 M public balls); Bayesian shrinkage for small samples; eligibility ≥150 pressure balls, active 2025+.', '§3'),
        ('Evidence for the top 10', 'Ratings with 80% ranges, P(top 10), observed pressure vs normal, biggest pressure moments, scout cards for 60 players, interactive site.', '§4'),
        ('Reliability & limitations', 'Tested on 4 seasons the models never saw; clutch test; calibration; sensitivity; ablation; fairness; full rerun reproduces the lists.', '§5'),
-       ('Two ordered top-10 lists', 'Players RR can back at the IPL 2027 auction (p.1) = the Unstop picks; the open ranking of all players (§4) validates the method across the full field.', 'p.1')]
+       ('Two ordered top-10 lists', 'Players RR can back at the IPL 2027 auction (p.2) = the Unstop picks; the open ranking of all players (§4) validates the method across the full field.', 'p.2')]
 req_html = ''.join(f'<tr><td><b>{a}</b></td><td>{b}</td><td class="n">{c}</td></tr>' for a, b, c in REQ)
 
 STEPS = [('1', 'Win probability', 'every ball, both innings; era, venue, team strength'), ('2', 'Leverage', 'how much the next ball can swing the match'),
@@ -220,7 +220,7 @@ vd_pool = VD[VD.status.astype(str).str.startswith(('In auction', 'Open market'))
 vd_pool['o'] = vd_pool.verdict.map({'Priority target': 0, 'Target': 1, 'Medical check first': 2}).fillna(3)
 vd_pool = vd_pool.sort_values(['o', 'score'], ascending=[True, False])
 ver_html = ''.join(f'<tr><td style="white-space:nowrap"><b>{r.name}</b></td><td><span class="pill {"good" if r.verdict.startswith("Priority") else "risk" if r.verdict.startswith("Medical") else "rr" if r.verdict == "Target" else "muted"}">{r.verdict}</span></td>'
-                   f'<td class="sm">{rabb(r.slots)}</td><td class="n">{r.score:.1f}</td><td class="sm">{str(r.main_risks).replace("interval includes below-average", "wide range").replace("in the auction pool - expect competition", "competition expected").replace("2026 fitness reports", "2026 injuries")}</td></tr>' for r in vd_pool.head(8).itertuples())
+                   f'<td class="sm">{rabb(r.slots)}</td><td class="n">{r.score:.1f}</td><td class="sm">{str(r.main_risks).replace("interval includes below-average", "wide range").replace("in the auction pool - expect competition", "competition expected").replace("2026 fitness reports", "2026 injuries")}</td></tr>' for r in vd_pool.head(6).itertuples())
 
 def small(df, cols, heads):
     return '<table class="t sm"><thead><tr>' + ''.join(f'<th>{h}</th>' for h in heads) + '</tr></thead><tbody>' + ''.join(
@@ -273,6 +273,7 @@ img { width: 100%; display: block; } .note { font-size: 7.6pt; color: #52514e; }
 
 """
 M = sk
+AUTHOR = dict(name='Tanay Patil', email='patiltanay569@gmail.com', github='github.com/tanaygit0530')
 html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SupeRR Selector S2 – Final Report</title><style>{CSS}</style></head><body>
 
 <section class="page">
@@ -281,23 +282,22 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
     <p style="font-size:9.8pt;max-width:178mm"><b>Pressure ball</b> = the next delivery can swing the match most (top 25% of balls by expected change in win probability).
     <b>Pressure Rating</b> = runs a player is expected to add per 100 pressure balls next season vs what the situation predicts (wicket = {KW:.1f} runs; 0 = average), from a Bayesian model tested on unseen seasons.
     <b>Only players RR can buy are listed</b>: released on 17 Nov 2026 or not on any IPL roster – none retained by another team, none already at RR.</p></div>
-  <div class="grid2">
-    <div><h3>Top 10 batters RR should back at the 2027 auction</h3>{top_table('bat')}</div>
-    <div><h3>Top 10 bowlers RR should back at the 2027 auction</h3>{top_table('bowl')}</div>
-  </div>
-  <div class="grid3" style="margin-top:3mm">
-    <div class="find"><b>"Clutch" does not repeat</b>A player's pressure-minus-usual gap made next-season predictions worse (batters {gap_b:+.3f}, bowlers {gap_w:+.3f} correlation).</div>
-    <div class="find"><b>Fair overall skill predicts pressure play</b>r = {M['bat'].loc['M4_eb_overall','wcorr']:.2f} / {M['bowl'].loc['M6_apm','wcorr']:.2f} vs a best-possible {M['bat'].noise_ceiling_r.iloc[0]:.2f} / {M['bowl'].noise_ceiling_r.iloc[0]:.2f}.</div>
-    <div class="find"><b>The obvious formula fails</b>A hand-weighted pressure score (our v1) had no out-of-sample signal: r = {M['bat'].loc['M2_baseline','wcorr']:+.2f} / {M['bowl'].loc['M2_baseline','wcorr']:+.2f}.</div>
-  </div>
-  <p class="note">Eligibility as for all ratings: ≥150 pressure balls in the RR data and active in 2025 or later. P(top 10) = chance of being a genuine top-10 player <i>within the auction pool</i> after uncertainty – the top two or three in each list are the clearest; the rest are near-ties, so role, price and fitness should decide (§6).
+  <h3 style="margin-top:1mm">Top 10 batters RR should back at the 2027 auction</h3>{top_table('bat')}
+  <h3>Top 10 bowlers RR should back at the 2027 auction</h3>{top_table('bowl')}
+  <p class="note">Eligibility as for all ratings: ≥150 pressure balls in the RR data and active in 2025 or later. P(top 10) = chance of being a genuine top-10 player <i>within the auction pool</i> after uncertainty – the top two or three in each list are the clearest; the rest are near-ties, so role, price and fitness should decide (§6–8).
   * Open-market players were not on a 2026 IPL roster and must register for the auction. The best performers overall – mostly retained by their teams – are shown in §4.</p>
 </section>
 
 <section class="page">
   <div class="kick">1 · The brief and our answer</div><h2>What the problem statement asks – and where we answer it</h2>
   <table class="t"><thead><tr><th style="width:30mm">Required</th><th>Our solution</th><th class="n">Where</th></tr></thead><tbody>{req_html}</tbody></table>
-  <h3 style="margin-top:5mm">From ball to rating: the pipeline</h3>{pipe}
+  <h3 style="margin-top:4mm">Three findings that shaped the answer</h3>
+  <div class="grid3" style="margin-top:1mm">
+    <div class="find"><b>"Clutch" does not repeat</b>A player's pressure-minus-usual gap made next-season predictions worse (batters {gap_b:+.3f}, bowlers {gap_w:+.3f} correlation).</div>
+    <div class="find"><b>Fair overall skill predicts pressure play</b>r = {M['bat'].loc['M4_eb_overall','wcorr']:.2f} / {M['bowl'].loc['M6_apm','wcorr']:.2f} vs a best-possible {M['bat'].noise_ceiling_r.iloc[0]:.2f} / {M['bowl'].noise_ceiling_r.iloc[0]:.2f}.</div>
+    <div class="find"><b>The obvious formula fails</b>A hand-weighted pressure score (our v1) had no out-of-sample signal: r = {M['bat'].loc['M2_baseline','wcorr']:+.2f} / {M['bowl'].loc['M2_baseline','wcorr']:+.2f}.</div>
+  </div>
+  <h3 style="margin-top:3mm">From ball to rating: the pipeline</h3>{pipe}
   <div class="kpis">
     <div class="kpi"><div class="v">1.67 M</div><div class="l">deliveries modelled (RR pack + 15 public T20 competitions, 2019–26)</div></div>
     <div class="kpi"><div class="v">{len(BAT)} / {len(BOWL)}</div><div class="l">eligible batters / bowlers (≥150 pressure balls, active 2025+)</div></div>
@@ -314,10 +314,10 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
 
 <section class="page join">
   <div class="kick">2 · Pressure definition</div><h2>Pressure = balls where the next delivery can swing the match</h2>
-  <div class="grid2" style="grid-template-columns:1.35fr 1fr">
-    <div><img src="img/1_leverage_by_over.png"></div>
-    <div><p>For every ball we estimate the batting side's <b>win probability</b> (logistic model with run rate, wickets, balls, target, era par, venue and team Elo). <b>Leverage</b> = the expected change in that probability from the next ball, averaged over its possible outcomes (0,1,2,3,4,6,wicket). The top 25% of balls are pressure balls.</p>
-      <p>The chart shows the shape cricket people expect: a chase tightens towards the end (3.5× an average ball in the 20th over), the death overs of the first innings matter, and middle overs are calm. Knockouts and close finishes are captured automatically.</p></div>
+  <img src="img/1_leverage_by_over.png" style="width:88%;margin:1mm auto 3mm">
+  <div class="grid2">
+    <div><p>For every ball we estimate the batting side's <b>win probability</b> (logistic model with run rate, wickets, balls, target, era par, venue and team Elo). <b>Leverage</b> = the expected change in that probability from the next ball, averaged over its possible outcomes (0,1,2,3,4,6,wicket). The top 25% of balls are pressure balls.</p></div>
+      <div><p>The chart shows the shape cricket people expect: a chase tightens towards the end (3.5× an average ball in the 20th over), the death overs of the first innings matter, and middle overs are calm. Knockouts and close finishes are captured automatically.</p></div>
   </div>
   <h3>We compared seven definitions (rule fixed in advance: keep leverage unless another is better on both tests)</h3>
   <div class="grid2" style="grid-template-columns:1fr 1fr">
@@ -332,13 +332,11 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
   <div class="card" style="margin-bottom:3mm"><b>Per ball:</b> runs scored − expected runs for that exact situation − {KW:.1f} × (dismissal − expected dismissal chance). Bowlers: the mirror image (runs saved + wickets).
     Expected values come from a gradient-boosting model of the situation only (innings, over, wickets, target, required rate, era, venue, team strength – <i>no player information</i>), so openers are not flattered by the powerplay and finishers are not punished for facing yorkers.
     The <b>usual vs pressure</b> comparison the brief asks for is computed for every player (§4).</div>
-  <div class="grid2" style="grid-template-columns:1.15fr 1fr">
-    <div><div class="sub" style="font-weight:700;color:#111;font-size:8.5pt">How strong is each league? (IPL = 0; further left = weaker)</div><img src="img/league.png"></div>
-    <div><h3 style="margin-top:0">Fair across leagues, venues, opponents, eras</h3>
+  <h3>How strong is each league? (IPL = 0; further left = weaker)</h3><img src="img/league.png" style="width:94%;margin:0 auto 3mm">
+  <div><h3 style="margin-top:0">Fair across leagues, venues, opponents and eras</h3><div class="grid3">
       <p class="sm">A ridge model of 1.6 M deliveries separates <b>player skill</b> from <b>league</b>, <b>venue</b> and <b>opponent</b> effects, using players who appear in several competitions (match-bootstrap SEs ≈ 0.4–1.2 runs per 100 balls). Full-member T20Is sit close to the IPL; associate T20Is are about {abs(LS.set_index('comp').loc['T20I-Assoc','batters_runs_vs_IPL_per100']):.0f} runs per 100 balls weaker for batters.</p>
       <p class="sm"><b>Small samples:</b> a hierarchical Bayesian model shrinks thin records toward the average; eligibility needs ≥150 pressure balls and an appearance in 2025 or later. <b>Era:</b> IPL par rose from about 162 to 186 since the Impact Player rule; the par term absorbs it.</p>
-      <p class="sm"><b>Win-probability model:</b> logistic regression beat tree models on unseen seasons (log-loss {wp_chosen.loc[1,'logloss']:.3f}/{wp_chosen.loc[2,'logloss']:.3f} vs the v1 replica {wp_b0.loc[1,'logloss']:.3f}/{wp_b0.loc[2,'logloss']:.3f}); simpler was better, so it was kept.</p></div>
-  </div>
+      <p class="sm"><b>Win-probability model:</b> logistic regression beat tree models on unseen seasons (log-loss {wp_chosen.loc[1,'logloss']:.3f}/{wp_chosen.loc[2,'logloss']:.3f} vs the v1 replica {wp_b0.loc[1,'logloss']:.3f}/{wp_b0.loc[2,'logloss']:.3f}); simpler was better, so it was kept.</p></div></div>
 </section>
 
 
@@ -390,7 +388,7 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
     <div><h3 style="margin-top:0">Pressure vs usual performance</h3>
       <p class="sm">Each dot is an eligible batter: observed run value on pressure balls (y) vs normal balls (x). Players above the line did better under pressure. Because that gap did <b>not</b> repeat from one season to the next, the rating relies on skill measured on all balls and shrinks the gap away – the gap is still shown for every player.</p>
       <p class="sm"><b>Behind each name</b>: pressure strike rate / economy, phase splits, matchups, the three matches where he added most win probability (e.g. Bumrah 4-0-20-0 v RCB, +48% win probability), and sourced risk notes – in the 60 scout cards and on the website.</p>
-      <p class="sm"><b>Why the open ranking matters:</b> it validates the method on the whole field (its #1, Sooryavanshi, is already RR's – re-derived from the raw ball file: 295 pressure balls, SR ≈ 229). Of the open top 10s, 9 batters and 5 bowlers were retained by other teams, so the auction lists on p.1 are a different, less certain set.</p></div>
+      <p class="sm"><b>Why the open ranking matters:</b> it validates the method on the whole field (its #1, Sooryavanshi, is already RR's – re-derived from the raw ball file: 295 pressure balls, SR ≈ 229). Of the open top 10s, 9 batters and 5 bowlers were retained by other teams, so the auction lists on p.2 are a different, less certain set.</p></div>
   </div>
 </section>
 
@@ -411,32 +409,39 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
 
 <section class="page">
   <div class="kick">6 · For Rajasthan Royals: after the 17 Nov 2026 retentions</div><h2>Where RR is exposed – and who it can actually buy</h2>
-  <div class="grid2" style="grid-template-columns:1.25fr 1fr">
-    <div><div class="sub" style="font-weight:700;color:#111;font-size:8.5pt">RR's best retained player per role vs league benchmark (red = big gap)</div><img src="img/rr_gaps.png"></div>
+  <h3 style="margin-top:0">RR's best retained player per role vs league benchmark (red = big gap)</h3><img src="img/rr_gaps.png" style="width:74%;margin:0 auto 3mm">
+  <div class="grid2" style="grid-template-columns:1fr 1fr">
     <div><div class="kpis tight" style="grid-template-columns:1.4fr 1fr 1fr;margin-top:0">
       <div class="kpi"><div class="v">₹{RRT.purse_cr:.2f} cr</div><div class="l">purse left</div></div><div class="kpi"><div class="v">{int(RRT.slots_left)}</div><div class="l">slots</div></div><div class="kpi"><div class="v">{int(RRT.overseas_slots_left)}</div><div class="l">overseas slots</div></div></div>
-      <p class="sm">RR kept {len(SQ)} players incl. Mohammed Shami and M Siddharth (traded in); Hetmyer, Deshpande, Milne, Maphaka and five others were released and Sam Curran went to LSG. The <b>middle order (4–5)</b> is now the biggest gap, then <b>middle-overs spin</b>; opening is RR's strength (Sooryavanshi).</p>
-      <table class="t sm"><thead><tr><th>Team</th><th class="n">Purse ₹cr</th><th class="n">Slots</th><th class="n">OS</th></tr></thead><tbody>{purse_html}</tbody></table></div>
+      <p class="sm">RR kept {len(SQ)} players incl. Mohammed Shami and M Siddharth (traded in); Hetmyer, Deshpande, Milne, Maphaka and five others were released and Sam Curran went to LSG. The <b>middle order (4–5)</b> is now the biggest gap, then <b>middle-overs spin</b>; opening is RR's strength (Sooryavanshi).</p></div>
+      <div><table class="t sm"><thead><tr><th>Team</th><th class="n">Purse ₹cr</th><th class="n">Slots</th><th class="n">OS</th></tr></thead><tbody>{purse_html}</tbody></table></div>
   </div>
   <h3>Auction plan for the biggest gaps (only players in the auction pool)</h3>
   <table class="t"><thead><tr><th>Role</th><th>Plan A</th><th>Plan B</th><th>Plan C</th><th>Value pick (≤ ₹3 cr)</th></tr></thead><tbody>{plans_html}</tbody></table>
 </section>
 
 <section class="page">
-  <div class="kick">6 · The IPL 2027 auction pool</div><h2>Best players NOT retained by any team</h2>
+  <div class="kick">7 · The IPL 2027 auction pool</div><h2>Best players NOT retained by any team</h2>
   <p class="sm">Every rated player who was released on 17 Nov 2026 or is not on any IPL roster – the only players RR can buy. Full lists ({len(pd.read_csv(res('auction_pool/bat_auction_pool.csv')))} batters, {len(pd.read_csv(res('auction_pool/bowl_auction_pool.csv')))} bowlers) in <code>IPL2027_Auction_Pool_Lists.xlsx</code>.
   <b>*</b> open-market players must register for the auction. <b>ex-XXX</b> = released by that team. <b>†</b> record mostly in associate T20Is (weaker opposition) – treat with caution. <b>E</b> = emerging (40–149 pressure balls, wider range).</p>
-  <div class="grid2"><div><h3 style="margin-top:0">Batters in the auction pool</h3>{pool_table('bat')}</div>
-    <div><h3 style="margin-top:0">Bowlers in the auction pool</h3>{pool_table('bowl')}</div></div>
-  <h3>Selector verdicts for the leading auction-pool names</h3>
-  <table class="t sm"><thead><tr><th>Player</th><th>Verdict</th><th>Fills</th><th class="n">Rating</th><th>Main risks</th></tr></thead><tbody>{ver_html}</tbody></table>
+  <div><h3 style="margin-top:1mm">Batters in the auction pool (top 15)</h3>{pool_table('bat')}</div>
+  <div><h3 style="margin-top:2mm">Bowlers in the auction pool (top 15)</h3>{pool_table('bowl')}</div>
 </section>
 
 <section class="page">
-  <div class="kick">7 · Beyond the top 10</div><h2>Value buys, available youngsters and what we delivered</h2>
-  <div class="grid2" style="margin-top:3mm"><div><h3 style="margin-top:0">Value buys in the pool (uncapped, or est. ≤ ₹3 cr)</h3>{val_b}<div style="height:2mm"></div>{val_w}</div>
-    <div><h3 style="margin-top:0">Youngsters in the auction pool (≤23 on 1 Apr 2027)</h3><div class="sub" style="margin-bottom:1mm">Batters</div>{youth_avail('bat')}<div class="sub" style="margin:2mm 0 1mm">Bowlers</div>{youth_avail('bowl')}
-      <p class="note">Projection = adjusted skill per 100 balls in all situations (different scale from the Pressure Rating), next season with 80% range; development model backtested on players aged ≤23 in 2021. Full lists incl. ages 24–26 in the workbook. Minors: cricket data and age only.</p></div></div>
+  <div class="kick">8 · Beyond the top 10</div><h2>Selector verdicts and available youngsters</h2>
+  <h3 style="margin-top:1mm">Selector verdicts for the leading auction-pool names</h3>
+  <table class="t sm"><thead><tr><th>Player</th><th>Verdict</th><th>Fills</th><th class="n">Rating</th><th>Main risks</th></tr></thead><tbody>{ver_html}</tbody></table>
+  <h3 style="margin-top:4mm">Youngsters in the auction pool (aged 23 or under on 1 Apr 2027)</h3>
+  <div class="grid2"><div><div class="sub" style="margin-bottom:1mm;font-weight:700">Batters</div>{youth_avail('bat')}</div>
+    <div><div class="sub" style="margin-bottom:1mm;font-weight:700">Bowlers</div>{youth_avail('bowl')}</div></div>
+  <p class="note">Projection = adjusted skill per 100 balls in all situations (a different scale from the Pressure Rating), next season with 80% range, from a development model backtested on players aged ≤23 in 2021. Small samples: treat as a watch list, not a ranking. Full lists incl. ages 24–26 in the workbook. Minors: cricket data and age only.</p>
+</section>
+
+<section class="page">
+  <div class="kick">9 · Delivery and future scope</div><h2>Value buys, what we delivered – and where it goes next</h2>
+  <h3 style="margin-top:1mm">Value buys in the auction pool (uncapped, or estimated ≤ ₹3 cr)</h3>
+  <div class="grid2">{val_b}{val_w}</div>
   <h3>What we delivered</h3>
   <div class="grid3">
     <div class="card sm"><b>Interactive evaluator site</b><br>Private, password-protected and encrypted: rankings with filters, a profile page for 394 players, compare, method explainer, RR strategy and this report.</div>
@@ -452,12 +457,81 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
       <li><b>Live auction mode</b> – enter each lot; purses and slots of all 10 teams update, RR's targets and max bids re-optimise, alerts when a last option in a role goes.</li>
       <li><b>Better price model</b> – train on the official auction register (base price, set) and show price ranges backtested on past auctions.</li>
       <li><b>Richer data</b> – fielding, ball-tracking and pitch data would sharpen ratings; U19 and state-league scorecards would firm up the youth board.</li></ul></div>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card" style="background:#f6f7fb"><h3 style="margin-top:0">Reproduce every number</h3><p class="sm">Install the pinned environment (<code>requirements.txt</code>), place the RR data pack in <code>02_data/</code>, run <code>bash v2_code/run_all.sh</code>. Each stage is one command; the README maps every table and chart in this report to the script and output file that produced it. The data pack is never uploaded or committed.</p></div>
+    <div class="card" style="background:linear-gradient(120deg,#13235a,#254aa5);color:#fff;border:0"><h3 style="margin-top:0;color:#fff">Contact</h3><p style="margin:0;font-size:10pt;line-height:1.7"><b>{AUTHOR['name']}</b><br>{AUTHOR['email']}<br>{AUTHOR['github']}</p><p class="sm" style="color:#d6dbf3;margin-top:2mm">Happy to walk the selection panel through the model, the website or any player in detail.</p></div></div>
   <p class="foot">Sources: RR/Unstop data pack (aggregates only); Cricsheet (ODC-By); Wikipedia (CC BY-SA) auction prices; Wikidata (CC0) ages; IPL 2027 retentions – Willow Sports via Yahoo Sports and rajasthanroyals.com (17 Nov 2026), RVCJ graphic. Full method, code and every table: v2_results/ and the evaluator website.</p>
 </section>
 </body></html>"""
+# ---------------- professional print layout: cover, running header/footer, full A4 pages ----------------
+PRINT_CSS = """
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body { font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Arial, sans-serif; font-size: 10.2pt; line-height: 1.45; color: #14161c; }
+section.page { width: 210mm; height: 297mm; padding: 11mm 15mm 9mm; display: flex; flex-direction: column; overflow: hidden;
+               page-break-after: always; break-after: page; margin: 0 !important; }
+section.page:last-child { page-break-after: auto; }
+.hdr { display: flex; justify-content: space-between; align-items: center; font-size: 7.6pt; color: #6b6a66; letter-spacing: .3px;
+       border-bottom: 1.5px solid #254aa5; padding-bottom: 1.8mm; margin-bottom: 4mm; }
+.hdr b { color: #254aa5; letter-spacing: .6px; }
+.ftr { display: flex; justify-content: space-between; font-size: 7.4pt; color: #6b6a66; border-top: 1px solid #e4e3de; padding-top: 1.8mm; margin-top: 3mm; }
+.body { flex: 1; display: flex; flex-direction: column; justify-content: flex-start; min-height: 0; }
+.body > h2 { margin-bottom: 3mm; } .body > .grid2, .body > .grid3, .body > table, .body > img { margin-bottom: 2mm; }
+h1 { font-size: 24pt; font-weight: 700; } h2 { font-size: 16pt; font-weight: 700; letter-spacing: -.2px; } h3 { font-size: 11.5pt; font-weight: 600; }
+.kick { font-size: 8pt; } .t { font-size: 8.9pt; } .t.sm { font-size: 8.2pt; } .sm { font-size: 8.6pt; } .note { font-size: 8.2pt; } .sub { font-size: 7.8pt; }
+.t th { font-size: 7.4pt; } .card { padding: 3.5mm 4mm; } .pill { font-size: 7.4pt; }
+.formula { font-size: 10.5pt; }
+/* cover */
+.cover { padding: 0 !important; color: #fff; background: linear-gradient(150deg, #13235a 0%, #254aa5 55%, #7a2a7a 100%); }
+.cover .in { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 22mm 20mm 16mm; }
+.cover .tag { font-size: 9pt; letter-spacing: 3px; text-transform: uppercase; color: #ffb8da; font-weight: 600; }
+.cover h1 { font-size: 34pt; line-height: 1.1; margin: 5mm 0 4mm; color: #fff; letter-spacing: -.5px; }
+.cover .lead { font-size: 12.5pt; max-width: 150mm; color: #e6e9f7; }
+.cover .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-top: 10mm; }
+.cover .stat { border: 1px solid rgba(255,255,255,.28); border-radius: 3mm; padding: 4mm; background: rgba(255,255,255,.07); }
+.cover .stat .v { font-size: 19pt; font-weight: 700; } .cover .stat .l { font-size: 8pt; color: #d6dbf3; }
+.cover .toc { columns: 2; font-size: 9.5pt; color: #e6e9f7; margin-top: 8mm; } .cover .toc div { margin-bottom: 1.6mm; }
+.cover .author { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,.35); padding-top: 6mm; }
+.cover .author .nm { font-size: 15pt; font-weight: 700; } .cover .author .c { font-size: 9.5pt; color: #e6e9f7; line-height: 1.6; }
+"""
+TOC = ['The answer: players RR should back', 'The brief and our solution', 'Defining pressure', 'Measuring performance fairly',
+       'Models and training logic', 'Evidence for the top 10', 'Reliability and limitations', 'RR after the retentions',
+       'The IPL 2027 auction pool', 'Selector verdicts and youngsters', 'Value buys and future scope']
+COVER = f"""<section class="page cover"><div class="in">
+  <div><div class="tag">SupeRR Selector Season 2 · Round 1 · Rajasthan Royals × Unstop</div>
+    <h1>The most reliable players<br>under pressure – and whom<br>RR should back at the<br>IPL 2027 auction</h1>
+    <div class="lead">A data-driven pressure rating for batters and bowlers, validated on seasons the models never saw, and turned into an auction shortlist after the 17 November 2026 retentions.</div>
+    <div class="stats">
+      <div class="stat"><div class="v">1.67 M</div><div class="l">deliveries modelled</div></div>
+      <div class="stat"><div class="v">{len(BAT) + len(BOWL)}</div><div class="l">players rated (≥150 pressure balls)</div></div>
+      <div class="stat"><div class="v">4</div><div class="l">unseen test seasons</div></div>
+      <div class="stat"><div class="v">20</div><div class="l">auction picks (10 bat, 10 bowl)</div></div></div>
+    <div class="toc">{''.join(f'<div>{i:02d} · {t}</div>' for i, t in enumerate(TOC, 1))}</div></div>
+  <div class="author"><div><div style="font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:#ffb8da">Prepared by</div>
+      <div class="nm">{AUTHOR['name']}</div><div class="c">{AUTHOR['email']}<br>{AUTHOR['github']}</div></div>
+    <div class="c" style="text-align:right">Methodology report<br>18 November 2026</div></div>
+</div></section>
+"""
+
+
+def finalize(h):
+    h = h.replace('<section class="page join">', '<section class="page">')
+    h = h.replace('</style>', PRINT_CSS + '</style>', 1)
+    parts = h.split('<section class="page">')
+    n = len(parts) - 1
+    out = [parts[0].replace('<body>', '<body>' + COVER, 1)]
+    for i, part in enumerate(parts[1:], start=2):
+        body, _, rest = part.partition('</section>')
+        out.append(f'<section class="page"><div class="hdr"><span><b>PRESSURE SCOUT</b> · Most reliable players under pressure</span>'
+                   f'<span>SupeRR Selector S2 · Round 1</span></div><div class="body">{body}</div>'
+                   f'<div class="ftr"><span>{AUTHOR["name"]} · {AUTHOR["email"]}</span><span>Page {i} of {n + 1}</span></div></section>{rest}')
+    return ''.join(out)
+
+
+html = finalize(html)
 path = os.path.join(OUT, 'SupeRR_S2_Final_Report.html')
 open(path, 'w').write(html)
 chrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 pdf = os.path.join(OUT, 'SupeRR_S2_Final_Report.pdf')
-subprocess.run([chrome, '--headless', '--disable-gpu', f'--print-to-pdf={pdf}', '--no-pdf-header-footer', 'file://' + path], check=True, capture_output=True)
+subprocess.run([chrome, '--headless', '--disable-gpu', f'--print-to-pdf={pdf}', '--no-pdf-header-footer', '--virtual-time-budget=4000', 'file://' + path], check=True, capture_output=True)
 print('written', pdf)

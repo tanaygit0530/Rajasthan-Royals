@@ -36,7 +36,7 @@ STAGES=(
   s21_report            # report, executive summary, model comparison, baseline vs v2 (pandoc + Chrome)
   s22_review            # fresh-eyes review (independent recomputation from the raw RR file)
   s27_auction_pool      # IPL 2027 auction pool + available youngsters (CSV, xlsx)
-  s26_final_pdf         # concise visual final report (8 pages) -> v2_results/report/final/
+  s26_final_pdf         # professional final report (12 pages, cover + header/footer) -> v2_results/report/final/
   s25_site_export       # aggregated JSON for the evaluator site (site/private_data, git-ignored)
 )
 # usage: run_all.sh            -> all stages
