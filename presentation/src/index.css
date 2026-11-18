@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body, #root { height: 100%; }
+body { @apply bg-blue-deep font-sans text-ink antialiased; margin: 0; overflow: hidden; }
+h1, h2, h3, .head { @apply font-head; }
+:focus-visible { outline: 3px solid #E5197E; outline-offset: 2px; border-radius: 8px; }
+.card { @apply rounded-3xl border border-line bg-white shadow-[0_8px_30px_rgba(10,27,77,0.06)]; }
+.pill { @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[15px] font-semibold; }
+.tab { @apply rounded-full px-4 py-2 text-[17px] font-semibold text-mute transition hover:text-blue; }
+.tab.on { @apply bg-blue text-white hover:text-white; }
+.num { font-variant-numeric: tabular-nums; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes slidein { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: none; } }
+@keyframes slideback { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.rise { animation: rise .55s cubic-bezier(.2,.7,.2,1) both; }
+.fwd { animation: slidein .45s cubic-bezier(.2,.7,.2,1) both; } .back { animation: slideback .45s cubic-bezier(.2,.7,.2,1) both; }
+.grow { transform-origin: left; animation: grow .8s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) { .rise, .fwd, .back, .grow { animation: none !important; } }

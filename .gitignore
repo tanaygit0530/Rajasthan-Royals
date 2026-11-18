@@ -14,3 +14,6 @@ site/dist/
 site/public/enc/
 site/screens/
 site/.env.local
+presentation/private_data/
+presentation/node_modules/
+presentation/dist/
