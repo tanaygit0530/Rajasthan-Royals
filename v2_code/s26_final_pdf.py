@@ -108,6 +108,35 @@ def top_table(role):
             f'<th class="n">Pressure balls</th><th>IPL 2027 status</th></tr></thead><tbody>{rows}</tbody></table>')
 
 
+EMB = '<span class="pill muted" style="padding:0 1.2mm">E</span>'
+RAB = {'Middle-overs spin': 'Mid-overs spin', 'Middle order (4-5)': 'Middle order', 'Left-handed top-6 bat': 'LH top-6', 'Finisher (6-7)': 'Finisher',
+       'Powerplay pace': 'PP pace', 'Death pace': 'Death pace', 'Left-arm bowler': 'Left-arm', 'Wrist spin': 'Wrist spin'}
+def av(x):
+    x = str(x)
+    return 'Open mkt*' if x.startswith('Open market') else x.replace('Released by ', 'ex-')
+def rabb(x):
+    return ', '.join(RAB.get(r.strip(), r.strip()) for r in str(x).split(','))[:30]
+
+
+def pool_table(role, n=15):
+    t = pd.read_csv(res(f'auction_pool/{role}_auction_pool.csv')).head(n)
+    rows = ''.join(f'<tr><td class="n">{int(r.pool_rank)}</td><td style="white-space:nowrap"><b>{r.name}</b>{"<sup>†</sup>" if isinstance(r.evidence_flag, str) and r.evidence_flag else ""} '
+                   f'{EMB if r.tier == "emerging" else ""} <span class="sub">{int(r.age) if pd.notna(r.age) else "–"}</span></td>'
+                   f'<td class="sm">{rabb(r.roles)}</td><td class="n" style="white-space:nowrap"><b>{r.rating:.1f}</b> <span class="sub">{r.low80:.0f} to {r.high80:.0f}</span></td>'
+                   f'<td class="sm" style="white-space:nowrap">{av(r.available_as)}</td></tr>' for r in t.itertuples())
+    return ('<table class="t sm"><thead><tr><th>#</th><th>Player · age</th><th>Role</th><th class="n">Rating (80%)</th><th>From</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table>')
+
+
+def youth_avail(role, n=8):
+    t = pd.read_csv(res(f'auction_pool/{role}_youth_available_u23.csv')).head(n)
+    rows = ''.join(f'<tr><td class="n">{int(r.youth_rank)}</td><td><b>{r.name}</b> <span class="sub">{int(r.age)}</span></td><td>{r.label}</td>'
+                   f'<td class="n">{r.proj_1:.1f} <span class="sub">{r.proj_1_lo:.0f}–{r.proj_1_hi:.0f}</span></td>'
+                   f'<td class="sm" style="white-space:nowrap">{av(r.available_as)}</td></tr>' for r in t.itertuples())
+    return ('<table class="t sm"><thead><tr><th>#</th><th>Player · age</th><th>Board</th><th class="n">Projection</th><th>Available as</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table>')
+
+
 def buy_table(role):
     t = FR[FR.list == f'{"batters" if role == "bat" else "bowlers"}_rr_can_buy']
     return ''.join(f'<tr><td class="n">{int(r.position)}</td><td><b>{r.name}</b> <span class="sub">{r.nation}</span></td><td class="n">{r.score_runs_per100_pressure_balls:.1f}</td>'
@@ -160,15 +189,15 @@ plans_html = ''.join(plans)
 vd_pool = VD[VD.status.astype(str).str.startswith(('In auction', 'Open market'))].copy()
 vd_pool['o'] = vd_pool.verdict.map({'Priority target': 0, 'Target': 1, 'Medical check first': 2}).fillna(3)
 vd_pool = vd_pool.sort_values(['o', 'score'], ascending=[True, False])
-ver_html = ''.join(f'<tr><td><b>{r.name}</b><div class="sub">{r.nation}</div></td><td><span class="pill {"good" if r.verdict.startswith("Priority") else "risk" if r.verdict.startswith("Medical") else "rr" if r.verdict == "Target" else "muted"}">{r.verdict}</span></td>'
-                   f'<td>{r.slots}</td><td class="n">{r.score:.1f}</td><td class="sm">{r.main_risks}</td></tr>' for r in vd_pool.head(8).itertuples())
+ver_html = ''.join(f'<tr><td style="white-space:nowrap"><b>{r.name}</b></td><td><span class="pill {"good" if r.verdict.startswith("Priority") else "risk" if r.verdict.startswith("Medical") else "rr" if r.verdict == "Target" else "muted"}">{r.verdict}</span></td>'
+                   f'<td class="sm">{rabb(r.slots)}</td><td class="n">{r.score:.1f}</td><td class="sm">{str(r.main_risks).replace("interval includes below-average", "wide range").replace("in the auction pool - expect competition", "competition expected").replace("2026 fitness reports", "2026 injuries")}</td></tr>' for r in vd_pool.head(8).itertuples())
 
 def small(df, cols, heads):
     return '<table class="t sm"><thead><tr>' + ''.join(f'<th>{h}</th>' for h in heads) + '</tr></thead><tbody>' + ''.join(
         '<tr>' + ''.join(f'<td>{(f"{v:.1f}" if isinstance(v, float) else v)}</td>' for v in r) + '</tr>' for r in df[cols].itertuples(index=False)) + '</tbody></table>'
 
-val_b = small(VAL['bat'].head(5), ['name', 'cap_status', 'score', 'status'], ['Batter', 'Cap', 'Rating', 'Status'])
-val_w = small(VAL['bowl'].head(5), ['name', 'cap_status', 'score', 'status'], ['Bowler', 'Cap', 'Rating', 'Status'])
+val_b = small(VAL['bat'].head(5), ['name', 'cap_status', 'score', 'pred_price_cr'], ['Batter', 'Cap', 'Rating', 'Est. price ₹cr'])
+val_w = small(VAL['bowl'].head(5), ['name', 'cap_status', 'score', 'pred_price_cr'], ['Bowler', 'Cap', 'Rating', 'Est. price ₹cr'])
 for v in (val_b, val_w): pass
 yb = small(YB['bat'].head(5), ['name', 'age', 'label', 'proj_1', 'status_2027'], ['Batter', 'Age', 'Board', 'Proj.', 'Status'])
 yw = small(YB['bowl'].head(5), ['name', 'age', 'label', 'proj_1', 'status_2027'], ['Bowler', 'Age', 'Board', 'Proj.', 'Status'])
@@ -317,18 +346,20 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
 </section>
 
 <section class="page">
-  <div class="kick">6 · continued</div><h2>Best available names, value buys and youth</h2>
-  <div class="grid2"><div><h3 style="margin-top:0">RR can buy – batters (auction pool)</h3><table class="t sm"><thead><tr><th>#</th><th>Player</th><th class="n">Rating</th><th class="n">Open rank</th><th>Status</th></tr></thead><tbody>{buy_table('bat')}</tbody></table></div>
-    <div><h3 style="margin-top:0">RR can buy – bowlers (auction pool)</h3><table class="t sm"><thead><tr><th>#</th><th>Player</th><th class="n">Rating</th><th class="n">Open rank</th><th>Status</th></tr></thead><tbody>{buy_table('bowl')}</tbody></table></div></div>
+  <div class="kick">6 · The IPL 2027 auction pool</div><h2>Best players NOT retained by any team</h2>
+  <p class="sm">Every rated player who was released on 17 Nov 2026 or is not on any IPL roster – the only players RR can buy. Full lists ({len(pd.read_csv(res('auction_pool/bat_auction_pool.csv')))} batters, {len(pd.read_csv(res('auction_pool/bowl_auction_pool.csv')))} bowlers) in <code>IPL2027_Auction_Pool_Lists.xlsx</code>.
+  <b>*</b> open-market players must register for the auction. <b>ex-XXX</b> = released by that team. <b>†</b> record mostly in associate T20Is (weaker opposition) – treat with caution. <b>E</b> = emerging (40–149 pressure balls, wider range).</p>
+  <div class="grid2"><div><h3 style="margin-top:0">Batters in the auction pool</h3>{pool_table('bat')}</div>
+    <div><h3 style="margin-top:0">Bowlers in the auction pool</h3>{pool_table('bowl')}</div></div>
   <h3>Selector verdicts for the leading auction-pool names</h3>
   <table class="t sm"><thead><tr><th>Player</th><th>Verdict</th><th>Fills</th><th class="n">Rating</th><th>Main risks</th></tr></thead><tbody>{ver_html}</tbody></table>
 </section>
 
 <section class="page">
-  <div class="kick">7 · Beyond the top 10</div><h2>Value buys, youth talent and what we delivered</h2>
-  <div class="grid2" style="margin-top:3mm"><div><h3 style="margin-top:0">Value & uncapped</h3>{val_b}<div style="height:2mm"></div>{val_w}</div>
-    <div><h3 style="margin-top:0">Youth board (≤23 on 1 Apr 2027)</h3>{yb}<div style="height:2mm"></div>{yw}
-      <p class="note">Youth projections = adjusted skill per 100 balls in all situations (different scale); development model backtested on players aged ≤23 in 2021. Minors: cricket data and age only.</p></div></div>
+  <div class="kick">7 · Beyond the top 10</div><h2>Value buys, available youngsters and what we delivered</h2>
+  <div class="grid2" style="margin-top:3mm"><div><h3 style="margin-top:0">Value buys in the pool (uncapped, or est. ≤ ₹3 cr)</h3>{val_b}<div style="height:2mm"></div>{val_w}</div>
+    <div><h3 style="margin-top:0">Youngsters in the auction pool (≤23 on 1 Apr 2027)</h3><div class="sub" style="margin-bottom:1mm">Batters</div>{youth_avail('bat')}<div class="sub" style="margin:2mm 0 1mm">Bowlers</div>{youth_avail('bowl')}
+      <p class="note">Projection = adjusted skill per 100 balls in all situations (different scale from the Pressure Rating), next season with 80% range; development model backtested on players aged ≤23 in 2021. Full lists incl. ages 24–26 in the workbook. Minors: cricket data and age only.</p></div></div>
   <h3>What we delivered</h3>
   <div class="grid3">
     <div class="card sm"><b>Interactive evaluator site</b><br>Private, password-protected and encrypted: rankings with filters, a profile page for 394 players, compare, method explainer, RR strategy and this report.</div>

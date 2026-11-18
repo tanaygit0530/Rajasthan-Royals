@@ -1,0 +1,24 @@
+uid,youth_rank,name,age,cap_status,label,n,proj_1,proj_1_lo,proj_1_hi,proj_3,rating,sample_flag,available_as
+9ca68676,1,Allah Ghazanfar,20,capped,Strong watch,1240.0,32.61,12.91,52.31,24.4,10.93,,Released by MI
+5cdf8304,2,Joel Davies,23,capped,Strong watch,318.0,22.33,0.89,43.77,17.47,,small sample (<500 balls),Open market (must register)
+1d48795b,3,F Singh,22,uncapped (no international),Strong watch,296.0,17.56,-4.01,39.13,14.25,,small sample (<500 balls),Open market (must register)
+bf26cd81,4,AM Green,20,uncapped (no international),Strong watch,150.0,17.37,-5.64,40.38,14.12,,small sample (<500 balls),Open market (must register)
+f146c339,5,SM Meherob,23,uncapped (no international),Strong watch,214.0,14.98,-7.25,37.21,12.51,,small sample (<500 balls),Open market (must register)
+26f1d66c,6,Farhan Ahmed,19,uncapped (no international),Strong watch,138.0,14.96,-8.24,38.15,12.5,,small sample (<500 balls),Open market (must register)
+ec0b9258,7,M Tharupathi,22,uncapped (no international),Track,184.0,11.38,-11.18,33.93,10.08,,small sample (<500 balls),Open market (must register)
+b5a12740,8,Mahli Beardman,21,capped,Track,270.0,11.28,-10.47,33.03,10.02,,small sample (<500 balls),Open market (must register)
+107c26fb,9,Kwena Maphaka,20,capped,Track,969.0,10.96,-8.94,30.87,9.81,-4.27,,Released by RR
+0ecb4de6,10,Rehan Ahmed,22,capped,Track,1626.0,8.61,-10.9,28.13,8.22,-6.61,,Released by DC
+3c55c703,11,Jacob Bethell,23,capped,Track,314.0,4.82,-16.64,26.28,5.67,,small sample (<500 balls),Released by RCB
+9c643d7b,12,JM Coles,22,uncapped (no international),Track,877.0,4.29,-15.71,24.3,5.31,,,Open market (must register)
+1cc0a83d,13,J Hull,22,capped,Track,613.0,2.9,-17.51,23.31,4.37,,,Open market (must register)
+943ca0cd,14,Newman Nyamhuri,21,capped,Track,167.0,0.96,-21.81,23.72,3.06,,small sample (<500 balls),Open market (must register)
+a0b76243,15,T Luus,21,uncapped (no international),Track,156.0,-0.71,-23.63,22.22,1.94,,small sample (<500 balls),Open market (must register)
+86e22dd4,16,Jishan Alam,22,uncapped (no international),Track,174.0,-0.82,-23.49,21.86,1.87,,small sample (<500 balls),Open market (must register)
+eaa36b2a,17,Brian Bennett,23,capped,Track,182.0,-0.89,-23.47,21.68,1.81,-13.01,small sample (<500 balls),Open market (must register)
+ebb74564,18,Andile Simelane,23,capped,Track,332.0,-2.16,-23.52,19.2,0.96,,small sample (<500 balls),Open market (must register)
+c2d9b9cd,19,SB Wood,22,uncapped (no international),Track,156.0,-8.57,-31.49,14.35,-3.36,,small sample (<500 balls),Open market (must register)
+c2e5539b,20,LM Benkenstein,22,uncapped (no international),Track,340.0,-8.73,-30.05,12.58,-3.47,,small sample (<500 balls),Open market (must register)
+a557333b,21,VO Lawes,20,capped,Track,228.0,-11.12,-33.22,10.97,-5.08,,small sample (<500 balls),Open market (must register)
+8ecb0241,22,Y Majid,23,uncapped (no international),Track,138.0,-11.97,-35.17,11.23,-5.65,,small sample (<500 balls),Open market (must register)
+40db4769,23,Garuka Sanketh,21,uncapped (no international),Track,172.0,-24.85,-47.55,-2.15,-14.33,,small sample (<500 balls),Open market (must register)

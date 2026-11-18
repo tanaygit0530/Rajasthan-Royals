@@ -71,6 +71,7 @@ def _match(nm):
 
 
 RET['uid'] = RET.player.map(_match)
+INELIG = pd.read_csv(os.path.join(ROOT, 'v2_code', 'config', 'ineligible_2027.csv')).set_index('player').reason.to_dict()   # cited
 RET_MAP = {r.uid: (r.team, r.status) for r in RET.dropna(subset=['uid']).itertuples()}
 RET_UNMATCHED = RET[RET.uid.isna()].player.tolist()
 
@@ -79,9 +80,7 @@ def status(name, uid):
     """IPL 2027 availability after the 17 Nov 2026 retentions."""
     team = TRADES.get(name, IPL26.get(uid)); nat = NAT.get(uid, 'India')
     if nat == 'Pakistan': return team, 'Not eligible (Pakistan national)'
-    if name == 'Harry Brook': return None, 'Not eligible (IPL ban through 2027)'
-    if name == 'Andre Russell': return None, 'Not eligible (retired from IPL)'
-    if name == 'Ajinkya Rahane': return None, 'Not eligible (retired, 30 Jul 2026)'
+    if name in INELIG: return None, INELIG[name]
     if uid in RET_MAP:
         t, st = RET_MAP[uid]
         if st == 'retained':

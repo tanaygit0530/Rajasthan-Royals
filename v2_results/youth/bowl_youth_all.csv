@@ -1,0 +1,606 @@
+uid,name,age,cap_status,status_2027,label,n,skill,se,proj_1,proj_1_lo,proj_1_hi,proj_2,proj_3,sample_flag
+462411b3,Jasprit Bumrah,33,capped,Retained by MI (not in auction),Buy now,3484.0,54.95,2.72,54.95,35.77,74.12,47.2,39.45,
+9d430b40,Sunil Narine,37,capped,Retained by KKR (not in auction),Buy now,7185.0,45.84,1.91,45.84,26.82,64.85,39.57,33.31,
+5f547c8b,Rashid Khan,28,capped,Retained by GT (not in auction),Buy now,7539.0,41.63,1.86,41.63,22.62,60.64,36.05,30.47,
+5b7ab5a9,Varun Chakravarthy,35,capped,Retained by KKR (not in auction),Buy now,3259.0,39.02,2.81,39.02,19.83,58.22,33.87,28.72,
+c7a995d3,Sai Kishore,30,capped,Retained by GT (not in auction),Buy now,1284.0,36.84,4.37,36.84,17.17,56.51,32.04,27.24,
+a97c8ec2,Wanindu Hasaranga,29,capped,In auction pool (released by LSG),Buy now,5148.0,36.03,2.25,36.03,16.95,55.1,31.36,26.7,
+a457cfb5,Mayank Dagar,30,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,689.0,33.49,5.79,33.49,13.23,53.76,29.24,24.99,
+acee4cc4,Imran Tahir,48,capped,Open market (not on a 2026 IPL roster),Strong watch,4370.0,33.3,2.43,33.3,14.19,52.42,29.08,24.86,
+efc04be7,Noor Ahmad,22,capped,Retained by CSK (not in auction),Strong watch,3726.0,32.93,2.63,32.93,13.78,52.09,28.77,24.61,
+c33d8116,Mohsin Khan,28,uncapped (no international),Retained by LSG (not in auction),Strong watch,1080.0,32.62,4.74,32.62,12.81,52.43,28.51,24.4,
+9ca68676,Allah Ghazanfar,20,capped,In auction pool (released by MI),Strong watch,1240.0,32.61,4.44,32.61,12.91,52.31,28.5,24.4,
+5574750c,Jofra Archer,32,capped,Already RR (retained),Strong watch,2937.0,32.51,2.95,32.51,13.27,51.74,28.42,24.32,
+8d2c70ad,Kuldeep Yadav,32,capped,Retained by LSG (not in auction),Strong watch,2508.0,32.44,3.19,32.44,13.15,51.74,28.36,24.28,
+03806cf8,Josh Hazlewood,36,capped,Retained by RCB (not in auction),Strong watch,2416.0,32.22,3.24,32.22,12.91,51.53,28.17,24.13,
+cf0ccafa,Manimaran Siddharth,28,uncapped (no international),Already RR (retained),Strong watch,294.0,32.1,8.19,32.1,10.52,53.69,28.08,24.05,small sample (<500 balls)
+3540beff,SNJ O'Keefe,42,capped,Open market (not on a 2026 IPL roster),Strong watch,1296.0,31.23,4.35,31.23,11.56,50.89,27.34,23.46,
+e4a0deae,Mitchell Santner,35,capped,Retained by MI (not in auction),Strong watch,4321.0,31.04,2.45,31.04,11.92,50.15,27.18,23.33,
+51a60c16,CJ Boyce,37,capped,Open market (not on a 2026 IPL roster),Strong watch,1248.0,30.56,4.43,30.56,10.87,50.26,26.79,23.01,
+2c54c49b,Matthew Humphreys,24,capped,Open market (not on a 2026 IPL roster),Strong watch,449.0,30.08,6.94,30.08,9.23,50.93,26.39,22.69,small sample (<500 balls)
+2e171977,Axar Patel,33,capped,Retained by DC (not in auction),Strong watch,4424.0,29.97,2.42,29.97,10.86,49.08,26.29,22.61,
+449f4e3c,Blessing Muzarabani,30,capped,In auction pool (released by KKR),Strong watch,2741.0,29.96,3.05,29.96,10.7,49.22,26.29,22.61,
+2e81a32d,Bhuvneshwar Kumar,37,capped,Retained by RCB (not in auction),Strong watch,3732.0,29.88,2.63,29.88,10.72,49.03,26.22,22.55,
+280fff14,Sakib Hussain,22,uncapped (no international),Retained by SRH (not in auction),Strong watch,276.0,29.26,8.39,29.26,7.55,50.97,25.7,22.14,small sample (<500 balls)
+2f9d0389,Lockie Ferguson,35,capped,In auction pool (released by PBKS),Strong watch,3401.0,29.08,2.75,29.08,9.9,48.27,25.55,22.02,
+d48c0f40,LA Patterson-White,28,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,536.0,29.02,6.45,29.02,8.43,49.61,25.5,21.97,
+c5f40e35,SW Currie,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1385.0,28.76,4.22,28.76,9.14,48.38,25.28,21.8,
+7d92277a,Mujeeb Ur Rahman,26,capped,Open market (not on a 2026 IPL roster),Strong watch,5011.0,28.71,2.28,28.71,9.62,47.79,25.23,21.76,
+c05edf8e,Harpreet Brar,31,uncapped (no international),Retained by PBKS (not in auction),Strong watch,1523.0,28.49,4.04,28.49,8.93,48.04,25.05,21.62,
+9eb1455b,Nathan Ellis,32,capped,Retained by SRH (not in auction),Strong watch,3575.0,28.3,2.68,28.3,9.13,47.47,24.89,21.49,
+736123bb,Dunith Wellalage,24,capped,Open market (not on a 2026 IPL roster),Strong watch,1433.0,28.28,4.15,28.28,8.68,47.87,24.88,21.47,
+6c79c098,David Payne,36,capped,In auction pool (released by SRH),Strong watch,2869.0,28.26,2.99,28.26,9.02,47.5,24.86,21.46,
+3feda4fa,Roston Chase,35,capped,Open market (not on a 2026 IPL roster),Strong watch,2531.0,28.17,3.17,28.17,8.88,47.46,24.78,21.4,
+58431ca0,Dushan Hemantha,32,capped,Open market (not on a 2026 IPL roster),Strong watch,642.0,28.07,5.97,28.07,7.72,48.42,24.7,21.34,
+5750bcb4,Eshan Malinga,26,capped,Retained by SRH (not in auction),Strong watch,1216.0,28.05,4.48,28.05,8.33,47.76,24.68,21.32,
+f24c6701,Maheesh Theekshana,26,capped,Open market (not on a 2026 IPL roster),Strong watch,4953.0,27.83,2.29,27.83,8.75,46.92,24.5,21.17,
+ac2e7ec0,T Murphy,26,capped,Open market (not on a 2026 IPL roster),Strong watch,414.0,27.81,7.17,27.81,6.83,48.79,24.48,21.16,small sample (<500 balls)
+80b2fb19,Prince Yadav,25,capped,Retained by LSG (not in auction),Strong watch,751.0,27.57,5.58,27.57,7.4,47.74,24.28,21.0,
+7f8ecc51,AM Phangiso,43,capped,Open market (not on a 2026 IPL roster),Strong watch,952.0,27.45,5.02,27.45,7.52,47.37,24.18,20.91,
+8d92a2c3,Mark Wood,37,capped,Open market (not on a 2026 IPL roster),Strong watch,785.0,27.35,5.47,27.35,7.23,47.47,24.1,20.85,
+6b9eb501,Ottneil Baartman,34,capped,Open market (not on a 2026 IPL roster),Strong watch,1906.0,27.03,3.63,27.03,7.61,46.46,23.83,20.63,
+df064e1a,Ravi Bishnoi,26,capped,Already RR (retained),Strong watch,3401.0,26.9,2.75,26.9,7.72,46.08,23.72,20.55,
+acdc62f5,Anrich Nortje,33,capped,In auction pool (released by LSG),Strong watch,3165.0,26.47,2.85,26.47,7.26,45.67,23.36,20.25,
+78c12883,Sonny Baker,24,capped,Open market (not on a 2026 IPL roster),Strong watch,488.0,26.28,6.71,26.28,5.55,47.0,23.2,20.12,small sample (<500 balls)
+4d7f517e,Akeal Hosein,33,capped,Retained by CSK (not in auction),Strong watch,5531.0,25.92,2.17,25.92,6.86,44.98,22.9,19.88,
+0a8fce53,Mustafizur Rahman,31,capped,In auction pool (released by KKR),Strong watch,4849.0,25.87,2.31,25.87,6.78,44.96,22.86,19.85,
+52c952d9,Tanveer Sangha,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1326.0,25.67,4.31,25.67,6.02,45.32,22.7,19.72,
+fe93fd9d,Ravindra Jadeja,38,capped,Already RR (retained),Strong watch,2592.0,25.38,3.14,25.38,6.09,44.66,22.45,19.52,
+249d60c9,Adil Rashid,39,capped,Open market (not on a 2026 IPL roster),Strong watch,3592.0,25.36,2.68,25.36,6.19,44.53,22.43,19.51,
+45d38a84,Al Islam,30,capped,Open market (not on a 2026 IPL roster),Strong watch,810.0,25.35,5.39,25.35,5.26,45.43,22.42,19.5,
+14f96089,Adam Zampa,35,capped,Open market (not on a 2026 IPL roster),Strong watch,4970.0,25.26,2.28,25.26,6.18,44.35,22.35,19.44,
+7ec9711d,Prenelan Subrayen,33,capped,Open market (not on a 2026 IPL roster),Strong watch,1193.0,25.23,4.52,25.23,5.51,44.96,22.33,19.42,
+9caf69a1,William Jacks,28,capped,Retained by MI (not in auction),Strong watch,1685.0,25.19,3.85,25.19,5.7,44.68,22.29,19.39,
+a03bba42,Tabraiz Shamsi,37,capped,Open market (not on a 2026 IPL roster),Strong watch,3436.0,25.12,2.74,25.12,5.94,44.3,22.24,19.35,
+83c3e8e3,Spencer Johnson,31,capped,In auction pool (released by CSK),Strong watch,1448.0,24.89,4.13,24.89,5.3,44.48,22.04,19.19,
+aa1210d8,CF Parkinson,30,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,2267.0,24.68,3.34,24.68,5.35,44.02,21.87,19.05,
+5b8c830e,Krunal Pandya,36,"uncapped (Indian, last international > 5 years ago)",Retained by RCB (not in auction),Strong watch,2815.0,24.62,3.01,24.62,5.37,43.87,21.82,19.01,
+2f49c897,Mohammed Siraj,33,capped,Retained by GT (not in auction),Strong watch,2892.0,24.33,2.97,24.33,5.09,43.57,21.57,18.81,
+7dc35884,Shakib Al Hasan,40,capped,Open market (not on a 2026 IPL roster),Strong watch,3552.0,24.28,2.69,24.28,5.11,43.45,21.53,18.78,
+bd93fea4,PM Siddle,42,capped,Open market (not on a 2026 IPL roster),Strong watch,2405.0,24.25,3.25,24.25,4.93,43.56,21.5,18.76,
+62af8546,Mohammad Nabi,42,capped,Open market (not on a 2026 IPL roster),Strong watch,3920.0,24.14,2.57,24.14,5.0,43.28,21.41,18.69,
+57ee1fde,Yuzvendra Chahal,36,capped,Retained by PBKS (not in auction),Strong watch,4156.0,23.97,2.49,23.97,4.84,43.1,21.27,18.57,
+e9c7f0d0,FazalHaq Farooqi,26,capped,Open market (not on a 2026 IPL roster),Strong watch,2664.0,23.86,3.09,23.86,4.59,43.13,21.17,18.49,
+0b60eb09,Keshav Maharaj,37,capped,In auction pool (released by MI),Strong watch,2657.0,23.79,3.1,23.79,4.52,43.06,21.12,18.45,
+0bf15e52,Harmeet Singh,34,capped,Open market (not on a 2026 IPL roster),Strong watch,1422.0,23.76,4.17,23.76,4.16,43.36,21.1,18.43,
+d3cc2954,S Simetu,35,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,120.0,23.46,10.97,23.46,-0.06,46.97,20.84,18.22,small sample (<500 balls)
+402f8494,Richard Gleeson,39,capped,In auction pool (released by RCB),Strong watch,2194.0,23.35,3.4,23.35,3.99,42.7,20.75,18.15,
+4167f30b,IG Holland,36,capped,Open market (not on a 2026 IPL roster),Strong watch,796.0,23.32,5.43,23.32,3.22,43.43,20.73,18.13,
+4c0f3806,BA Raine,35,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1584.0,23.32,3.96,23.32,3.79,42.85,20.73,18.13,
+537f5ab2,DL Piedt,37,capped,Open market (not on a 2026 IPL roster),Strong watch,216.0,23.22,9.15,23.22,1.02,45.43,20.65,18.07,small sample (<500 balls)
+e7e86505,Brad Evans,33,capped,Open market (not on a 2026 IPL roster),Strong watch,906.0,23.07,5.13,23.07,3.1,43.04,20.52,17.96,
+e84ac20c,Matt Henry,35,capped,In auction pool (released by CSK),Strong watch,2146.0,22.93,3.43,22.93,3.56,42.29,20.4,17.87,
+8cf9814c,Mohammed Shami,37,capped,Already RR (retained),Strong watch,2596.0,22.79,3.13,22.79,3.51,42.07,20.28,17.77,
+3122c016,KI Simmonds,33,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,342.0,22.73,7.74,22.73,1.43,44.04,20.23,17.74,small sample (<500 balls)
+7d608e12,Dhananjaya de Silva,35,capped,Open market (not on a 2026 IPL roster),Strong watch,732.0,22.67,5.64,22.67,2.48,42.87,20.18,17.7,
+9a2fc964,Bjorn Fortuin,32,capped,Open market (not on a 2026 IPL roster),Strong watch,2323.0,22.56,3.3,22.56,3.23,41.89,20.09,17.62,
+d12143bf,JM Anderson,44,capped,Open market (not on a 2026 IPL roster),Strong watch,360.0,22.51,7.58,22.51,1.3,43.73,20.05,17.59,small sample (<500 balls)
+f986ca1a,Harshal Patel,36,capped,Retained by GT (not in auction),Strong watch,2593.0,22.49,3.13,22.49,3.21,41.78,20.04,17.58,
+5cdf8304,Joel Davies,23,capped,Open market (not on a 2026 IPL roster),Strong watch,318.0,22.33,7.96,22.33,0.89,43.77,19.9,17.47,small sample (<500 balls)
+f19ccfad,Washington Sundar,27,capped,Retained by GT (not in auction),Strong watch,2175.0,22.29,3.41,22.29,2.93,41.65,19.86,17.44,
+24f6e254,JM James,26,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,162.0,22.26,10.05,22.26,-0.58,45.1,19.84,17.42,small sample (<500 balls)
+2ed569a0,Rahul Chahar,27,"uncapped (Indian, last international > 5 years ago)",Retained by CSK (not in auction),Strong watch,2199.0,22.17,3.39,22.17,2.82,41.53,19.77,17.36,
+244048f6,Arshdeep Singh,28,capped,Retained by MI (not in auction),Strong watch,4562.0,22.12,2.38,22.12,3.02,41.22,19.72,17.32,
+6e3f5a5c,Richard Ngarava,29,capped,Open market (not on a 2026 IPL roster),Strong watch,2246.0,22.12,3.36,22.12,2.77,41.46,19.72,17.32,
+78dfe704,V Permaul,37,capped,Open market (not on a 2026 IPL roster),Strong watch,388.0,22.09,7.36,22.09,1.0,43.18,19.7,17.31,small sample (<500 balls)
+64839cb3,Matheesha Pathirana,24,capped,In auction pool (released by KKR),Strong watch,2012.0,22.04,3.54,22.04,2.64,41.44,19.66,17.27,
+dabbd0ae,Binura Fernando,31,capped,Open market (not on a 2026 IPL roster),Strong watch,1719.0,21.84,3.81,21.84,2.36,41.32,19.49,17.13,
+876dbe2d,Dan Mousley,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1261.0,21.81,4.41,21.81,2.12,41.49,19.46,17.11,
+a343262c,Joe Root,36,capped,Open market (not on a 2026 IPL roster),Strong watch,372.0,21.64,7.49,21.64,0.48,42.8,19.32,17.0,small sample (<500 balls)
+05c2ca46,RE van der Merwe,42,capped,Open market (not on a 2026 IPL roster),Strong watch,2532.0,21.56,3.17,21.56,2.27,40.85,19.25,16.94,
+19b9f399,Chris Green,33,capped,Open market (not on a 2026 IPL roster),Strong watch,4996.0,21.46,2.28,21.46,2.37,40.54,19.17,16.88,
+e62dd25d,Kagiso Rabada,31,capped,Retained by GT (not in auction),Strong watch,4393.0,21.35,2.43,21.35,2.24,40.47,19.08,16.81,
+fe366f34,Cooper Connolly,23,capped,Retained by PBKS (not in auction),Strong watch,582.0,21.12,6.23,21.12,0.64,41.6,18.89,16.65,
+3204c99f,Gerald Coetzee,26,capped,In auction pool (released by SRH),Strong watch,1569.0,21.07,3.98,21.07,1.53,40.61,18.84,16.62,
+7dfb8890,Senuran Muthusamy,33,capped,Open market (not on a 2026 IPL roster),Strong watch,949.0,21.05,5.02,21.05,1.13,40.98,18.83,16.61,
+bc773eeb,JM Bird,40,capped,Open market (not on a 2026 IPL roster),Strong watch,954.0,21.03,5.01,21.03,1.1,40.95,18.81,16.59,
+07793daf,Jayden Lennox,32,capped,Open market (not on a 2026 IPL roster),Strong watch,906.0,20.98,5.13,20.98,1.01,40.95,18.77,16.55,
+af5b6464,Navin Bidaisee,27,capped,Open market (not on a 2026 IPL roster),Strong watch,240.0,20.93,8.82,20.93,-1.06,42.91,18.72,16.52,small sample (<500 balls)
+bb351c23,Moeen Ali,39,capped,Open market (not on a 2026 IPL roster),Strong watch,3648.0,20.75,2.66,20.75,1.59,39.91,18.57,16.4,
+98ae73b1,Piyush Chawla,38,"uncapped (Indian, last international > 5 years ago)",Open market (not on a 2026 IPL roster),Strong watch,1867.0,20.68,3.67,20.68,1.25,40.12,18.52,16.36,
+ba5e1069,Rachin Ravindra,27,capped,In auction pool (released by KKR),Strong watch,1375.0,20.66,4.24,20.66,1.04,40.29,18.5,16.34,
+5e3054d0,PG Dooley,29,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,455.0,20.62,6.9,20.62,-0.21,41.45,18.47,16.31,small sample (<500 balls)
+172dff15,Corbin Bosch,32,capped,Retained by MI (not in auction),Strong watch,1586.0,20.61,3.96,20.61,1.08,40.14,18.46,16.3,
+f834dcfc,Lungi Ngidi,31,capped,Retained by DC (not in auction),Strong watch,2502.0,20.6,3.19,20.6,1.31,39.9,18.45,16.3,
+fcc21ace,Anshul Kamboj,32,capped,Retained by CSK (not in auction),Strong watch,611.0,20.48,6.1,20.48,0.07,40.9,18.35,16.22,
+ded9240e,Patrick Cummins,33,capped,Retained by SRH (not in auction),Strong watch,2402.0,20.39,3.25,20.39,1.07,39.7,18.27,16.16,
+f655d740,CG Harrison,32,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1416.0,20.26,4.18,20.26,0.66,39.87,18.17,16.07,
+ee0c05c0,NA Sowter,34,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,2284.0,20.02,3.33,20.02,0.69,39.36,17.97,15.91,
+a818c1be,Trent Boult,37,capped,In auction pool (released by MI),Strong watch,5054.0,19.94,2.27,19.94,0.86,39.02,17.9,15.85,
+ce820073,Sandeep Sharma,33,"uncapped (Indian, last international > 5 years ago)",Already RR (retained),Strong watch,2108.0,19.68,3.46,19.68,0.31,39.05,17.68,15.68,
+23eeb873,Deepak Chahar,54,capped,In auction pool (released by MI),Strong watch,2526.0,19.67,3.17,19.67,0.38,38.96,17.67,15.67,
+4933f499,Jason Behrendorff,36,capped,Open market (not on a 2026 IPL roster),Strong watch,2732.0,19.64,3.06,19.64,0.38,38.9,17.64,15.65,
+4a461c24,Liam Dawson,37,capped,Open market (not on a 2026 IPL roster),Strong watch,3519.0,19.46,2.7,19.46,0.29,38.64,17.5,15.53,
+23638956,SR Harmer,38,capped,Open market (not on a 2026 IPL roster),Strong watch,2768.0,19.42,3.04,19.42,0.16,38.67,17.46,15.5,
+03a83c50,Vijayakanth Viyaskanth,25,capped,Open market (not on a 2026 IPL roster),Strong watch,1007.0,19.37,4.89,19.37,-0.5,39.24,17.42,15.47,
+13c35c9e,Tim Southee,38,capped,Open market (not on a 2026 IPL roster),Strong watch,2521.0,19.34,3.18,19.34,0.05,38.63,17.39,15.45,
+983f2f61,Swapnil Singh,36,uncapped (no international),In auction pool (released by RCB),Strong watch,580.0,19.32,6.24,19.32,-1.16,39.8,17.38,15.44,
+350bb1b1,Adam Milne,34,capped,In auction pool (released by RR),Strong watch,2520.0,19.29,3.18,19.29,-0.01,38.58,17.35,15.41,
+97bdec3d,Gudakesh Motie,32,capped,Open market (not on a 2026 IPL roster),Strong watch,2270.0,19.16,3.34,19.16,-0.17,38.5,17.25,15.33,
+f6d8a7ab,Kumar Kartikeya Singh,29,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,618.0,19.15,6.07,19.15,-1.25,39.55,17.24,15.32,
+660538af,EO Leonard,24,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,300.0,19.07,8.13,19.07,-2.47,40.62,17.17,15.27,small sample (<500 balls)
+26d041c4,Sikandar Raza,40,capped,Open market (not on a 2026 IPL roster),Strong watch,4824.0,19.05,2.32,19.05,-0.04,38.14,17.15,15.25,
+ce794613,T Natarajan,35,"uncapped (Indian, last international > 5 years ago)",Retained by SRH (not in auction),Strong watch,1906.0,18.83,3.63,18.83,-0.6,38.25,16.97,15.1,
+208f22ea,DJ Worrall,35,capped,Open market (not on a 2026 IPL roster),Strong watch,1745.0,18.74,3.79,18.74,-0.73,38.22,16.9,15.05,
+18fac429,SR Patel,42,capped,Open market (not on a 2026 IPL roster),Strong watch,3249.0,18.59,2.81,18.59,-0.61,37.79,16.77,14.94,
+0f721006,Jason Holder,35,capped,Retained by GT (not in auction),Strong watch,6089.0,18.56,2.07,18.56,-0.48,37.61,16.75,14.93,
+ab01e323,SA Zaib,28,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,440.0,18.54,7.0,18.54,-2.34,39.42,16.72,14.91,small sample (<500 balls)
+f0e293b0,Zahoor Khan,37,capped,Open market (not on a 2026 IPL roster),Strong watch,1719.0,18.41,3.81,18.41,-1.07,37.89,16.62,14.82,
+4b31f3a3,Yash Thakur,27,capped,Retained by PBKS (not in auction),Strong watch,1171.0,18.37,4.56,18.37,-1.38,38.11,16.58,14.79,
+83d17bbc,Matthew Forde,24,capped,Open market (not on a 2026 IPL roster),Strong watch,1393.0,18.36,4.21,18.36,-1.26,37.97,16.57,14.79,
+3f1066d0,Waqar Salamkheil,30,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1757.0,18.32,3.77,18.32,-1.15,37.78,16.54,14.76,
+5bb1a1c4,Ishant Sharma,38,"uncapped (Indian, last international > 5 years ago)",In auction pool (released by GT),Strong watch,1155.0,18.24,4.59,18.24,-1.51,38.0,16.48,14.71,
+fc55ec67,Mark Adair,31,capped,Open market (not on a 2026 IPL roster),Strong watch,2528.0,18.14,3.17,18.14,-1.15,37.43,16.39,14.64,
+b8527c3d,Rasikh Salam,25,uncapped (no international),Retained by RCB (not in auction),Strong watch,768.0,18.07,5.52,18.07,-2.07,38.21,16.33,14.59,
+9440ef41,Suyash Sharma,23,uncapped (no international),Retained by RCB (not in auction),Strong watch,1041.0,18.05,4.82,18.05,-1.79,37.9,16.32,14.58,
+37654b75,Nasum Ahmed,32,capped,Open market (not on a 2026 IPL roster),Strong watch,2489.0,18.05,3.2,18.05,-1.24,37.35,16.32,14.58,
+4bd09374,Akash Madhwal,33,uncapped (no international),In auction pool (released by CSK),Strong watch,732.0,18.03,5.64,18.03,-2.16,38.23,16.3,14.57,
+f3abd0c9,DR Briggs,35,capped,Open market (not on a 2026 IPL roster),Strong watch,2503.0,17.79,3.19,17.79,-1.51,37.09,16.1,14.41,
+87e562a9,Dwayne Bravo,43,capped,Open market (not on a 2026 IPL roster),Strong watch,3187.0,17.67,2.84,17.67,-1.53,36.88,16.0,14.33,
+c05f9d20,Sahan Arachchige,30,capped,Open market (not on a 2026 IPL roster),Strong watch,279.0,17.64,8.36,17.64,-4.05,39.33,15.97,14.3,small sample (<500 balls)
+1d48795b,F Singh,22,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,296.0,17.56,8.17,17.56,-4.01,39.13,15.9,14.25,small sample (<500 balls)
+786b7fe8,Zahir Khan,28,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1600.0,17.52,3.95,17.52,-2.01,37.04,15.87,14.22,
+4eb02f2e,Tharindu Rathnayake,30,capped,Open market (not on a 2026 IPL roster),Strong watch,484.0,17.42,6.73,17.42,-3.31,38.16,15.79,14.16,small sample (<500 balls)
+bf26cd81,AM Green,20,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,150.0,17.37,10.29,17.37,-5.64,40.38,15.75,14.12,small sample (<500 balls)
+a2f46292,Khaleel Ahmed,29,capped,Retained by SRH (not in auction),Strong watch,2231.0,17.29,3.37,17.29,-2.05,36.64,15.68,14.07,
+8d5d991e,Qais Ahmad,26,capped,Open market (not on a 2026 IPL roster),Strong watch,2485.0,17.28,3.2,17.28,-2.02,36.58,15.67,14.06,
+64775749,Riley Meredith,30,capped,Open market (not on a 2026 IPL roster),Strong watch,3257.0,17.26,2.81,17.26,-1.94,36.45,15.65,14.05,
+dfc4d8b5,Kane Richardson,36,capped,Open market (not on a 2026 IPL roster),Strong watch,2250.0,17.21,3.36,17.21,-2.13,36.55,15.61,14.02,
+0a12e736,TMJ Smith,39,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1443.0,17.14,4.14,17.14,-2.45,36.73,15.56,13.97,
+327b58d3,Dushmantha Chameera,35,capped,In auction pool (released by DC),Strong watch,2901.0,16.94,2.97,16.94,-2.3,36.18,15.39,13.83,
+4b685e2d,DW Lawrence,29,capped,Open market (not on a 2026 IPL roster),Strong watch,900.0,16.92,5.14,16.92,-3.06,36.89,15.37,13.82,
+e9987a94,C Overton,32,capped,Open market (not on a 2026 IPL roster),Strong watch,1962.0,16.88,3.58,16.88,-2.53,36.29,15.34,13.79,
+b40ee8a8,PC de Silva,37,capped,Open market (not on a 2026 IPL roster),Strong watch,692.0,16.8,5.78,16.8,-3.46,37.06,15.27,13.74,
+8db7f47f,Reece Topley,33,capped,Open market (not on a 2026 IPL roster),Strong watch,2631.0,16.8,3.11,16.8,-2.48,36.07,15.27,13.74,
+7c3b3b78,Vaibhav Arora,29,uncapped (no international),Retained by KKR (not in auction),Strong watch,1224.0,16.73,4.47,16.73,-2.98,36.44,15.21,13.69,
+25228673,Harsh Dubey,24,uncapped (no international),Retained by SRH (not in auction),Strong watch,330.0,16.72,7.84,16.72,-4.65,38.09,15.2,13.68,small sample (<500 balls)
+1cfac535,CP Wood,36,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,2319.0,16.63,3.31,16.63,-2.69,35.96,15.13,13.63,
+7b953689,Matthew Kuhnemann,30,capped,Open market (not on a 2026 IPL roster),Strong watch,1385.0,16.58,4.22,16.58,-3.04,36.2,15.09,13.59,
+77b1aa15,Harshit Rana,25,capped,Retained by KKR (not in auction),Strong watch,955.0,16.58,5.01,16.58,-3.34,36.5,15.09,13.59,
+dadbdb68,Jacob Duffy,26,capped,Retained by RCB (not in auction),Strong watch,2487.0,16.58,3.2,16.58,-2.72,35.88,15.08,13.59,
+e5437608,George Linde,35,capped,In auction pool (released by LSG),Strong watch,3143.0,16.5,2.86,16.5,-2.71,35.71,15.02,13.54,
+1ee08e9a,Jhye Richardson,30,capped,Open market (not on a 2026 IPL roster),Strong watch,1705.0,16.42,3.83,16.42,-3.06,35.91,14.95,13.48,
+ef18b66e,Taskin Ahmed,31,capped,Open market (not on a 2026 IPL roster),Strong watch,3114.0,16.37,2.87,16.37,-2.85,35.58,14.91,13.45,
+81c36ee9,Marco Jansen,26,capped,Retained by PBKS (not in auction),Strong watch,3274.0,16.28,2.8,16.28,-2.91,35.48,14.84,13.39,
+465aa633,Nandre Burger,31,capped,Already RR (retained),Strong watch,1394.0,16.28,4.21,16.28,-3.34,35.89,14.83,13.39,
+e1891e00,Benjamin Sears,29,capped,Open market (not on a 2026 IPL roster),Strong watch,1438.0,16.27,4.15,16.27,-3.32,35.87,14.83,13.38,
+f0af99a7,Donovan Ferreira,28,capped,Already RR (retained),Strong watch,688.0,16.25,5.79,16.25,-4.02,36.52,14.81,13.37,
+4b6f6b73,S Colombage,29,capped,Open market (not on a 2026 IPL roster),Strong watch,282.0,16.24,8.32,16.24,-5.42,37.91,14.8,13.36,small sample (<500 balls)
+c5cc48bc,MJJ Critchley,30,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1955.0,16.21,3.59,16.21,-3.2,35.62,14.78,13.34,
+a0f612b6,TD Andrews,32,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,300.0,16.09,8.13,16.09,-5.46,37.64,14.67,13.26,small sample (<500 balls)
+a2421394,Ashton Agar,33,capped,Open market (not on a 2026 IPL roster),Strong watch,2375.0,15.93,3.27,15.93,-3.38,35.25,14.55,13.16,
+149d0c18,PF Younghusband,37,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1157.0,15.9,4.59,15.9,-3.85,35.66,14.52,13.13,
+8c7b16c8,Nahidul Islam,33,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,904.0,15.89,5.13,15.89,-4.08,35.86,14.51,13.13,
+e871a7a1,BW Sanderson,38,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,1876.0,15.77,3.66,15.77,-3.67,35.2,14.4,13.04,
+7f048519,David Willey,37,capped,Open market (not on a 2026 IPL roster),Strong watch,3675.0,15.72,2.65,15.72,-3.44,34.88,14.37,13.01,
+ee1b6c27,Nuwan Thushara,32,capped,Retained by RCB (not in auction),Strong watch,2063.0,15.71,3.5,15.71,-3.67,35.09,14.36,13.0,
+1e66c162,Jaydev Unadkat,34,capped,In auction pool (released by SRH),Strong watch,1803.0,15.66,3.73,15.66,-3.8,35.11,14.31,12.97,
+aceb7654,Jeffrey Vandersay,37,capped,Open market (not on a 2026 IPL roster),Strong watch,578.0,15.47,6.25,15.47,-5.02,35.96,14.16,12.84,
+cdd875d9,John Turner,25,capped,Open market (not on a 2026 IPL roster),Strong watch,578.0,15.46,6.25,15.46,-5.03,35.94,14.14,12.83,
+42172c3c,JT Smuts,38,capped,Open market (not on a 2026 IPL roster),Strong watch,1077.0,15.4,4.74,15.4,-4.41,35.21,14.1,12.8,
+9dad0f2e,Mahedi Hasan,32,capped,Open market (not on a 2026 IPL roster),Strong watch,3246.0,15.35,2.81,15.35,-3.85,34.55,14.05,12.76,
+bd0a4a7d,Craig Young,36,capped,Open market (not on a 2026 IPL roster),Strong watch,1087.0,15.23,4.72,15.23,-4.58,35.03,13.95,12.68,
+eef2536f,Avesh Khan,30,capped,In auction pool (released by LSG),Strong watch,2626.0,15.2,3.12,15.2,-4.08,34.47,13.93,12.66,
+ff1e12a0,Ashton Turner,34,capped,Open market (not on a 2026 IPL roster),Strong watch,653.0,15.15,5.93,15.15,-5.18,35.48,13.89,12.63,
+a1d95bd8,Lizaad Williams,33,capped,Open market (not on a 2026 IPL roster),Strong watch,1389.0,15.11,4.22,15.11,-4.51,34.73,13.85,12.6,
+f146c339,SM Meherob,23,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,214.0,14.98,9.18,14.98,-7.25,37.21,13.75,12.51,small sample (<500 balls)
+92b7602a,AR Nedd,26,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,455.0,14.97,6.9,14.97,-5.86,35.81,13.74,12.51,small sample (<500 balls)
+26f1d66c,Farhan Ahmed,19,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,138.0,14.96,10.54,14.96,-8.24,38.15,13.73,12.5,small sample (<500 balls)
+759ac88f,Mohit Sharma,38,"uncapped (Indian, last international > 5 years ago)",Open market (not on a 2026 IPL roster),Strong watch,967.0,14.93,4.98,14.93,-4.98,34.84,13.71,12.48,
+7ca5e05d,RS Bopara,41,capped,Open market (not on a 2026 IPL roster),Strong watch,1588.0,14.88,3.96,14.88,-4.65,34.4,13.66,12.44,
+5ec126fa,I Manack,35,uncapped (no international),Open market (not on a 2026 IPL roster),Strong watch,592.0,14.86,6.18,14.86,-5.59,35.32,13.65,12.43,
+ad46c747,DM Bess,29,capped,Open market (not on a 2026 IPL roster),Strong watch,1290.0,14.82,4.36,14.82,-4.85,34.49,13.61,12.4,
+fbd4f01f,AY Patel,38,capped,Open market (not on a 2026 IPL roster),Strong watch,1297.0,14.67,4.35,14.67,-4.99,34.34,13.49,12.31,
+1a2676c5,Sean Abbott,35,capped,Open market (not on a 2026 IPL roster),Track,2749.0,14.62,3.05,14.62,-4.63,33.88,13.45,12.27,
+aa467af0,Tanvir Islam,30,capped,Open market (not on a 2026 IPL roster),Track,1399.0,14.54,4.2,14.54,-5.07,34.15,13.38,12.21,
+b0946605,Alzarri Joseph,30,capped,Open market (not on a 2026 IPL roster),Track,3737.0,14.47,2.63,14.47,-4.68,33.63,13.32,12.17,
+679cd31e,SJ Cook,29,capped,Open market (not on a 2026 IPL roster),Track,1331.0,14.44,4.3,14.44,-5.21,34.08,13.29,12.15,
+86b4bf88,Mitchell Swepson,33,capped,Open market (not on a 2026 IPL roster),Track,1580.0,14.42,3.97,14.42,-5.11,33.95,13.28,12.13,
+245c97cb,Tymal Mills,34,capped,Open market (not on a 2026 IPL roster),Track,3055.0,14.38,2.9,14.38,-4.84,33.6,13.24,12.11,
+65b6943c,Luke Wood,31,capped,In auction pool (released by GT),Track,3390.0,14.21,2.75,14.21,-4.98,33.39,13.1,11.99,
+99cddc5e,George Dockrell,34,capped,Open market (not on a 2026 IPL roster),Track,622.0,14.1,6.05,14.1,-6.29,34.5,13.01,11.92,
+eca6dcb2,Nihaduzzaman,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,546.0,14.03,6.4,14.03,-6.53,34.59,12.95,11.87,
+a90e53ec,Matthew Short,31,capped,In auction pool (released by CSK),Track,1440.0,13.99,4.15,13.99,-5.6,33.59,12.92,11.85,
+b0482a1d,Namboori Tilak Varma,24,capped,Retained by MI (not in auction),Track,169.0,13.91,9.92,13.91,-8.83,36.66,12.85,11.79,small sample (<500 balls)
+b681e71e,Glenn Maxwell,38,capped,Open market (not on a 2026 IPL roster),Track,2843.0,13.89,3.0,13.89,-5.35,33.14,12.84,11.78,
+3d0ed2f9,JT Ball,36,capped,Open market (not on a 2026 IPL roster),Track,1645.0,13.83,3.89,13.83,-5.68,33.33,12.78,11.74,
+1f7adc8a,Arafat Sunny,40,capped,Open market (not on a 2026 IPL roster),Track,1032.0,13.77,4.83,13.77,-6.08,33.62,12.74,11.7,
+a316d663,GC Viljoen,38,capped,Open market (not on a 2026 IPL roster),Track,1469.0,13.73,4.11,13.73,-5.85,33.31,12.7,11.67,
+894b2d25,Matty Potts,28,capped,Open market (not on a 2026 IPL roster),Track,1347.0,13.72,4.28,13.72,-5.92,33.36,12.69,11.66,
+59ea70a4,Harry Tector,27,capped,Open market (not on a 2026 IPL roster),Track,336.0,13.71,7.79,13.71,-7.62,35.05,12.69,11.66,small sample (<500 balls)
+afe57f7a,Sean Williams,40,capped,Open market (not on a 2026 IPL roster),Track,768.0,13.7,5.52,13.7,-6.44,33.84,12.68,11.65,
+66162077,J Bishop,26,capped,Open market (not on a 2026 IPL roster),Track,449.0,13.69,6.94,13.69,-7.16,34.54,12.67,11.65,small sample (<500 balls)
+85e0cf10,Prasidh Krishna,31,capped,Retained by GT (not in auction),Track,2126.0,13.64,3.45,13.64,-5.73,33.01,12.62,11.61,
+cc61ee8f,Gurjapneet Singh,28,uncapped (no international),Retained by CSK (not in auction),Track,241.0,13.56,8.81,13.56,-8.42,35.54,12.56,11.56,small sample (<500 balls)
+e1b9f3a9,Ben Dwarshuis,32,capped,Retained by PBKS (not in auction),Track,3474.0,13.47,2.72,13.47,-5.71,32.64,12.48,11.49,
+e4cdf230,Anukul Roy,28,uncapped (no international),Retained by KKR (not in auction),Track,760.0,13.46,5.55,13.46,-6.69,33.61,12.47,11.49,
+59559bc2,Jamie Overton,32,capped,Retained by CSK (not in auction),Track,1886.0,13.46,3.65,13.46,-5.97,32.89,12.47,11.49,
+7210d461,Yash Dayal,29,uncapped (no international),Retained by RCB (not in auction),Track,1207.0,13.34,4.5,13.34,-6.38,33.06,12.37,11.41,
+c8a3f688,SN Netravalkar,35,capped,Open market (not on a 2026 IPL roster),Track,1821.0,13.22,3.71,13.22,-6.23,32.67,12.27,11.33,
+f787e0eb,Jack Edwards,26,capped,Retained by CSK (not in auction),Track,993.0,13.16,4.92,13.16,-6.72,33.04,12.22,11.29,
+c0c411cb,Naveen ul Haq,27,capped,Open market (not on a 2026 IPL roster),Track,3722.0,13.15,2.63,13.15,-6.01,32.31,12.22,11.28,
+6e5840e3,O Cele,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,222.0,13.1,9.06,13.1,-9.05,35.25,12.17,11.24,small sample (<500 balls)
+5426de63,Henry Shipley,30,capped,Open market (not on a 2026 IPL roster),Track,699.0,12.93,5.75,12.93,-7.32,33.17,12.03,11.13,
+ffe699c0,Chris Jordan,38,capped,Open market (not on a 2026 IPL roster),Track,5641.0,12.91,2.15,12.91,-6.15,31.96,12.01,11.12,
+28d6c44d,E Bosch,28,capped,Open market (not on a 2026 IPL roster),Track,1442.0,12.8,4.14,12.8,-6.79,32.39,11.92,11.04,
+3d8feaf8,Mitchell Marsh,35,capped,Retained by LSG (not in auction),Track,752.0,12.7,5.57,12.7,-7.46,32.87,11.84,10.98,
+c4d9634c,RRS Cornwall,34,capped,Open market (not on a 2026 IPL roster),Track,659.0,12.66,5.9,12.66,-7.66,32.98,11.81,10.95,
+80ad39ac,Hasan Mahmud,27,capped,Open market (not on a 2026 IPL roster),Track,1979.0,12.64,3.57,12.64,-6.76,32.04,11.79,10.94,
+0f3ee070,OE Robinson,33,capped,Open market (not on a 2026 IPL roster),Track,1038.0,12.6,4.82,12.6,-7.24,32.45,11.76,10.91,
+218d4d78,Matthew Renshaw,31,capped,Open market (not on a 2026 IPL roster),Track,373.0,12.58,7.48,12.58,-8.57,33.74,11.74,10.9,small sample (<500 balls)
+764f35d8,N Sharma,38,uncapped (no international),Open market (not on a 2026 IPL roster),Track,144.0,12.57,10.41,12.57,-10.53,35.68,11.73,10.89,small sample (<500 balls)
+b3a28446,Mohammad Saifuddin,30,capped,Open market (not on a 2026 IPL roster),Track,1947.0,12.57,3.6,12.57,-6.84,31.98,11.73,10.89,
+79f5bc26,Benjamin Lister,31,capped,Open market (not on a 2026 IPL roster),Track,1261.0,12.52,4.41,12.52,-7.17,32.2,11.69,10.85,
+ac3c3cab,TAR Scriven,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,342.0,12.44,7.74,12.44,-8.86,33.75,11.62,10.8,small sample (<500 balls)
+b82e3032,J Shaw,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,928.0,12.34,5.07,12.34,-7.61,32.29,11.54,10.73,
+30f92334,Zakary Foulkes,25,capped,In auction pool (released by CSK),Track,1308.0,12.33,4.34,12.33,-7.33,31.98,11.52,10.72,
+b1ad996b,Mayank Yadav,24,capped,Retained by LSG (not in auction),Track,547.0,12.2,6.39,12.2,-8.36,32.76,11.42,10.64,
+3987e390,MJ Leach,35,capped,Open market (not on a 2026 IPL roster),Track,216.0,12.19,9.15,12.19,-10.02,34.4,11.41,10.63,small sample (<500 balls)
+ed47cb25,LP Goldsworthy,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1026.0,12.13,4.85,12.13,-7.72,31.99,11.36,10.59,
+0bec3a6c,BAC Howell,38,uncapped (no international),Open market (not on a 2026 IPL roster),Track,2623.0,12.1,3.12,12.1,-7.18,31.37,11.33,10.57,
+e342e5fb,CR Brathwaite,38,capped,Open market (not on a 2026 IPL roster),Track,2151.0,12.06,3.43,12.06,-7.3,31.43,11.3,10.55,
+4c5d73db,Chris Woakes,38,capped,Open market (not on a 2026 IPL roster),Track,1484.0,12.03,4.09,12.03,-7.54,31.6,11.28,10.52,
+0f6db197,Saqib Mahmood,30,capped,Open market (not on a 2026 IPL roster),Track,1517.0,11.97,4.05,11.97,-7.58,31.53,11.23,10.49,
+11614d87,Dwaine Pretorius,38,capped,Open market (not on a 2026 IPL roster),Track,2934.0,11.87,2.95,11.87,-7.36,31.11,11.14,10.42,
+caf69bf7,Daniel Sams,34,capped,Open market (not on a 2026 IPL roster),Track,4531.0,11.84,2.39,11.84,-7.27,30.94,11.12,10.4,
+732c038e,Charith Asalanka,29,capped,Open market (not on a 2026 IPL roster),Track,469.0,11.79,6.82,11.79,-9.0,32.57,11.07,10.36,small sample (<500 balls)
+7c7d63a2,Andrew Tye,40,capped,Open market (not on a 2026 IPL roster),Track,3301.0,11.73,2.79,11.73,-7.46,30.92,11.03,10.32,
+6f95e5fa,P Hatzoglou,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1382.0,11.7,4.23,11.7,-7.92,31.32,11.0,10.3,
+46a9bea1,Tushar Deshpande,31,capped,In auction pool (released by RR),Track,1735.0,11.69,3.8,11.69,-7.79,31.17,10.99,10.3,
+0164b064,MG Neser,37,capped,Open market (not on a 2026 IPL roster),Track,1498.0,11.69,4.07,11.69,-7.88,31.25,10.99,10.29,
+79f8472d,Mohammad Mohsin,32,capped,Open market (not on a 2026 IPL roster),Track,491.0,11.63,6.69,11.63,-9.09,32.35,10.94,10.25,small sample (<500 balls)
+5318ee68,Nahid Rana,24,capped,Open market (not on a 2026 IPL roster),Track,754.0,11.58,5.57,11.58,-8.58,31.75,10.9,10.22,
+58c481c6,JJ Cobb,36,uncapped (no international),Open market (not on a 2026 IPL roster),Track,676.0,11.51,5.84,11.51,-8.78,31.8,10.84,10.17,
+3dcd1e8d,ME Milnes,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1144.0,11.46,4.61,11.46,-8.3,31.23,10.8,10.14,
+47c449c5,Dayyaan Galiem,30,capped,Open market (not on a 2026 IPL roster),Track,529.0,11.44,6.49,11.44,-9.17,32.05,10.78,10.12,
+d3868bd0,JH Davey,36,capped,Open market (not on a 2026 IPL roster),Track,1317.0,11.39,4.32,11.39,-8.26,31.05,10.74,10.09,
+ec0b9258,M Tharupathi,22,uncapped (no international),Open market (not on a 2026 IPL roster),Track,184.0,11.38,9.65,11.38,-11.18,33.93,10.73,10.08,small sample (<500 balls)
+b08252b8,Ryan Burl,32,capped,Open market (not on a 2026 IPL roster),Track,1397.0,11.3,4.2,11.3,-8.31,30.91,10.66,10.03,
+b5a12740,Mahli Beardman,21,capped,Open market (not on a 2026 IPL roster),Track,270.0,11.28,8.46,11.28,-10.47,33.03,10.65,10.02,small sample (<500 balls)
+6ea2710f,D Moriarty,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1200.0,11.23,4.51,11.23,-8.49,30.96,10.61,9.99,
+f0a0204e,MS Crane,30,capped,Open market (not on a 2026 IPL roster),Track,1767.0,11.02,3.76,11.02,-8.44,30.49,10.43,9.84,
+1be67d37,Ramesh Mendis,31,capped,Open market (not on a 2026 IPL roster),Track,580.0,10.97,6.24,10.97,-9.51,31.45,10.39,9.81,
+107c26fb,Kwena Maphaka,20,capped,In auction pool (released by RR),Track,969.0,10.96,4.98,10.96,-8.94,30.87,10.38,9.81,
+9061a703,Joshua Little,27,capped,Open market (not on a 2026 IPL roster),Track,2162.0,10.95,3.42,10.95,-8.41,30.31,10.37,9.8,
+e6e154e3,FL Walker,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,511.0,10.88,6.58,10.88,-9.78,31.53,10.31,9.75,
+b52ffbbd,Fabian Allen,31,capped,Open market (not on a 2026 IPL roster),Track,1838.0,10.85,3.7,10.85,-8.6,30.29,10.29,9.73,
+26989d80,Shashank Singh,35,uncapped (no international),Retained by PBKS (not in auction),Track,282.0,10.77,8.32,10.77,-10.89,32.44,10.22,9.68,small sample (<500 balls)
+b8828a1b,KJ Dudgeon,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,275.0,10.64,8.4,10.64,-11.08,32.35,10.11,9.59,small sample (<500 balls)
+a63dfe8a,JJG Sales,24,uncapped (no international),Open market (not on a 2026 IPL roster),Track,387.0,10.52,7.37,10.52,-10.57,31.61,10.01,9.51,small sample (<500 balls)
+aa8d28ae,David Wiese,41,capped,Open market (not on a 2026 IPL roster),Track,3659.0,10.46,2.65,10.46,-8.7,29.62,9.96,9.47,
+70d57519,Gus Atkinson,29,capped,Open market (not on a 2026 IPL roster),Track,1133.0,10.45,4.63,10.45,-9.32,30.22,9.95,9.46,
+641ac5ff,Ish Sodhi,34,capped,Open market (not on a 2026 IPL roster),Track,3619.0,10.44,2.67,10.44,-8.73,29.6,9.95,9.45,
+ea1eba98,SA Mothoa,37,uncapped (no international),Open market (not on a 2026 IPL roster),Track,402.0,10.43,7.26,10.43,-10.6,31.45,9.93,9.44,small sample (<500 balls)
+15de1f5d,WA Agar,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1546.0,10.42,4.01,10.42,-9.13,29.96,9.93,9.44,
+1f1b4c89,Josh Tongue,29,capped,Open market (not on a 2026 IPL roster),Track,210.0,10.36,9.24,10.36,-11.91,32.62,9.88,9.4,small sample (<500 balls)
+19708692,Matthew Parkinson,30,capped,Open market (not on a 2026 IPL roster),Track,1622.0,10.33,3.92,10.33,-9.19,29.84,9.85,9.38,
+dbe50b21,Hardik Pandya,33,capped,Retained by PBKS (not in auction),Track,2806.0,10.21,3.02,10.21,-9.04,29.46,9.76,9.3,
+04a418e8,Riyan Parag,25,capped,Already RR (retained),Track,937.0,10.21,5.05,10.21,-9.72,30.15,9.76,9.3,
+3b53243a,Xavier Bartlett,28,capped,Retained by PBKS (not in auction),Track,2483.0,10.21,3.2,10.21,-9.09,29.51,9.75,9.3,
+bdc0670a,LBK Hollman,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1484.0,10.17,4.09,10.17,-9.4,29.74,9.72,9.27,
+d9273ee7,Marcus Stoinis,37,capped,Retained by PBKS (not in auction),Track,2748.0,10.15,3.05,10.15,-9.1,29.41,9.71,9.26,
+05b1aef8,Nathan Smith,28,capped,Open market (not on a 2026 IPL roster),Track,1357.0,10.14,4.26,10.14,-9.49,29.77,9.7,9.25,
+cdac5a3d,M Shiraz,32,capped,Open market (not on a 2026 IPL roster),Track,170.0,10.08,9.9,10.08,-12.65,32.8,9.64,9.21,small sample (<500 balls)
+06c2de82,L Gregory,34,capped,Open market (not on a 2026 IPL roster),Track,2245.0,10.04,3.36,10.04,-9.3,29.38,9.61,9.18,
+aa8914ad,BNJ Lockrose,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,785.0,9.96,5.47,9.96,-10.15,30.08,9.55,9.13,
+5a74e559,CJ White,35,uncapped (no international),Open market (not on a 2026 IPL roster),Track,144.0,9.88,10.41,9.88,-13.22,32.99,9.48,9.08,small sample (<500 balls)
+ba377b40,GL van Buuren,36,uncapped (no international),Open market (not on a 2026 IPL roster),Track,741.0,9.87,5.61,9.87,-10.31,30.05,9.47,9.07,
+a61bcb94,Khary Pierre,35,capped,Open market (not on a 2026 IPL roster),Track,1516.0,9.84,4.05,9.84,-9.72,29.4,9.45,9.05,
+390c914c,Shafiqul Islam,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,294.0,9.82,8.19,9.82,-11.77,31.4,9.43,9.03,small sample (<500 balls)
+8ce2080b,Tim Pringle,24,capped,Open market (not on a 2026 IPL roster),Track,963.0,9.81,4.99,9.81,-10.1,29.73,9.42,9.03,
+e5218454,JB Lintott,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1892.0,9.81,3.64,9.81,-9.62,29.24,9.42,9.03,
+1957c6b7,LWP Wells,36,uncapped (no international),Open market (not on a 2026 IPL roster),Track,943.0,9.79,5.04,9.79,-10.14,29.73,9.41,9.02,
+c042b412,FJ Klaassen,34,capped,Open market (not on a 2026 IPL roster),Track,2537.0,9.72,3.17,9.72,-9.57,29.01,9.34,8.96,
+9679838c,BL D'Oliveira,35,uncapped (no international),Open market (not on a 2026 IPL roster),Track,895.0,9.71,5.16,9.71,-10.27,29.69,9.34,8.96,
+0773c16a,TP Kaber,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,132.0,9.7,10.68,9.7,-13.6,33.0,9.33,8.95,small sample (<500 balls)
+1062bebb,Siyabonga Mahima,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,354.0,9.67,7.63,9.67,-11.58,30.91,9.3,8.93,small sample (<500 balls)
+3a60e0b5,Wayne Parnell,37,capped,Open market (not on a 2026 IPL roster),Track,1931.0,9.65,3.61,9.65,-9.77,29.07,9.29,8.92,
+e38bce7a,Michael Bracewell,36,capped,Open market (not on a 2026 IPL roster),Track,1857.0,9.62,3.68,9.62,-9.82,29.05,9.26,8.9,
+bf1d7d3e,Mohammad Mahmudullah,41,capped,Open market (not on a 2026 IPL roster),Track,597.0,9.6,6.16,9.6,-10.85,30.04,9.24,8.88,
+8dc152d1,Duan Jansen,26,capped,Open market (not on a 2026 IPL roster),Track,903.0,9.31,5.14,9.31,-10.66,29.29,9.0,8.69,
+8f6dd463,Azmatullah Omarzai,27,capped,Retained by PBKS (not in auction),Track,2073.0,9.28,3.49,9.28,-10.1,28.66,8.97,8.67,
+f2ab7a69,JA Leaning,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,534.0,9.26,6.46,9.26,-11.33,29.86,8.96,8.66,
+055be93a,HTRY Thornton,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,688.0,9.25,5.79,9.25,-11.01,29.52,8.95,8.65,
+22b98d7c,TW Hartley,28,capped,Open market (not on a 2026 IPL roster),Track,1400.0,9.23,4.2,9.23,-10.38,28.84,8.94,8.64,
+1f84183a,Nikhil Chaudhary,30,capped,Open market (not on a 2026 IPL roster),Track,594.0,9.2,6.17,9.2,-11.26,29.65,8.9,8.61,
+fe5b4367,ZJ Chappell,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,939.0,9.17,5.05,9.17,-10.77,29.11,8.88,8.6,
+2cffab74,Mukesh Kumar,33,capped,Retained by DC (not in auction),Track,1400.0,9.03,4.2,9.03,-10.58,28.65,8.77,8.51,
+1558d83b,GS Sandhu,33,capped,Open market (not on a 2026 IPL roster),Track,946.0,9.03,5.03,9.03,-10.9,28.95,8.76,8.5,
+dbe38f35,Amshi de Silva,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,211.0,9.02,9.22,9.02,-13.24,31.27,8.75,8.49,small sample (<500 balls)
+b53136ce,AW McKenzie,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,437.0,8.96,7.02,8.96,-11.93,29.86,8.71,8.46,small sample (<500 balls)
+bb34fd31,Shoriful Islam,25,capped,Open market (not on a 2026 IPL roster),Track,2674.0,8.93,3.09,8.93,-10.34,28.19,8.68,8.43,
+56b93d46,BJ Webster,33,capped,Open market (not on a 2026 IPL roster),Track,942.0,8.9,5.04,8.9,-11.03,28.84,8.66,8.42,
+8abdf100,CJ Anderson,36,capped,Open market (not on a 2026 IPL roster),Track,291.0,8.9,8.23,8.9,-12.71,30.5,8.65,8.41,small sample (<500 balls)
+867a45a7,TAI Taylor,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1577.0,8.78,3.97,8.78,-10.75,28.31,8.56,8.33,
+486065b3,Hassan Khan,28,capped,Open market (not on a 2026 IPL roster),Track,1247.0,8.76,4.43,8.76,-10.94,28.45,8.54,8.32,
+33b3d2df,Gareth Delany,29,capped,Open market (not on a 2026 IPL roster),Track,1280.0,8.71,4.38,8.71,-10.97,28.38,8.5,8.29,
+3fb19989,Mitchell Starc,37,capped,In auction pool (released by DC),Track,1664.0,8.69,3.87,8.69,-10.81,28.19,8.49,8.28,
+78adc879,N Wagner,41,capped,Open market (not on a 2026 IPL roster),Track,471.0,8.62,6.81,8.62,-12.16,29.4,8.42,8.23,small sample (<500 balls)
+0ecb4de6,Rehan Ahmed,22,capped,In auction pool (released by DC),Track,1626.0,8.61,3.92,8.61,-10.9,28.13,8.42,8.22,
+c78a879c,RI Walker,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,373.0,8.61,7.48,8.61,-12.54,29.77,8.42,8.22,small sample (<500 balls)
+68e26ec9,M Kelly,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,781.0,8.6,5.48,8.6,-11.52,28.73,8.41,8.21,
+529eb9e0,Obed McCoy,30,capped,Open market (not on a 2026 IPL roster),Track,2913.0,8.6,2.96,8.6,-10.64,27.84,8.41,8.21,
+e94915e6,Sam Curran,28,capped,Retained by LSG (not in auction),Track,4509.0,8.57,2.4,8.57,-10.53,27.68,8.38,8.19,
+616a8149,L Pope,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1260.0,8.55,4.41,8.55,-11.14,28.24,8.36,8.18,
+68c56d09,Kyle Jamieson,32,capped,Retained by DC (not in auction),Track,1943.0,8.53,3.6,8.53,-10.89,27.94,8.35,8.16,
+e86754b2,TK Curran,32,capped,Open market (not on a 2026 IPL roster),Track,3024.0,8.51,2.91,8.51,-10.71,27.74,8.33,8.16,
+be8b147b,C Seleka,24,uncapped (no international),Open market (not on a 2026 IPL roster),Track,390.0,8.48,7.35,8.48,-12.6,29.56,8.3,8.13,small sample (<500 balls)
+4751caa3,Lahiru Kumara,30,capped,Open market (not on a 2026 IPL roster),Track,1010.0,8.46,4.88,8.46,-11.41,28.33,8.29,8.12,
+95a06106,GLS Scrimshaw,29,capped,Open market (not on a 2026 IPL roster),Track,1421.0,8.21,4.17,8.21,-11.39,27.81,8.08,7.95,
+9a963804,LE Plunkett,41,capped,Open market (not on a 2026 IPL roster),Track,657.0,8.19,5.91,8.19,-12.13,28.51,8.06,7.94,
+e734d090,CN Ackermann,35,capped,Open market (not on a 2026 IPL roster),Track,1293.0,8.17,4.36,8.17,-11.5,27.83,8.04,7.92,
+b1b7b7de,BJ Small,35,uncapped (no international),Open market (not on a 2026 IPL roster),Track,230.0,8.15,8.95,8.15,-13.93,30.22,8.03,7.91,small sample (<500 balls)
+23393635,Dian Forrester,26,capped,In auction pool (released by CSK),Track,202.0,8.0,9.36,8.0,-14.35,30.35,7.9,7.81,small sample (<500 balls)
+f422728b,H Kerr,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1426.0,7.98,4.16,7.98,-11.62,27.58,7.89,7.8,
+90701232,MB Bacon,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,972.0,7.97,4.97,7.97,-11.94,27.87,7.88,7.79,
+2e9fdf9b,DAJ Bracewell,36,capped,Open market (not on a 2026 IPL roster),Track,909.0,7.88,5.12,7.88,-12.09,27.85,7.8,7.73,
+2c1438ef,L Delport,39,uncapped (no international),Open market (not on a 2026 IPL roster),Track,595.0,7.86,6.17,7.86,-12.59,28.31,7.78,7.71,
+1ac2a995,Hayden Walsh,34,capped,Open market (not on a 2026 IPL roster),Track,1425.0,7.83,4.17,7.83,-11.77,27.43,7.76,7.69,
+cb5100f1,Ebadot Hossain,33,capped,Open market (not on a 2026 IPL roster),Track,769.0,7.78,5.52,7.78,-12.36,27.92,7.72,7.66,
+50c6bc2b,Liam Livingstone,33,capped,Retained by CSK (not in auction),Track,2479.0,7.63,3.2,7.63,-11.67,26.93,7.6,7.56,
+b08e58e2,LR Morris,29,capped,Open market (not on a 2026 IPL roster),Track,665.0,7.52,5.88,7.52,-12.79,27.83,7.5,7.49,
+eaa76d3c,Cameron Green,27,capped,Retained by KKR (not in auction),Track,802.0,7.39,5.42,7.39,-12.71,27.48,7.39,7.4,
+c672e80e,J Clark,36,uncapped (no international),Open market (not on a 2026 IPL roster),Track,753.0,7.38,5.57,7.38,-12.78,27.54,7.39,7.39,
+1b04e02b,TS Rogers,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1690.0,7.21,3.84,7.21,-12.28,26.7,7.24,7.28,
+56d471f2,FW Sheat,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,237.0,7.16,8.86,7.16,-14.85,29.17,7.2,7.24,small sample (<500 balls)
+7671203a,M Montgomery,26,capped,Open market (not on a 2026 IPL roster),Track,568.0,6.97,6.29,6.97,-13.54,27.48,7.04,7.12,
+eec5fe00,ZN Gibson,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,282.0,6.93,8.32,6.93,-14.73,28.6,7.01,7.09,small sample (<500 balls)
+ab6b1c45,Andile Phehlukwayo,31,capped,Open market (not on a 2026 IPL roster),Track,1012.0,6.93,4.88,6.93,-12.94,26.8,7.01,7.09,
+fa433be6,M Labuschagne,32,capped,Open market (not on a 2026 IPL roster),Track,574.0,6.92,6.27,6.92,-13.58,27.41,7.0,7.08,
+1abb78f8,Shardul Thakur,35,capped,Retained by MI (not in auction),Track,2433.0,6.89,3.23,6.89,-12.41,26.2,6.98,7.06,
+782fb776,Logan van Beek,36,capped,Open market (not on a 2026 IPL roster),Track,2908.0,6.86,2.97,6.86,-12.38,26.1,6.95,7.04,
+fc60e81a,B Parsons,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,198.0,6.85,9.42,6.85,-15.54,29.24,6.94,7.03,small sample (<500 balls)
+5d2eea49,Kartik Tyagi,26,uncapped (no international),Retained by KKR (not in auction),Track,837.0,6.74,5.31,6.74,-13.31,26.79,6.85,6.96,
+01a95383,MD Taylor,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1248.0,6.61,4.43,6.61,-13.08,26.3,6.74,6.87,
+b8704508,Luke Jongwe,32,capped,Open market (not on a 2026 IPL roster),Track,892.0,6.6,5.16,6.6,-13.39,26.58,6.73,6.86,
+8f3fde65,LC Hatcher,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,509.0,6.57,6.59,6.57,-14.1,27.23,6.7,6.84,
+9f0270e0,Graeme Cremer,40,capped,Open market (not on a 2026 IPL roster),Track,138.0,6.5,10.54,6.5,-16.7,29.7,6.65,6.8,small sample (<500 balls)
+1670dcfd,Nayeem Hasan,26,capped,Open market (not on a 2026 IPL roster),Track,588.0,6.39,6.2,6.39,-14.08,26.85,6.55,6.72,
+a757b0d8,Kieron Pollard,39,capped,Open market (not on a 2026 IPL roster),Track,1844.0,6.18,3.69,6.18,-13.26,25.62,6.38,6.58,
+e941cd33,AR Lamba,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,216.0,6.16,9.15,6.16,-16.04,28.37,6.37,6.57,small sample (<500 balls)
+aed5be04,JMR Taylor,35,uncapped (no international),Open market (not on a 2026 IPL roster),Track,266.0,6.14,8.5,6.14,-15.64,27.92,6.35,6.56,small sample (<500 balls)
+b215a7be,Nimesh Vimukthi,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,252.0,6.13,8.67,6.13,-15.76,28.02,6.34,6.55,small sample (<500 balls)
+765a4731,Mukesh Choudhary,40,uncapped (no international),Retained by CSK (not in auction),Track,724.0,6.13,5.67,6.13,-14.08,26.34,6.34,6.55,
+56feceb0,K Mungroo,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,395.0,6.08,7.31,6.08,-14.98,27.14,6.3,6.51,small sample (<500 balls)
+6be7b49d,LI Georgeson,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,176.0,6.0,9.79,6.0,-16.65,28.65,6.23,6.46,small sample (<500 balls)
+3f61a062,Brad Wheal,30,capped,Open market (not on a 2026 IPL roster),Track,1112.0,6.0,4.67,6.0,-13.79,25.78,6.23,6.46,
+b5781ac3,L Trevaskis,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1576.0,5.99,3.97,5.99,-13.54,25.53,6.22,6.46,
+5935d694,Mohammad Rishad Hossain,24,capped,Open market (not on a 2026 IPL roster),Track,1975.0,5.95,3.57,5.95,-13.46,25.35,6.19,6.43,
+898e628d,B Doggett,32,capped,Open market (not on a 2026 IPL roster),Track,800.0,5.93,5.42,5.93,-14.17,26.02,6.17,6.41,
+97b0e4ff,Shadley Van Schalkwyk,38,capped,Open market (not on a 2026 IPL roster),Track,1072.0,5.85,4.75,5.85,-13.97,25.67,6.1,6.36,
+4175d211,Shamar Springer,29,capped,Open market (not on a 2026 IPL roster),Track,753.0,5.82,5.57,5.82,-14.34,25.98,6.08,6.34,
+f9e6e7ef,Shahbaz Ahmed,32,capped,Retained by LSG (not in auction),Track,1261.0,5.82,4.41,5.82,-13.87,25.5,6.08,6.34,
+bb95564b,Mohammad Saif Hassan,28,capped,Open market (not on a 2026 IPL roster),Track,250.0,5.78,8.69,5.78,-16.12,27.68,6.05,6.31,small sample (<500 balls)
+48ad3373,Blair Tickner,33,capped,Open market (not on a 2026 IPL roster),Track,1637.0,5.68,3.9,5.68,-13.83,25.19,5.96,6.24,
+9f77963a,Gulbadin Naib,35,capped,Open market (not on a 2026 IPL roster),Track,355.0,5.55,7.63,5.55,-15.69,26.79,5.85,6.16,small sample (<500 balls)
+39181592,Patrick Kruger,32,capped,Open market (not on a 2026 IPL roster),Track,332.0,5.51,7.83,5.51,-15.85,26.87,5.82,6.13,small sample (<500 balls)
+8919756f,Mosaddek Hossain,31,capped,Open market (not on a 2026 IPL roster),Track,897.0,5.47,5.15,5.47,-14.51,25.45,5.79,6.1,
+896d78ad,Angelo Mathews,39,capped,Open market (not on a 2026 IPL roster),Track,522.0,5.46,6.52,5.46,-15.16,26.09,5.78,6.1,
+2af838ee,N Pradeep,40,capped,Open market (not on a 2026 IPL roster),Track,801.0,5.42,5.42,5.42,-14.67,25.52,5.75,6.07,
+c58b0108,Mehidy Hasan Miraz,29,capped,Open market (not on a 2026 IPL roster),Track,1742.0,5.36,3.79,5.36,-14.11,24.84,5.7,6.03,
+f29185a1,Abhishek Sharma,26,capped,Retained by SRH (not in auction),Track,936.0,5.23,5.05,5.23,-14.71,25.17,5.59,5.94,
+00cada13,JDM Evison,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,460.0,5.23,6.87,5.23,-15.58,26.05,5.59,5.94,small sample (<500 balls)
+9d1d34bd,Taijul Islam,35,capped,Open market (not on a 2026 IPL roster),Track,648.0,5.12,5.95,5.12,-15.22,25.46,5.5,5.87,
+50c09020,Ashok Sharma,24,capped,Retained by GT (not in auction),Track,174.0,5.11,9.83,5.11,-17.56,27.79,5.49,5.86,small sample (<500 balls)
+d285acaf,Cole McConchie,35,capped,Open market (not on a 2026 IPL roster),Track,1607.0,5.01,3.94,5.01,-14.51,24.54,5.41,5.8,
+8012d0b8,Kasun Rajitha,33,capped,Open market (not on a 2026 IPL roster),Track,781.0,4.99,5.48,4.99,-15.13,25.12,5.39,5.78,
+73c18486,Kyle Mayers,34,capped,Open market (not on a 2026 IPL roster),Track,1413.0,4.94,4.18,4.94,-14.67,24.54,5.34,5.74,
+3c55c703,Jacob Bethell,23,capped,In auction pool (released by RCB),Track,314.0,4.82,7.99,4.82,-16.64,26.28,5.24,5.67,small sample (<500 balls)
+5dbdecf1,Khaled Ahmed,34,capped,Open market (not on a 2026 IPL roster),Track,1274.0,4.79,4.39,4.79,-14.89,24.47,5.21,5.64,
+0b7363da,Mehedi Hasan Rana,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,804.0,4.72,5.41,4.72,-15.38,24.81,5.16,5.6,
+a2316f90,J Dawood,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,324.0,4.71,7.9,4.71,-16.69,26.12,5.15,5.59,small sample (<500 balls)
+6a26221c,Aiden Markram,32,capped,Retained by LSG (not in auction),Track,1009.0,4.68,4.88,4.68,-15.19,24.55,5.13,5.57,
+519c30cb,CJ Gannon,38,capped,Open market (not on a 2026 IPL roster),Track,751.0,4.53,5.58,4.53,-15.63,24.7,5.0,5.47,
+a77472dc,G Stewart,33,capped,Open market (not on a 2026 IPL roster),Track,1719.0,4.49,3.81,4.49,-14.99,23.97,4.97,5.44,
+321be7e3,Adithya Ashok,24,capped,Open market (not on a 2026 IPL roster),Track,656.0,4.42,5.92,4.42,-15.9,24.75,4.91,5.4,
+23dee937,GP Balderson,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,138.0,4.38,10.54,4.38,-18.82,27.58,4.87,5.37,small sample (<500 balls)
+30df8c66,Simarjeet Singh,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,582.0,4.37,6.23,4.37,-16.11,24.85,4.87,5.36,
+492ff0c2,Ripon Mondol,24,capped,Open market (not on a 2026 IPL roster),Track,675.0,4.36,5.84,4.36,-15.93,24.65,4.86,5.36,
+9c643d7b,JM Coles,22,uncapped (no international),Open market (not on a 2026 IPL roster),Track,877.0,4.29,5.2,4.29,-15.71,24.3,4.8,5.31,
+da9f58aa,Hasan Murad,25,capped,Open market (not on a 2026 IPL roster),Track,336.0,4.25,7.79,4.25,-17.08,25.59,4.77,5.28,small sample (<500 balls)
+9f395b45,JW Hartshorn,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,138.0,4.22,10.54,4.22,-18.98,27.42,4.74,5.26,small sample (<500 balls)
+54e52590,Vyshak Kumar,30,uncapped (no international),Retained by PBKS (not in auction),Track,783.0,4.18,5.47,4.18,-15.95,24.3,4.7,5.23,
+39d608d4,F O'Neill,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,231.0,4.15,8.94,4.15,-17.92,26.22,4.68,5.21,small sample (<500 balls)
+57590dbb,PI Walter,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1309.0,3.73,4.33,3.73,-15.93,23.38,4.33,4.93,
+cc1e8c68,Umesh Yadav,39,capped,Open market (not on a 2026 IPL roster),Track,1093.0,3.56,4.71,3.56,-16.24,23.36,4.18,4.81,
+a4b810d0,MJ Waite,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,739.0,3.47,5.62,3.47,-16.72,23.65,4.11,4.75,
+4bc0a378,Wellington Masakadza,33,capped,Open market (not on a 2026 IPL roster),Track,1198.0,3.29,4.51,3.29,-16.43,23.02,3.97,4.64,
+7cb2d9d2,DM Dupavillon,32,capped,Open market (not on a 2026 IPL roster),Track,901.0,3.2,5.14,3.2,-16.78,23.17,3.88,4.57,
+607ed7c2,Shohidul Islam,32,capped,Open market (not on a 2026 IPL roster),Track,835.0,3.13,5.32,3.13,-16.93,23.18,3.82,4.52,
+1a156c88,DJM Short,36,capped,Open market (not on a 2026 IPL roster),Track,1390.0,3.08,4.21,3.08,-16.53,22.7,3.79,4.5,
+97290faf,Shamar Joseph,27,capped,Open market (not on a 2026 IPL roster),Track,1104.0,3.07,4.69,3.07,-16.72,22.86,3.78,4.48,
+dfc3f02d,OJ Price,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,389.0,2.98,7.36,2.98,-18.1,24.06,3.7,4.42,small sample (<500 balls)
+d4d37c31,GA Stuurman,34,capped,Open market (not on a 2026 IPL roster),Track,209.0,2.96,9.25,2.96,-19.32,25.24,3.68,4.41,small sample (<500 balls)
+a9fd84fb,Mayank Markande,29,"uncapped (Indian, last international > 5 years ago)",In auction pool (released by MI),Track,1118.0,2.93,4.66,2.93,-16.86,22.71,3.66,4.39,
+1cc0a83d,J Hull,22,capped,Open market (not on a 2026 IPL roster),Track,613.0,2.9,6.09,2.9,-17.51,23.31,3.63,4.37,
+f9d99806,Tajinder Singh,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,168.0,2.86,9.94,2.86,-19.9,25.61,3.6,4.34,small sample (<500 balls)
+b56dc5f7,BE Hendricks,36,capped,Open market (not on a 2026 IPL roster),Track,905.0,2.84,5.13,2.84,-17.13,22.82,3.59,4.33,
+9219eff0,Jimmy Neesham,36,capped,Open market (not on a 2026 IPL roster),Track,3375.0,2.83,2.76,2.83,-16.35,22.02,3.58,4.33,
+38c276e1,N McAndrew,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,2204.0,2.73,3.39,2.73,-16.62,22.09,3.5,4.26,
+872b03f7,Ayush Badoni,27,uncapped (no international),Retained by LSG (not in auction),Track,125.0,2.72,10.84,2.72,-20.71,26.14,3.48,4.25,small sample (<500 balls)
+903560ed,MT Steketee,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,910.0,2.68,5.12,2.68,-17.28,22.65,3.45,4.22,
+9a46c4e5,Glenn Phillips,30,capped,Retained by GT (not in auction),Track,718.0,2.6,5.69,2.6,-17.62,22.82,3.38,4.17,
+0b0cc297,Tanzim Sakib,24,capped,Open market (not on a 2026 IPL roster),Track,1609.0,2.54,3.93,2.54,-16.98,22.06,3.33,4.13,
+39180894,BC Cullen,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,662.0,2.5,5.89,2.5,-17.82,22.81,3.3,4.1,
+fef92afc,SC Kuggeleijn,35,capped,Open market (not on a 2026 IPL roster),Track,2092.0,2.44,3.47,2.44,-16.93,21.82,3.25,4.06,
+7f7f658b,SF Hunt,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,158.0,2.39,10.13,2.39,-20.51,25.28,3.21,4.03,small sample (<500 balls)
+d405c0d5,Aaron Hardie,28,capped,Open market (not on a 2026 IPL roster),Track,1308.0,2.37,4.34,2.37,-17.29,22.03,3.2,4.02,
+3ee0050f,Pramod Madushan,33,capped,Open market (not on a 2026 IPL roster),Track,500.0,2.35,6.64,2.35,-18.34,23.04,3.18,4.0,
+214f6461,GCH Hill,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,213.0,2.34,9.19,2.34,-19.9,24.57,3.16,3.99,small sample (<500 balls)
+7d7233a9,AW Gorvin,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,463.0,2.32,6.86,2.32,-18.48,23.12,3.15,3.98,small sample (<500 balls)
+6ce9f3eb,EA Brookes,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,390.0,2.16,7.35,2.16,-18.91,23.24,3.02,3.88,small sample (<500 balls)
+eade4650,Daryl Mitchell,39,capped,Open market (not on a 2026 IPL roster),Track,1062.0,2.08,4.77,2.08,-17.74,21.9,2.95,3.82,
+7c8f533d,JS Paris,34,capped,Open market (not on a 2026 IPL roster),Track,746.0,2.03,5.59,2.03,-18.14,22.21,2.91,3.79,
+e3aa97a2,JM Gibson,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,396.0,2.03,7.3,2.03,-19.03,23.08,2.9,3.78,small sample (<500 balls)
+b03db6fa,MJG Rippon,35,capped,Open market (not on a 2026 IPL roster),Track,1044.0,1.95,4.81,1.95,-17.89,21.79,2.84,3.73,
+0a67aec0,Akash Deep,30,capped,In auction pool (released by KKR),Track,733.0,1.83,5.64,1.83,-18.36,22.03,2.74,3.65,
+d4eef961,M de Lange,36,capped,Open market (not on a 2026 IPL roster),Track,1601.0,1.83,3.94,1.83,-17.69,21.35,2.74,3.65,
+547c5509,M Mpongwana,26,capped,Open market (not on a 2026 IPL roster),Track,248.0,1.82,8.72,1.82,-20.1,23.74,2.73,3.64,small sample (<500 balls)
+5fed6272,CN Miles,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,912.0,1.82,5.11,1.82,-18.15,21.78,2.73,3.64,
+c6097d68,Oshane Thomas,30,capped,Open market (not on a 2026 IPL roster),Track,1040.0,1.82,4.82,1.82,-18.03,21.66,2.73,3.64,
+3f659464,Olly Stone,33,capped,Open market (not on a 2026 IPL roster),Track,1598.0,1.82,3.95,1.82,-17.71,21.34,2.73,3.64,
+1cb14aa4,CJ Dala,37,capped,Open market (not on a 2026 IPL roster),Track,918.0,1.64,5.1,1.64,-18.32,21.6,2.58,3.52,
+94db3502,MK O'Riordan,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,202.0,1.6,9.36,1.6,-20.75,23.95,2.55,3.5,small sample (<500 balls)
+d7725664,Raymon Reifer,35,capped,Open market (not on a 2026 IPL roster),Track,610.0,1.48,6.1,1.48,-18.93,21.9,2.45,3.42,
+93f25f4f,BR Hampton,35,uncapped (no international),Open market (not on a 2026 IPL roster),Track,590.0,1.3,6.19,1.3,-19.16,21.76,2.3,3.29,
+a3ae63f4,GJ Snyman,32,capped,Open market (not on a 2026 IPL roster),Track,301.0,1.18,8.12,1.18,-20.36,22.72,2.19,3.21,small sample (<500 balls)
+bdadf7da,JL Denly,41,capped,Open market (not on a 2026 IPL roster),Track,742.0,1.12,5.61,1.12,-19.06,21.3,2.14,3.17,
+1d2f290a,JA Thompson,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1865.0,1.11,3.67,1.11,-18.32,20.55,2.14,3.17,
+943ca0cd,Newman Nyamhuri,21,capped,Open market (not on a 2026 IPL roster),Track,167.0,0.96,9.95,0.96,-21.81,23.72,2.01,3.06,small sample (<500 balls)
+7a8a0237,JP Morley,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,216.0,0.79,9.15,0.79,-21.41,23.0,1.87,2.95,small sample (<500 balls)
+f1c61793,JD Wildermuth,33,capped,Open market (not on a 2026 IPL roster),Track,716.0,0.76,5.69,0.76,-19.47,20.98,1.84,2.93,
+3766056b,Barry McCarthy,34,capped,Open market (not on a 2026 IPL roster),Track,1313.0,0.68,4.33,0.68,-18.97,20.34,1.78,2.88,
+c5aef772,Romario Shepherd,32,capped,Retained by RCB (not in auction),Track,4047.0,0.55,2.53,0.55,-18.58,19.68,1.67,2.79,
+34b37279,BGF Green,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1590.0,0.54,3.96,0.54,-18.98,20.07,1.66,2.78,
+6834d1f2,B Stanlake,32,capped,Open market (not on a 2026 IPL roster),Track,863.0,0.26,5.24,0.26,-19.76,20.27,1.42,2.59,
+be69e09d,BL Couch,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,935.0,-0.08,5.06,-0.08,-20.02,19.86,1.14,2.36,
+9d50c7e1,MP Siboto,39,uncapped (no international),Open market (not on a 2026 IPL roster),Track,532.0,-0.12,6.47,-0.12,-20.72,20.48,1.11,2.33,
+03df7a25,DA Douthwaite,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1521.0,-0.19,4.04,-0.19,-19.75,19.37,1.05,2.29,
+07c8a2f4,LA Procter,38,uncapped (no international),Open market (not on a 2026 IPL roster),Track,339.0,-0.26,7.76,-0.26,-21.58,21.06,0.99,2.24,small sample (<500 balls)
+119678fd,Karn Sharma,39,"uncapped (Indian, last international > 5 years ago)",Open market (not on a 2026 IPL roster),Track,1011.0,-0.3,4.88,-0.3,-20.17,19.57,0.96,2.21,
+fbfea9c2,Evan Jones,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,580.0,-0.32,6.24,-0.32,-20.8,20.16,0.94,2.2,
+3ff033bb,Dasun Shanaka,35,capped,Already RR (retained),Track,1796.0,-0.37,3.74,-0.37,-19.82,19.09,0.9,2.17,
+a0b76243,T Luus,21,uncapped (no international),Open market (not on a 2026 IPL roster),Track,156.0,-0.71,10.17,-0.71,-23.63,22.22,0.62,1.94,small sample (<500 balls)
+92780e2f,JU Goolie,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,132.0,-0.76,10.68,-0.76,-24.06,22.54,0.57,1.91,small sample (<500 balls)
+ac5ae4af,I Udana,39,capped,Open market (not on a 2026 IPL roster),Track,1668.0,-0.78,3.87,-0.78,-20.28,18.72,0.56,1.89,
+86e22dd4,Jishan Alam,22,uncapped (no international),Open market (not on a 2026 IPL roster),Track,174.0,-0.82,9.83,-0.82,-23.49,21.86,0.53,1.87,small sample (<500 balls)
+eaa36b2a,Brian Bennett,23,capped,Open market (not on a 2026 IPL roster),Track,182.0,-0.89,9.69,-0.89,-23.47,21.68,0.46,1.81,small sample (<500 balls)
+e05b2a5b,MET Salisbury,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,204.0,-0.93,9.33,-0.93,-23.26,21.4,0.43,1.79,small sample (<500 balls)
+b483905d,Akash Singh,24,uncapped (no international),Retained by LSG (not in auction),Track,379.0,-0.94,7.43,-0.94,-22.07,20.18,0.42,1.78,small sample (<500 balls)
+cad40f5e,Brydon Carse,31,capped,Retained by SRH (not in auction),Track,1241.0,-0.98,4.44,-0.98,-20.68,18.72,0.39,1.76,
+9f812582,LPJ Kimber,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,216.0,-1.0,9.15,-1.0,-23.21,21.21,0.37,1.74,small sample (<500 balls)
+10f42013,WJ Lubbe,34,capped,Open market (not on a 2026 IPL roster),Track,366.0,-1.03,7.54,-1.03,-22.22,20.16,0.35,1.72,small sample (<500 balls)
+74a274cc,TG Helm,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1850.0,-1.07,3.68,-1.07,-20.51,18.37,0.31,1.7,
+aad0c365,Nitish Reddy,23,capped,Retained by SRH (not in auction),Track,571.0,-1.1,6.28,-1.1,-21.6,19.41,0.29,1.68,
+d99cc23a,T van der Gugten,36,capped,Open market (not on a 2026 IPL roster),Track,1540.0,-1.17,4.02,-1.17,-20.72,18.38,0.23,1.63,
+4885bbe6,Yudhvir Singh,29,uncapped (no international),In auction pool (released by RR),Track,342.0,-1.18,7.74,-1.18,-22.48,20.13,0.22,1.62,small sample (<500 balls)
+f892fcf9,Lutho Sipamla,28,capped,Open market (not on a 2026 IPL roster),Track,835.0,-1.29,5.32,-1.29,-21.34,18.76,0.13,1.55,
+6eea0b32,Nasir Hossain,35,capped,Open market (not on a 2026 IPL roster),Track,432.0,-1.47,7.05,-1.47,-22.38,19.45,-0.02,1.43,small sample (<500 balls)
+a4e37e47,Shivam Dube,33,capped,Retained by CSK (not in auction),Track,1282.0,-1.55,4.38,-1.55,-21.22,18.12,-0.09,1.37,
+de7d833e,Dilshan Madushanka,26,capped,In auction pool (released by SRH),Track,1170.0,-1.79,4.56,-1.79,-21.53,17.95,-0.29,1.21,
+1a448be0,Benjamin White,28,capped,Open market (not on a 2026 IPL roster),Track,720.0,-1.88,5.68,-1.88,-22.1,18.33,-0.37,1.15,
+d014d5ac,Sherfane Rutherford,28,capped,Retained by MI (not in auction),Track,324.0,-1.93,7.9,-1.93,-23.34,19.47,-0.41,1.12,small sample (<500 balls)
+a790df98,S Snater,31,capped,Open market (not on a 2026 IPL roster),Track,1204.0,-1.95,4.5,-1.95,-21.67,17.77,-0.42,1.1,
+d45c29b1,Ashwani Kumar,26,uncapped (no international),Retained by MI (not in auction),Track,213.0,-2.08,9.19,-2.08,-24.31,20.16,-0.53,1.02,small sample (<500 balls)
+ebb74564,Andile Simelane,23,capped,Open market (not on a 2026 IPL roster),Track,332.0,-2.16,7.83,-2.16,-23.52,19.2,-0.6,0.96,small sample (<500 balls)
+dbeb6733,BG Randell,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,757.0,-2.21,5.56,-2.21,-22.37,17.94,-0.64,0.93,
+f28c7456,DK Ferns,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,780.0,-2.22,5.48,-2.22,-22.34,17.91,-0.65,0.92,
+6ed11905,M Nabe,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,259.0,-2.32,8.59,-2.32,-24.15,19.52,-0.73,0.86,small sample (<500 balls)
+f2397e48,Codi Yusuf,28,capped,Open market (not on a 2026 IPL roster),Track,460.0,-2.34,6.87,-2.34,-23.15,18.48,-0.75,0.84,small sample (<500 balls)
+c27518d2,Ziaur Rahman,40,capped,Open market (not on a 2026 IPL roster),Track,389.0,-2.37,7.36,-2.37,-23.45,18.71,-0.77,0.82,small sample (<500 balls)
+dda5aae5,JK Fuller,37,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1744.0,-2.43,3.79,-2.43,-21.91,17.04,-0.83,0.78,
+e423d162,LJ Fletcher,38,uncapped (no international),Open market (not on a 2026 IPL roster),Track,663.0,-2.48,5.89,-2.48,-22.8,17.83,-0.87,0.74,
+1efd12d1,PR Brown,28,capped,Open market (not on a 2026 IPL roster),Track,1674.0,-2.49,3.86,-2.49,-21.99,17.01,-0.88,0.74,
+ad212f96,RF Higgins,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1321.0,-2.53,4.32,-2.53,-22.19,17.12,-0.91,0.71,
+fc63d916,AW Finch,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,794.0,-2.6,5.44,-2.6,-22.7,17.51,-0.97,0.67,
+08548b13,Kamindu Mendis,28,capped,In auction pool (released by SRH),Track,594.0,-2.62,6.17,-2.62,-23.07,17.83,-0.98,0.65,
+b0eaaac6,Ali Khan,36,capped,Open market (not on a 2026 IPL roster),Track,1926.0,-2.62,3.61,-2.62,-22.04,16.79,-0.99,0.65,
+1c06d60a,MD Rae,31,capped,Open market (not on a 2026 IPL roster),Track,840.0,-2.71,5.31,-2.71,-22.76,17.34,-1.06,0.59,
+62175638,Karim Janat,28,capped,Open market (not on a 2026 IPL roster),Track,647.0,-2.74,5.95,-2.74,-23.08,17.61,-1.08,0.57,
+63e1e352,Zaman Akhter,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,258.0,-2.81,8.6,-2.81,-24.65,19.04,-1.14,0.53,small sample (<500 balls)
+8f3f2d61,RD Harrison,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,211.0,-3.04,9.22,-3.04,-25.29,19.22,-1.33,0.37,small sample (<500 balls)
+af4a9a0a,Jediah Blades,24,capped,Open market (not on a 2026 IPL roster),Track,248.0,-3.06,8.72,-3.06,-24.98,18.86,-1.35,0.36,small sample (<500 balls)
+66272dc4,Ziaur Rahman,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,126.0,-3.07,10.82,-3.07,-26.48,20.33,-1.36,0.35,small sample (<500 balls)
+be869ccf,George Garton,29,capped,Open market (not on a 2026 IPL roster),Track,1257.0,-3.11,4.42,-3.11,-22.8,16.58,-1.4,0.32,
+36619795,Zeeshan Ansari,27,uncapped (no international),Retained by DC (not in auction),Track,227.0,-3.19,9.0,-3.19,-25.29,18.92,-1.46,0.27,small sample (<500 balls)
+8cbcff3b,JM De Caires,24,uncapped (no international),Open market (not on a 2026 IPL roster),Track,260.0,-3.51,8.57,-3.51,-25.33,18.32,-1.73,0.05,small sample (<500 balls)
+60fbf53a,D Potgieter,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,440.0,-3.51,7.0,-3.51,-24.4,17.37,-1.73,0.05,small sample (<500 balls)
+27fc5808,HT Crocombe,25,capped,Open market (not on a 2026 IPL roster),Track,564.0,-3.6,6.31,-3.6,-24.12,16.92,-1.81,-0.01,
+21b97584,Mrittunjoy Chowdhury,27,capped,Open market (not on a 2026 IPL roster),Track,561.0,-3.66,6.33,-3.66,-24.19,16.87,-1.85,-0.05,
+c96f6ac5,Pieter Willem Mulder,29,capped,Open market (not on a 2026 IPL roster),Track,1320.0,-3.7,4.32,-3.7,-23.36,15.95,-1.89,-0.08,
+ed6894af,Dean Foxcroft,28,capped,Open market (not on a 2026 IPL roster),Track,500.0,-3.77,6.64,-3.77,-24.46,16.92,-1.94,-0.12,
+bc2d4f2e,W Sutherland,27,capped,Open market (not on a 2026 IPL roster),Track,1293.0,-3.83,4.36,-3.83,-23.5,15.84,-2.0,-0.16,
+80e44dc5,JP McIlroy,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,632.0,-3.88,6.01,-3.88,-24.26,16.49,-2.04,-0.2,
+7a490dec,C le Roux,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,375.0,-3.9,7.46,-3.9,-25.04,17.25,-2.06,-0.21,small sample (<500 balls)
+219cc59e,DY Pennington,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1348.0,-3.93,4.27,-3.93,-23.56,15.71,-2.08,-0.23,
+ded9ff1e,Jayden Seales,25,capped,Open market (not on a 2026 IPL roster),Track,1059.0,-3.95,4.78,-3.95,-23.78,15.88,-2.1,-0.24,
+85b3fab2,Tristan Stubbs,26,capped,Retained by DC (not in auction),Track,123.0,-4.1,10.89,-4.1,-27.57,19.36,-2.23,-0.35,small sample (<500 balls)
+fa41edde,Ruyel Miah,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,328.0,-4.11,7.86,-4.11,-25.49,17.28,-2.23,-0.35,small sample (<500 balls)
+1a8eebbe,Shafiul Islam,37,capped,Open market (not on a 2026 IPL roster),Track,784.0,-4.43,5.47,-4.43,-24.55,15.69,-2.5,-0.57,
+34b332d3,Dominic Drakes,29,capped,Open market (not on a 2026 IPL roster),Track,1452.0,-4.44,4.13,-4.44,-24.02,15.15,-2.51,-0.57,
+d1d83db3,Trevor Gwandu,29,capped,Open market (not on a 2026 IPL roster),Track,372.0,-4.71,7.49,-4.71,-25.87,16.44,-2.74,-0.76,small sample (<500 balls)
+56ef4f99,FJ Heldreich,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,717.0,-4.77,5.69,-4.77,-24.98,15.45,-2.78,-0.79,
+ad286dcc,AT Thomson,33,uncapped (no international),Open market (not on a 2026 IPL roster),Track,654.0,-4.8,5.92,-4.8,-25.12,15.53,-2.8,-0.81,
+bb01f9e0,Shuvagata Hom,40,capped,Open market (not on a 2026 IPL roster),Track,452.0,-4.91,6.92,-4.91,-25.75,15.93,-2.9,-0.89,small sample (<500 balls)
+236c8ffb,MW Snedden,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,342.0,-4.98,7.74,-4.98,-26.29,16.32,-2.96,-0.94,small sample (<500 balls)
+5b16a806,Akila Dananjaya,33,capped,Open market (not on a 2026 IPL roster),Track,847.0,-5.11,5.29,-5.11,-25.14,14.93,-3.07,-1.02,
+7bc29ffb,CA Dry,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,231.0,-5.14,8.94,-5.14,-27.21,16.92,-3.1,-1.05,small sample (<500 balls)
+be3ffb65,Tsepo Ndwandwa,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,246.0,-5.3,8.74,-5.3,-27.24,16.63,-3.23,-1.16,small sample (<500 balls)
+3f5f39cd,Al-Amin Hossain,34,capped,Open market (not on a 2026 IPL roster),Track,1031.0,-5.34,4.84,-5.34,-25.19,14.51,-3.26,-1.18,
+0085a7ce,JFA Field,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,451.0,-5.46,6.93,-5.46,-26.3,15.39,-3.36,-1.26,small sample (<500 balls)
+25550d06,Graham Hume,36,capped,Open market (not on a 2026 IPL roster),Track,188.0,-5.47,9.59,-5.47,-27.97,17.04,-3.37,-1.27,small sample (<500 balls)
+33ad0ad9,ATE Hazeldine,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,474.0,-5.48,6.79,-5.48,-26.25,15.29,-3.38,-1.27,small sample (<500 balls)
+12314277,Arshad Khan,29,uncapped (no international),Retained by GT (not in auction),Track,396.0,-5.73,7.3,-5.73,-26.79,15.32,-3.59,-1.45,small sample (<500 balls)
+ebb1f8e8,T Muller,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,312.0,-5.78,8.01,-5.78,-27.26,15.69,-3.63,-1.48,small sample (<500 balls)
+eab74985,AP Beard,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,438.0,-5.94,7.01,-5.94,-26.83,14.95,-3.77,-1.59,small sample (<500 balls)
+269ff06e,TJ Price,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,186.0,-6.01,9.62,-6.01,-28.54,16.52,-3.82,-1.63,small sample (<500 balls)
+478a63e7,Curtis Campher,27,capped,Open market (not on a 2026 IPL roster),Track,1009.0,-6.1,4.88,-6.1,-25.97,13.77,-3.9,-1.69,
+a510bdd3,EG Barnard,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1039.0,-6.22,4.82,-6.22,-26.06,13.62,-4.0,-1.77,
+6e0a2209,B Swanepoel,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,468.0,-6.49,6.83,-6.49,-27.28,14.29,-4.23,-1.96,small sample (<500 balls)
+54c2b697,M Pretorius,32,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1230.0,-6.54,4.46,-6.54,-26.25,13.16,-4.27,-1.99,
+27e60d6e,AS Dale,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,309.0,-6.61,8.04,-6.61,-28.11,14.88,-4.33,-2.04,small sample (<500 balls)
+2e78f685,Kuldeep Sen,30,capped,In auction pool (released by RR),Track,663.0,-6.72,5.89,-6.72,-27.03,13.59,-4.42,-2.11,
+1e1a8922,Kristian Clarke,26,capped,Open market (not on a 2026 IPL roster),Track,477.0,-6.99,6.77,-6.99,-27.75,13.77,-4.64,-2.29,small sample (<500 balls)
+f2c936d7,Mitchell Owen,25,capped,In auction pool (released by PBKS),Track,694.0,-7.07,5.77,-7.07,-27.33,13.19,-4.71,-2.35,
+27c5a793,DJ Lamb,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1214.0,-7.23,4.49,-7.23,-26.95,12.48,-4.85,-2.46,
+a699488a,Mukidul Islam,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,728.0,-7.35,5.65,-7.35,-27.55,12.85,-4.94,-2.53,
+93cad673,NN Gilchrist,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,338.0,-7.39,7.77,-7.39,-28.72,13.94,-4.98,-2.56,small sample (<500 balls)
+e0ac7144,OJ Hannon-Dalby,37,uncapped (no international),Open market (not on a 2026 IPL roster),Track,207.0,-7.41,9.28,-7.41,-29.71,14.88,-5.0,-2.58,small sample (<500 balls)
+a5c48ed1,Chamindu Wickramasinghe,24,capped,Open market (not on a 2026 IPL roster),Track,148.0,-7.44,10.33,-7.44,-30.48,15.6,-5.02,-2.6,small sample (<500 balls)
+ed12fcd7,BWM Mike,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,1036.0,-7.52,4.83,-7.52,-27.37,12.32,-5.09,-2.65,
+1bb0993e,Abu Jayed,33,capped,Open market (not on a 2026 IPL roster),Track,623.0,-7.78,6.05,-7.78,-28.17,12.61,-5.3,-2.82,
+711249d1,Shamim Hossain,26,capped,Open market (not on a 2026 IPL roster),Track,195.0,-8.0,9.47,-8.0,-30.42,14.43,-5.48,-2.97,small sample (<500 balls)
+0f348f58,Sunzamul Islam,37,capped,Open market (not on a 2026 IPL roster),Track,557.0,-8.0,6.35,-8.0,-28.53,12.54,-5.48,-2.97,
+de3d549a,Asitha Fernando,29,capped,Open market (not on a 2026 IPL roster),Track,596.0,-8.04,6.17,-8.04,-28.48,12.41,-5.52,-3.0,
+721032ec,Alauddin Babu,35,uncapped (no international),Open market (not on a 2026 IPL roster),Track,264.0,-8.21,8.53,-8.21,-30.01,13.58,-5.66,-3.12,small sample (<500 balls)
+77768f72,Rakibul Hasan,24,capped,Open market (not on a 2026 IPL roster),Track,498.0,-8.25,6.65,-8.25,-28.95,12.44,-5.7,-3.14,small sample (<500 balls)
+4d9f9686,Soumya Sarkar,34,capped,Open market (not on a 2026 IPL roster),Track,628.0,-8.37,6.03,-8.37,-28.75,12.01,-5.8,-3.23,
+c2d9b9cd,SB Wood,22,uncapped (no international),Open market (not on a 2026 IPL roster),Track,156.0,-8.57,10.17,-8.57,-31.49,14.35,-5.97,-3.36,small sample (<500 balls)
+37b12633,N Potts,24,uncapped (no international),Open market (not on a 2026 IPL roster),Track,232.0,-8.62,8.93,-8.62,-30.68,13.44,-6.01,-3.39,small sample (<500 balls)
+c2e5539b,LM Benkenstein,22,uncapped (no international),Open market (not on a 2026 IPL roster),Track,340.0,-8.73,7.75,-8.73,-30.05,12.58,-6.1,-3.47,small sample (<500 balls)
+39e2c0fd,BMJ Allison,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,568.0,-8.78,6.29,-8.78,-29.29,11.73,-6.14,-3.5,
+2085e1fa,HJH Brookes,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,882.0,-9.57,5.19,-9.57,-29.57,10.43,-6.8,-4.03,
+bed90114,Joshua Clarkson,30,capped,Open market (not on a 2026 IPL roster),Track,349.0,-9.89,7.68,-9.89,-31.16,11.38,-7.07,-4.25,small sample (<500 balls)
+be24ead0,Ramandeep Singh,29,capped,Retained by KKR (not in auction),Track,262.0,-9.92,8.55,-9.92,-31.73,11.89,-7.1,-4.27,small sample (<500 balls)
+31803fac,Abu Hider,31,capped,Open market (not on a 2026 IPL roster),Track,811.0,-9.92,5.39,-9.92,-30.01,10.16,-7.1,-4.27,
+f7e9a562,Kamrul Islam Rabbi,35,capped,Open market (not on a 2026 IPL roster),Track,744.0,-10.36,5.6,-10.36,-30.53,9.82,-7.46,-4.56,
+0f12f9df,NLTC Perera,37,capped,Open market (not on a 2026 IPL roster),Track,1321.0,-10.56,4.32,-10.56,-30.21,9.1,-7.63,-4.7,
+267be846,Rejaur Rahman,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,455.0,-10.57,6.9,-10.57,-31.4,10.26,-7.64,-4.71,small sample (<500 balls)
+ffdba4e2,BG Charlesworth,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,141.0,-10.57,10.48,-10.57,-33.73,12.58,-7.64,-4.71,small sample (<500 balls)
+35c08a29,JM Blatherwick,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,512.0,-10.68,6.58,-10.68,-31.34,9.97,-7.73,-4.78,
+5a4c12ab,Sohag Gazi,35,capped,Open market (not on a 2026 IPL roster),Track,498.0,-10.69,6.65,-10.69,-31.38,10.01,-7.74,-4.79,small sample (<500 balls)
+0ebb3444,L Scott,26,capped,Open market (not on a 2026 IPL roster),Track,253.0,-10.92,8.66,-10.92,-32.8,10.96,-7.93,-4.94,small sample (<500 balls)
+a557333b,VO Lawes,20,capped,Open market (not on a 2026 IPL roster),Track,228.0,-11.12,8.98,-11.12,-33.22,10.97,-8.1,-5.08,small sample (<500 balls)
+d26e0405,MK Andersson,30,uncapped (no international),Open market (not on a 2026 IPL roster),Track,796.0,-11.21,5.43,-11.21,-31.32,8.89,-8.18,-5.14,
+28217d89,ML Revis,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,683.0,-11.97,5.81,-11.97,-32.24,8.31,-8.81,-5.65,
+8ecb0241,Y Majid,23,uncapped (no international),Open market (not on a 2026 IPL roster),Track,138.0,-11.97,10.54,-11.97,-35.17,11.23,-8.81,-5.65,small sample (<500 balls)
+6575e3bc,Nazmul Islam,36,capped,Open market (not on a 2026 IPL roster),Track,557.0,-12.1,6.35,-12.1,-32.63,8.44,-8.91,-5.73,
+932d3cc9,FJ Hudson-Prentice,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,765.0,-12.39,5.53,-12.39,-32.53,7.76,-9.16,-5.93,
+75224f22,Keemo Paul,29,capped,Open market (not on a 2026 IPL roster),Track,1585.0,-13.37,3.96,-13.37,-32.9,6.16,-9.98,-6.59,
+fb3e0d39,Chamika Karunaratne,30,capped,Open market (not on a 2026 IPL roster),Track,1279.0,-13.42,4.38,-13.42,-33.1,6.25,-10.03,-6.63,
+23cca426,Odean Smith,30,capped,Open market (not on a 2026 IPL roster),Track,1531.0,-14.34,4.03,-14.34,-33.9,5.21,-10.8,-7.25,
+f1f99156,Tim David,31,capped,Retained by RCB (not in auction),Track,654.0,-14.37,5.92,-14.37,-34.7,5.96,-10.82,-7.27,
+fd9f43bb,SM Solia,34,capped,Open market (not on a 2026 IPL roster),Track,638.0,-15.17,5.99,-15.17,-35.53,5.18,-11.49,-7.81,
+cc23e91e,JA Warrican,34,capped,Open market (not on a 2026 IPL roster),Track,144.0,-15.26,10.41,-15.26,-38.36,7.84,-11.56,-7.87,small sample (<500 balls)
+a84ccd7d,Sumon Khan,27,capped,Open market (not on a 2026 IPL roster),Track,228.0,-15.53,8.98,-15.53,-37.63,6.56,-11.79,-8.05,small sample (<500 balls)
+7068c81e,Matthew John Fisher,27,capped,Open market (not on a 2026 IPL roster),Track,714.0,-15.63,5.7,-15.63,-35.86,4.59,-11.88,-8.12,
+344c6d55,JJ Carson,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,281.0,-15.68,8.33,-15.68,-37.35,5.99,-11.91,-8.15,small sample (<500 balls)
+fe2ac1a8,TE Lawes,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,352.0,-15.92,7.65,-15.92,-37.18,5.33,-12.12,-8.31,small sample (<500 balls)
+faa8cfba,MT Stanley,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,255.0,-16.04,8.63,-16.04,-37.9,5.83,-12.21,-8.39,small sample (<500 balls)
+36ea17c1,TL Moreki,33,capped,Open market (not on a 2026 IPL roster),Track,301.0,-16.16,8.12,-16.16,-37.7,5.38,-12.32,-8.47,small sample (<500 balls)
+1afcbb60,Musfik Hasan,24,uncapped (no international),Open market (not on a 2026 IPL roster),Track,183.0,-16.17,9.67,-16.17,-38.73,6.4,-12.32,-8.48,small sample (<500 balls)
+5899dceb,CT Steel,31,uncapped (no international),Open market (not on a 2026 IPL roster),Track,216.0,-16.5,9.15,-16.5,-38.7,5.71,-12.6,-8.7,small sample (<500 balls)
+a83c44b8,A Gqamane,37,uncapped (no international),Open market (not on a 2026 IPL roster),Track,358.0,-16.74,7.6,-16.74,-37.96,4.49,-12.8,-8.86,small sample (<500 balls)
+45a62071,Terrance Hinds,32,capped,Open market (not on a 2026 IPL roster),Track,386.0,-17.19,7.38,-17.19,-38.29,3.9,-13.18,-9.17,small sample (<500 balls)
+fffa744b,Naman Dhir,27,capped,Retained by MI (not in auction),Track,162.0,-17.77,10.05,-17.77,-40.61,5.07,-13.66,-9.56,small sample (<500 balls)
+e3fe4b49,Fionn Hand,28,capped,Open market (not on a 2026 IPL roster),Track,164.0,-17.95,10.01,-17.95,-40.76,4.86,-13.82,-9.68,small sample (<500 balls)
+2baad3bd,LW James,28,uncapped (no international),Open market (not on a 2026 IPL roster),Track,249.0,-18.0,8.71,-18.0,-39.91,3.92,-13.85,-9.71,small sample (<500 balls)
+3a3e7d82,BW Aitchison,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,398.0,-18.83,7.29,-18.83,-39.88,2.21,-14.56,-10.28,small sample (<500 balls)
+afe7d695,JM Tashkoff,27,uncapped (no international),Open market (not on a 2026 IPL roster),Track,144.0,-19.46,10.41,-19.46,-42.57,3.64,-15.08,-10.7,small sample (<500 balls)
+71440756,P Coughlin,34,uncapped (no international),Open market (not on a 2026 IPL roster),Track,588.0,-19.47,6.2,-19.47,-39.93,1.0,-15.09,-10.7,
+20afc7e7,T van Vuuren,25,uncapped (no international),Open market (not on a 2026 IPL roster),Track,209.0,-20.2,9.25,-20.2,-42.47,2.08,-15.69,-11.19,small sample (<500 balls)
+31b01074,Kasey Aldridge,26,uncapped (no international),Open market (not on a 2026 IPL roster),Track,299.0,-22.93,8.14,-22.93,-44.48,-1.38,-17.98,-13.03,small sample (<500 balls)
+40db4769,Garuka Sanketh,21,uncapped (no international),Open market (not on a 2026 IPL roster),Track,172.0,-24.85,9.86,-24.85,-47.55,-2.15,-19.59,-14.33,small sample (<500 balls)
+5ccdb14f,C McKerr,29,uncapped (no international),Open market (not on a 2026 IPL roster),Track,432.0,-26.78,7.05,-26.78,-47.7,-5.87,-21.21,-15.63,small sample (<500 balls)
+650d5e49,Rovman Powell,33,capped,Retained by KKR (not in auction),Track,444.0,-33.17,6.97,-33.17,-54.04,-12.3,-26.55,-19.94,small sample (<500 balls)
+ad1730bc,Ariful Haque,42,capped,Open market (not on a 2026 IPL roster),Track,198.0,-44.82,9.42,-44.82,-67.21,-22.42,-36.3,-27.79,small sample (<500 balls)

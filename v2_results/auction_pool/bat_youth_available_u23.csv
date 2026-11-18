@@ -1,0 +1,21 @@
+uid,youth_rank,name,age,cap_status,label,n,proj_1,proj_1_lo,proj_1_hi,proj_3,rating,sample_flag,available_as
+eaa36b2a,1,Brian Bennett,23,capped,Strong watch,1597.0,43.74,23.31,64.16,44.53,-2.84,,Open market (must register)
+754c883c,2,Hassan Eisakhil,20,uncapped (no international),Strong watch,151.0,35.89,12.12,59.65,38.31,,small sample (<500 balls),Open market (must register)
+3c55c703,3,Jacob Bethell,23,capped,Strong watch,1204.0,31.69,11.08,52.3,34.99,-5.03,,Released by RCB
+9c643d7b,4,JM Coles,22,uncapped (no international),Strong watch,801.0,30.41,9.44,51.38,33.98,,,Open market (must register)
+5cdf8304,5,Joel Davies,23,capped,Track,135.0,29.53,5.52,53.54,33.28,,small sample (<500 balls),Open market (must register)
+d8417b91,6,JT Todd,23,uncapped (no international),Track,244.0,27.55,4.79,50.31,31.72,,small sample (<500 balls),Open market (must register)
+521595e7,7,JEK Rew,23,capped,Track,525.0,26.15,4.67,47.62,30.61,,,Open market (must register)
+c15fb753,8,W Luxton,23,uncapped (no international),Track,432.0,21.87,0.11,43.62,27.22,,small sample (<500 balls),Open market (must register)
+a8ffcd4f,9,THS Rew,19,uncapped (no international),Track,175.0,21.3,-2.15,44.74,26.77,,small sample (<500 balls),Open market (must register)
+66c59019,10,LN Stackpole,22,uncapped (no international),Track,146.0,18.66,-5.18,42.5,24.68,,small sample (<500 balls),Open market (must register)
+9c8448ba,11,OJ Peake,20,capped,Track,138.0,18.25,-5.71,42.21,24.35,,small sample (<500 balls),Open market (must register)
+f2e28b0c,12,GW Thomas,23,uncapped (no international),Track,217.0,17.62,-5.38,40.61,23.85,,small sample (<500 balls),Open market (must register)
+c3576908,13,MA Abbas,23,capped,Track,448.0,14.06,-7.63,35.76,21.04,,small sample (<500 balls),Open market (must register)
+c2e5539b,14,LM Benkenstein,22,uncapped (no international),Track,419.0,11.81,-9.99,33.61,19.26,,small sample (<500 balls),Open market (must register)
+0ecb4de6,15,Rehan Ahmed,22,capped,Track,774.0,7.9,-13.11,28.9,16.16,,,Released by DC
+3c34c9e1,16,S Konstas,21,capped,Track,231.0,6.25,-16.61,29.12,14.86,,small sample (<500 balls),Open market (must register)
+86e22dd4,17,Jishan Alam,22,uncapped (no international),Track,184.0,1.87,-21.47,25.2,11.39,-15.58,small sample (<500 balls),Open market (must register)
+cbf58a86,18,Shaik Rasheed,22,uncapped (no international),Track,141.0,-10.03,-33.94,13.89,1.97,,small sample (<500 balls),Open market (must register)
+ebb74564,19,Andile Simelane,23,capped,Track,137.0,-17.39,-41.37,6.59,-3.85,,small sample (<500 balls),Open market (must register)
+f146c339,20,SM Meherob,23,uncapped (no international),Track,120.0,-22.51,-46.78,1.76,-7.9,,small sample (<500 balls),Open market (must register)

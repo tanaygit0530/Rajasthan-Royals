@@ -173,6 +173,10 @@ for role in ['bat', 'bowl']:
     T['cap_status'] = CAP.status_2027.reindex(T.index).fillna('uncapped (no international)')
     T['sample_flag'] = np.where(T.n < 500, 'small sample (<500 balls)', '')
     boards[role] = T
+    full = T.copy(); full[['skill', 'se', 'proj_1', 'proj_1_lo', 'proj_1_hi', 'proj_2', 'proj_3']] *= 100
+    full['age'] = np.floor(full.age).astype(int)
+    full.sort_values('proj_1', ascending=False).round(2)[['name', 'age', 'cap_status', 'status_2027', 'label', 'n', 'skill', 'se', 'proj_1',
+        'proj_1_lo', 'proj_1_hi', 'proj_2', 'proj_3', 'sample_flag']].to_csv(res(f'youth/{role}_youth_all.csv'), index_label='uid')
     for grp, lo, hi, nmx in [('u23', 0, 23.999, 15), ('24_26', 24, 26.999, 15)]:
         Y = T[T.age.between(lo, hi)].sort_values('proj_1', ascending=False).head(nmx).copy()
         Y.insert(0, 'board_rank', range(1, len(Y) + 1))
