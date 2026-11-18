@@ -8,7 +8,7 @@ import { useData, useProfiles, type Player, type Role } from '../lib/data'
 import { json } from '../lib/crypto'
 import { f1, f0, pct, initials } from '../lib/fmt'
 
-const AUTHOR = { name: 'Tanay Patil', email: 'patiltanay569@gmail.com', github: 'github.com/tanaygit0530' }
+const AUTHOR = { name: 'Tanay Patil', email: 'tanaypatil0530@gmail.com', github: 'github.com/tanaygit0530' }
 type Photos = { photos: Record<string, string>; credits: Record<string, any> }
 type Slide = { id: string; title: string; group: string; body: ReactNode }
 

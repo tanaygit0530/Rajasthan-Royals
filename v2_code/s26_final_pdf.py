@@ -273,7 +273,7 @@ img { width: 100%; display: block; } .note { font-size: 7.6pt; color: #52514e; }
 
 """
 M = sk
-AUTHOR = dict(name='Tanay Patil', email='patiltanay569@gmail.com', github='github.com/tanaygit0530')
+AUTHOR = dict(name='Tanay Patil', email='tanaypatil0530@gmail.com', github='github.com/tanaygit0530')
 html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SupeRR Selector S2 – Final Report</title><style>{CSS}</style></head><body>
 
 <section class="page">

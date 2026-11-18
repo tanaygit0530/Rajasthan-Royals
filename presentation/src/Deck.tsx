@@ -7,7 +7,7 @@ import DATA from '../private_data/deck.json'
 
 const W = 1600, H = 900
 const C = { pink: '#E5197E', pinkSoft: '#FDE7F2', blue: '#1E3FA0', blueSoft: '#E8EDFA', navy: '#0A1B4D', ink: '#121530', mute: '#5B6079', line: '#E6E8F0', green: '#12805C', red: '#C8323C' }
-const AUTHOR = { name: 'Tanay Patil', email: 'patiltanay569@gmail.com', github: 'github.com/tanaygit0530' }
+const AUTHOR = { name: 'Tanay Patil', email: 'tanaypatil0530@gmail.com', github: 'github.com/tanaygit0530' }
 type Role = 'bat' | 'bowl'
 const f1 = (x: any) => (x === null || x === undefined || Number.isNaN(+x) ? '–' : (+x).toFixed(1))
 const f0 = (x: any) => (x === null || x === undefined || Number.isNaN(+x) ? '–' : Math.round(+x).toLocaleString('en-IN'))
