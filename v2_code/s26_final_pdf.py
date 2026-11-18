@@ -33,6 +33,10 @@ clear = {r: int((T.head(15).p_top10 >= 0.5).sum()) for r, T in [('bat', BAT), ('
 gap_b = sk['bat'].loc['M5_eb_overall_plus_gap', 'wcorr'] - sk['bat'].loc['M4_eb_overall', 'wcorr']
 gap_w = sk['bowl'].loc['M5_eb_overall_plus_gap', 'wcorr'] - sk['bowl'].loc['M4_eb_overall', 'wcorr']
 RRT = TEAMS.set_index('team').loc['Rajasthan Royals']
+META7 = json.load(open(w('comp_strength/fit_meta.json')))
+XO = rd('models/xoutcome_comparison.csv', index_col=0)
+xo_gain = (1 - XO.loc['hgb_separate', 'bat_runs_mse'] / XO.loc['T0_cell_means', 'bat_runs_mse']) * 100
+AB = rd('models/ablation_by_fold.csv')
 
 # ---------------- new charts ----------------
 def save(fig, name):
@@ -164,6 +168,12 @@ def buy_table(role):
 
 
 # requirements map
+SEAS = list(range(2019, 2027))
+def fold_row(c):
+    cells = ''.join(f'<div class="c {"tr" if y <= c else "te" if y == c + 1 else "na"}">{y}</div>' for y in SEAS)
+    return f'<div class="fold"><div>Fold: train ≤{c}, test {c + 1}</div>{cells}</div>'
+FOLDS = ''.join(fold_row(c) for c in [2022, 2023, 2024, 2025])
+
 REQ = [('Pressure definition', 'Learned <b>leverage index</b>: how much the next ball can swing win probability; top 25% of balls = pressure. 7 definitions compared.', '§2'),
        ('Performance measurement', f'<b>Run value</b> per ball vs the situation\'s expectation (wicket = {KW:.1f} runs); batters and bowlers on one scale; pressure vs usual shown for every player.', '§3'),
        ('Fair comparisons', 'Opposition, venue, era and league strength adjusted (1.6 M public balls); Bayesian shrinkage for small samples; eligibility ≥150 pressure balls, active 2025+.', '§3'),
@@ -255,6 +265,12 @@ img { width: 100%; display: block; } .note { font-size: 7.6pt; color: #52514e; }
 .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin: 3mm 0; } .kpi { border: 1px solid #e4e3de; border-radius: 3mm; padding: 2.5mm 3mm; }
 .kpi .v { font-size: 15pt; font-weight: 800; white-space: nowrap; } .kpis.tight .v { font-size: 12.5pt; } .kpi .l { font-size: 7.2pt; color: #52514e; }
 .foot { font-size: 7pt; color: #8a8984; margin-top: 2mm; }
+.formula { font-family: 'Cambria Math', 'STIX Two Math', Georgia, serif; font-size: 10pt; background: #f6f7fb; border-radius: 2mm; padding: 1.6mm 3mm; margin: 1mm 0 2mm; }
+.fold { display: grid; grid-template-columns: 34mm repeat(8, 1fr); gap: 0.8mm; font-size: 7pt; align-items: center; margin: 0.6mm 0; }
+.fold div.c { height: 5mm; border-radius: 1mm; text-align: center; line-height: 5mm; color: #fff; }
+.tr { background: #254aa5; } .te { background: #d63384; } .na { background: #ecebe7; color: #8a8984 !important; }
+.scope li { margin-bottom: 1mm; }
+
 """
 M = sk
 html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SupeRR Selector S2 – Final Report</title><style>{CSS}</style></head><body>
@@ -325,6 +341,45 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
   </div>
 </section>
 
+
+<section class="page">
+  <div class="kick">3b · Models and training logic</div><h2>How the models work – and how we trained them</h2>
+  <div class="grid2" style="gap:5mm">
+    <div>
+      <b>1 · Win probability</b> (batting side, every ball, both innings)
+      <div class="formula">WP(s) = σ( β · x(s) ),&nbsp; x = runs needed, balls left, wickets in hand, run rates, era par, venue, team Elo</div>
+      <b>2 · Leverage = pressure</b>
+      <div class="formula">LI(s) = Σ<sub>k</sub> p<sub>k</sub>(s) · | WP(s after outcome k) − WP(s) |,&nbsp; k ∈ &#123;0,1,2,3,4,6,W&#125;</div>
+      <p class="sm">p<sub>k</sub> = chance of each outcome in that exact state (learned outcome model). Top 25% of LI = pressure ball.</p>
+    </div>
+    <div>
+      <b>3 · Run value per ball</b>
+      <div class="formula">RV = (runs − E[runs | s]) − {KW:.1f} × (out − P(out | s))</div>
+      <b>4 · Player rating (hierarchical Bayes)</b>
+      <div class="formula">θ<sub>i</sub> ~ N(a + b·prior<sub>i</sub>, σ<sub>θ</sub>),&nbsp; ȳ<sub>i</sub> ~ N(θ<sub>i</sub> + δ<sub>i</sub>, σ/√n<sub>i</sub>)</div>
+      <p class="sm">θ = player's true skill per ball; δ = pressure-specific effect (estimated, but not used to rank – it did not repeat); n = balls. Small samples are pulled towards the average automatically.</p>
+    </div>
+  </div>
+  <h3>The four models, how they were trained and why we kept them</h3>
+  <table class="t sm"><thead><tr><th style="width:26mm">Model</th><th>Predicts</th><th>Trained on</th><th>Validation</th><th>Chosen because</th></tr></thead><tbody>
+    <tr><td><b>Win probability</b><div class="sub">logistic regression</div></td><td>Batting side wins the match</td><td>All T20s 2019–26 (RR pack + Cricsheet), separate models per innings</td>
+        <td>Log-loss / Brier / AUC on the next season (4 folds); 5 families compared</td><td>Best on unseen seasons ({wp_chosen.loc[1,'logloss']:.3f}/{wp_chosen.loc[2,'logloss']:.3f}); tree models over-fit match-level features</td></tr>
+    <tr><td><b>Expected outcomes</b><div class="sub">gradient boosting (HGB) + 7-class model</div></td><td>Expected runs, dismissal chance, outcome mix for leverage</td><td>Situation only – no player information</td>
+        <td>MSE / log-loss on the next season vs simple cell averages</td><td>{xo_gain:.1f}% better on runs than averages; simpler where no gain</td></tr>
+    <tr><td><b>League & venue strength</b><div class="sub">sparse ridge regression</div></td><td>Player, league, venue, opponent effects per ball</td><td>1.6 M deliveries, players who appear in several leagues link the leagues</td>
+        <td>Penalty chosen on the 2026 hold-out (runs λ={META7['lam']['runs_bat']:.0f}, wickets λ={META7['lam']['striker_out']:.0f}); 60 match bootstraps for SEs</td><td>Replaces hand-set opposition tiers with measured strength</td></tr>
+    <tr><td><b>Player rating</b><div class="sub">Bayesian (NumPyro, NUTS)</div></td><td>Run value per pressure ball next season, with 80% range</td><td>RR-pack balls 2022–26; bowlers get a prior from public leagues only</td>
+        <td>Correlation with next-season pressure performance vs 8 alternatives; interval coverage calibrated (×{CAL['bat']['widen']:.2f} / ×{CAL['bowl']['widen']:.2f})</td><td>Within 1 SE of the best predictor and the only one with honest uncertainty</td></tr>
+  </tbody></table>
+  <h3>Training without leakage: every model is tested on a season it never saw</h3>
+  {FOLDS}
+  <p class="note"><span style="color:#254aa5">■</span> training seasons &nbsp; <span style="color:#d63384">■</span> test season. Ratings used as features for season c+1 are rebuilt from models trained only on seasons ≤ c. The final ratings are refitted on all seasons.</p>
+  <div class="grid3" style="margin-top:2mm">
+    <div class="card sm"><b>What we dropped (and why)</b><br>Hand-set weights (no signal), pressure-specific "clutch" term (hurt prediction), age curve (no gain), tree WP models (over-fit). Rule: keep the simpler model unless the complex one wins on unseen seasons.</div>
+    <div class="card sm"><b>Fixes found by testing</b><br>Run rate shrunk towards par early in an innings (removed a first-ball swing); a prior that reused the same balls was replaced (intervals had been 3× too narrow); merged venues split by city.</div>
+    <div class="card sm"><b>Reproducibility</b><br>Fixed seeds, pinned environment, one command per stage; a clean rerun from raw data reproduces every list except one 0.01-point near-tie.</div>
+  </div>
+</section>
 <section class="page">
   <div class="kick">4 · Evidence for the top 10</div><h2>Ratings with honest uncertainty</h2>
   <img src="img/submitted_intervals.png" style="width:96%;margin:0 auto">
@@ -388,6 +443,15 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sup
     <div class="card sm"><b>Reproducible pipeline</b><br>30 stage scripts, one command (<code>run_all.sh</code>), fixed seeds, pinned environment; a clean rerun from raw data reproduces every list (one 0.01 near-tie can swap).</div>
     <div class="card sm"><b>Decision support for the auction</b><br>Scout cards for 60 players, value and youth boards, squad-gap analysis and plan A/B/C per role – refreshed after the 17 Nov retentions; config files make the next refresh a rerun, not a rewrite.</div>
   </div>
+  <h3>Future scope: from analysis to a live auction tool</h3>
+  <div class="grid2"><ul class="scope sm" style="margin:0;padding-left:5mm">
+      <li><b>RR Pressure Scout app</b> – upload any new data pack (CSV, Excel, JSON, Cricsheet); columns are mapped automatically, validated and de-duplicated; player identities checked, never merged silently.</li>
+      <li><b>Refresh or retrain on new data</b> – the app decides and explains; a retrained model replaces the current one only if it is at least as good on unseen seasons; drift checks and a model registry.</li>
+      <li><b>Auction optimiser</b> – picks the best set of targets within purse, slot and overseas limits, with max bids, plan A/B/C per role, youth-investment and risk sliders, and instant what-ifs.</li></ul>
+    <ul class="scope sm" style="margin:0;padding-left:5mm">
+      <li><b>Live auction mode</b> – enter each lot; purses and slots of all 10 teams update, RR's targets and max bids re-optimise, alerts when a last option in a role goes.</li>
+      <li><b>Better price model</b> – train on the official auction register (base price, set) and show price ranges backtested on past auctions.</li>
+      <li><b>Richer data</b> – fielding, ball-tracking and pitch data would sharpen ratings; U19 and state-league scorecards would firm up the youth board.</li></ul></div>
   <p class="foot">Sources: RR/Unstop data pack (aggregates only); Cricsheet (ODC-By); Wikipedia (CC BY-SA) auction prices; Wikidata (CC0) ages; IPL 2027 retentions – Willow Sports via Yahoo Sports and rajasthanroyals.com (17 Nov 2026), RVCJ graphic. Full method, code and every table: v2_results/ and the evaluator website.</p>
 </section>
 </body></html>"""
