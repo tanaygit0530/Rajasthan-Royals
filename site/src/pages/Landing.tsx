@@ -5,7 +5,7 @@ import { PlayerCard, Tip } from '../components/ui'
 
 export default function Landing() {
   const { meta, players, rankings } = useData()
-  const top = (r: Role) => (rankings.lists[r].open as string[]).slice(0, 10).map(id => players[id])
+  const top = (r: Role) => (rankings.lists[r].buy as string[]).slice(0, 10).map(id => players[id])
   return (
     <div>
       <section className="card relative overflow-hidden p-6 sm:p-10">
@@ -28,8 +28,8 @@ export default function Landing() {
         {(['bat', 'bowl'] as Role[]).map(r => (
           <section key={r} aria-labelledby={`h-${r}`}>
             <div className="mb-3 flex items-baseline justify-between">
-              <h2 id={`h-${r}`} className="text-xl font-bold">Top 10 {r === 'bat' ? 'batters' : 'bowlers'} under pressure</h2>
-              <Link to={`/rankings?role=${r}`} className="text-sm text-royal hover:underline">Full ranking <ArrowRight size={14} className="inline" aria-hidden /></Link>
+              <h2 id={`h-${r}`} className="text-xl font-bold">Top 10 {r === 'bat' ? 'batters' : 'bowlers'} RR should back at the 2027 auction</h2>
+              <Link to={`/rankings?role=${r}&list=open`} className="text-sm text-royal hover:underline">Best overall (incl. retained) <ArrowRight size={14} className="inline" aria-hidden /></Link>
             </div>
             <div className="mb-3 flex items-center gap-3 text-[11px] text-ink2">
               <span>Bar = 80% range<Tip k="interval" label="80% range" /></span><span>P(top 10)<Tip k="ptop10" label="P(top 10)" /></span>
@@ -38,7 +38,7 @@ export default function Landing() {
           </section>
         ))}
       </div>
-      <p className="mt-4 rounded-xl border border-line bg-surface p-3 text-sm text-ink2"><strong className="text-ink">How sure are we?</strong> {meta.certainty}</p>
+      <p className="mt-4 rounded-xl border border-line bg-surface p-3 text-sm text-ink2"><strong className="text-ink">Only players RR can buy:</strong> released on 17 Nov 2026 or not on any IPL roster – none retained by another team, none already at RR. P(top 10) here is the chance of being a top-10 player within the auction pool; most ranks are near-ties.</p>
 
       <section className="mt-10" aria-labelledby="h-find">
         <h2 id="h-find" className="mb-4 text-xl font-bold">Three findings that shaped the method</h2>

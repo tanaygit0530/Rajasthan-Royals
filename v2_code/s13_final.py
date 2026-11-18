@@ -161,6 +161,15 @@ def table(role, F, th, de, summ, el):
     T['nation'] = [NAT.get(u, 'India') for u in T.index]
     T['buyable'] = T.status.str.startswith(('In auction pool', 'Open market'))     # only players RR can actually bid for
     T['buy_rank'] = np.nan; T.loc[T.buyable, 'buy_rank'] = np.arange(1, T.buyable.sum() + 1)
+    # within the auction pool: chance of being a top-10 BUYABLE player, and near-ties between consecutive buyable players
+    bu = [u for u in T.index if T.buyable.get(u)]
+    T['p_top10_pool'] = np.nan; T['near_tie_pool'] = False
+    if bu:
+        Sb = S[:, [pos[u] for u in bu]]
+        Rb = (-Sb).argsort(1).argsort(1) + 1
+        T.loc[bu, 'p_top10_pool'] = (Rb <= 10).mean(0)
+        nt = [float((Sb[:, i] > Sb[:, i + 1]).mean()) < 0.6 for i in range(len(bu) - 1)] + [False]
+        T.loc[bu, 'near_tie_pool'] = nt
     rcol = 'bat_role' if role == 'bat' else 'bowl_role'
     T['role_label'] = ID[rcol].reindex(T.index).astype(str)
     T['role_pct'] = T.groupby('role_label').score.rank(pct=True) * 100
@@ -170,7 +179,7 @@ def table(role, F, th, de, summ, el):
     return T
 
 
-COLS = ['rank', 'name', 'nation', 'team27', 'status', 'buy_rank', 'score', 'score_lo', 'score_hi', 'p_top10', 'rank_lo',
+COLS = ['rank', 'name', 'nation', 'team27', 'status', 'buy_rank', 'score', 'score_lo', 'score_hi', 'p_top10', 'p_top10_pool', 'near_tie_pool', 'rank_lo',
         'rank_hi', 'p_ahead_of_next', 'near_tie_with_next', 'p_n', 'n_n', 'obs_pressure_rv100', 'obs_normal_rv100',
         'apm_rv100', 'pressure_tendency', 'age', 'role_label', 'role_pct', 'ipl_share', 'last_season']
 
@@ -192,8 +201,10 @@ if __name__ == '__main__':
                 rows.append(dict(list=f'{"batters" if role == "bat" else "bowlers"}_{kind}', position=int(r.rank if kind == 'open' else r.buy_rank),
                                  open_rank=int(r.rank), uid=r.Index, name=r.name, nation=r.nation, status=r.status,
                                  score_runs_per100_pressure_balls=round(r.score, 2), interval_80_lo=round(r.score_lo, 2),
-                                 interval_80_hi=round(r.score_hi, 2), p_top10=round(r.p_top10, 3), pressure_balls=int(r.p_n),
-                                 near_tie_with_next=bool(r.near_tie_with_next)))
+                                 interval_80_hi=round(r.score_hi, 2),
+                                 p_top10=round(r.p_top10 if kind == 'open' else r.p_top10_pool, 3),
+                                 p_top10_all_players=round(r.p_top10, 3), pressure_balls=int(r.p_n),
+                                 near_tie_with_next=bool(r.near_tie_with_next if kind == 'open' else r.near_tie_pool)))
     pd.DataFrame(rows).to_csv(res('final_rankings.csv'), index=False)
     if QUICK:
         sys.exit()

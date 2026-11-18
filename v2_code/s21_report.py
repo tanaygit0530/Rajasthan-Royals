@@ -85,13 +85,14 @@ L += ['# Headline', '',
       f'{sw.loc["M6_apm", "wcorr"]:.2f} (bowlers) with next-season pressure performance, against a noise ceiling of '
       f'{sb.ceiling.iloc[0]:.2f} and {sw.ceiling.iloc[0]:.2f}.',
       f'3. *The v1 baseline formula had no out-of-sample signal* (correlation {m2b:+.2f} for batters, {m2w:+.2f} for bowlers).', '',
-      '## Top 10 batters under pressure (open ranking)', '', top_table('bat', 'open'), '',
-      '## Top 10 bowlers under pressure (open ranking)', '', top_table('bowl', 'open'), '',
+      '## Top 10 batters RR should back at the IPL 2027 auction (submitted on Unstop)', '', top_table('bat', 'rr_can_buy'), '',
+      '## Top 10 bowlers RR should back at the IPL 2027 auction (submitted on Unstop)', '', top_table('bowl', 'rr_can_buy'), '',
+      'Only players RR can buy: released on 17 Nov 2026 or not on any IPL roster (none retained by another team, none already at RR). P(top 10) is within the auction pool.', '',
       'Score = predicted runs added per 100 pressure balls above expectation (bowlers: runs saved plus wickets). '
       '"Near-tie" = less than 60% posterior probability that the player is ahead of the next one; ranks inside a near-tie are '
       'statistically interchangeable. Availability uses the IPL 2027 retention lists published 17 Nov 2026: only players in the auction pool can be bought.', '',
-      '## The lists RR can act on (excluding current RR players and ineligible players)', '', '**Batters**', '',
-      top_table('bat', 'rr_can_buy'), '', '**Bowlers**', '', top_table('bowl', 'rr_can_buy'), '']
+      '## For reference: best performers overall (open ranking, incl. players retained by other teams)', '', '**Batters**', '',
+      top_table('bat', 'open'), '', '**Bowlers**', '', top_table('bowl', 'open'), '']
 
 # ---- 1. pressure
 L += ['# 1. Defining pressure', '',

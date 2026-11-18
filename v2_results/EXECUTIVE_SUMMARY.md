@@ -7,7 +7,7 @@
 - Batters: 1. Vaibhav Sooryavanshi (37), 2. Tim David (25), 3. Abhishek Sharma (24), 4. Finn Allen (19), 5. Suryakumar Yadav (19), 6. Heinrich Klaasen (17), 7. Phil Salt (16), 8. Nicholas Pooran (15), 9. Priyansh Arya (11), 10. Tim Seifert (10).
 - Bowlers: 1. Jasprit Bumrah (24), 2. Sunil Narine (22), 3. Rashid Khan (16), 4. Wanindu Hasaranga (14), 5. Varun Chakravarthy (13), 6. Noor Ahmad (12), 7. Mujeeb Ur Rahman (11), 8. Abrar Ahmed (11), 9. Blessing Muzarabani (10), 10. Matheesha Pathirana (10).
 - RR can act on (batters): 1. Reeza Hendricks (10), 2. Muhammad Waseem (10), 3. Shai Hope (8), 4. Pathum Nissanka (7), 5. Travis Head (6), 6. Sikandar Raza (6), 7. Shimron Hetmyer (5), 8. Daryl Mitchell (3), 9. Jonny Bairstow (3), 10. Kusal Mendis (2).
-- RR can act on (bowlers): 1. Wanindu Hasaranga (14), 2. Mujeeb Ur Rahman (11), 3. Blessing Muzarabani (10), 4. Matheesha Pathirana (10), 5. Maheesh Theekshana (9), 6. Mustafizur Rahman (8), 7. Lockie Ferguson (4), 8. Spencer Johnson (3), 9. Ravichandran Ashwin (3), 10. Adam Zampa (3).
+- RR can act on (bowlers): 1. Wanindu Hasaranga (14), 2. Mujeeb Ur Rahman (11), 3. Blessing Muzarabani (10), 4. Matheesha Pathirana (10), 5. Maheesh Theekshana (9), 6. Mustafizur Rahman (8), 7. Lockie Ferguson (4), 8. Spencer Johnson (3), 9. Adam Zampa (3), 10. Richard Ngarava (2).
 
 (score = runs added per 100 pressure balls above expectation; full intervals and P(top 10) in the report)
 

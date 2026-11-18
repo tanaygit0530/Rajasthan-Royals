@@ -98,7 +98,8 @@ def rating(u, r):
     if T is None:
         return None
     x = T.loc[u]
-    return dict(score=x.score, lo=x.score_lo, hi=x.score_hi, p_top10=x.p_top10,
+    pp = x.get('p_top10_pool') if 'p_top10_pool' in x.index else None
+    return dict(score=x.score, lo=x.score_lo, hi=x.score_hi, p_top10=pp if (pp is not None and pd.notna(pp)) else x.p_top10,
                 rank=int(FULL[r]['rank'].get(u)) if u in FULL[r].index else None,
                 tier='established' if u in FULL[r].index else 'emerging', pressure_balls=x.p_n,
                 obs_pressure=x.obs_pressure_rv100, obs_normal=x.obs_normal_rv100,

@@ -14,7 +14,43 @@ We rank batters and bowlers by the run value they are expected to add **per pres
 2. *The best predictor of pressure performance is overall skill measured fairly* - adjusted for the match situation, opposition, venue, era and competition. These models reach correlations of about 0.19 (batters) and 0.24 (bowlers) with next-season pressure performance, against a noise ceiling of 0.44 and 0.35.
 3. *The v1 baseline formula had no out-of-sample signal* (correlation -0.02 for batters, -0.12 for bowlers).
 
-## Top 10 batters under pressure (open ranking)
+## Top 10 batters RR should back at the IPL 2027 auction (submitted on Unstop)
+
+|   # |   Open rank | Player          | Nation               | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
+|----:|------------:|:----------------|:---------------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
+|   1 |          11 | Reeza Hendricks | South Africa         | 10.1 (-14.1 to 34.0)   | 53%         |              260 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   2 |          14 | Muhammad Waseem | United Arab Emirates | 9.7 (-19.6 to 38.1)    | 52%         |              173 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   3 |          19 | Shai Hope       | West Indies          | 7.5 (-16.0 to 30.5)    | 47%         |              330 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   4 |          20 | Pathum Nissanka | Sri Lanka            | 7.3 (-11.1 to 26.2)    | 45%         |              645 | In auction pool (released by DC)       | near-tie with next |
+|   5 |          25 | Travis Head     | Australia            | 6.2 (-18.9 to 30.2)    | 45%         |              569 | In auction pool (released by SRH)      | near-tie with next |
+|   6 |          27 | Sikandar Raza   | Zimbabwe             | 5.7 (-16.9 to 28.6)    | 43%         |              189 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   7 |          30 | Shimron Hetmyer | West Indies          | 4.6 (-16.1 to 24.9)    | 40%         |              240 | In auction pool (released by RR)       | near-tie with next |
+|   8 |          34 | Daryl Mitchell  | New Zealand          | 3.5 (-18.5 to 25.4)    | 38%         |              188 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   9 |          35 | Jonny Bairstow  | England              | 3.0 (-21.7 to 28.1)    | 38%         |              221 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|  10 |          37 | Kusal Mendis    | Sri Lanka            | 2.4 (-18.6 to 23.0)    | 36%         |              477 | Open market (not on a 2026 IPL roster) | near-tie with next |
+
+## Top 10 bowlers RR should back at the IPL 2027 auction (submitted on Unstop)
+
+|   # |   Open rank | Player              | Nation      | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
+|----:|------------:|:--------------------|:------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
+|   1 |           4 | Wanindu Hasaranga   | Sri Lanka   | 13.6 (-1.1 to 28.8)    | 60%         |              329 | In auction pool (released by LSG)      | near-tie with next |
+|   2 |           7 | Mujeeb Ur Rahman    | Afghanistan | 11.5 (-8.3 to 31.3)    | 53%         |              256 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   3 |           9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 49%         |              263 | In auction pool (released by KKR)      | near-tie with next |
+|   4 |          10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 47%         |              246 | In auction pool (released by KKR)      | near-tie with next |
+|   5 |          14 | Maheesh Theekshana  | Sri Lanka   | 8.7 (-5.7 to 23.4)     | 44%         |              524 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|   6 |          19 | Mustafizur Rahman   | Bangladesh  | 7.8 (-8.2 to 23.5)     | 42%         |              400 | In auction pool (released by KKR)      | near-tie with next |
+|   7 |          26 | Lockie Ferguson     | New Zealand | 4.5 (-12.9 to 22.1)    | 34%         |              285 | In auction pool (released by PBKS)     | near-tie with next |
+|   8 |          29 | Spencer Johnson     | Australia   | 3.4 (-19.1 to 25.5)    | 35%         |              150 | In auction pool (released by CSK)      | near-tie with next |
+|   9 |          35 | Adam Zampa          | Australia   | 2.6 (-15.1 to 20.8)    | 29%         |              164 | Open market (not on a 2026 IPL roster) | near-tie with next |
+|  10 |          39 | Richard Ngarava     | Zimbabwe    | 2.4 (-16.1 to 20.7)    | 29%         |              248 | Open market (not on a 2026 IPL roster) | near-tie with next |
+
+Only players RR can buy: released on 17 Nov 2026 or not on any IPL roster (none retained by another team, none already at RR). P(top 10) is within the auction pool.
+
+Score = predicted runs added per 100 pressure balls above expectation (bowlers: runs saved plus wickets). "Near-tie" = less than 60% posterior probability that the player is ahead of the next one; ranks inside a near-tie are statistically interchangeable. Availability uses the IPL 2027 retention lists published 17 Nov 2026: only players in the auction pool can be bought.
+
+## For reference: best performers overall (open ranking, incl. players retained by other teams)
+
+**Batters**
 
 |   # | Player               | Nation       | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                       | Tie                |
 |----:|:---------------------|:-------------|:-----------------------|:------------|-----------------:|:----------------------------------|:-------------------|
@@ -29,7 +65,7 @@ We rank batters and bowlers by the run value they are expected to add **per pres
 |   9 | Priyansh Arya        | India        | 10.9 (-18.8 to 41.4)   | 27%         |              284 | Retained by PBKS (not in auction) | near-tie with next |
 |  10 | Tim Seifert          | New Zealand  | 10.5 (-14.6 to 34.9)   | 22%         |              325 | Retained by KKR (not in auction)  | near-tie with next |
 
-## Top 10 bowlers under pressure (open ranking)
+**Bowlers**
 
 |   # | Player              | Nation      | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
 |----:|:--------------------|:------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
@@ -43,40 +79,6 @@ We rank batters and bowlers by the run value they are expected to add **per pres
 |   8 | Abrar Ahmed         | Pakistan    | 11.1 (-8.7 to 31.2)    | 26%         |              169 | Not eligible (Pakistan national)       | near-tie with next |
 |   9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 24%         |              263 | In auction pool (released by KKR)      | near-tie with next |
 |  10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 18%         |              246 | In auction pool (released by KKR)      | near-tie with next |
-
-Score = predicted runs added per 100 pressure balls above expectation (bowlers: runs saved plus wickets). "Near-tie" = less than 60% posterior probability that the player is ahead of the next one; ranks inside a near-tie are statistically interchangeable. Availability uses the IPL 2027 retention lists published 17 Nov 2026: only players in the auction pool can be bought.
-
-## The lists RR can act on (excluding current RR players and ineligible players)
-
-**Batters**
-
-|   # |   Open rank | Player          | Nation               | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
-|----:|------------:|:----------------|:---------------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
-|   1 |          11 | Reeza Hendricks | South Africa         | 10.1 (-14.1 to 34.0)   | 21%         |              260 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   2 |          14 | Muhammad Waseem | United Arab Emirates | 9.7 (-19.6 to 38.1)    | 24%         |              173 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   3 |          19 | Shai Hope       | West Indies          | 7.5 (-16.0 to 30.5)    | 15%         |              330 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   4 |          20 | Pathum Nissanka | Sri Lanka            | 7.3 (-11.1 to 26.2)    | 11%         |              645 | In auction pool (released by DC)       | near-tie with next |
-|   5 |          25 | Travis Head     | Australia            | 6.2 (-18.9 to 30.2)    | 15%         |              569 | In auction pool (released by SRH)      | near-tie with next |
-|   6 |          27 | Sikandar Raza   | Zimbabwe             | 5.7 (-16.9 to 28.6)    | 13%         |              189 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   7 |          30 | Shimron Hetmyer | West Indies          | 4.6 (-16.1 to 24.9)    | 10%         |              240 | In auction pool (released by RR)       | near-tie with next |
-|   8 |          34 | Daryl Mitchell  | New Zealand          | 3.5 (-18.5 to 25.4)    | 10%         |              188 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   9 |          35 | Jonny Bairstow  | England              | 3.0 (-21.7 to 28.1)    | 13%         |              221 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|  10 |          37 | Kusal Mendis    | Sri Lanka            | 2.4 (-18.6 to 23.0)    | 8%          |              477 | Open market (not on a 2026 IPL roster) | near-tie with next |
-
-**Bowlers**
-
-|   # |   Open rank | Player              | Nation      | Score (80% interval)   | P(top 10)   |   Pressure balls | 2027 status                            | Tie                |
-|----:|------------:|:--------------------|:------------|:-----------------------|:------------|-----------------:|:---------------------------------------|:-------------------|
-|   1 |           4 | Wanindu Hasaranga   | Sri Lanka   | 13.6 (-1.1 to 28.8)    | 25%         |              329 | In auction pool (released by LSG)      | near-tie with next |
-|   2 |           7 | Mujeeb Ur Rahman    | Afghanistan | 11.5 (-8.3 to 31.3)    | 26%         |              256 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   3 |           9 | Blessing Muzarabani | Zimbabwe    | 10.5 (-8.3 to 30.1)    | 24%         |              263 | In auction pool (released by KKR)      | near-tie with next |
-|   4 |          10 | Matheesha Pathirana | Sri Lanka   | 9.5 (-8.1 to 28.3)     | 18%         |              246 | In auction pool (released by KKR)      | near-tie with next |
-|   5 |          14 | Maheesh Theekshana  | Sri Lanka   | 8.7 (-5.7 to 23.4)     | 14%         |              524 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|   6 |          19 | Mustafizur Rahman   | Bangladesh  | 7.8 (-8.2 to 23.5)     | 13%         |              400 | In auction pool (released by KKR)      | near-tie with next |
-|   7 |          26 | Lockie Ferguson     | New Zealand | 4.5 (-12.9 to 22.1)    | 12%         |              285 | In auction pool (released by PBKS)     | near-tie with next |
-|   8 |          29 | Spencer Johnson     | Australia   | 3.4 (-19.1 to 25.5)    | 16%         |              150 | In auction pool (released by CSK)      | near-tie with next |
-|   9 |          31 | Ravichandran Ashwin | India       | 3.0 (-13.3 to 19.5)    | 7%          |              317 | Open market (not on a 2026 IPL roster) | near-tie with next |
-|  10 |          35 | Adam Zampa          | Australia   | 2.6 (-15.1 to 20.8)    | 10%         |              164 | Open market (not on a 2026 IPL roster) | near-tie with next |
 
 # 1. Defining pressure
 
